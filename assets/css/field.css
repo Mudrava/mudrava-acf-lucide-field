@@ -1,0 +1,340 @@
+/**
+ * Mudrava Lucide Field - Styles
+ *
+ * Styles for the Lucide icon picker ACF field type.
+ * Designed to seamlessly integrate with ACF's native appearance.
+ *
+ * @package Mudrava\LucideField
+ * @since   1.0.0
+ */
+
+/* -----------------------------------------------------------------------------
+ * Container
+ * -------------------------------------------------------------------------- */
+
+.mudrava-lucide-picker {
+    position: relative;
+    width: 100%;
+}
+
+/* -----------------------------------------------------------------------------
+ * Selected Icon Preview
+ * -------------------------------------------------------------------------- */
+
+.mudrava-lucide-selected {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 40px;
+    padding: 8px 12px;
+    background: #fff;
+    border: 1px solid #8c8f94;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.mudrava-lucide-selected:hover {
+    border-color: #2271b1;
+}
+
+.mudrava-lucide-selected:focus-within {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+    outline: none;
+}
+
+.mudrava-lucide-preview {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    min-width: 0;
+}
+
+.mudrava-lucide-preview-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    color: #1d2327;
+    stroke: currentColor;
+    fill: none;
+}
+
+.mudrava-lucide-preview-name {
+    font-size: 13px;
+    color: #1d2327;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mudrava-lucide-preview-empty {
+    font-size: 13px;
+    color: #646970;
+    font-style: italic;
+}
+
+/* -----------------------------------------------------------------------------
+ * Clear Button
+ * -------------------------------------------------------------------------- */
+
+.mudrava-lucide-clear {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    margin-left: 8px;
+    background: transparent;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    color: #646970;
+    transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.mudrava-lucide-clear:hover {
+    color: #d63638;
+    background: rgba(214, 54, 56, 0.1);
+}
+
+.mudrava-lucide-clear .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+/* -----------------------------------------------------------------------------
+ * Dropdown
+ * -------------------------------------------------------------------------- */
+
+.mudrava-lucide-dropdown {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: #fff;
+    border: 1px solid #8c8f94;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4px);
+    transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s ease;
+}
+
+.mudrava-lucide-picker.is-open .mudrava-lucide-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* -----------------------------------------------------------------------------
+ * Search Input
+ * -------------------------------------------------------------------------- */
+
+.mudrava-lucide-search-wrap {
+    padding: 12px;
+    border-bottom: 1px solid #dcdcde;
+}
+
+.mudrava-lucide-search {
+    width: 100%;
+    height: 36px;
+    padding: 0 12px;
+    font-size: 13px;
+    border: 1px solid #8c8f94;
+    border-radius: 4px;
+    background: #fff;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.mudrava-lucide-search:focus {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+    outline: none;
+}
+
+.mudrava-lucide-search::placeholder {
+    color: #a7aaad;
+}
+
+/* -----------------------------------------------------------------------------
+ * Icon Grid
+ * -------------------------------------------------------------------------- */
+
+.mudrava-lucide-grid-wrap {
+    max-height: 280px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.mudrava-lucide-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(44px, 1fr));
+    gap: 4px;
+    padding: 12px;
+}
+
+.mudrava-lucide-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    background: #f6f7f7;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+}
+
+.mudrava-lucide-icon:hover {
+    background: #e8f0fe;
+    border-color: #c3d9f7;
+}
+
+.mudrava-lucide-icon:focus {
+    outline: none;
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+}
+
+.mudrava-lucide-icon.is-selected {
+    background: #2271b1;
+    border-color: #2271b1;
+}
+
+.mudrava-lucide-icon.is-selected:hover {
+    background: #135e96;
+    border-color: #135e96;
+}
+
+.mudrava-lucide-icon svg,
+.mudrava-lucide-icon-svg {
+    width: 22px;
+    height: 22px;
+    color: #1d2327;
+    stroke: currentColor;
+    fill: none;
+    transition: color 0.15s ease;
+}
+
+.mudrava-lucide-icon.is-selected svg,
+.mudrava-lucide-icon.is-selected .mudrava-lucide-icon-svg {
+    color: #fff;
+}
+
+/* -----------------------------------------------------------------------------
+ * No Results
+ * -------------------------------------------------------------------------- */
+
+.mudrava-lucide-no-results {
+    padding: 24px 12px;
+    text-align: center;
+    color: #646970;
+    font-size: 13px;
+    font-style: italic;
+}
+
+/* -----------------------------------------------------------------------------
+ * Loading State
+ * -------------------------------------------------------------------------- */
+
+.mudrava-lucide-grid.is-loading {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mudrava-lucide-grid.is-loading::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    border: 2px solid #dcdcde;
+    border-top-color: #2271b1;
+    border-radius: 50%;
+    animation: mudrava-lucide-spin 0.8s linear infinite;
+}
+
+@keyframes mudrava-lucide-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* -----------------------------------------------------------------------------
+ * Scrollbar Styling
+ * -------------------------------------------------------------------------- */
+
+.mudrava-lucide-grid-wrap::-webkit-scrollbar {
+    width: 8px;
+}
+
+.mudrava-lucide-grid-wrap::-webkit-scrollbar-track {
+    background: #f6f7f7;
+    border-radius: 4px;
+}
+
+.mudrava-lucide-grid-wrap::-webkit-scrollbar-thumb {
+    background: #c3c4c7;
+    border-radius: 4px;
+}
+
+.mudrava-lucide-grid-wrap::-webkit-scrollbar-thumb:hover {
+    background: #a7aaad;
+}
+
+/* -----------------------------------------------------------------------------
+ * Responsive Adjustments
+ * -------------------------------------------------------------------------- */
+
+@media screen and (max-width: 782px) {
+    .mudrava-lucide-grid {
+        grid-template-columns: repeat(auto-fill, minmax(48px, 1fr));
+    }
+
+    .mudrava-lucide-icon {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+/* -----------------------------------------------------------------------------
+ * RTL Support
+ * -------------------------------------------------------------------------- */
+
+[dir="rtl"] .mudrava-lucide-preview {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .mudrava-lucide-clear {
+    margin-left: 0;
+    margin-right: 8px;
+}
+
+/* -----------------------------------------------------------------------------
+ * ACF Block Editor Integration
+ * -------------------------------------------------------------------------- */
+
+.acf-block-component .mudrava-lucide-dropdown {
+    z-index: 1000;
+}
+
+/* -----------------------------------------------------------------------------
+ * Repeater / Flexible Content Compatibility
+ * -------------------------------------------------------------------------- */
+
+.acf-row .mudrava-lucide-picker {
+    width: 100%;
+}
+
+.acf-flexible-content .mudrava-lucide-dropdown,
+.acf-repeater .mudrava-lucide-dropdown {
+    z-index: 100;
+}
