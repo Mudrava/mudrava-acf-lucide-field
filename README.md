@@ -219,7 +219,7 @@ Contributions are welcome! Please read our contributing guidelines before submit
 
 ## Links
 
-- **Plugin Page**: [gofman.com/ru/projects/lucide-acf-field-free](https://gofman.com/ru/projects/lucide-acf-field-free)
+- **Plugin Page**: [mudrava.com/en/projects/lucide-acf-field-free](https://mudrava.com/en/projects/lucide-acf-field-free)
 - **GitHub**: [github.com/Mudrava/Lucide-ACF-Field-Free](https://github.com/Mudrava/Lucide-ACF-Field-Free)
 - **Lucide Icons**: [lucide.dev](https://lucide.dev/)
 
