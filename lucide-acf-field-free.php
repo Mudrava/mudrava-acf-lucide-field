@@ -8,10 +8,10 @@
  * Author URI:  https://mudrava.com
  * License:     GPL-2.0-or-later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: mudrava-lucide-field
+ * Text Domain: lucide-acf-field-free
  * Domain Path: /languages
  * Requires at least: 6.0
- * Requires PHP: 8.0
+ * Requires PHP: 7.4
  *
  * @package Mudrava\LucideField
  */
@@ -44,11 +44,31 @@ define('MUDRAVA_LUCIDE_FIELD_PATH', plugin_dir_path(__FILE__));
 define('MUDRAVA_LUCIDE_FIELD_URL', plugin_dir_url(__FILE__));
 
 /**
- * Lucide CDN base URL for icon SVGs.
+ * Check if ACF Pro is active.
  *
- * @var string
+ * @since 1.0.0
+ *
+ * @return bool True if ACF Pro is active, false otherwise.
  */
-define('MUDRAVA_LUCIDE_CDN_URL', 'https://unpkg.com/lucide-static@latest/icons/');
+function mudrava_lucide_field_check_acf(): bool
+{
+    return class_exists('ACF');
+}
+
+/**
+ * Display admin notice if ACF Pro is not active.
+ *
+ * @since 1.0.0
+ *
+ * @return void
+ */
+function mudrava_lucide_field_acf_notice(): void
+{
+    if (!mudrava_lucide_field_check_acf()) {
+        echo '<div class="error"><p><strong>Lucide ACF Field:</strong> This plugin requires <a href="https://www.advancedcustomfields.com/" target="_blank" rel="noopener noreferrer">Advanced Custom Fields Pro</a> version 6.0 or higher to function.</p></div>';
+    }
+}
+add_action('admin_notices', 'mudrava_lucide_field_acf_notice');
 
 /**
  * Registers the Lucide Icon field type with ACF.
@@ -62,51 +82,15 @@ define('MUDRAVA_LUCIDE_CDN_URL', 'https://unpkg.com/lucide-static@latest/icons/'
  */
 function mudrava_lucide_field_register(): void
 {
+    if (!mudrava_lucide_field_check_acf()) {
+        return;
+    }
+
     require_once MUDRAVA_LUCIDE_FIELD_PATH . 'includes/class-mudrava-acf-field-lucide-icon.php';
 
     acf_register_field_type('Mudrava_ACF_Field_Lucide_Icon');
 }
 add_action('acf/include_field_types', 'mudrava_lucide_field_register');
-
-/**
- * Initialize GitHub updater.
- *
- * @since 1.0.0
- *
- * @return void
- */
-function mudrava_lucide_field_updater_init(): void
-{
-    if (!is_admin()) {
-        return;
-    }
-
-    require_once MUDRAVA_LUCIDE_FIELD_PATH . 'includes/class-mudrava-github-updater.php';
-
-    new Mudrava_GitHub_Updater(
-        __FILE__,
-        'Mudrava',
-        'Lucide-ACF-Field-Free'
-    );
-}
-add_action('plugins_loaded', 'mudrava_lucide_field_updater_init');
-
-/**
- * Loads plugin text domain for translations.
- *
- * @since 1.0.0
- *
- * @return void
- */
-function mudrava_lucide_field_load_textdomain(): void
-{
-    load_plugin_textdomain(
-        'mudrava-lucide-field',
-        false,
-        dirname(plugin_basename(__FILE__)) . '/languages'
-    );
-}
-add_action('plugins_loaded', 'mudrava_lucide_field_load_textdomain');
 
 /**
  * Modifies plugin row links.
@@ -129,15 +113,8 @@ function mudrava_lucide_field_plugin_links(array $links, string $plugin_file): a
     $links[] = sprintf(
         '<a href="%s" target="_blank" rel="noopener noreferrer">%s</a>',
         'https://github.com/Mudrava/Lucide-ACF-Field-Free/blob/main/README.md',
-        __('Docs', 'mudrava-lucide-field')
+        __('Docs', 'lucide-acf-field-free')
     );
-
-    // Force target="_blank" on "Visit plugin site" if present
-    foreach ($links as $key => $link) {
-        if (strpos($link, 'Visit plugin site') !== false) {
-            $links[$key] = str_replace('<a href=', '<a target="_blank" rel="noopener noreferrer" href=', $link);
-        }
-    }
 
     return $links;
 }
@@ -148,6 +125,7 @@ add_filter('plugin_row_meta', 'mudrava_lucide_field_plugin_links', 10, 2);
  *
  * This helper function can be used in templates to render a Lucide icon
  * based on its name. Returns an empty string if the icon cannot be retrieved.
+ * All icons are loaded from the local sprite.svg file bundled with the plugin.
  *
  * @since 1.0.0
  *
@@ -157,6 +135,7 @@ add_filter('plugin_row_meta', 'mudrava_lucide_field_plugin_links', 10, 2);
  *                          - 'width'  (int)    Icon width in pixels. Default 24.
  *                          - 'height' (int)    Icon height in pixels. Default 24.
  *                          - 'stroke' (string) Stroke color. Default 'currentColor'.
+ *                          - 'stroke_width' (int) Stroke width. Default 2.
  * @return string The SVG markup or empty string on failure.
  */
 function mudrava_get_lucide_icon(string $icon_name, array $args = array()): string
@@ -172,42 +151,54 @@ function mudrava_get_lucide_icon(string $icon_name, array $args = array()): stri
         'width' => 24,
         'height' => 24,
         'stroke' => 'currentColor',
+        'stroke_width' => 2,
     );
 
     $args = wp_parse_args($args, $defaults);
 
-    $transient_key = 'mudrava_lucide_' . $icon_name;
-    $svg_content = get_transient($transient_key);
+    // Check if icon exists in the bundled icons list
+    $transient_key = 'mudrava_lucide_sprite_symbols';
+    $available_icons = get_transient($transient_key);
 
-    if (false === $svg_content) {
-        $response = wp_remote_get(
-            MUDRAVA_LUCIDE_CDN_URL . $icon_name . '.svg',
-            array(
-                'timeout' => 5,
-            )
-        );
+    if (false === $available_icons) {
+        $sprite_path = MUDRAVA_LUCIDE_FIELD_PATH . 'assets/sprite.svg';
 
-        if (is_wp_error($response) || 200 !== wp_remote_retrieve_response_code($response)) {
+        if (!file_exists($sprite_path)) {
             return '';
         }
 
-        $svg_content = wp_remote_retrieve_body($response);
+        // Parse sprite.svg to get available icon IDs
+        $sprite_content = file_get_contents($sprite_path); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
 
-        if (empty($svg_content)) {
+        if (false === $sprite_content) {
             return '';
         }
 
-        set_transient($transient_key, $svg_content, WEEK_IN_SECONDS);
+        // Extract all symbol IDs
+        preg_match_all('/<symbol[^>]+id="([^"]+)"/', $sprite_content, $matches);
+        $available_icons = !empty($matches[1]) ? $matches[1] : array();
+
+        set_transient($transient_key, $available_icons, WEEK_IN_SECONDS);
     }
 
+    // Verify icon exists in sprite
+    if (!in_array($icon_name, $available_icons, true)) {
+        return '';
+    }
+
+    // Build SVG with use reference to sprite
     $class_attr = !empty($args['class']) ? ' class="' . esc_attr($args['class']) . '"' : '';
 
-    $svg_content = preg_replace(
-        '/<svg([^>]*)>/',
-        '<svg$1' . $class_attr . ' width="' . esc_attr((string) $args['width']) . '" height="' . esc_attr((string) $args['height']) . '" stroke="' . esc_attr($args['stroke']) . '">',
-        $svg_content,
-        1
+    $svg = sprintf(
+        '<svg%s width="%s" height="%s" viewBox="0 0 24 24" fill="none" stroke="%s" stroke-width="%s" stroke-linecap="round" stroke-linejoin="round"><use href="%s#%s"></use></svg>',
+        $class_attr,
+        esc_attr((string) $args['width']),
+        esc_attr((string) $args['height']),
+        esc_attr($args['stroke']),
+        esc_attr((string) $args['stroke_width']),
+        esc_url(MUDRAVA_LUCIDE_FIELD_URL . 'assets/sprite.svg'),
+        esc_attr($icon_name)
     );
 
-    return $svg_content;
+    return $svg;
 }
