@@ -2,9 +2,11 @@
 
 A professional ACF (Advanced Custom Fields) custom field type for selecting [Lucide](https://lucide.dev/) icons with a visual picker interface.
 
+![Lucide Icon Picker Interface](assets/img/screenshot-1.png)
+
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![WordPress](https://img.shields.io/badge/WordPress-6.0%2B-green.svg)
-![PHP](https://img.shields.io/badge/PHP-8.0%2B-purple.svg)
+![PHP](https://img.shields.io/badge/PHP-7.4%2B-purple.svg)
 ![ACF Pro](https://img.shields.io/badge/ACF%20Pro-6.0%2B-orange.svg)
 ![License](https://img.shields.io/badge/license-GPL--2.0--or--later-lightgrey.svg)
 
@@ -21,12 +23,11 @@ Lucide ACF Field Free adds a new field type to ACF Pro that allows users to sele
 - **Responsive** — Works on all screen sizes
 - **Accessible** — Keyboard navigation support
 - **Flexible Output** — Return icon name or full SVG markup
-- **Auto Updates** — Receive updates directly from GitHub
 
 ## Requirements
 
 - WordPress 6.0 or higher
-- PHP 8.0 or higher
+- PHP 7.4 or higher
 - ACF Pro 6.0 or higher
 
 ## Installation
@@ -167,6 +168,7 @@ Retrieves the SVG markup for a Lucide icon.
 | `width` | int | `24` | Icon width in pixels |
 | `height` | int | `24` | Icon height in pixels |
 | `stroke` | string | `'currentColor'` | Stroke color |
+| `stroke_width`| int | `2` | Stroke width |
 
 #### Returns
 

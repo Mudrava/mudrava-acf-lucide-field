@@ -174,13 +174,14 @@
         },
 
         /**
-         * Show clear button if there's a value.
+         * Show clear button if there's a value and allow_null is true.
          */
         showClearButton: function () {
             const $selected = this.$selected();
             const value = this.$input().val();
+            const allowNull = this.$control().data('allow-null') == 1;
 
-            if (value && !$selected.find('.mudrava-lucide-clear').length) {
+            if (value && allowNull && !$selected.find('.mudrava-lucide-clear').length) {
                 $selected.append(
                     '<button type="button" class="mudrava-lucide-clear" title="' + mudravaLucideField.clear + '">' +
                     '<span class="dashicons dashicons-no-alt"></span>' +
