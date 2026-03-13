@@ -84,7 +84,7 @@ Before installing this plugin, ensure you have:
 = Installation Steps =
 
 1. Install and activate ACF Pro (if not already installed)
-2. Upload the `mudrava-lucide-field` folder to `/wp-content/plugins/`
+2. Upload the `Lucide-ACF-Field-Free` folder to `/wp-content/plugins/`
 3. Activate the plugin through the 'Plugins' menu in WordPress
 4. The new "Lucide Icon" field type will appear in ACF field type selection
 
