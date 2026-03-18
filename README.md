@@ -1,4 +1,4 @@
-# Lucide ACF Field Free
+# Mudrava Icon Field for ACF with Lucide
 
 A professional ACF (Advanced Custom Fields) custom field type for selecting [Lucide](https://lucide.dev/) icons with a visual picker interface.
 
@@ -12,7 +12,7 @@ A professional ACF (Advanced Custom Fields) custom field type for selecting [Luc
 
 ## Description
 
-Lucide ACF Field Free adds a new field type to ACF Pro that allows users to select icons from the Lucide icon library through an intuitive visual picker. The selected icon name is stored in the database, making it lightweight and flexible for frontend rendering.
+Mudrava Icon Field for ACF with Lucide adds a new field type to ACF Pro that allows users to select icons from the Lucide icon library through an intuitive visual picker. The selected icon name is stored in the database, making it lightweight and flexible for frontend rendering.
 
 ### Features
 
@@ -34,7 +34,7 @@ Lucide ACF Field Free adds a new field type to ACF Pro that allows users to sele
 
 ### Manual Installation
 
-1. Download the plugin zip file from [GitHub Releases](https://github.com/Mudrava/Lucide-ACF-Field-Free/releases)
+1. Download the plugin zip file from [GitHub Releases](https://github.com/Mudrava/mudrava-acf-lucide-field/releases)
 2. Go to **Plugins > Add New > Upload Plugin**
 3. Upload the zip file and click **Install Now**
 4. Activate the plugin
@@ -43,7 +43,7 @@ Lucide ACF Field Free adds a new field type to ACF Pro that allows users to sele
 
 ```bash
 cd wp-content/plugins
-git clone https://github.com/Mudrava/Lucide-ACF-Field-Free.git mudrava-lucide-field
+git clone https://github.com/Mudrava/mudrava-acf-lucide-field.git mudrava-acf-lucide-field
 ```
 
 ## Usage
@@ -221,8 +221,8 @@ Contributions are welcome! Please read our contributing guidelines before submit
 
 ## Links
 
-- **Plugin Page**: [mudrava.com/en/projects/lucide-acf-field-free](https://mudrava.com/en/projects/lucide-acf-field-free)
-- **GitHub**: [github.com/Mudrava/Lucide-ACF-Field-Free](https://github.com/Mudrava/Lucide-ACF-Field-Free)
+- **Plugin Page**: [mudrava.com/en/projects/mudrava-acf-lucide-field](https://mudrava.com/en/projects/mudrava-acf-lucide-field)
+- **GitHub**: [github.com/Mudrava/mudrava-acf-lucide-field](https://github.com/Mudrava/mudrava-acf-lucide-field)
 - **Lucide Icons**: [lucide.dev](https://lucide.dev/)
 
 ## Credits

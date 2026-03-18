@@ -1,4 +1,4 @@
-=== Lucide ACF Field Free ===
+=== Mudrava Icon Field for ACF with Lucide ===
 Contributors: mudrava
 Tags: acf, icons, lucide, custom fields, icon picker
 Requires at least: 6.0
@@ -12,7 +12,7 @@ A professional ACF custom field type for selecting Lucide icons with a visual pi
 
 == Description ==
 
-**Lucide ACF Field Free** adds a new field type to Advanced Custom Fields (ACF) that allows users to select icons from the Lucide icon library through an intuitive visual picker. The selected icon name is stored in the database, making it lightweight and flexible for frontend rendering.
+**Mudrava Icon Field for ACF with Lucide** adds a new field type to Advanced Custom Fields (ACF) that allows users to select icons from the Lucide icon library through an intuitive visual picker. The selected icon name is stored in the database, making it lightweight and flexible for frontend rendering.
 
 **Requirements**: This plugin requires [Advanced Custom Fields (ACF) Pro](https://www.advancedcustomfields.com/) version 6.0 or higher to function.
 
@@ -84,7 +84,7 @@ Before installing this plugin, ensure you have:
 = Installation Steps =
 
 1. Install and activate ACF Pro (if not already installed)
-2. Upload the `Lucide-ACF-Field-Free` folder to `/wp-content/plugins/`
+2. Upload the `mudrava-acf-lucide-field` folder to `/wp-content/plugins/`
 3. Activate the plugin through the 'Plugins' menu in WordPress
 4. The new "Lucide Icon" field type will appear in ACF field type selection
 
@@ -128,7 +128,7 @@ Use the `mudrava_get_lucide_icon()` helper function with custom attributes for w
 
 = Is the plugin translation-ready? =
 
-Yes, the plugin is fully translation-ready with text domain `mudrava-lucide-field`. Translation files should be placed in the `/languages/` directory.
+Yes, the plugin is fully translation-ready with text domain `mudrava-acf-lucide-field`. Translation files should be placed in the `/languages/` directory.
 
 == Privacy ==
 
@@ -171,4 +171,4 @@ This plugin does not integrate with or send data to any third-party services.
 == Upgrade Notice ==
 
 = 1.0.0 =
-Initial release of Lucide ACF Field Free.
+Initial release of Mudrava Icon Field for ACF with Lucide.

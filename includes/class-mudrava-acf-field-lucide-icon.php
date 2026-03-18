@@ -44,7 +44,7 @@ class Mudrava_ACF_Field_Lucide_Icon extends acf_field
     public function initialize(): void
     {
         $this->name = 'lucide_icon';
-        $this->label = __('Lucide Icon', 'lucide-acf-field-free');
+        $this->label = __('Lucide Icon', 'mudrava-acf-lucide-field');
         $this->category = 'choice';
 
         $this->defaults = array(
@@ -68,14 +68,14 @@ class Mudrava_ACF_Field_Lucide_Icon extends acf_field
         $url = MUDRAVA_LUCIDE_FIELD_URL;
 
         wp_enqueue_style(
-            'lucide-acf-field-free',
+            'mudrava-acf-lucide-field',
             $url . 'assets/css/field.css',
             array('acf-input'),
             $version
         );
 
         wp_enqueue_script(
-            'lucide-acf-field-free',
+            'mudrava-acf-lucide-field',
             $url . 'assets/js/field.js',
             array('acf-input'),
             $version,
@@ -83,14 +83,14 @@ class Mudrava_ACF_Field_Lucide_Icon extends acf_field
         );
 
         wp_localize_script(
-            'lucide-acf-field-free',
+            'mudrava-acf-lucide-field',
             'mudravaLucideField',
             array(
                 'icons' => $this->get_icons(),
                 'spriteUrl' => MUDRAVA_LUCIDE_FIELD_URL . 'assets/sprite.svg',
-                'placeholder' => __('Search icons...', 'lucide-acf-field-free'),
-                'noResults' => __('No icons found', 'lucide-acf-field-free'),
-                'clear' => __('Clear selection', 'lucide-acf-field-free'),
+                'placeholder' => __('Search icons...', 'mudrava-acf-lucide-field'),
+                'noResults' => __('No icons found', 'mudrava-acf-lucide-field'),
+                'clear' => __('Clear selection', 'mudrava-acf-lucide-field'),
             )
         );
     }
@@ -150,7 +150,7 @@ class Mudrava_ACF_Field_Lucide_Icon extends acf_field
     public function render_field(array $field): void
     {
         $value = $field['value'] ?? '';
-        $placeholder = $field['placeholder'] ?: __('Search icons...', 'lucide-acf-field-free');
+        $placeholder = $field['placeholder'] ?: __('Search icons...', 'mudrava-acf-lucide-field');
         $field_id = esc_attr($field['id']);
         $field_name = esc_attr($field['name']);
         ?>
@@ -161,12 +161,12 @@ class Mudrava_ACF_Field_Lucide_Icon extends acf_field
                         <span class="mudrava-lucide-preview-name"><?php echo esc_html($value); ?></span>
                     <?php else: ?>
                         <span
-                            class="mudrava-lucide-preview-empty"><?php esc_html_e('No icon selected', 'lucide-acf-field-free'); ?></span>
+                            class="mudrava-lucide-preview-empty"><?php esc_html_e('No icon selected', 'mudrava-acf-lucide-field'); ?></span>
                     <?php endif; ?>
                 </div>
                 <?php if ($field['allow_null'] && $value): ?>
                     <button type="button" class="mudrava-lucide-clear"
-                        title="<?php esc_attr_e('Clear selection', 'lucide-acf-field-free'); ?>">
+                        title="<?php esc_attr_e('Clear selection', 'mudrava-acf-lucide-field'); ?>">
                         <span class="dashicons dashicons-no-alt"></span>
                     </button>
                 <?php endif; ?>
@@ -180,7 +180,7 @@ class Mudrava_ACF_Field_Lucide_Icon extends acf_field
                 <div class="mudrava-lucide-grid-wrap">
                     <div class="mudrava-lucide-grid"></div>
                     <div class="mudrava-lucide-no-results" style="display: none;">
-                        <?php esc_html_e('No icons found', 'lucide-acf-field-free'); ?>
+                        <?php esc_html_e('No icons found', 'mudrava-acf-lucide-field'); ?>
                     </div>
                 </div>
             </div>
@@ -204,8 +204,8 @@ class Mudrava_ACF_Field_Lucide_Icon extends acf_field
         acf_render_field_setting(
             $field,
             array(
-                'label' => __('Default Value', 'lucide-acf-field-free'),
-                'instructions' => __('Enter the icon name to be selected by default (e.g., "rocket").', 'lucide-acf-field-free'),
+                'label' => __('Default Value', 'mudrava-acf-lucide-field'),
+                'instructions' => __('Enter the icon name to be selected by default (e.g., "rocket").', 'mudrava-acf-lucide-field'),
                 'type' => 'text',
                 'name' => 'default_value',
             )
@@ -214,13 +214,13 @@ class Mudrava_ACF_Field_Lucide_Icon extends acf_field
         acf_render_field_setting(
             $field,
             array(
-                'label' => __('Return Format', 'lucide-acf-field-free'),
-                'instructions' => __('Specify the format returned by get_field().', 'lucide-acf-field-free'),
+                'label' => __('Return Format', 'mudrava-acf-lucide-field'),
+                'instructions' => __('Specify the format returned by get_field().', 'mudrava-acf-lucide-field'),
                 'type' => 'radio',
                 'name' => 'return_format',
                 'choices' => array(
-                    'name' => __('Icon Name (e.g., "rocket")', 'lucide-acf-field-free'),
-                    'svg' => __('SVG Markup', 'lucide-acf-field-free'),
+                    'name' => __('Icon Name (e.g., "rocket")', 'mudrava-acf-lucide-field'),
+                    'svg' => __('SVG Markup', 'mudrava-acf-lucide-field'),
                 ),
                 'layout' => 'horizontal',
             )
@@ -229,8 +229,8 @@ class Mudrava_ACF_Field_Lucide_Icon extends acf_field
         acf_render_field_setting(
             $field,
             array(
-                'label' => __('Placeholder', 'lucide-acf-field-free'),
-                'instructions' => __('Placeholder text for the search input.', 'lucide-acf-field-free'),
+                'label' => __('Placeholder', 'mudrava-acf-lucide-field'),
+                'instructions' => __('Placeholder text for the search input.', 'mudrava-acf-lucide-field'),
                 'type' => 'text',
                 'name' => 'placeholder',
             )
@@ -250,8 +250,8 @@ class Mudrava_ACF_Field_Lucide_Icon extends acf_field
         acf_render_field_setting(
             $field,
             array(
-                'label' => __('Allow Null', 'lucide-acf-field-free'),
-                'instructions' => __('Allow the field to have no icon selected.', 'lucide-acf-field-free'),
+                'label' => __('Allow Null', 'mudrava-acf-lucide-field'),
+                'instructions' => __('Allow the field to have no icon selected.', 'mudrava-acf-lucide-field'),
                 'name' => 'allow_null',
                 'type' => 'true_false',
                 'ui' => 1,
@@ -320,7 +320,7 @@ class Mudrava_ACF_Field_Lucide_Icon extends acf_field
     public function validate_value($valid, $value, $field, $input)
     {
         if (!$field['allow_null'] && empty($value)) {
-            return __('Please select an icon.', 'lucide-acf-field-free');
+            return __('Please select an icon.', 'mudrava-acf-lucide-field');
         }
 
         return $valid;

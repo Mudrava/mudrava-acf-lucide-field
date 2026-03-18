@@ -1,14 +1,14 @@
 <?php
 /**
- * Plugin Name: Lucide ACF Field Free
- * Plugin URI:  https://github.com/Mudrava/Lucide-ACF-Field-Free
+ * Plugin Name: Mudrava Icon Field for ACF with Lucide
+ * Plugin URI:  https://github.com/Mudrava/mudrava-acf-lucide-field
  * Description: A custom ACF field type for selecting Lucide icons with a visual picker interface.
  * Version:     1.0.0
  * Author:      Mudrava
  * Author URI:  https://mudrava.com
  * License:     GPL-2.0-or-later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: lucide-acf-field-free
+ * Text Domain: mudrava-acf-lucide-field
  * Domain Path: /languages
  * Requires at least: 6.0
  * Requires PHP: 7.4
@@ -65,7 +65,7 @@ function mudrava_lucide_field_check_acf(): bool
 function mudrava_lucide_field_acf_notice(): void
 {
     if (!mudrava_lucide_field_check_acf()) {
-        echo '<div class="error"><p><strong>Lucide ACF Field:</strong> This plugin requires <a href="https://www.advancedcustomfields.com/" target="_blank" rel="noopener noreferrer">Advanced Custom Fields Pro</a> version 6.0 or higher to function.</p></div>';
+        echo '<div class="error"><p><strong>Mudrava Icon Field:</strong> This plugin requires <a href="https://www.advancedcustomfields.com/" target="_blank" rel="noopener noreferrer">Advanced Custom Fields Pro</a> version 6.0 or higher to function.</p></div>';
     }
 }
 add_action('admin_notices', 'mudrava_lucide_field_acf_notice');
@@ -112,8 +112,8 @@ function mudrava_lucide_field_plugin_links(array $links, string $plugin_file): a
     // Add Docs link
     $links[] = sprintf(
         '<a href="%s" target="_blank" rel="noopener noreferrer">%s</a>',
-        'https://github.com/Mudrava/Lucide-ACF-Field-Free/blob/main/README.md',
-        __('Docs', 'lucide-acf-field-free')
+        'https://github.com/Mudrava/mudrava-acf-lucide-field/blob/main/README.md',
+        __('Docs', 'mudrava-acf-lucide-field')
     );
 
     return $links;

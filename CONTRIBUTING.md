@@ -1,4 +1,4 @@
-# Contributing to Lucide ACF Field Free
+# Contributing to Mudrava Icon Field for ACF with Lucide
 
 First off, thank you for considering contributing to this plugin! It's people like you that make the open-source community such a great place to learn, inspire, and create.
 

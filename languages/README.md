@@ -8,9 +8,9 @@ You do not need to manually add translation files here. WordPress will automatic
 
 ## Text Domain
 
-This plugin uses the text domain: `lucide-acf-field-free`
+This plugin uses the text domain: `mudrava-acf-lucide-field`
 
 ## Translating
 
 To contribute translations, visit:
-https://translate.wordpress.org/projects/wp-plugins/lucide-acf-field-free/
+https://translate.wordpress.org/projects/wp-plugins/mudrava-acf-lucide-field/
