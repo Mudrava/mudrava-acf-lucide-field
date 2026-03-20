@@ -12,6 +12,22 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
+#. Plugin Name of the plugin
+msgid "Mudrava Icon Field for ACF with Lucide"
+msgstr ""
+
+#. Description of the plugin
+msgid "A custom ACF field type for selecting Lucide icons with a visual picker interface."
+msgstr ""
+
+#. Author of the plugin
+msgid "Mudrava"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://mudrava.com"
+msgstr ""
+
 #: mudrava-acf-lucide-field.php:116
 msgid "Docs"
 msgstr ""

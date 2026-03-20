@@ -15,6 +15,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 
+#. Plugin Name of the plugin
+msgid "Mudrava Icon Field for ACF with Lucide"
+msgstr "Mudrava Icon Field dla ACF z Lucide"
+
+#. Description of the plugin
+msgid "A custom ACF field type for selecting Lucide icons with a visual picker interface."
+msgstr "Niestandardowy typ pola ACF do wybierania ikon Lucide z wizualnym interfejsem wyboru."
+
+#. Author of the plugin
+msgid "Mudrava"
+msgstr "Mudrava"
+
+#. Author URI of the plugin
+msgid "https://mudrava.com"
+msgstr "https://mudrava.com"
+
 #: mudrava-acf-lucide-field.php:116
 msgid "Docs"
 msgstr "Dokumentacja"
