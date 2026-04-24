@@ -239,4 +239,4 @@ This project is licensed under the GPL-2.0-or-later License. See the [LICENSE](L
 ## Author
 
 **Mudrava**  
-[https://mudrava.com](https://mudrava.com)
+[https://mudrava.com/en/](https://mudrava.com/en/)
