@@ -835,6 +835,17 @@
     "wildcard",
     "*"
   ],
+  "astroid": [
+    "star",
+    "math",
+    "shape",
+    "curve",
+    "sharp",
+    "four-pointed",
+    "hypocycloid",
+    "ai",
+    "artificial intelligence"
+  ],
   "at-sign": [
     "mention",
     "at",
@@ -1413,6 +1424,17 @@
     "bbq",
     "steak"
   ],
+  "beef-off": [
+    "food",
+    "dish",
+    "restaurant",
+    "course",
+    "meal",
+    "meat",
+    "bbq",
+    "steak",
+    "vegetarian"
+  ],
   "beer": [
     "alcohol",
     "bar",
@@ -1428,6 +1450,12 @@
     "drink"
   ],
   "bell": [
+    "alarm",
+    "notification",
+    "sound",
+    "reminder"
+  ],
+  "bell-check": [
     "alarm",
     "notification",
     "sound",
@@ -1644,6 +1672,15 @@
     "woodwork"
   ],
   "bitcoin": [
+    "cryptocurrency",
+    "digital",
+    "blockchain",
+    "finance",
+    "coin",
+    "market",
+    "decentralized",
+    "investment",
+    "crypto",
     "currency",
     "money",
     "payment"
@@ -2407,6 +2444,19 @@
   "bookmark-minus": [
     "delete",
     "remove"
+  ],
+  "bookmark-off": [
+    "unsaved",
+    "unfavorite",
+    "unmarked",
+    "unlabel",
+    "disabled",
+    "removed",
+    "unpin",
+    "unread",
+    "unclip",
+    "marker",
+    "untag"
   ],
   "bookmark-plus": [
     "add"
@@ -3281,6 +3331,15 @@
     "crime",
     "watching"
   ],
+  "cctv-off": [
+    "camera",
+    "surveillance",
+    "recording",
+    "film",
+    "videotape",
+    "crime",
+    "watching"
+  ],
   "chart-area": [
     "statistics",
     "analytics",
@@ -3659,10 +3718,6 @@
     "expand",
     "unfold",
     "vertical"
-  ],
-  "chromium": [
-    "browser",
-    "logo"
   ],
   "church": [
     "temple",
@@ -4499,12 +4554,6 @@
     "html",
     "xml"
   ],
-  "codepen": [
-    "logo"
-  ],
-  "codesandbox": [
-    "logo"
-  ],
   "coffee": [
     "drink",
     "cup",
@@ -4893,11 +4942,24 @@
   "cuboid": [
     "brick",
     "block",
+    "box",
+    "3d",
+    "solid",
+    "volume",
     "container",
     "storage",
+    "shipping",
+    "carton",
     "geometry",
     "rectangular",
-    "hexahedron"
+    "hexahedron",
+    "butter",
+    "tofu",
+    "soap",
+    "cheese",
+    "package",
+    "parcel",
+    "crate"
   ],
   "cup-soda": [
     "beverage",
@@ -4944,6 +5006,15 @@
     "rotate",
     "arrow",
     "left"
+  ],
+  "database-search": [
+    "storage",
+    "memory",
+    "container",
+    "tin",
+    "pot",
+    "bytes",
+    "servers"
   ],
   "database-zap": [
     "cache busting",
@@ -5344,10 +5415,6 @@
     "entertainment",
     "show"
   ],
-  "dribbble": [
-    "design",
-    "social"
-  ],
   "drill": [
     "power",
     "bit",
@@ -5516,6 +5583,19 @@
     "hatched",
     "bad egg"
   ],
+  "ellipse": [
+    "shape",
+    "geometry",
+    "rounded",
+    "smooth",
+    "outline",
+    "form",
+    "boundary",
+    "curve",
+    "shapes",
+    "ellipse",
+    "oval"
+  ],
   "ellipsis": [
     "et cetera",
     "etc",
@@ -5676,10 +5756,6 @@
     "visibility",
     "vision"
   ],
-  "facebook": [
-    "logo",
-    "social"
-  ],
   "factory": [
     "building",
     "business",
@@ -5721,11 +5797,6 @@
     "amusement park",
     "theme park",
     "funfair"
-  ],
-  "figma": [
-    "logo",
-    "design",
-    "tool"
   ],
   "file": [
     "document"
@@ -6162,6 +6233,13 @@
     "sports",
     "travel"
   ],
+  "fishing-rod": [
+    "fishing",
+    "rod",
+    "hobby",
+    "equipment",
+    "reel"
+  ],
   "flag": [
     "report",
     "marker",
@@ -6274,19 +6352,7 @@
     "experiment",
     "test"
   ],
-  "flip-horizontal": [
-    "reflect",
-    "mirror",
-    "alignment",
-    "dashed"
-  ],
   "flip-horizontal-2": [
-    "reflect",
-    "mirror",
-    "alignment",
-    "dashed"
-  ],
-  "flip-vertical": [
     "reflect",
     "mirror",
     "alignment",
@@ -6336,6 +6402,19 @@
     "archive",
     "zip",
     "package"
+  ],
+  "folder-bookmark": [
+    "folder",
+    "bookmark",
+    "file",
+    "mark",
+    "storage",
+    "archive",
+    "directory",
+    "project",
+    "favorite",
+    "save",
+    "read later"
   ],
   "folder-check": [
     "done",
@@ -6552,6 +6631,14 @@
     "shoe"
   ],
   "forklift": [
+    "machinery",
+    "industrial",
+    "warehouse",
+    "lifting",
+    "storage",
+    "equipment",
+    "heavy-duty",
+    "moving",
     "vehicle",
     "transport",
     "logistics"
@@ -6576,11 +6663,6 @@
     "email"
   ],
   "frame": [
-    "logo",
-    "design",
-    "tool"
-  ],
-  "framer": [
     "logo",
     "design",
     "tool"
@@ -6810,6 +6892,14 @@
     "code",
     "version control"
   ],
+  "git-merge-conflict": [
+    "code",
+    "version control",
+    "commits",
+    "diff",
+    "error",
+    "conflict"
+  ],
   "git-pull-request": [
     "code",
     "version control",
@@ -6851,14 +6941,6 @@
     "draft",
     "dashed"
   ],
-  "github": [
-    "logo",
-    "version control"
-  ],
-  "gitlab": [
-    "logo",
-    "version control"
-  ],
   "glass-water": [
     "beverage",
     "drink",
@@ -6886,6 +6968,28 @@
     "encryption",
     "protection",
     "connection"
+  ],
+  "globe-off": [
+    "globe",
+    "earth",
+    "planet",
+    "disable",
+    "mute",
+    "off",
+    "hide",
+    "avoid",
+    "world",
+    "browser",
+    "language",
+    "translate",
+    "internet",
+    "offline",
+    "disconnected",
+    "network",
+    "connection",
+    "no connection",
+    "network failure",
+    "signal off"
   ],
   "globe-x": [
     "globe",
@@ -7232,7 +7336,11 @@
     "data",
     "ssd",
     "disk",
-    "hard disk"
+    "hard disk",
+    "storage",
+    "hardware",
+    "backup",
+    "media"
   ],
   "hard-drive-download": [
     "computer",
@@ -7415,8 +7523,8 @@
     "unlike",
     "unfavorite",
     "remove",
-    "damage",
-    "ui & ux"
+    "delete",
+    "damage"
   ],
   "heart-off": [
     "unlike",
@@ -7441,6 +7549,15 @@
     "cardiac",
     "systole",
     "diastole"
+  ],
+  "heart-x": [
+    "unlike",
+    "unfavorite",
+    "remove",
+    "reject",
+    "dismiss",
+    "delete",
+    "clear"
   ],
   "heater": [
     "heating",
@@ -7663,7 +7780,19 @@
     "math"
   ],
   "info": [
-    "help"
+    "about",
+    "advice",
+    "clue",
+    "details",
+    "help",
+    "hint",
+    "indicator",
+    "information",
+    "knowledge",
+    "notice",
+    "status",
+    "support",
+    "tooltip"
   ],
   "inspection-panel": [
     "access",
@@ -7672,11 +7801,6 @@
     "metal",
     "materials",
     "screws"
-  ],
-  "instagram": [
-    "logo",
-    "camera",
-    "social"
   ],
   "italic": [
     "oblique",
@@ -7928,6 +8052,18 @@
     "double",
     "shortcuts"
   ],
+  "layers-minus": [
+    "stack",
+    "pile",
+    "pages",
+    "sheets",
+    "paperwork",
+    "copies",
+    "copy",
+    "layers",
+    "remove",
+    "delete"
+  ],
   "layers-plus": [
     "stack",
     "layers",
@@ -7996,6 +8132,36 @@
     "pulpit",
     "podium",
     "stand"
+  ],
+  "lens-concave": [
+    "concave",
+    "lens",
+    "optics",
+    "light",
+    "magnification",
+    "curved",
+    "focus",
+    "refraction",
+    "science",
+    "physics",
+    "eyeglass",
+    "telescope",
+    "microscope"
+  ],
+  "lens-convex": [
+    "convex",
+    "lens",
+    "optics",
+    "magnification",
+    "focus",
+    "light",
+    "refraction",
+    "physics",
+    "eyeglass",
+    "telescope",
+    "microscope",
+    "curved",
+    "science"
   ],
   "library": [
     "books",
@@ -8075,6 +8241,15 @@
   "lightbulb-off": [
     "lights"
   ],
+  "line-dot-right-horizontal": [
+    "code",
+    "version control",
+    "waypoint",
+    "stop",
+    "station",
+    "last",
+    "end"
+  ],
   "line-squiggle": [
     "line",
     "snakes",
@@ -8090,6 +8265,13 @@
     "art",
     "road"
   ],
+  "line-style": [
+    "line",
+    "stroke",
+    "style",
+    "dashed",
+    "border"
+  ],
   "link": [
     "chain",
     "url"
@@ -8101,11 +8283,6 @@
   "link-2-off": [
     "unchain",
     "chain"
-  ],
-  "linkedin": [
-    "logo",
-    "social media",
-    "social"
   ],
   "list": [
     "options"
@@ -8574,6 +8751,14 @@
     "create",
     "new"
   ],
+  "map-pin-search": [
+    "location",
+    "navigation",
+    "travel",
+    "waypoint",
+    "marker",
+    "drop"
+  ],
   "map-pin-x": [
     "location",
     "waypoint",
@@ -8701,6 +8886,19 @@
     "dialog",
     "feedback",
     "speech bubble"
+  ],
+  "message-circle-check": [
+    "comment",
+    "chat",
+    "conversation",
+    "dialog",
+    "feedback",
+    "speech bubble",
+    "moderate",
+    "check",
+    "done",
+    "todo",
+    "complete"
   ],
   "message-circle-code": [
     "comment",
@@ -8835,6 +9033,19 @@
     "dialog",
     "feedback",
     "speech bubble"
+  ],
+  "message-square-check": [
+    "comment",
+    "chat",
+    "conversation",
+    "dialog",
+    "feedback",
+    "speech bubble",
+    "moderate",
+    "check",
+    "done",
+    "todo",
+    "complete"
   ],
   "message-square-code": [
     "comment",
@@ -9036,6 +9247,27 @@
     "interview",
     "debate"
   ],
+  "metronome": [
+    "metronome",
+    "tempo",
+    "rhythm",
+    "beat",
+    "bpm",
+    "music",
+    "audio",
+    "sound",
+    "practice",
+    "timing",
+    "timer",
+    "time",
+    "pulse",
+    "sync",
+    "cadence",
+    "control",
+    "playback",
+    "studio",
+    "tool"
+  ],
   "mic": [
     "record",
     "sound",
@@ -9150,6 +9382,37 @@
     "coding",
     "minimum",
     "downgrade"
+  ],
+  "mirror-rectangular": [
+    "reflection",
+    "optics",
+    "glass",
+    "surface",
+    "image",
+    "physics",
+    "science",
+    "bathroom",
+    "decor",
+    "cosmetic",
+    "shiny",
+    "periscope",
+    "vanity"
+  ],
+  "mirror-round": [
+    "reflection",
+    "optics",
+    "glass",
+    "surface",
+    "image",
+    "physics",
+    "science",
+    "bathroom",
+    "vanity",
+    "makeup",
+    "decor",
+    "cosmetic",
+    "shiny",
+    "periscope"
   ],
   "monitor": [
     "tv",
@@ -9339,6 +9602,11 @@
     "scroll",
     "click"
   ],
+  "mouse-left": [
+    "device",
+    "scroll",
+    "click"
+  ],
   "mouse-off": [
     "device",
     "scroll",
@@ -9378,6 +9646,11 @@
   "mouse-pointer-click": [
     "click",
     "select"
+  ],
+  "mouse-right": [
+    "device",
+    "scroll",
+    "click"
   ],
   "move": [
     "arrows"
@@ -10473,10 +10746,6 @@
     "extra",
     "+"
   ],
-  "pocket": [
-    "logo",
-    "save"
-  ],
   "pocket-knife": [
     "swiss army knife",
     "penknife",
@@ -10687,6 +10956,13 @@
     "live",
     "frequency"
   ],
+  "radio-off": [
+    "signal",
+    "broadcast",
+    "connectivity",
+    "live",
+    "frequency"
+  ],
   "radio-receiver": [
     "device",
     "music",
@@ -10708,12 +10984,6 @@
     "calculate",
     "measure",
     "size"
-  ],
-  "rail-symbol": [
-    "railway",
-    "train",
-    "track",
-    "line"
   ],
   "rainbow": [
     "colors",
@@ -11030,6 +11300,12 @@
     "repeat",
     "loop"
   ],
+  "repeat-off": [
+    "loop",
+    "arrows",
+    "recurring",
+    "again"
+  ],
   "replace": [
     "search",
     "substitute",
@@ -11059,6 +11335,17 @@
     "strap",
     "cordon"
   ],
+  "road": [
+    "road",
+    "street",
+    "highway",
+    "route",
+    "path",
+    "transport",
+    "traffic",
+    "drive",
+    "map"
+  ],
   "rocket": [
     "release",
     "boost",
@@ -11069,7 +11356,9 @@
   "rocking-chair": [
     "chair",
     "furniture",
-    "seat"
+    "seat",
+    "comfort",
+    "relax"
   ],
   "roller-coaster": [
     "attraction",
@@ -11785,6 +12074,25 @@
     "hypnotise",
     "hypnosis"
   ],
+  "shelving-unit": [
+    "ledge",
+    "rack",
+    "storage",
+    "inventory",
+    "furniture",
+    "sill",
+    "shelves",
+    "shelf",
+    "organize",
+    "display",
+    "store",
+    "arrange",
+    "unit",
+    "cabinet",
+    "fixture",
+    "retail",
+    "warehouse"
+  ],
   "shield": [
     "cybersecurity",
     "secure",
@@ -12009,6 +12317,95 @@
     "checked",
     "crest",
     "bravery"
+  ],
+  "shield-cog": [
+    "cybersecurity",
+    "secure",
+    "safety",
+    "protection",
+    "guardian",
+    "armored",
+    "armoured",
+    "defense",
+    "defence",
+    "defender",
+    "block",
+    "threat",
+    "prevention",
+    "antivirus",
+    "vigilance",
+    "vigilant",
+    "detection",
+    "scan",
+    "find",
+    "strength",
+    "strong",
+    "tough",
+    "invincible",
+    "invincibility",
+    "invulnerable",
+    "undamaged",
+    "audit",
+    "admin",
+    "verification",
+    "crest",
+    "bravery",
+    "knight",
+    "foot soldier",
+    "infantry",
+    "trooper",
+    "pawn",
+    "battle",
+    "war",
+    "military",
+    "army",
+    "cadet",
+    "scout"
+  ],
+  "shield-cog-corner": [
+    "cybersecurity",
+    "secure",
+    "safety",
+    "protection",
+    "guardian",
+    "armored",
+    "armoured",
+    "defense",
+    "defence",
+    "defender",
+    "block",
+    "threat",
+    "prevention",
+    "antivirus",
+    "vigilance",
+    "vigilant",
+    "detection",
+    "scan",
+    "find",
+    "strength",
+    "strong",
+    "tough",
+    "invincible",
+    "invincibility",
+    "invulnerable",
+    "undamaged",
+    "audit",
+    "admin",
+    "verification",
+    "crest",
+    "shieldcog",
+    "bravery",
+    "knight",
+    "foot soldier",
+    "infantry",
+    "trooper",
+    "pawn",
+    "battle",
+    "war",
+    "military",
+    "army",
+    "cadet",
+    "scout"
   ],
   "shield-ellipsis": [
     "cybersecurity",
@@ -12539,6 +12936,16 @@
     "unique"
   ],
   "signpost": [
+    "navigation",
+    "direction",
+    "arrow",
+    "wayfinding",
+    "guide",
+    "location",
+    "pointer",
+    "route",
+    "indicator",
+    "marker",
     "bidirectional",
     "left",
     "right",
@@ -12576,9 +12983,6 @@
     "death",
     "danger",
     "bone"
-  ],
-  "slack": [
-    "logo"
   ],
   "slash": [
     "divide",
@@ -12798,6 +13202,17 @@
     "sewing",
     "needlework"
   ],
+  "sport-shoe": [
+    "footwear",
+    "sports",
+    "running",
+    "athletic",
+    "shoe",
+    "sneaker",
+    "training",
+    "exercise",
+    "fitness"
+  ],
   "spotlight": [
     "winner",
     "soapbox",
@@ -12958,6 +13373,24 @@
     "button",
     "->"
   ],
+  "square-arrow-right-enter": [
+    "left",
+    "in",
+    "inside",
+    "input",
+    "insert",
+    "source",
+    "import",
+    "place",
+    "->"
+  ],
+  "square-arrow-right-exit": [
+    "out",
+    "outside",
+    "output",
+    "export",
+    "->"
+  ],
   "square-arrow-up": [
     "forward",
     "direction",
@@ -13000,6 +13433,18 @@
     "chop",
     "stationery",
     "crafts"
+  ],
+  "square-centerline-dashed-horizontal": [
+    "reflect",
+    "mirror",
+    "alignment",
+    "dashed"
+  ],
+  "square-centerline-dashed-vertical": [
+    "reflect",
+    "mirror",
+    "alignment",
+    "dashed"
   ],
   "square-chart-gantt": [
     "projects",
@@ -13149,6 +13594,12 @@
     "target",
     "dom",
     "node"
+  ],
+  "square-dashed-text": [
+    "find",
+    "search",
+    "selection",
+    "dashed"
   ],
   "square-dashed-top-solid": [
     "square",
@@ -14096,12 +14547,6 @@
     "magnifying glass",
     "lens"
   ],
-  "text-select": [
-    "find",
-    "search",
-    "selection",
-    "dashed"
-  ],
   "text-wrap": [
     "words",
     "lines",
@@ -14297,6 +14742,10 @@
     "check-in",
     "airport"
   ],
+  "timeline": [
+    "tags",
+    "history"
+  ],
   "timer": [
     "time",
     "timer",
@@ -14389,6 +14838,24 @@
   "touchpad-off": [
     "trackpad",
     "cursor"
+  ],
+  "towel-rack": [
+    "flannel",
+    "bathroom",
+    "toiletries",
+    "sanitation",
+    "clean",
+    "fresh",
+    "dry",
+    "laundry",
+    "laundrette",
+    "hospitality",
+    "housekeeping",
+    "room service",
+    "spa break",
+    "health club",
+    "amenities",
+    "hanging"
   ],
   "tower-control": [
     "airport",
@@ -14502,10 +14969,6 @@
     "forest",
     "park",
     "nature"
-  ],
-  "trello": [
-    "logo",
-    "brand"
   ],
   "trending-down": [
     "statistics"
@@ -14691,14 +15154,6 @@
     "channels",
     "catchup"
   ],
-  "twitch": [
-    "logo",
-    "social"
-  ],
-  "twitter": [
-    "logo",
-    "social"
-  ],
   "type": [
     "text",
     "font",
@@ -14831,6 +15286,21 @@
     "cog",
     "gear"
   ],
+  "user-key": [
+    "passkey",
+    "password",
+    "login",
+    "authentication",
+    "authorization",
+    "roles",
+    "permissions",
+    "private",
+    "public",
+    "security",
+    "person",
+    "account",
+    "contact"
+  ],
   "user-lock": [
     "person",
     "lock",
@@ -14878,6 +15348,21 @@
     "edit",
     "cog",
     "gear"
+  ],
+  "user-round-key": [
+    "passkey",
+    "password",
+    "login",
+    "authentication",
+    "authorization",
+    "roles",
+    "permissions",
+    "private",
+    "public",
+    "security",
+    "person",
+    "account",
+    "contact"
   ],
   "user-round-minus": [
     "delete",
@@ -15254,14 +15739,6 @@
     "clock",
     "time"
   ],
-  "waves": [
-    "water",
-    "sea",
-    "sound",
-    "hertz",
-    "wavelength",
-    "vibrate"
-  ],
   "waves-arrow-down": [
     "water",
     "sea",
@@ -15290,6 +15767,17 @@
     "ocean",
     "rising"
   ],
+  "waves-horizontal": [
+    "water",
+    "sea",
+    "sound",
+    "hertz",
+    "wavelength",
+    "vibrate",
+    "ocean",
+    "swimming",
+    "frequency"
+  ],
   "waves-ladder": [
     "swimming",
     "water",
@@ -15301,6 +15789,20 @@
     "🏊‍♀️",
     "🏊",
     "🥽"
+  ],
+  "waves-vertical": [
+    "steam",
+    "warmth",
+    "temperature",
+    "burn",
+    "hot",
+    "boiling",
+    "heat",
+    "smoke",
+    "vapor",
+    "smell",
+    "aroma",
+    "sauna"
   ],
   "waypoints": [
     "indirection",
@@ -15505,25 +16007,203 @@
     "multiply",
     "multiplication"
   ],
-  "youtube": [
-    "logo",
-    "social",
-    "video",
-    "play"
+  "x-line-top": [
+    "line",
+    "top",
+    "arrow",
+    "navigation",
+    "up",
+    "pointer",
+    "direction",
+    "vector",
+    "symbol",
+    "cancel",
+    "close",
+    "delete",
+    "remove",
+    "times",
+    "clear",
+    "math",
+    "multiply",
+    "multiplication",
+    "mean",
+    "median",
+    "average",
+    "x̄"
   ],
   "zap": [
     "flash",
     "camera",
     "lightning",
     "electricity",
-    "energy"
+    "energy",
+    "power",
+    "quick"
   ],
   "zap-off": [
     "flash",
     "camera",
     "lightning",
     "electricity",
-    "energy"
+    "energy",
+    "power"
+  ],
+  "zodiac-aquarius": [
+    "water bearer",
+    "waves",
+    "innovation",
+    "air",
+    "future",
+    "astrology",
+    "star sign",
+    "horoscope",
+    "constellation",
+    "celestial"
+  ],
+  "zodiac-aries": [
+    "ram",
+    "horns",
+    "fire",
+    "energy",
+    "initiative",
+    "astrology",
+    "star sign",
+    "horoscope",
+    "constellation",
+    "celestial"
+  ],
+  "zodiac-cancer": [
+    "crab",
+    "shell",
+    "protection",
+    "water",
+    "intuition",
+    "astrology",
+    "star sign",
+    "horoscope",
+    "constellation",
+    "celestial"
+  ],
+  "zodiac-capricorn": [
+    "goat",
+    "mountain",
+    "ambition",
+    "earth",
+    "discipline",
+    "astrology",
+    "star sign",
+    "horoscope",
+    "constellation",
+    "celestial"
+  ],
+  "zodiac-gemini": [
+    "twins",
+    "duality",
+    "communication",
+    "air",
+    "adaptability",
+    "astrology",
+    "star sign",
+    "horoscope",
+    "constellation",
+    "celestial"
+  ],
+  "zodiac-leo": [
+    "lion",
+    "crown",
+    "leadership",
+    "fire",
+    "confidence",
+    "astrology",
+    "star sign",
+    "horoscope",
+    "constellation",
+    "celestial"
+  ],
+  "zodiac-libra": [
+    "scales",
+    "balance",
+    "justice",
+    "air",
+    "harmony",
+    "astrology",
+    "star sign",
+    "horoscope",
+    "constellation",
+    "celestial"
+  ],
+  "zodiac-ophiuchus": [
+    "serpent",
+    "snake holder",
+    "healing",
+    "knowledge",
+    "astronomy",
+    "astrology",
+    "star sign",
+    "horoscope",
+    "constellation",
+    "celestial"
+  ],
+  "zodiac-pisces": [
+    "fish",
+    "duality",
+    "water",
+    "dreams",
+    "empathy",
+    "astrology",
+    "star sign",
+    "horoscope",
+    "constellation",
+    "celestial"
+  ],
+  "zodiac-sagittarius": [
+    "archer",
+    "arrow",
+    "exploration",
+    "fire",
+    "philosophy",
+    "astrology",
+    "star sign",
+    "horoscope",
+    "constellation",
+    "celestial"
+  ],
+  "zodiac-scorpio": [
+    "scorpion",
+    "stinger",
+    "intensity",
+    "water",
+    "transformation",
+    "astrology",
+    "star sign",
+    "horoscope",
+    "constellation",
+    "celestial"
+  ],
+  "zodiac-taurus": [
+    "bull",
+    "strength",
+    "stability",
+    "earth",
+    "endurance",
+    "astrology",
+    "star sign",
+    "horoscope",
+    "constellation",
+    "celestial"
+  ],
+  "zodiac-virgo": [
+    "virgin",
+    "maiden",
+    "harvest",
+    "precision",
+    "earth",
+    "analysis",
+    "astrology",
+    "star sign",
+    "horoscope",
+    "constellation",
+    "celestial"
   ],
   "zoom-in": [
     "magnifying glass",

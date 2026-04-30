@@ -1,6 +1,6 @@
 # Mudrava Icon Field for ACF with Lucide
 
-A professional ACF (Advanced Custom Fields) custom field type for selecting [Lucide](https://lucide.dev/) icons with a visual picker interface.
+A professional ACF (Advanced Custom Fields) custom field type for selecting [Lucide](https://lucide.dev/) icons and [Simple Icons](https://simpleicons.org/) brand logos with a visual picker interface.
 
 ![Lucide Icon Picker Interface](assets/img/screenshot-1.png)
 
@@ -8,28 +8,30 @@ A professional ACF (Advanced Custom Fields) custom field type for selecting [Luc
 [![WordPress Plugin Downloads](https://img.shields.io/wordpress/plugin/dt/mudrava-acf-lucide-field)](https://wordpress.org/plugins/mudrava-acf-lucide-field/)
 ![WordPress](https://img.shields.io/badge/WordPress-6.0%2B-green.svg)
 ![PHP](https://img.shields.io/badge/PHP-7.4%2B-purple.svg)
-![ACF Pro](https://img.shields.io/badge/ACF%20Pro-6.0%2B-orange.svg)
+![ACF](https://img.shields.io/badge/ACF-6.0%2B-orange.svg)
 ![License](https://img.shields.io/badge/license-GPL--2.0--or--later-lightgrey.svg)
 
 ## Description
 
-Mudrava Icon Field for ACF with Lucide adds a new field type to ACF Pro that allows users to select icons from the Lucide icon library through an intuitive visual picker. The selected icon name is stored in the database, making it lightweight and flexible for frontend rendering.
+Mudrava Icon Field for ACF with Lucide adds a new field type to Advanced Custom Fields that allows users to select icons from the Lucide icon library and brand logos from Simple Icons through an intuitive visual picker. The selected icon value is stored in the database, making it lightweight and flexible for frontend rendering.
 
 ### Features
 
-- **Visual Icon Picker** — Browse and select from 1,500+ Lucide icons
-- **Smart Search** — Filter icons by name or tags instantly
-- **Performant** — Local sprite file, paginated grid (100 icons per page)
-- **Native ACF Look** — Seamlessly integrates with ACF's design language
-- **Responsive** — Works on all screen sizes
-- **Accessible** — Keyboard navigation support
-- **Flexible Output** — Return icon name or full SVG markup
+- **Visual Icon Picker** - Browse and select from 1,700+ Lucide icons and 3,400+ brand logos
+- **Brand Icons** - Brand logos use Simple Icons values such as `simple:facebook`
+- **Smart Search** - Filter icons by name or tags instantly
+- **Performant** - Local sprite file, inline frontend SVG output, paginated grid (100 icons per page)
+- **No External Requests** - Lucide and Simple Icons assets are bundled locally
+- **Native ACF Look** - Seamlessly integrates with ACF's design language
+- **Responsive** - Works on all screen sizes
+- **Accessible** - Keyboard navigation support
+- **Flexible Output** - Return icon value or full SVG markup
 
 ## Requirements
 
 - WordPress 6.0 or higher
 - PHP 7.4 or higher
-- ACF Pro 6.0 or higher
+- ACF 6.0 or higher
 
 ## Installation
 
@@ -54,9 +56,9 @@ git clone https://github.com/Mudrava/mudrava-acf-lucide-field.git mudrava-acf-lu
 1. Go to **Custom Fields > Add New**
 2. Add a new field and select **Lucide Icon** as the field type
 3. Configure the field settings:
-   - **Default Value** — Pre-selected icon name (e.g., `rocket`)
-   - **Return Format** — Choose between icon name or SVG markup
-   - **Allow Null** — Allow the field to have no selection
+   - **Default Value** - Pre-selected icon value (e.g., `rocket` or `simple:facebook`)
+   - **Return Format** - Choose between icon value or SVG markup
+   - **Allow Null** - Allow the field to have no selection
 4. Save your field group
 
 ### Retrieving the Value
@@ -66,7 +68,7 @@ git clone https://github.com/Mudrava/mudrava-acf-lucide-field.git mudrava-acf-lu
 ```php
 <?php
 $icon_name = get_field('your_field_name');
-// Returns: 'rocket'
+// Returns: 'rocket' or 'simple:facebook'
 ?>
 ```
 
@@ -89,6 +91,9 @@ The plugin provides a helper function for rendering icons with custom attributes
 <?php
 // Basic usage
 echo mudrava_get_lucide_icon('rocket');
+
+// Brand logo
+echo mudrava_get_lucide_icon('simple:facebook');
 
 // With custom attributes
 echo mudrava_get_lucide_icon('rocket', [
@@ -152,13 +157,13 @@ if ($icon && $url) : ?>
 
 ### `mudrava_get_lucide_icon( string $icon_name, array $args = [] ): string`
 
-Retrieves the SVG markup for a Lucide icon.
+Retrieves the SVG markup for a Lucide icon or Simple Icons brand logo.
 
 #### Parameters
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$icon_name` | string | The name of the Lucide icon (e.g., 'rocket') |
+| `$icon_name` | string | Icon value (e.g., `rocket` or `simple:facebook`) |
 | `$args` | array | Optional. Customization arguments |
 
 #### Arguments
@@ -170,17 +175,18 @@ Retrieves the SVG markup for a Lucide icon.
 | `height` | int | `24` | Icon height in pixels |
 | `stroke` | string | `'currentColor'` | Stroke color |
 | `stroke_width`| int | `2` | Stroke width |
+| `fill` | string | `''` | Fill color for brand icons. Defaults to `stroke` |
 
 #### Returns
 
-`string` — The SVG markup or empty string on failure.
+`string` - The SVG markup or empty string on failure.
 
 ## Field Settings
 
 | Setting | Description |
 |---------|-------------|
-| **Default Value** | Icon name to pre-select when field is empty |
-| **Return Format** | `name` returns icon name, `svg` returns full SVG markup |
+| **Default Value** | Icon value to pre-select when field is empty |
+| **Return Format** | `name` returns icon value, `svg` returns full SVG markup |
 | **Placeholder** | Custom placeholder text for the search input |
 | **Allow Null** | When enabled, allows clearing the selection |
 
@@ -188,15 +194,21 @@ Retrieves the SVG markup for a Lucide icon.
 
 ### Can I use this with the free version of ACF?
 
-No, this plugin requires ACF Pro 6.0 or higher due to the use of advanced field type APIs.
+Yes. The field type works with Advanced Custom Fields 6.0 or higher. It also works inside ACF Pro field groups such as Repeaters and Flexible Content.
 
 ### Are the icons bundled with the plugin?
 
-Yes! The Lucide sprite file is bundled locally for optimal performance. No external CDN requests are made.
+Yes. Lucide `1.14.0` and Simple Icons `16.18.0` sprite files are bundled locally for optimal performance. No external CDN requests are made.
 
 ### How often is the icon library updated?
 
-The bundled sprite can be updated by replacing the `assets/sprite.svg` file with the latest version from [Lucide's repository](https://github.com/lucide-icons/lucide).
+Version `1.1.0` updates the bundled Lucide assets to `lucide-static@1.14.0` and adds a separate Simple Icons brand bundle. Lucide v1 removed most brand icons from current packages, so brand logos are now handled through Simple Icons instead of being mixed into the Lucide sprite.
+
+New brand values are saved as `simple:<slug>`, for example `simple:facebook`. Legacy unprefixed social values such as `facebook`, `instagram`, `twitter`, or `youtube` are resolved against Simple Icons when they no longer exist in Lucide.
+
+### Can I use brand logos freely?
+
+Simple Icons is distributed under CC0-1.0, but brand logos and trademarks may still be governed by each brand owner's guidelines and permissions. Check the relevant brand guidelines before using a logo in production. Source and guideline URLs from Simple Icons are bundled in `data/brand-icons-meta.json`, and third-party notices are documented in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
 
 ### Does it support RTL languages?
 
@@ -226,11 +238,13 @@ Contributions are welcome! Please read our contributing guidelines before submit
 - **Plugin Page**: [mudrava.com/en/projects/mudrava-acf-lucide-field](https://mudrava.com/en/projects/mudrava-acf-lucide-field)
 - **GitHub**: [github.com/Mudrava/mudrava-acf-lucide-field](https://github.com/Mudrava/mudrava-acf-lucide-field)
 - **Lucide Icons**: [lucide.dev](https://lucide.dev/)
+- **Simple Icons**: [simpleicons.org](https://simpleicons.org/)
 
 ## Credits
 
-- [Lucide Icons](https://lucide.dev/) — The icon library
-- [Advanced Custom Fields](https://www.advancedcustomfields.com/) — The ACF framework
+- [Lucide Icons](https://lucide.dev/) - The UI icon library
+- [Simple Icons](https://simpleicons.org/) - Brand logo icons
+- [Advanced Custom Fields](https://www.advancedcustomfields.com/) - The ACF framework
 
 ## License
 

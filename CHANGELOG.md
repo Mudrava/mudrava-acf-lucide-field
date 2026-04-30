@@ -5,6 +5,36 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-04-30
+
+### Added
+
+- Added a separate Simple Icons `16.18.0` brand icon bundle with 3,400+ brand logos.
+- Added `simple:<slug>` values for new brand icon selections, for example `simple:facebook`.
+- Added legacy fallback resolution for unprefixed social values such as `facebook`, `instagram`, `twitter`, and `youtube` when Lucide no longer contains them.
+- Added third-party notices and brand-logo usage guidance.
+
+### Changed
+
+- Updated bundled Lucide assets to `lucide-static` `1.14.0`.
+- Updated the admin picker to search Lucide icons and Simple Icons brand logos together while keeping the icon sources separate.
+- Improved picker search result ranking and labels so direct brand matches appear before Lucide tag-only matches.
+- Render Simple Icons brand logos as fill-based inline SVGs and Lucide icons as stroke-based inline SVGs.
+
+## [1.0.1] - 2026-04-30
+
+### Fixed
+
+- Render frontend helper output as inline SVG instead of external sprite references, improving reliability with CDN domains, HTTPS/domain rewrites, CSP, MIME handling, and optimization plugins.
+- Avoid stale transient icon lists after sprite updates by parsing the bundled sprite once per request.
+- Preserve open picker stacking above ACF Repeater and Flexible Content rows.
+
+### Changed
+
+- Validate saved icon names against the bundled local sprite.
+- Clarify the ACF 6.0+ requirement.
+- Document Lucide v1 brand icon behavior and warn against blindly replacing the bundled sprite with `lucide-static@latest`.
+
 ## [1.0.0] - 2026-03-07
 
 ### Added

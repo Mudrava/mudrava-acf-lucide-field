@@ -17,6 +17,11 @@
     width: 100%;
 }
 
+.mudrava-lucide-picker,
+.mudrava-lucide-picker * {
+    box-sizing: border-box;
+}
+
 /* -----------------------------------------------------------------------------
  * Selected Icon Preview
  * -------------------------------------------------------------------------- */
@@ -38,6 +43,7 @@
     border-color: #2271b1;
 }
 
+.mudrava-lucide-selected:focus,
 .mudrava-lucide-selected:focus-within {
     border-color: #2271b1;
     box-shadow: 0 0 0 1px #2271b1;
@@ -180,6 +186,11 @@
     padding: 12px;
 }
 
+.mudrava-lucide-grid.has-search {
+    grid-template-columns: repeat(auto-fill, minmax(108px, 1fr));
+    gap: 6px;
+}
+
 .mudrava-lucide-icon {
     display: flex;
     align-items: center;
@@ -192,6 +203,14 @@
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+}
+
+.mudrava-lucide-grid.has-search .mudrava-lucide-icon {
+    width: 100%;
+    height: 68px;
+    flex-direction: column;
+    gap: 6px;
+    padding: 8px 6px;
 }
 
 .mudrava-lucide-icon:hover {
@@ -220,13 +239,56 @@
     width: 18px;
     height: 18px;
     color: #1d2327;
+    transition: color 0.15s ease;
+}
+
+.mudrava-lucide-icon svg:not,
+.mudrava-lucide-icon-svg:not(.mudrava-lucide-icon-svg--brand) {
     stroke: currentColor;
     fill: none;
-    transition: color 0.15s ease;
+}
+
+.mudrava-lucide-grid.has-search .mudrava-lucide-icon-svg {
+    width: 22px;
+    height: 22px;
+}
+
+.mudrava-lucide-preview .mudrava-lucide-icon-svg {
+    width: 24px;
+    height: 24px;
+}
+
+.mudrava-lucide-icon-svg--lucide {
+    fill: none;
+    stroke: currentColor;
+}
+
+.mudrava-lucide-icon-svg--brand {
+    fill: currentColor;
+    stroke: none;
 }
 
 .mudrava-lucide-icon.is-selected svg,
 .mudrava-lucide-icon.is-selected .mudrava-lucide-icon-svg {
+    color: #fff;
+}
+
+.mudrava-lucide-icon-label {
+    display: none;
+    max-width: 100%;
+    color: #1d2327;
+    font-size: 11px;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.mudrava-lucide-grid.has-search .mudrava-lucide-icon-label {
+    display: block;
+}
+
+.mudrava-lucide-icon.is-selected .mudrava-lucide-icon-label {
     color: #fff;
 }
 
@@ -338,4 +400,9 @@
 .acf-flexible-content .mudrava-lucide-dropdown,
 .acf-repeater .mudrava-lucide-dropdown {
     z-index: 100;
+}
+
+.acf-flexible-content .mudrava-lucide-picker.is-open .mudrava-lucide-dropdown,
+.acf-repeater .mudrava-lucide-picker.is-open .mudrava-lucide-dropdown {
+    z-index: 10001;
 }

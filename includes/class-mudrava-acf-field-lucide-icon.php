@@ -2,7 +2,7 @@
 /**
  * Mudrava ACF Field: Lucide Icon
  *
- * A custom ACF field type for selecting Lucide icons with a visual picker interface.
+ * A custom ACF field type for selecting Lucide icons and brand icons with a visual picker interface.
  *
  * @package Mudrava\LucideField
  * @since   1.0.0
@@ -17,8 +17,8 @@ if (!defined('ABSPATH')) {
 /**
  * ACF Field Type: Lucide Icon
  *
- * Provides a visual icon picker for selecting Lucide icons.
- * The field stores the icon name (e.g., 'rocket') in the database.
+ * Provides a visual icon picker for selecting Lucide icons and Simple Icons brand icons.
+ * The field stores the icon value (e.g., 'rocket' or 'simple:facebook') in the database.
  *
  * @since 1.0.0
  */
@@ -31,6 +31,13 @@ class Mudrava_ACF_Field_Lucide_Icon extends acf_field
      * @var array<string, array<string>>|null
      */
     private ?array $icons_cache = null;
+
+    /**
+     * Cached brand icon data from brand-icons.json.
+     *
+     * @var array<string, array<string>>|null
+     */
+    private ?array $brand_icons_cache = null;
 
     /**
      * Initializes the field type.
@@ -87,9 +94,12 @@ class Mudrava_ACF_Field_Lucide_Icon extends acf_field
             'mudravaLucideField',
             array(
                 'icons' => $this->get_icons(),
+                'brandIcons' => $this->get_brand_icons(),
                 'spriteUrl' => MUDRAVA_LUCIDE_FIELD_URL . 'assets/sprite.svg',
-                'placeholder' => __('Search icons...', 'mudrava-acf-lucide-field'),
+                'brandSpriteUrl' => MUDRAVA_LUCIDE_FIELD_URL . 'assets/brand-sprite.svg',
+                'placeholder' => __('Search icons or brand logos...', 'mudrava-acf-lucide-field'),
                 'noResults' => __('No icons found', 'mudrava-acf-lucide-field'),
+                'emptyLabel' => __('No icon selected', 'mudrava-acf-lucide-field'),
                 'clear' => __('Clear selection', 'mudrava-acf-lucide-field'),
             )
         );
@@ -137,6 +147,44 @@ class Mudrava_ACF_Field_Lucide_Icon extends acf_field
     }
 
     /**
+     * Retrieves the brand icon data from the bundled JSON file.
+     *
+     * @since 1.1.0
+     *
+     * @return array<string, array<string>> Brand icon data array.
+     */
+    private function get_brand_icons(): array
+    {
+        if (null !== $this->brand_icons_cache) {
+            return $this->brand_icons_cache;
+        }
+
+        $json_path = MUDRAVA_LUCIDE_FIELD_PATH . 'data/brand-icons.json';
+
+        if (!file_exists($json_path)) {
+            $this->brand_icons_cache = array();
+            return $this->brand_icons_cache;
+        }
+
+        $json_content = file_get_contents($json_path); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
+
+        if (false === $json_content) {
+            $this->brand_icons_cache = array();
+            return $this->brand_icons_cache;
+        }
+
+        $brand_icons = json_decode($json_content, true);
+
+        if (!is_array($brand_icons)) {
+            $this->brand_icons_cache = array();
+            return $this->brand_icons_cache;
+        }
+
+        $this->brand_icons_cache = $brand_icons;
+        return $this->brand_icons_cache;
+    }
+
+    /**
      * Renders the field HTML interface.
      *
      * Creates the icon picker UI with search input, icon grid,
@@ -150,12 +198,12 @@ class Mudrava_ACF_Field_Lucide_Icon extends acf_field
     public function render_field(array $field): void
     {
         $value = $field['value'] ?? '';
-        $placeholder = $field['placeholder'] ?: __('Search icons...', 'mudrava-acf-lucide-field');
+        $placeholder = $field['placeholder'] ?: __('Search icons or brand logos...', 'mudrava-acf-lucide-field');
         $field_id = esc_attr($field['id']);
         $field_name = esc_attr($field['name']);
         ?>
         <div class="mudrava-lucide-picker" data-allow-null="<?php echo esc_attr((string) $field['allow_null']); ?>">
-            <div class="mudrava-lucide-selected">
+            <div class="mudrava-lucide-selected" role="button" tabindex="0" aria-haspopup="listbox" aria-expanded="false">
                 <div class="mudrava-lucide-preview">
                     <?php if ($value): ?>
                         <span class="mudrava-lucide-preview-name"><?php echo esc_html($value); ?></span>
@@ -172,7 +220,7 @@ class Mudrava_ACF_Field_Lucide_Icon extends acf_field
                 <?php endif; ?>
             </div>
 
-            <div class="mudrava-lucide-dropdown">
+            <div class="mudrava-lucide-dropdown" role="listbox">
                 <div class="mudrava-lucide-search-wrap">
                     <input type="text" class="mudrava-lucide-search" placeholder="<?php echo esc_attr($placeholder); ?>"
                         autocomplete="off" />
@@ -205,7 +253,7 @@ class Mudrava_ACF_Field_Lucide_Icon extends acf_field
             $field,
             array(
                 'label' => __('Default Value', 'mudrava-acf-lucide-field'),
-                'instructions' => __('Enter the icon name to be selected by default (e.g., "rocket").', 'mudrava-acf-lucide-field'),
+                'instructions' => __('Enter the icon value to be selected by default (e.g., "rocket" or "simple:facebook").', 'mudrava-acf-lucide-field'),
                 'type' => 'text',
                 'name' => 'default_value',
             )
@@ -219,7 +267,7 @@ class Mudrava_ACF_Field_Lucide_Icon extends acf_field
                 'type' => 'radio',
                 'name' => 'return_format',
                 'choices' => array(
-                    'name' => __('Icon Name (e.g., "rocket")', 'mudrava-acf-lucide-field'),
+                    'name' => __('Icon Value (e.g., "rocket" or "simple:facebook")', 'mudrava-acf-lucide-field'),
                     'svg' => __('SVG Markup', 'mudrava-acf-lucide-field'),
                 ),
                 'layout' => 'horizontal',
@@ -262,7 +310,7 @@ class Mudrava_ACF_Field_Lucide_Icon extends acf_field
     /**
      * Formats the field value for use in templates.
      *
-     * Based on the return_format setting, returns either the icon name
+     * Based on the return_format setting, returns either the icon value
      * or the full SVG markup.
      *
      * @since 1.0.0
@@ -303,6 +351,10 @@ class Mudrava_ACF_Field_Lucide_Icon extends acf_field
             return '';
         }
 
+        if (function_exists('mudrava_lucide_field_sanitize_icon_value')) {
+            return mudrava_lucide_field_sanitize_icon_value((string) $value);
+        }
+
         return sanitize_file_name((string) $value);
     }
 
@@ -321,6 +373,10 @@ class Mudrava_ACF_Field_Lucide_Icon extends acf_field
     {
         if (!$field['allow_null'] && empty($value)) {
             return __('Please select an icon.', 'mudrava-acf-lucide-field');
+        }
+
+        if (!empty($value) && function_exists('mudrava_lucide_field_icon_exists') && !mudrava_lucide_field_icon_exists((string) $value)) {
+            return __('Please select a valid icon.', 'mudrava-acf-lucide-field');
         }
 
         return $valid;
