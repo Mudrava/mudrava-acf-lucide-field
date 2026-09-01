@@ -252,8 +252,8 @@
     transition: color 0.15s ease;
 }
 
-.mudrava-lucide-icon svg:not(.mudrava-lucide-icon-svg--brand),
-.mudrava-lucide-icon-svg:not(.mudrava-lucide-icon-svg--brand) {
+.mudrava-lucide-icon svg:not(.mudrava-lucide-icon-svg--brand):not(.mudrava-lucide-icon-svg--custom),
+.mudrava-lucide-icon-svg:not(.mudrava-lucide-icon-svg--brand):not(.mudrava-lucide-icon-svg--custom) {
     stroke: currentColor;
     fill: none;
 }
@@ -274,6 +274,11 @@
 }
 
 .mudrava-lucide-icon-svg--brand {
+    fill: currentColor;
+    stroke: none;
+}
+
+.mudrava-lucide-icon-svg--custom {
     fill: currentColor;
     stroke: none;
 }

@@ -2042,13 +2042,20 @@ function mudrava_lucide_field_render_custom_icons_page() {
 		echo '<style>.mudrava-lucide-icon-preview{display:inline-flex;width:32px;height:32px;align-items:center;justify-content:center;background:#fff;border:1px solid #dcdcde;border-radius:4px}.mudrava-lucide-icon-preview svg{width:20px;height:20px;display:block}</style>';
 		echo '<table class="widefat striped"><thead><tr><th>' . esc_html__( 'Name', 'mudrava-acf-lucide-field' ) . '</th><th>' . esc_html__( 'Preview', 'mudrava-acf-lucide-field' ) . '</th><th>' . esc_html__( 'Title', 'mudrava-acf-lucide-field' ) . '</th><th>' . esc_html__( 'Keywords', 'mudrava-acf-lucide-field' ) . '</th><th>' . esc_html__( 'Value', 'mudrava-acf-lucide-field' ) . '</th><th>' . esc_html__( 'Actions', 'mudrava-acf-lucide-field' ) . '</th></tr></thead><tbody>';
 
+		$preview_schema = mudrava_lucide_field_allowed_svg_children();
+
+		$preview_schema['svg'] = array(
+			'xmlns'   => true,
+			'viewBox' => true,
+		);
+
 		foreach ( $icons as $name => $meta ) {
 			$markup = mudrava_lucide_field_get_custom_icon_markup( $name );
 
 			echo '<tr><td><code>' . esc_html( $name ) . '</code></td><td>';
 
 			if ( '' !== $markup ) {
-				echo '<span class="mudrava-lucide-icon-preview" aria-hidden="true">' . $markup . '</span>';
+				echo '<span class="mudrava-lucide-icon-preview" aria-hidden="true">' . wp_kses( $markup, $preview_schema ) . '</span>';
 			} else {
 				echo '<span class="dashicons dashicons-format-image" aria-hidden="true"></span>';
 			}
