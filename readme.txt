@@ -20,6 +20,8 @@ A professional ACF custom field type for selecting Lucide icons and Simple Icons
 
 * **Visual Icon Picker** - Browse and select from 1,791 Lucide icons and 3,457 brand logos
 * **Brand Icons** - Brand logos use Simple Icons values such as `simple:facebook`
+* **Custom Icon Library** - Upload your own SVG icons under Settings, sanitized on upload and addressable as `custom:<name>`
+* **Shortcode & Helper** - `[lucide_icon]` shortcode plus `mudrava_get_lucide_icon()` helper for templates
 * **Smart Search** - Filter icons by name or tags instantly
 * **Performant** - Lazy icon catalog over a local REST endpoint, byte-offset sprite lookups, inline frontend SVG output, paginated grid (100 icons per page)
 * **Native ACF Look** - Seamlessly integrates with ACF's design language
@@ -69,6 +71,24 @@ echo mudrava_get_lucide_icon('rocket', [
     'mode'   => 'sprite', // 'inline' (default) or 'sprite'
 ]);
 ?>`
+
+= Shortcode =
+
+`[lucide_icon name="rocket" size="32" title="Launch"]`
+
+Custom icons uploaded under Settings → Custom Icons are addressed as `custom:<name>`,
+for example `[lucide_icon name="custom:my-logo" title="My Logo"]` or
+`mudrava_get_lucide_icon( 'custom:my-logo' )`.
+
+= About Custom SVG Icons =
+
+Site owners can upload plain SVG icons under **Settings → Custom Icons**.
+Uploads are parsed with `DOMDocument` (no network access) and reduced to the
+same element and attribute allowlist as the bundled sets via `wp_kses()`, so
+scripts, styles, embedded images and unsupported elements never reach storage.
+Custom icons are stored as standalone files in the uploads directory, appear
+in the picker search, and render with their own colors instead of a forced
+currentColor tint.
 
 = About Lucide Icons =
 
@@ -176,6 +196,8 @@ This plugin does not integrate with or send data to any third-party services.
 * Add a compatibility alias layer (`data/compat-aliases.json`) for icon names removed upstream; saved values are never rewritten.
 * Unknown icon values no longer block saving by default; they show a dismissible admin notice. A per-field "Unknown Icon Values" setting (`warn`/`error`) controls strict mode.
 * Harden SVG handling with a build-time allowlist (`data/allowed-svg.json`) and runtime `wp_kses` sanitization.
+* Add a custom SVG icon library: upload icons under Settings, sanitized against the same allowlist and stored as standalone files; addressable as `custom:<name>` in the field, picker, shortcode and helper.
+* Add the `[lucide_icon]` shortcode with `mudrava_lucide_icon_svg_args` and `mudrava_lucide_icon_svg` filters.
 * Bundle minified sprite assets and add scripted asset pipeline checks.
 * Add PHPUnit unit tests and PHPCS/ESLint configs.
 
