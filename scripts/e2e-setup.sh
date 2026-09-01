@@ -96,7 +96,20 @@ sleep 1
 nohup php -d memory_limit=2G -S "127.0.0.1:$WP_PORT" -t "$WP_SITE_DIR" "$REPO/tests/e2e/fixtures/router.php" \
 	>"${TMPDIR:-/tmp}/mudrava-e2e-php.log" 2>&1 &
 
-curl -fsS "http://127.0.0.1:$WP_PORT/" >/dev/null
+http_ready=0
+for _ in $(seq 1 20); do
+	if curl -fsS "http://127.0.0.1:$WP_PORT/" >/dev/null; then
+		http_ready=1
+		break
+	fi
+	sleep 1
+done
+
+if [ "$http_ready" -ne 1 ]; then
+	echo "HTTP server did not come up on port $WP_PORT" >&2
+	cat "${TMPDIR:-/tmp}/mudrava-e2e-php.log" >&2 || true
+	exit 1
+fi
 
 echo "Site ready at http://127.0.0.1:$WP_PORT"
 echo "Run: WP_BASE_URL=http://127.0.0.1:$WP_PORT WP_SITE_PATH=$WP_SITE_DIR npx playwright test"
