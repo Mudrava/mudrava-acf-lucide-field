@@ -144,6 +144,7 @@ jobs:
         run: |
           bash scripts/build-dist.sh
           wp plugin install plugin-check --activate --path="$WP_SITE_DIR" --allow-root
+          wp plugin deactivate mudrava-acf-lucide-field --path="$WP_SITE_DIR" --allow-root
           rm -rf /tmp/pc-check && mkdir -p /tmp/pc-check
           unzip -q -o dist/mudrava-acf-lucide-field.zip -d /tmp/pc-check
           rm -rf "$WP_SITE_DIR/wp-content/plugins/mudrava-acf-lucide-field-test"
@@ -151,6 +152,8 @@ jobs:
           wp plugin activate mudrava-acf-lucide-field-test --path="$WP_SITE_DIR" --allow-root
           wp plugin check mudrava-acf-lucide-field-test --require="$WP_SITE_DIR/wp-content/plugins/plugin-check/cli.php" --allow-root --path="$WP_SITE_DIR"
           wp plugin deactivate mudrava-acf-lucide-field-test --path="$WP_SITE_DIR" --allow-root
+          rm -rf "$WP_SITE_DIR/wp-content/plugins/mudrava-acf-lucide-field-test"
+          wp plugin activate mudrava-acf-lucide-field --path="$WP_SITE_DIR" --allow-root
 
       - name: Run Playwright tests
         run: npx playwright test
