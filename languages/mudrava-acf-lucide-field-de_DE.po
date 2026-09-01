@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mudrava Icon Field for ACF with Lucide 1.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mudrava-acf-lucide-field/\n"
-"POT-Creation-Date: 2026-09-01 01:14+0000\n"
+"POT-Creation-Date: 2026-09-01 09:51+0000\n"
 "PO-Revision-Date: 2026-03-20 00:00+0000\n"
 "Last-Translator: Mudrava <info@mudrava.com>\n"
 "Language-Team: German <de@li.org>\n"
@@ -129,6 +129,9 @@ msgstr ""
 
 msgid "Please select an icon."
 msgstr "Bitte wählen Sie ein Symbol aus."
+
+msgid "Preview"
+msgstr ""
 
 msgid "Return Format"
 msgstr "Rückgabeformat"

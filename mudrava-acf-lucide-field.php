@@ -2039,18 +2039,21 @@ function mudrava_lucide_field_render_custom_icons_page() {
 
 	if ( array() !== $icons ) {
 		echo '<hr><h2>' . esc_html__( 'Stored icons', 'mudrava-acf-lucide-field' ) . '</h2>';
-		echo '<table class="widefat striped"><thead><tr><th>' . esc_html__( 'Name', 'mudrava-acf-lucide-field' ) . '</th><th>' . esc_html__( 'Title', 'mudrava-acf-lucide-field' ) . '</th><th>' . esc_html__( 'Keywords', 'mudrava-acf-lucide-field' ) . '</th><th>' . esc_html__( 'Value', 'mudrava-acf-lucide-field' ) . '</th><th>' . esc_html__( 'Actions', 'mudrava-acf-lucide-field' ) . '</th></tr></thead><tbody>';
+		echo '<style>.mudrava-lucide-icon-preview{display:inline-flex;width:32px;height:32px;align-items:center;justify-content:center;background:#fff;border:1px solid #dcdcde;border-radius:4px}.mudrava-lucide-icon-preview svg{width:20px;height:20px;display:block}</style>';
+		echo '<table class="widefat striped"><thead><tr><th>' . esc_html__( 'Name', 'mudrava-acf-lucide-field' ) . '</th><th>' . esc_html__( 'Preview', 'mudrava-acf-lucide-field' ) . '</th><th>' . esc_html__( 'Title', 'mudrava-acf-lucide-field' ) . '</th><th>' . esc_html__( 'Keywords', 'mudrava-acf-lucide-field' ) . '</th><th>' . esc_html__( 'Value', 'mudrava-acf-lucide-field' ) . '</th><th>' . esc_html__( 'Actions', 'mudrava-acf-lucide-field' ) . '</th></tr></thead><tbody>';
 
 		foreach ( $icons as $name => $meta ) {
 			$markup = mudrava_lucide_field_get_custom_icon_markup( $name );
 
-			echo '<tr><td><code>' . esc_html( $name ) . '</code></td><td>' . esc_html( $meta['title'] );
+			echo '<tr><td><code>' . esc_html( $name ) . '</code></td><td>';
 
 			if ( '' !== $markup ) {
-				echo ' <span class="dashicons dashicons-format-image" aria-hidden="true"></span>';
+				echo '<span class="mudrava-lucide-icon-preview" aria-hidden="true">' . $markup . '</span>';
+			} else {
+				echo '<span class="dashicons dashicons-format-image" aria-hidden="true"></span>';
 			}
 
-			echo '</td><td>' . esc_html( implode( ', ', $meta['keywords'] ) ) . '</td><td><code>custom:' . esc_html( $name ) . '</code></td><td>';
+			echo '</td><td>' . esc_html( $meta['title'] ) . '</td><td>' . esc_html( implode( ', ', $meta['keywords'] ) ) . '</td><td><code>custom:' . esc_html( $name ) . '</code></td><td>';
 			echo '<form method="post" action="' . esc_url( admin_url( 'admin-post.php' ) ) . '" onsubmit="return confirm(\'' . esc_js( __( 'Delete this icon? Existing fields will fall back to their default behavior.', 'mudrava-acf-lucide-field' ) ) . '\');">';
 			wp_nonce_field( 'mudrava_lucide_upload_icon', 'mudrava_lucide_upload_nonce' );
 			echo '<input type="hidden" name="action" value="mudrava_lucide_delete_icon">';
