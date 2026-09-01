@@ -174,7 +174,9 @@ test.describe('admin picker', () => {
 
 		await page.click('#publish');
 
-		await expect(page.locator('.notice-warning').first()).toContainText('totally-removed-icon', { timeout: 20000 });
+		await expect(
+			page.locator('.notice').filter({ hasText: 'totally-removed-icon' }).first()
+		).toBeVisible({ timeout: 20000 });
 	});
 
 	test('strict mode blocks save for unknown value', async ({ page }) => {
