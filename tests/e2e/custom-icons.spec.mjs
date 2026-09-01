@@ -15,7 +15,7 @@ test.use({ storageState: AUTH_FILE });
 const IDS = JSON.parse(fs.readFileSync(path.join(__dirname, '.auth', 'ids.json'), 'utf8'));
 
 const SITE = process.env.WP_SITE_PATH || '/var/folders/8l/qy_hbfsx1lxc2_2_rkn33mzw0000gn/T/opencode/wp-site';
-const WP_BIN = process.env.WP_BIN || '/var/folders/8l/qy_hbfsx1lxc2_2_rkn33mzw0000gn/T/opencode/bin/wp';
+const WP_BIN = process.env.WP_BIN || 'wp';
 
 const editUrl = (id) => `/wp-admin/post.php?post=${id}&action=edit`;
 const ICONS_PAGE = '/wp-admin/options-general.php?page=mudrava-lucide-icons';

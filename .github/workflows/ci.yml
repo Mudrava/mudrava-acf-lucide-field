@@ -145,9 +145,10 @@ jobs:
           bash scripts/build-dist.sh
           wp plugin install plugin-check --activate --path="$WP_SITE_DIR" --allow-root
           # The site already loads the plugin through the symlink created by
-          # e2e-setup.sh; checking that slug keeps the text domain and global
-          # prefix assertions aligned with the shipped code.
-          wp plugin check mudrava-acf-lucide-field --require="$WP_SITE_DIR/wp-content/plugins/plugin-check/cli.php" --allow-root --path="$WP_SITE_DIR"
+          # e2e-setup.sh. Pass the absolute plugin path (not a bare slug) so
+          # the engine never resolves the argument against the current
+          # working directory and drags unrelated paths into the scan.
+          wp plugin check "$WP_SITE_DIR/wp-content/plugins/mudrava-acf-lucide-field" --require="$WP_SITE_DIR/wp-content/plugins/plugin-check/cli.php" --allow-root --path="$WP_SITE_DIR"
 
       - name: Run Playwright tests
         run: npx playwright test

@@ -1,7 +1,7 @@
 import { execFileSync } from 'node:child_process';
 
 const SITE = process.env.WP_SITE_PATH || '/var/folders/8l/qy_hbfsx1lxc2_2_rkn33mzw0000gn/T/opencode/wp-site';
-const WP_BIN = process.env.WP_BIN || '/var/folders/8l/qy_hbfsx1lxc2_2_rkn33mzw0000gn/T/opencode/bin/wp';
+const WP_BIN = process.env.WP_BIN || 'wp';
 
 export function resetFixtures(ids) {
 	if (!ids.rocket || !ids.unknown || !ids.strict) {

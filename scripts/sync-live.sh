@@ -13,8 +13,15 @@ mkdir -p "$LIVE_DIR/$SLUG"
 rsync -a --delete --exclude-from="$REPO/.distignore" "$REPO/" "$LIVE_DIR/$SLUG/"
 
 if [ -n "$SITE_DIR" ]; then
-	rm -f "$SITE_DIR/wp-content/plugins/$SLUG"
-	ln -sfn "$LIVE_DIR/$SLUG" "$SITE_DIR/wp-content/plugins/$SLUG"
+	target="$SITE_DIR/wp-content/plugins/$SLUG"
+	# Handle both states: a previous symlink (rm -f) or a leftover real
+	# directory (ln -sfn would otherwise nest the link inside it).
+	if [ -d "$target" ] && [ ! -L "$target" ]; then
+		rm -rf "$target"
+	else
+		rm -f "$target"
+	fi
+	ln -sfn "$LIVE_DIR/$SLUG" "$target"
 fi
 
 echo "$LIVE_DIR/$SLUG"
