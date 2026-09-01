@@ -143,7 +143,7 @@ jobs:
       - name: WordPress Plugin Check (release artifact)
         run: |
           bash scripts/build-dist.sh
-          wp plugin install plugin-check --path="$WP_SITE_DIR" --allow-root
+          wp plugin install plugin-check --activate --path="$WP_SITE_DIR" --allow-root
           unzip -q -o dist/mudrava-acf-lucide-field.zip -d /tmp/pc-check
           wp plugin check /tmp/pc-check/mudrava-acf-lucide-field             --require="$WP_SITE_DIR/wp-content/plugins/plugin-check/cli.php"             --allow-root --path="$WP_SITE_DIR"
 
