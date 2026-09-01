@@ -12,6 +12,7 @@ set -euo pipefail
 
 REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 WP_SITE_DIR="${WP_SITE_DIR:-/tmp/wp-site-mudrava-e2e}"
+WP_VERSION="${WP_VERSION:-latest}"
 WP_PORT="${WP_PORT:-8877}"
 DB_NAME="${DB_NAME:-wp}"
 DB_USER="${DB_USER:-wp}"
@@ -63,7 +64,7 @@ else
 fi
 
 if [ ! -f "$WP_SITE_DIR/wp-settings.php" ]; then
-	$WP core download --path="$WP_SITE_DIR"
+	$WP core download --version="$WP_VERSION" --path="$WP_SITE_DIR"
 fi
 
 if [ ! -f "$WP_SITE_DIR/wp-config.php" ]; then

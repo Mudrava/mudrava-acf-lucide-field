@@ -104,10 +104,10 @@ jobs:
           --health-timeout=5s
           --health-retries=20
     env:
-      WP_SITE_DIR: ${{ github.workspace }}/.e2e-site
+      WP_SITE_DIR: /home/runner/mudrava-e2e-site
       WP_PORT: '8877'
       WP_BASE_URL: http://127.0.0.1:8877
-      WP_SITE_PATH: ${{ github.workspace }}/.e2e-site
+      WP_SITE_PATH: /home/runner/mudrava-e2e-site
     steps:
       - uses: actions/checkout@v4
 
@@ -134,11 +134,9 @@ jobs:
           npx playwright install --with-deps chromium
 
       - name: Install WordPress ${{ matrix.wp }} + fixtures
-        run: |
-          bash scripts/e2e-setup.sh
-          if [ "${{ matrix.wp }}" != "latest" ]; then
-            wp core download --version=${{ matrix.wp }} --force --path="$WP_SITE_DIR" --allow-root
-          fi
+        env:
+          WP_VERSION: ${{ matrix.wp }}
+        run: bash scripts/e2e-setup.sh
 
       - name: WordPress Plugin Check (release artifact)
         run: |
