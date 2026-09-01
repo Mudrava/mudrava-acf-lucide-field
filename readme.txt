@@ -2,9 +2,9 @@
 Contributors: mudrava
 Tags: acf, icons, lucide, brands, icon picker
 Requires at least: 6.0
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.1.0
+Stable tag: 1.2.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,10 +18,10 @@ A professional ACF custom field type for selecting Lucide icons and Simple Icons
 
 = Features =
 
-* **Visual Icon Picker** - Browse and select from 1,700+ Lucide icons and 3,400+ brand logos
+* **Visual Icon Picker** - Browse and select from 1,791 Lucide icons and 3,457 brand logos
 * **Brand Icons** - Brand logos use Simple Icons values such as `simple:facebook`
 * **Smart Search** - Filter icons by name or tags instantly
-* **Performant** - Local sprite file, inline frontend SVG output, paginated grid (100 icons per page)
+* **Performant** - Lazy icon catalog over a local REST endpoint, byte-offset sprite lookups, inline frontend SVG output, paginated grid (100 icons per page)
 * **Native ACF Look** - Seamlessly integrates with ACF's design language
 * **Responsive** - Works on all screen sizes
 * **Accessible** - Keyboard navigation support
@@ -65,16 +65,18 @@ echo mudrava_get_lucide_icon('rocket', [
     'width'  => 32,
     'height' => 32,
     'stroke' => '#ff0000',
+    'title'  => 'Launch', // accessible title
+    'mode'   => 'sprite', // 'inline' (default) or 'sprite'
 ]);
 ?>`
 
 = About Lucide Icons =
 
-[Lucide](https://lucide.dev/) is a modern, open-source icon library with 1,700+ carefully crafted icons. The bundled Lucide assets are from `lucide-static` 1.14.0 and are licensed under ISC.
+[Lucide](https://lucide.dev/) is a modern, open-source icon library with 1,700+ carefully crafted icons. The bundled Lucide assets are from `lucide-static` 1.38.0 and are licensed under ISC.
 
 = About Brand Icons =
 
-Brand logos are bundled separately from [Simple Icons](https://simpleicons.org/) 16.18.0 and are saved with the `simple:` prefix, for example `simple:facebook`.
+Brand logos are bundled separately from [Simple Icons](https://simpleicons.org/) 16.29.0 and are saved with the `simple:` prefix, for example `simple:facebook`.
 
 Simple Icons is distributed under CC0-1.0, but individual brand logos and trademarks may still be governed by each brand owner's guidelines and permissions. Check the relevant brand guidelines before using a logo in production. Source and guideline URLs from Simple Icons are bundled in `data/brand-icons-meta.json`.
 
@@ -117,11 +119,15 @@ No. All icon data is stored locally in the plugin files. No external API calls o
 
 = Where are the icons stored? =
 
-Lucide SVG data is bundled in `assets/sprite.svg`. Brand logo SVG data is bundled in `assets/brand-sprite.svg`. Search metadata is stored in `data/icons.json` and `data/brand-icons.json`. Everything runs locally on your server.
+Lucide SVG data is bundled in `assets/sprite.svg`. Brand logo SVG data is bundled in `assets/brand-sprite.svg`. Search metadata is built into `data/icons.json`, `data/brand-icons.json`, `data/lucide-tags.php`, `data/simple-tags.php` and byte-offset lookups in `data/lucide-index.php` and `data/simple-index.php`. The admin picker loads the catalog lazily through a local REST endpoint (`wp-json/mudrava-lucide/v1/icons`, logged in by default). Everything runs locally on your server.
 
 = Why did social or brand icons disappear after updating Lucide assets? =
 
 Lucide v1 removed most brand icons from the current packages. Version 1.1.0 updates Lucide to `lucide-static` 1.14.0 and adds a separate Simple Icons brand bundle, which is the recommended direction for brand logos. New brand values are saved as `simple:<slug>`, and legacy unprefixed social values such as `facebook`, `instagram`, `twitter`, or `youtube` are resolved against Simple Icons when they no longer exist in Lucide.
+
+= What happens if an icon name was removed in a library update? =
+
+Saved values are never rewritten. Icons removed in `lucide-static` 1.38.0 (`angry`, `annoyed`, `frown`, `history`, `laugh`, `meh`, `podcast`, `smile`, `smile-plus`) are mapped to canonical replacements in `data/compat-aliases.json`, for example `smile` renders as `face-slightly-smiling`. Unknown values that have no alias keep saving and surface as a dismissible admin notice; set the field setting "Unknown Icon Values" to "error" to make validation strict instead.
 
 = Can I use this with ACF Repeater or Flexible Content fields? =
 
@@ -161,6 +167,18 @@ This plugin does not integrate with or send data to any third-party services.
 
 == Changelog ==
 
+= 1.2.0 - 2026-08-31 =
+
+* Update bundled assets to `lucide-static` 1.38.0 and `simple-icons` 16.29.0.
+* Replace the 600 KB admin payload with a lazy REST icon catalog.
+* Replace regex sprite extraction with byte-offset index lookups (no full-file scans per render).
+* Render icons as inline SVG by default and support a `sprite` mode with a footer sprite sheet.
+* Add a compatibility alias layer (`data/compat-aliases.json`) for icon names removed upstream; saved values are never rewritten.
+* Unknown icon values no longer block saving by default; they show a dismissible admin notice. A per-field "Unknown Icon Values" setting (`warn`/`error`) controls strict mode.
+* Harden SVG handling with a build-time allowlist (`data/allowed-svg.json`) and runtime `wp_kses` sanitization.
+* Bundle minified sprite assets and add scripted asset pipeline checks.
+* Add PHPUnit unit tests and PHPCS/ESLint configs.
+
 = 1.1.0 - 2026-04-30 =
 
 * Update bundled Lucide assets to `lucide-static` 1.14.0.
@@ -196,6 +214,9 @@ This plugin does not integrate with or send data to any third-party services.
 * Full compatibility with ACF Repeater and Flexible Content fields
 
 == Upgrade Notice ==
+
+= 1.2.0 =
+Updates bundled icon libraries to `lucide-static` 1.38.0 and `simple-icons` 16.29.0, reworks the admin picker to load lazily over REST, and makes unknown icon values non-blocking by default. Saved values are never rewritten; removed upstream icons are aliased to their canonical replacements.
 
 = 1.1.0 =
 Updates Lucide to 1.14.0 and moves brand logos to a separate Simple Icons bundle. New brand values use `simple:<slug>`; legacy social values are resolved automatically where possible.

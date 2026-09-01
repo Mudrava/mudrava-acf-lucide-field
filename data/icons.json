@@ -55,6 +55,23 @@
     "synthesiser",
     "music"
   ],
+  "ad": [
+    "advert",
+    "affiliate",
+    "brand",
+    "campaign",
+    "commercial",
+    "marketing",
+    "monetize",
+    "paid",
+    "partner",
+    "promo",
+    "sponsor",
+    "audio description",
+    "video description",
+    "described video",
+    "visual description"
+  ],
   "air-vent": [
     "air conditioner",
     "ac",
@@ -295,17 +312,22 @@
   "anchor": [
     "ship"
   ],
-  "angry": [
-    "emoji",
-    "anger",
-    "face",
-    "emotion"
-  ],
-  "annoyed": [
-    "emoji",
-    "nuisance",
-    "face",
-    "emotion"
+  "angle": [
+    "angle",
+    "degree",
+    "corner",
+    "geometry",
+    "measure",
+    "math",
+    "rotate",
+    "vertex",
+    "slope",
+    "protractor",
+    "measurement",
+    "dimension",
+    "arc",
+    "drafting",
+    "cad"
   ],
   "antenna": [
     "signal",
@@ -825,6 +847,16 @@
     "shipping"
   ],
   "asterisk": [
+    "symbol",
+    "sterisk",
+    "mark",
+    "pointer",
+    "pencil",
+    "sign",
+    "alert",
+    "notification",
+    "indicator",
+    "symbolic",
     "reference",
     "times",
     "multiply",
@@ -875,6 +907,72 @@
     "wavelength",
     "vibrate",
     "sine",
+    "synthesizer",
+    "synthesiser",
+    "levels",
+    "track",
+    "music",
+    "playback",
+    "radio",
+    "broadcast",
+    "airwaves",
+    "voice",
+    "vocals",
+    "singer",
+    "song"
+  ],
+  "audio-lines-off": [
+    "audio",
+    "sound",
+    "noise",
+    "mute",
+    "silence",
+    "off",
+    "disabled",
+    "inactive",
+    "listen",
+    "hearing",
+    "equalizer",
+    "equaliser",
+    "hertz",
+    "frequency",
+    "wavelength",
+    "vibrate",
+    "sine",
+    "waveform",
+    "synthesizer",
+    "synthesiser",
+    "levels",
+    "track",
+    "music",
+    "playback",
+    "radio",
+    "broadcast",
+    "airwaves",
+    "voice",
+    "vocals",
+    "singer",
+    "song"
+  ],
+  "audio-lines-x": [
+    "sound",
+    "noise",
+    "mute",
+    "silence",
+    "disabled",
+    "cancel",
+    "remove",
+    "unavailable",
+    "listen",
+    "hearing",
+    "equalizer",
+    "equaliser",
+    "hertz",
+    "frequency",
+    "wavelength",
+    "vibrate",
+    "sine",
+    "waveform",
     "synthesizer",
     "synthesiser",
     "levels",
@@ -1254,6 +1352,26 @@
     "prepaid",
     "growth",
     "increase"
+  ],
+  "banknote-check": [
+    "banknote",
+    "bill",
+    "currency",
+    "payment",
+    "money",
+    "finance",
+    "document",
+    "verification",
+    "tick",
+    "verified",
+    "accepted",
+    "done",
+    "complete",
+    "found",
+    "paid",
+    "task",
+    "check",
+    "success"
   ],
   "banknote-x": [
     "bill",
@@ -1703,7 +1821,36 @@
     "brightness",
     "overlap",
     "colors",
-    "colours"
+    "colours",
+    "marriage",
+    "rings",
+    "couple",
+    "connection"
+  ],
+  "blender": [
+    "mixer",
+    "appliances",
+    "food",
+    "liquid",
+    "juicer",
+    "vitamizer",
+    "mix",
+    "emulsify",
+    "smoothie",
+    "drink",
+    "blade",
+    "container",
+    "kitchen",
+    "milkshake",
+    "cocktail",
+    "beverage",
+    "culinary",
+    "shredder",
+    "processor",
+    "cooking",
+    "recipe",
+    "chef",
+    "restaurant"
   ],
   "blinds": [
     "shades",
@@ -1779,6 +1926,24 @@
     "death",
     "pets",
     "dog"
+  ],
+  "bone-fracture": [
+    "bone",
+    "fracture",
+    "injury",
+    "orthopedic",
+    "medical",
+    "anatomy",
+    "skeletal",
+    "broken",
+    "xray",
+    "trauma",
+    "health",
+    "vet",
+    "veterinary",
+    "crack",
+    "break",
+    "damage"
   ],
   "book": [
     "reading",
@@ -2728,6 +2893,69 @@
     "layer",
     "order"
   ],
+  "broccoli": [
+    "leafy",
+    "crisp",
+    "fresh",
+    "culinary",
+    "vegetation",
+    "vegetable",
+    "food",
+    "healthy",
+    "vegan",
+    "vegetarian",
+    "nutrition",
+    "diet",
+    "plant",
+    "green",
+    "produce"
+  ],
+  "broom": [
+    "broomstick",
+    "brush",
+    "sweep",
+    "sweeping",
+    "floor",
+    "cleaning",
+    "housekeeping",
+    "chores",
+    "tidy",
+    "spotless",
+    "dust",
+    "debris",
+    "bristles",
+    "handle",
+    "janitor",
+    "maintenance",
+    "witch",
+    "halloween"
+  ],
+  "broom-sparkles": [
+    "broomstick",
+    "brush",
+    "sweep",
+    "sweeping",
+    "floor",
+    "cleaning",
+    "ai",
+    "magic",
+    "sparkle",
+    "smart",
+    "automation",
+    "housekeeping",
+    "chores",
+    "tidy",
+    "spotless",
+    "pristine",
+    "dust",
+    "debris",
+    "bristles",
+    "handle",
+    "janitor",
+    "maintenance",
+    "witch",
+    "halloween"
+  ],
   "brush": [
     "clean",
     "sweep",
@@ -3226,6 +3454,20 @@
     "trip",
     "journey"
   ],
+  "car-battery": [
+    "battery",
+    "automobile",
+    "powercell",
+    "electric",
+    "power",
+    "electricity",
+    "energy",
+    "accumulator",
+    "charge",
+    "transport",
+    "vehicle",
+    "car"
+  ],
   "car-front": [
     "vehicle",
     "drive",
@@ -3273,6 +3515,14 @@
     "chip"
   ],
   "carrot": [
+    "orange",
+    "healthy",
+    "nature",
+    "fresh",
+    "root",
+    "produce",
+    "organic",
+    "nutrition",
     "vegetable",
     "food",
     "eat"
@@ -3305,9 +3555,18 @@
     "play"
   ],
   "cast": [
-    "chromecast",
-    "airplay",
-    "screen"
+    "stream",
+    "streaming",
+    "screen",
+    "display",
+    "wireless",
+    "broadcast",
+    "transmit",
+    "media",
+    "receiver",
+    "remote display",
+    "screen sharing",
+    "media streaming"
   ],
   "castle": [
     "fortress",
@@ -3876,7 +4135,25 @@
     "version control",
     "choices",
     "multiple choice",
-    "choose"
+    "choose",
+    "album",
+    "music",
+    "songs",
+    "format",
+    "cd",
+    "dvd",
+    "vinyl",
+    "sleeve",
+    "cover",
+    "platinum",
+    "compilation",
+    "ep",
+    "recording",
+    "playback",
+    "spin",
+    "rotate",
+    "rpm",
+    "dj"
   ],
   "circle-dot-dashed": [
     "pending",
@@ -3916,6 +4193,21 @@
     "shape",
     "="
   ],
+  "circle-euro": [
+    "symbol",
+    "economy",
+    "banking",
+    "europe",
+    "€",
+    "euro",
+    "currency",
+    "money",
+    "payment",
+    "coin",
+    "finance",
+    "financial",
+    "exchange"
+  ],
   "circle-fading-arrow-up": [
     "north",
     "up",
@@ -3927,10 +4219,6 @@
   "circle-fading-plus": [
     "stories",
     "social media",
-    "instagram",
-    "facebook",
-    "meta",
-    "snapchat",
     "sharing",
     "content"
   ],
@@ -4366,6 +4654,20 @@
     "rising",
     "falling"
   ],
+  "clock-arrow-left": [
+    "time",
+    "watch",
+    "alarm",
+    "assign",
+    "range"
+  ],
+  "clock-arrow-right": [
+    "time",
+    "watch",
+    "alarm",
+    "range",
+    "unassign"
+  ],
   "clock-arrow-up": [
     "time",
     "watch",
@@ -4705,7 +5007,6 @@
     "east",
     "south",
     "west",
-    "safari",
     "browser"
   ],
   "component": [
@@ -4719,8 +5020,7 @@
   "computer": [
     "pc",
     "chassis",
-    "codespaces",
-    "github"
+    "codespaces"
   ],
   "concierge-bell": [
     "reception",
@@ -4767,7 +5067,6 @@
     "shipping",
     "freight",
     "supply chain",
-    "docker",
     "environment",
     "devops",
     "code",
@@ -4911,6 +5210,93 @@
     "payment",
     "cc"
   ],
+  "credit-card-check": [
+    "debit",
+    "payment",
+    "banking",
+    "finance",
+    "transaction",
+    "wallet",
+    "purchase",
+    "checkout",
+    "billing",
+    "account",
+    "cardholder",
+    "verified",
+    "approved",
+    "authorized",
+    "valid",
+    "success",
+    "complete",
+    "check",
+    "bank",
+    "cc"
+  ],
+  "credit-card-minus": [
+    "debit",
+    "payment",
+    "remove",
+    "delete",
+    "unlink",
+    "revoke",
+    "decline",
+    "canceled",
+    "banking",
+    "finance",
+    "wallet",
+    "transaction",
+    "billing",
+    "account",
+    "purchase",
+    "checkout",
+    "subtract",
+    "minus",
+    "bank",
+    "cc"
+  ],
+  "credit-card-plus": [
+    "debit",
+    "payment",
+    "banking",
+    "finance",
+    "transaction",
+    "wallet",
+    "purchase",
+    "checkout",
+    "billing",
+    "account",
+    "cardholder",
+    "add",
+    "new",
+    "link",
+    "save",
+    "method",
+    "plastic",
+    "bank",
+    "cc"
+  ],
+  "credit-card-x": [
+    "debit",
+    "payment",
+    "banking",
+    "finance",
+    "transaction",
+    "wallet",
+    "purchase",
+    "checkout",
+    "billing",
+    "account",
+    "cardholder",
+    "declined",
+    "rejected",
+    "failed",
+    "invalid",
+    "canceled",
+    "error",
+    "cancel",
+    "bank",
+    "cc"
+  ],
   "croissant": [
     "bakery",
     "cooking",
@@ -4996,6 +5382,28 @@
     "bytes",
     "servers"
   ],
+  "database-arrow-down": [
+    "storage",
+    "memory",
+    "bytes",
+    "server",
+    "export",
+    "download",
+    "backup",
+    "pull",
+    "downsize"
+  ],
+  "database-arrow-up": [
+    "storage",
+    "memory",
+    "bytes",
+    "server",
+    "import",
+    "upload",
+    "backup",
+    "push",
+    "upscale"
+  ],
   "database-backup": [
     "storage",
     "memory",
@@ -5007,6 +5415,40 @@
     "arrow",
     "left"
   ],
+  "database-check": [
+    "storage",
+    "memory",
+    "bytes",
+    "server",
+    "check",
+    "success",
+    "valid",
+    "verified",
+    "confirmed",
+    "complete"
+  ],
+  "database-minus": [
+    "storage",
+    "memory",
+    "bytes",
+    "server",
+    "minus",
+    "remove",
+    "delete",
+    "reduce"
+  ],
+  "database-plus": [
+    "storage",
+    "memory",
+    "bytes",
+    "server",
+    "plus",
+    "add",
+    "create",
+    "insert",
+    "new",
+    "expand"
+  ],
   "database-search": [
     "storage",
     "memory",
@@ -5015,6 +5457,21 @@
     "pot",
     "bytes",
     "servers"
+  ],
+  "database-x": [
+    "storage",
+    "memory",
+    "bytes",
+    "server",
+    "x",
+    "error",
+    "failed",
+    "invalid",
+    "rejected",
+    "denied",
+    "clear",
+    "remove",
+    "disconnect"
   ],
   "database-zap": [
     "cache busting",
@@ -5583,6 +6040,21 @@
     "hatched",
     "bad egg"
   ],
+  "eject": [
+    "disc",
+    "drive",
+    "dvd",
+    "blu-ray",
+    "cd",
+    "media",
+    "optical",
+    "optical drive",
+    "removable media",
+    "storage",
+    "tray",
+    "unmount",
+    "usb"
+  ],
   "ellipse": [
     "shape",
     "geometry",
@@ -5643,7 +6115,7 @@
     "about",
     "calculate",
     "math",
-    "operater"
+    "operator"
   ],
   "equal-not": [
     "calculate",
@@ -5745,6 +6217,18 @@
     "visibility",
     "vision"
   ],
+  "eye-dashed": [
+    "view",
+    "watch",
+    "see",
+    "hide",
+    "conceal",
+    "mask",
+    "hidden",
+    "invisible",
+    "visibility",
+    "vision"
+  ],
   "eye-off": [
     "view",
     "watch",
@@ -5755,6 +6239,79 @@
     "hidden",
     "visibility",
     "vision"
+  ],
+  "face-angry": [
+    "anger",
+    "rage",
+    "fury",
+    "resentment",
+    "irritation",
+    "disgust",
+    "emoji",
+    "emotion"
+  ],
+  "face-expressionless": [
+    "nuisance",
+    "annoyed",
+    "annoyance",
+    "frustration",
+    "emoji",
+    "emotion"
+  ],
+  "face-grinning": [
+    "happy",
+    "happiness",
+    "good",
+    "laugh",
+    "broad smile",
+    "pleasure",
+    "good cheer",
+    "humour",
+    "funny",
+    "emoji",
+    "emotion"
+  ],
+  "face-neutral": [
+    "emoji",
+    "neutral",
+    "emotion",
+    "meh",
+    "blank stare",
+    "social masking",
+    "irritation",
+    "concern",
+    "deadpan"
+  ],
+  "face-slightly-frowning": [
+    "emoji",
+    "bad",
+    "sadness",
+    "emotion",
+    "concern",
+    "disappointment"
+  ],
+  "face-slightly-smiling": [
+    "smile",
+    "happy",
+    "happiness",
+    "good",
+    "positive",
+    "friendly",
+    "patronizing",
+    "passive aggressive",
+    "ironic",
+    "emoji",
+    "emotion"
+  ],
+  "face-slightly-smiling-plus": [
+    "smile",
+    "happy",
+    "good",
+    "react",
+    "reaction",
+    "emoji",
+    "add",
+    "emotion"
   ],
   "factory": [
     "building",
@@ -5775,7 +6332,17 @@
     "music"
   ],
   "feather": [
-    "logo"
+    "quill",
+    "plume",
+    "writing",
+    "author",
+    "literature",
+    "poetry",
+    "manuscript",
+    "bird",
+    "plumage",
+    "lightweight",
+    "soft"
   ],
   "fence": [
     "picket",
@@ -5821,9 +6388,25 @@
     "winner"
   ],
   "file-box": [
+    "document",
+    "page",
+    "sheet",
+    "cube",
     "box",
+    "3d",
+    "model",
+    "asset",
+    "object",
+    "geometry",
+    "mesh",
+    "ar",
+    "augmented reality",
+    "cad",
+    "design",
+    "blueprint",
+    "draft",
     "package",
-    "model"
+    "scene"
   ],
   "file-braces": [
     "code",
@@ -6667,13 +7250,6 @@
     "design",
     "tool"
   ],
-  "frown": [
-    "emoji",
-    "face",
-    "bad",
-    "sad",
-    "emotion"
-  ],
   "fuel": [
     "filling-station",
     "gas",
@@ -6705,6 +7281,22 @@
     "hopper",
     "remove",
     "delete"
+  ],
+  "galaxy": [
+    "astronomy",
+    "space",
+    "stars",
+    "cosmos",
+    "universe",
+    "spiral",
+    "milky way",
+    "nebula",
+    "cosmology",
+    "interstellar",
+    "celestial",
+    "constellation",
+    "stargazing",
+    "spaceflight"
   ],
   "gallery-horizontal": [
     "carousel",
@@ -6820,8 +7412,26 @@
     "payment"
   ],
   "ghost": [
+    "spirit",
+    "haunt",
+    "specter",
+    "apparition",
+    "wraith",
+    "shade",
+    "phantom",
+    "entity",
+    "shadow",
+    "silhouette",
     "pac-man",
-    "spooky"
+    "spooky",
+    "halloween",
+    "haunted",
+    "invisible",
+    "hidden",
+    "empty",
+    "dead",
+    "obsolete",
+    "outdated"
   ],
   "gift": [
     "present",
@@ -6956,6 +7566,21 @@
     "browser",
     "language",
     "translate"
+  ],
+  "globe-check": [
+    "world",
+    "browser",
+    "language",
+    "translate",
+    "internet",
+    "web",
+    "check",
+    "verified",
+    "success",
+    "valid",
+    "available",
+    "online",
+    "status"
   ],
   "globe-lock": [
     "vpn",
@@ -7591,18 +8216,6 @@
     "mark",
     "text"
   ],
-  "history": [
-    "time",
-    "redo",
-    "undo",
-    "rewind",
-    "timeline",
-    "version",
-    "time machine",
-    "backup",
-    "rotate",
-    "ccw"
-  ],
   "hop": [
     "beer",
     "brewery",
@@ -7985,12 +8598,21 @@
     "institute",
     "pediment",
     "portico",
+    "doric",
     "columns",
     "pillars",
     "classical",
     "architecture",
     "government",
-    "institution"
+    "institution",
+    "monument",
+    "site",
+    "history",
+    "historic",
+    "library",
+    "temple",
+    "ancient",
+    "structure"
   ],
   "languages": [
     "translate"
@@ -8024,12 +8646,40 @@
     "select",
     "cursor"
   ],
-  "laugh": [
-    "emoji",
-    "face",
-    "happy",
-    "good",
-    "emotion"
+  "layer-arrow-down": [
+    "move back",
+    "backward",
+    "lower",
+    "demote",
+    "step back",
+    "behind",
+    "reorder",
+    "arrange",
+    "layer",
+    "layers",
+    "stack",
+    "stacking",
+    "z-index",
+    "depth",
+    "graphics",
+    "design"
+  ],
+  "layer-arrow-up": [
+    "move forward",
+    "forward",
+    "raise",
+    "lift",
+    "promote",
+    "advance",
+    "step forward",
+    "reorder",
+    "arrange",
+    "stack",
+    "stacking",
+    "z-index",
+    "depth",
+    "graphics",
+    "design"
   ],
   "layers": [
     "stack",
@@ -8051,6 +8701,44 @@
     "duplicate",
     "double",
     "shortcuts"
+  ],
+  "layers-arrow-down": [
+    "send to back",
+    "send backward",
+    "back",
+    "background",
+    "bottom",
+    "bottommost",
+    "lower",
+    "demote",
+    "behind",
+    "reorder",
+    "arrange",
+    "stack",
+    "stacking",
+    "z-index",
+    "depth",
+    "graphics",
+    "design"
+  ],
+  "layers-arrow-up": [
+    "bring to front",
+    "bring forward",
+    "front",
+    "foreground",
+    "top",
+    "topmost",
+    "raise",
+    "lift",
+    "promote",
+    "reorder",
+    "arrange",
+    "stack",
+    "stacking",
+    "z-index",
+    "depth",
+    "graphics",
+    "design"
   ],
   "layers-minus": [
     "stack",
@@ -8078,6 +8766,20 @@
   "layout-dashboard": [
     "masonry",
     "brick"
+  ],
+  "layout-freeform": [
+    "layout",
+    "freeform",
+    "free",
+    "absolute",
+    "position",
+    "auto layout",
+    "unaligned",
+    "scattered",
+    "arrange",
+    "blocks",
+    "canvas",
+    "frame"
   ],
   "layout-grid": [
     "app",
@@ -8340,6 +9042,19 @@
     "unfold",
     "vertical"
   ],
+  "list-clock": [
+    "history",
+    "log",
+    "clock",
+    "time",
+    "recent",
+    "updated",
+    "revision",
+    "activity",
+    "timestamp",
+    "audit",
+    "list"
+  ],
   "list-collapse": [
     "items",
     "collapse",
@@ -8411,6 +9126,42 @@
     "reload",
     "playlist",
     "replay"
+  ],
+  "list-sort-ascending": [
+    "list",
+    "order",
+    "arrangement",
+    "organization",
+    "sequence",
+    "ranking",
+    "categories",
+    "presentation",
+    "filter",
+    "sort",
+    "ascending",
+    "descending",
+    "increasing",
+    "decreasing",
+    "rising",
+    "falling"
+  ],
+  "list-sort-descending": [
+    "list",
+    "order",
+    "arrangement",
+    "organization",
+    "sequence",
+    "ranking",
+    "categories",
+    "presentation",
+    "filter",
+    "sort",
+    "ascending",
+    "descending",
+    "increasing",
+    "decreasing",
+    "rising",
+    "falling"
   ],
   "list-start": [
     "queue",
@@ -8560,6 +9311,21 @@
     "letter",
     "unread"
   ],
+  "mail-badge": [
+    "email",
+    "message",
+    "letter",
+    "certified",
+    "registered",
+    "seal",
+    "stamp",
+    "verified",
+    "envelope",
+    "rosette",
+    "signed",
+    "official",
+    "delivery"
+  ],
   "mail-check": [
     "email",
     "message",
@@ -8573,6 +9339,20 @@
     "tick",
     "complete",
     "task"
+  ],
+  "mail-clock": [
+    "email",
+    "message",
+    "letter",
+    "unread",
+    "scheduled",
+    "delayed",
+    "sendlater",
+    "delivery",
+    "reminder",
+    "pending",
+    "outgoing",
+    "timer"
   ],
   "mail-minus": [
     "email",
@@ -8810,7 +9590,11 @@
     "beverage",
     "bar",
     "drink",
-    "glass"
+    "glass",
+    "spirit",
+    "party",
+    "celebration",
+    "mixer"
   ],
   "maximize": [
     "fullscreen",
@@ -8849,12 +9633,6 @@
     "notification",
     "disable",
     "silent"
-  ],
-  "meh": [
-    "emoji",
-    "face",
-    "neutral",
-    "emotion"
   ],
   "memory-stick": [
     "ram",
@@ -8918,6 +9696,27 @@
     "feedback",
     "speech bubble",
     "draft"
+  ],
+  "message-circle-dashed-check": [
+    "comment",
+    "chat",
+    "conversation",
+    "dialog",
+    "feedback",
+    "speech bubble",
+    "draft",
+    "pending",
+    "provisional",
+    "verification",
+    "confirmation",
+    "success",
+    "status",
+    "check",
+    "approval",
+    "moderate",
+    "resolved",
+    "done",
+    "complete"
   ],
   "message-circle-heart": [
     "comment",
@@ -9276,11 +10075,46 @@
     "podcast",
     "microphone"
   ],
+  "mic-audio-lines": [
+    "podcast",
+    "audio",
+    "waveform",
+    "sound waves",
+    "microphone",
+    "talk",
+    "voice",
+    "speech",
+    "stream",
+    "recording",
+    "transcription",
+    "dictation",
+    "voice assistant",
+    "noise cancellation",
+    "sound processing"
+  ],
   "mic-off": [
     "record",
     "sound",
     "mute",
     "microphone"
+  ],
+  "mic-signal": [
+    "podcast",
+    "audio",
+    "broadcast",
+    "signal",
+    "wireless",
+    "radio",
+    "airwaves",
+    "microphone",
+    "talk",
+    "voice",
+    "speech",
+    "stream",
+    "live",
+    "voice chat",
+    "push to talk",
+    "transmission"
   ],
   "mic-vocal": [
     "lyrics",
@@ -9320,6 +10154,24 @@
     "cooker",
     "toaster oven",
     "bake"
+  ],
+  "midi-port": [
+    "musical instrument digital interface",
+    "port",
+    "connector",
+    "socket",
+    "jack",
+    "din",
+    "5-pin",
+    "audio",
+    "music",
+    "synthesizer",
+    "keyboard",
+    "controller",
+    "interface",
+    "input",
+    "output",
+    "io"
   ],
   "milestone": [
     "signpost",
@@ -9573,6 +10425,71 @@
     "dark",
     "night",
     "star"
+  ],
+  "mop": [
+    "cleaning",
+    "sweeping",
+    "scrubbing",
+    "housekeeping",
+    "hygiene",
+    "sanitation",
+    "chores",
+    "swab",
+    "tidy",
+    "floor",
+    "janitor",
+    "maintenance",
+    "wash",
+    "wipe",
+    "spotless",
+    "pristine",
+    "disinfect"
+  ],
+  "mop-sparkles": [
+    "cleaning",
+    "scrubbing",
+    "sweeping",
+    "ai",
+    "magic",
+    "sparkle",
+    "smart",
+    "automation",
+    "housekeeping",
+    "hygiene",
+    "sanitation",
+    "chores",
+    "swab",
+    "tidy",
+    "floor",
+    "spotless",
+    "pristine",
+    "polish",
+    "sanitize",
+    "disinfect"
+  ],
+  "mosque": [
+    "mosque",
+    "masjid",
+    "islam",
+    "muslim",
+    "ramadan",
+    "eid",
+    "prayer",
+    "worship",
+    "building",
+    "minaret",
+    "dome",
+    "architecture",
+    "faith",
+    "religion",
+    "holy",
+    "sacred",
+    "landmark",
+    "community",
+    "spiritual",
+    "tourism",
+    "map",
+    "heritage"
   ],
   "motorbike": [
     "moto",
@@ -10292,9 +11209,41 @@
     "projects",
     "overview"
   ],
+  "paper-bag": [
+    "storage",
+    "package",
+    "lunch",
+    "takeout",
+    "eco-friendly",
+    "kraft",
+    "retail",
+    "doggybag"
+  ],
   "paperclip": [
     "attachment",
     "file"
+  ],
+  "parasol": [
+    "umbrella",
+    "sunshade",
+    "beach",
+    "shade",
+    "sun",
+    "protection",
+    "cover",
+    "canopy",
+    "garden",
+    "outdoors",
+    "resort",
+    "travel",
+    "vacation",
+    "holiday",
+    "summer",
+    "apparel",
+    "accessory",
+    "sunbathing",
+    "relax",
+    "tropical"
   ],
   "parentheses": [
     "code",
@@ -10482,6 +11431,23 @@
     "breadth",
     "extent"
   ],
+  "pencil-sparkles": [
+    "edit",
+    "ai",
+    "tools",
+    "smart",
+    "create",
+    "draw",
+    "sketch",
+    "draft",
+    "writer",
+    "writing",
+    "stationery",
+    "artist",
+    "magic",
+    "wizard",
+    "magician"
+  ],
   "pentagon": [
     "shape"
   ],
@@ -10501,6 +11467,17 @@
     "human",
     "accessibility",
     "stick figure"
+  ],
+  "phi": [
+    "math",
+    "golden-ratio",
+    "symbol",
+    "greek",
+    "letter",
+    "typography",
+    "constant",
+    "flux",
+    "magnetic-flux"
   ],
   "philippine-peso": [
     "currency",
@@ -10701,6 +11678,92 @@
     "start",
     "run"
   ],
+  "play-off": [
+    "audio",
+    "video",
+    "music",
+    "start",
+    "run",
+    "off",
+    "disabled",
+    "blocked",
+    "forbidden"
+  ],
+  "playing-card": [
+    "deck",
+    "draw",
+    "deal",
+    "shuffle",
+    "chance",
+    "random",
+    "selection",
+    "tabletop",
+    "flashcard",
+    "study",
+    "learning",
+    "prompt",
+    "icebreaker",
+    "conversation",
+    "collectible",
+    "trading",
+    "poker",
+    "casino",
+    "game",
+    "gambling",
+    "suit"
+  ],
+  "playing-cards": [
+    "deck",
+    "stack",
+    "shuffle",
+    "deal",
+    "draw",
+    "hand",
+    "tabletop",
+    "planning poker",
+    "scrum",
+    "agile",
+    "estimation",
+    "estimate",
+    "flashcards",
+    "study",
+    "learning",
+    "collectible",
+    "collection",
+    "trading",
+    "poker",
+    "casino",
+    "game",
+    "gambling",
+    "suit"
+  ],
+  "playing-cards-fan": [
+    "deck",
+    "fan",
+    "spread",
+    "hand",
+    "deal",
+    "dealt",
+    "draw",
+    "shuffle",
+    "tabletop",
+    "planning poker",
+    "scrum",
+    "agile",
+    "estimation",
+    "estimate",
+    "prompt",
+    "icebreaker",
+    "conversation",
+    "collectible",
+    "collection",
+    "trading",
+    "poker",
+    "casino",
+    "game",
+    "gambling",
+    "suit"
+  ],
   "plug": [
     "electricity",
     "energy",
@@ -10756,15 +11819,27 @@
     "gadget",
     "corkscrew"
   ],
-  "podcast": [
-    "audio",
-    "music",
-    "mic",
-    "talk",
-    "voice",
-    "subscribe",
-    "subscription",
-    "stream"
+  "podium": [
+    "award",
+    "stage",
+    "winner",
+    "celebration",
+    "performance",
+    "medal",
+    "success",
+    "achievement",
+    "highlight",
+    "ranking",
+    "winning",
+    "place",
+    "placing",
+    "leaderboard",
+    "first",
+    "second",
+    "third",
+    "gold",
+    "silver",
+    "bronze"
   ],
   "pointer": [
     "mouse"
@@ -11346,6 +12421,37 @@
     "drive",
     "map"
   ],
+  "robot-arm": [
+    "mechanical",
+    "automation",
+    "factory",
+    "manufacture",
+    "technology",
+    "cyborg",
+    "industrial",
+    "hardware",
+    "machinery"
+  ],
+  "robot-vacuum": [
+    "appliance",
+    "cleaning",
+    "household",
+    "housekeeping",
+    "tool",
+    "maintenance",
+    "smarthome",
+    "sweeping",
+    "hygiene",
+    "chores",
+    "automation",
+    "smart home",
+    "device",
+    "floor",
+    "dust",
+    "debris",
+    "navigation",
+    "sensor"
+  ],
   "rocket": [
     "release",
     "boost",
@@ -11413,6 +12519,18 @@
     "rewind",
     "reverse"
   ],
+  "rotate-ccw-clock": [
+    "history",
+    "time",
+    "redo",
+    "undo",
+    "rewind",
+    "timeline",
+    "version",
+    "time machine",
+    "backup",
+    "ccw"
+  ],
   "rotate-ccw-key": [
     "password",
     "key",
@@ -11437,6 +12555,17 @@
     "reload",
     "rerun",
     "redo"
+  ],
+  "rotate-cw-fading-clock": [
+    "clock",
+    "waiting",
+    "schedule",
+    "hourglass",
+    "loading",
+    "pause",
+    "pending",
+    "time",
+    "watch"
   ],
   "rotate-cw-square": [
     "right",
@@ -11646,9 +12775,30 @@
     "floppy disks",
     "copy"
   ],
+  "save-check": [
+    "save",
+    "save-check",
+    "floppy-disk",
+    "saved",
+    "check",
+    "save-success"
+  ],
   "save-off": [
     "floppy disk",
     "unsalvageable"
+  ],
+  "save-pen": [
+    "floppy disk",
+    "directory",
+    "rename"
+  ],
+  "save-plus": [
+    "floppy disk",
+    "save",
+    "plus",
+    "add",
+    "update",
+    "create"
   ],
   "scale": [
     "balance",
@@ -11708,6 +12858,27 @@
     "packaging",
     "retail",
     "consumer"
+  ],
+  "scan-box": [
+    "ar",
+    "augmented reality",
+    "3d",
+    "object detection",
+    "object recognition",
+    "tracking",
+    "spatial computing",
+    "capture",
+    "cube",
+    "bounding box",
+    "camera",
+    "frame",
+    "shape",
+    "boundary",
+    "lidar",
+    "depth",
+    "scanning",
+    "mapping",
+    "placement"
   ],
   "scan-eye": [
     "preview",
@@ -11779,6 +12950,25 @@
     "image",
     "focus",
     "lens"
+  ],
+  "scan-square": [
+    "scan",
+    "square",
+    "detect",
+    "recognition",
+    "select",
+    "frame",
+    "object",
+    "viewfinder",
+    "capture",
+    "shape",
+    "boundary",
+    "camera",
+    "scanner",
+    "overlay",
+    "focus",
+    "crop",
+    "marker"
   ],
   "scan-text": [
     "recognition",
@@ -11884,7 +13074,12 @@
     "scan",
     "magnifier",
     "magnifying glass",
-    "lens"
+    "lens",
+    "locate",
+    "explore",
+    "discover",
+    "enlarge",
+    "zoom"
   ],
   "search-alert": [
     "find",
@@ -11896,7 +13091,12 @@
     "alert",
     "error",
     "anomaly",
-    "lens"
+    "lens",
+    "locate",
+    "explore",
+    "discover",
+    "enlarge",
+    "zoom"
   ],
   "search-check": [
     "find",
@@ -11907,7 +13107,12 @@
     "correct",
     "complete",
     "tick",
-    "lens"
+    "lens",
+    "locate",
+    "explore",
+    "discover",
+    "enlarge",
+    "zoom"
   ],
   "search-code": [
     "find",
@@ -11917,7 +13122,12 @@
     "grep",
     "chevrons",
     "<>",
-    "lens"
+    "lens",
+    "locate",
+    "explore",
+    "discover",
+    "enlarge",
+    "zoom"
   ],
   "search-slash": [
     "find",
@@ -11929,7 +13139,12 @@
     "cancel",
     "abort",
     "/",
-    "lens"
+    "lens",
+    "locate",
+    "explore",
+    "discover",
+    "enlarge",
+    "zoom"
   ],
   "search-x": [
     "find",
@@ -11940,7 +13155,12 @@
     "clear",
     "cancel",
     "abort",
-    "lens"
+    "lens",
+    "locate",
+    "explore",
+    "discover",
+    "enlarge",
+    "zoom"
   ],
   "section": [
     "mark",
@@ -12007,6 +13227,14 @@
   "server-off": [
     "cloud",
     "storage"
+  ],
+  "server-plus": [
+    "add",
+    "create",
+    "new",
+    "cloud",
+    "storage",
+    "computing"
   ],
   "settings": [
     "cog",
@@ -12492,6 +13720,58 @@
     "cadet",
     "scout"
   ],
+  "shield-keyhole": [
+    "cybersecurity",
+    "secure",
+    "safety",
+    "protection",
+    "defense",
+    "defence",
+    "defender",
+    "block",
+    "threat",
+    "prevention",
+    "antivirus",
+    "vigilance",
+    "vigilant",
+    "detection",
+    "scan",
+    "find",
+    "strength",
+    "strong",
+    "tough",
+    "invincible",
+    "invincibility",
+    "invulnerable",
+    "undamaged",
+    "audit",
+    "admin",
+    "verification",
+    "crest",
+    "bravery",
+    "trooper",
+    "pawn"
+  ],
+  "shield-lock": [
+    "antivirus",
+    "authentication",
+    "authorization",
+    "credentials",
+    "cybersecurity",
+    "data protection",
+    "defense",
+    "encryption",
+    "guard",
+    "login",
+    "password",
+    "privacy",
+    "safeguard",
+    "ssl",
+    "tls",
+    "two-factor authentication",
+    "verification",
+    "vpn"
+  ],
   "shield-minus": [
     "unshield",
     "cybersecurity",
@@ -12743,6 +14023,29 @@
     "navy",
     "trip",
     "releases"
+  ],
+  "ship-cargo": [
+    "boat",
+    "knots",
+    "nautical mile",
+    "maritime",
+    "sailing",
+    "cruise",
+    "ocean liner",
+    "tanker",
+    "vessel",
+    "navy",
+    "cargo",
+    "container",
+    "freighter",
+    "freight",
+    "shipping",
+    "port",
+    "harbor",
+    "dock",
+    "logistics",
+    "import",
+    "export"
   ],
   "ship-wheel": [
     "steering",
@@ -13022,23 +14325,6 @@
     "payment",
     "near-field communication",
     "screen"
-  ],
-  "smile": [
-    "emoji",
-    "face",
-    "happy",
-    "good",
-    "emotion"
-  ],
-  "smile-plus": [
-    "emoji",
-    "face",
-    "happy",
-    "good",
-    "emotion",
-    "react",
-    "reaction",
-    "add"
   ],
   "snail": [
     "animal",
@@ -13616,6 +14902,20 @@
     "aspect ratio",
     "1:1"
   ],
+  "square-dimensions": [
+    "ratio",
+    "size",
+    "width",
+    "height",
+    "resize",
+    "scale",
+    "frame",
+    "proportions",
+    "aspect",
+    "bounds",
+    "measurements",
+    "canvas"
+  ],
   "square-divide": [
     "calculate",
     "math",
@@ -13732,6 +15032,26 @@
     "target",
     "dom",
     "node"
+  ],
+  "square-off": [
+    "/",
+    "not",
+    "slash",
+    "off",
+    "disabled",
+    "inactive",
+    "cancel",
+    "none",
+    "block",
+    "forbidden",
+    "unavailable",
+    "stopped",
+    "checkbox",
+    "unchecked",
+    "toggle",
+    "negation",
+    "form",
+    "ui"
   ],
   "square-parking": [
     "parking lot",
@@ -13932,6 +15252,29 @@
     "prompt",
     "shell"
   ],
+  "square-text": [
+    "text",
+    "paragraph",
+    "content",
+    "note",
+    "document",
+    "body",
+    "copy",
+    "article",
+    "square",
+    "container",
+    "block",
+    "card",
+    "placeholder",
+    "log",
+    "page",
+    "paper",
+    "sheet",
+    "list",
+    "script",
+    "code",
+    "editor"
+  ],
   "square-user": [
     "person",
     "account",
@@ -14031,6 +15374,15 @@
     "review",
     "rating"
   ],
+  "star-check": [
+    "bookmark",
+    "favorite",
+    "like",
+    "review",
+    "rating",
+    "check",
+    "star"
+  ],
   "star-half": [
     "bookmark",
     "favorite",
@@ -14038,11 +15390,50 @@
     "review",
     "rating"
   ],
+  "star-minus": [
+    "bookmark",
+    "favorite",
+    "like",
+    "review",
+    "rating",
+    "minus",
+    "remove",
+    "deselect",
+    "star"
+  ],
   "star-off": [
     "dislike",
     "unlike",
     "remove",
     "unrate"
+  ],
+  "star-plus": [
+    "bookmark",
+    "favorite",
+    "like",
+    "review",
+    "rating",
+    "plus",
+    "add",
+    "join",
+    "star"
+  ],
+  "star-x": [
+    "mark",
+    "symbol",
+    "shape",
+    "vector",
+    "design",
+    "graphic",
+    "bookmark",
+    "favorite",
+    "like",
+    "review",
+    "rating",
+    "x",
+    "cancel",
+    "reject",
+    "star"
   ],
   "step-back": [
     "arrow",
@@ -14090,6 +15481,135 @@
     "stationary",
     "office"
   ],
+  "sticky-note-check": [
+    "post-it",
+    "comment",
+    "annotation",
+    "reaction",
+    "memo",
+    "reminder",
+    "todo",
+    "task",
+    "idea",
+    "brainstorm",
+    "document",
+    "page",
+    "paper",
+    "sheet",
+    "stationary",
+    "office",
+    "done",
+    "complete",
+    "success",
+    "check",
+    "verified"
+  ],
+  "sticky-note-minus": [
+    "post-it",
+    "comment",
+    "annotation",
+    "reaction",
+    "memo",
+    "reminder",
+    "todo",
+    "task",
+    "idea",
+    "brainstorm",
+    "document",
+    "page",
+    "paper",
+    "sheet",
+    "stationary",
+    "office",
+    "remove",
+    "delete",
+    "minus"
+  ],
+  "sticky-note-off": [
+    "post-it",
+    "comment",
+    "annotation",
+    "reaction",
+    "memo",
+    "reminder",
+    "todo",
+    "task",
+    "idea",
+    "brainstorm",
+    "document",
+    "page",
+    "paper",
+    "sheet",
+    "stationary",
+    "office",
+    "disabled",
+    "hidden",
+    "mute",
+    "inactive"
+  ],
+  "sticky-note-plus": [
+    "post-it",
+    "comment",
+    "annotation",
+    "reaction",
+    "memo",
+    "reminder",
+    "todo",
+    "task",
+    "idea",
+    "brainstorm",
+    "document",
+    "page",
+    "paper",
+    "sheet",
+    "stationary",
+    "office",
+    "add",
+    "create",
+    "new",
+    "plus"
+  ],
+  "sticky-note-x": [
+    "post-it",
+    "comment",
+    "annotation",
+    "reaction",
+    "memo",
+    "reminder",
+    "todo",
+    "task",
+    "idea",
+    "brainstorm",
+    "document",
+    "page",
+    "paper",
+    "sheet",
+    "stationary",
+    "office",
+    "close",
+    "cancel",
+    "delete",
+    "remove"
+  ],
+  "sticky-notes": [
+    "post-it",
+    "annotation",
+    "memo",
+    "reminder",
+    "todo",
+    "tasks",
+    "ideas",
+    "brainstorm",
+    "documents",
+    "notes",
+    "multiple",
+    "collection",
+    "group",
+    "stack",
+    "clone",
+    "duplicate",
+    "copy"
+  ],
   "stone": [
     "mineral",
     "geology",
@@ -14131,6 +15651,20 @@
   ],
   "subscript": [
     "text"
+  ],
+  "summary": [
+    "brief",
+    "abstract",
+    "synopsis",
+    "report",
+    "digest",
+    "outline",
+    "recap",
+    "condensation",
+    "summary",
+    "ai",
+    "text",
+    "overview"
   ],
   "sun": [
     "brightness",
@@ -14214,16 +15748,39 @@
   "sword": [
     "battle",
     "challenge",
+    "combat",
+    "duel",
+    "fantasy",
     "game",
+    "knight",
+    "melee",
+    "medieval",
+    "offense",
+    "rpg",
+    "sharp",
+    "weapon",
     "war",
-    "weapon"
+    "warrior"
   ],
   "swords": [
     "battle",
     "challenge",
+    "combat",
+    "conflict",
+    "crossed",
+    "duel",
+    "faction",
+    "fantasy",
     "game",
+    "melee",
+    "medieval",
+    "opponent",
+    "rivalry",
+    "rpg",
+    "versus",
+    "weapon",
     "war",
-    "weapon"
+    "warrior"
   ],
   "syringe": [
     "medicine",
@@ -14317,6 +15874,25 @@
     "badge",
     "ticket",
     "mark"
+  ],
+  "tag-plus": [
+    "label",
+    "badge",
+    "ticket",
+    "mark",
+    "new",
+    "add",
+    "create",
+    "+"
+  ],
+  "tag-x": [
+    "label",
+    "badge",
+    "ticket",
+    "mark",
+    "x",
+    "delete",
+    "remove"
   ],
   "tags": [
     "labels",
@@ -14515,7 +16091,16 @@
     "list"
   ],
   "text-cursor": [
-    "select"
+    "select",
+    "caret",
+    "type",
+    "typing",
+    "write",
+    "writing",
+    "edit",
+    "insert",
+    "input",
+    "textarea"
   ],
   "text-cursor-input": [
     "select"
@@ -14885,6 +16470,15 @@
     "safety",
     "block"
   ],
+  "trailer": [
+    "tow",
+    "shipping",
+    "delivery",
+    "haulage",
+    "vehicle",
+    "equipment",
+    "freight"
+  ],
   "train-front": [
     "railway",
     "metro",
@@ -15030,7 +16624,16 @@
     "award",
     "champion",
     "celebration",
-    "victory"
+    "victory",
+    "competition",
+    "tournament",
+    "leaderboard",
+    "ranking",
+    "success",
+    "reward",
+    "cup",
+    "first",
+    "gold"
   ],
   "truck": [
     "delivery",
@@ -15266,6 +16869,20 @@
     "connector",
     "interface"
   ],
+  "usb-c-port": [
+    "universal",
+    "serial",
+    "bus",
+    "controller",
+    "connector",
+    "interface",
+    "socket",
+    "plug",
+    "slot",
+    "data",
+    "input",
+    "output"
+  ],
   "user": [
     "person",
     "account",
@@ -15333,6 +16950,22 @@
     "person",
     "account",
     "contact"
+  ],
+  "user-round-arrow-left": [
+    "person",
+    "assign",
+    "move",
+    "give",
+    "setup",
+    "self",
+    "me",
+    "myself",
+    "profile",
+    "avatar",
+    "incoming",
+    "recipient",
+    "assignee",
+    "inbound"
   ],
   "user-round-check": [
     "followed",
@@ -15411,6 +17044,18 @@
     "magnifier",
     "magnifying glass",
     "lens"
+  ],
+  "user-shield": [
+    "user",
+    "shield",
+    "admin",
+    "protected",
+    "guard",
+    "profile",
+    "security",
+    "privacy",
+    "permissions",
+    "role"
   ],
   "user-star": [
     "person",
@@ -15518,6 +17163,25 @@
     "storage",
     "valuables",
     "bank"
+  ],
+  "vector-polygon": [
+    "map",
+    "vector",
+    "geometry",
+    "coordinates",
+    "shape",
+    "location",
+    "boundary",
+    "area",
+    "region",
+    "gis",
+    "geospatial",
+    "vertices",
+    "points",
+    "outline",
+    "drawing",
+    "design",
+    "math"
   ],
   "vector-square": [
     "shape",
@@ -15678,6 +17342,12 @@
     "pocket"
   ],
   "wallet-cards": [
+    "wallet",
+    "cards",
+    "banking",
+    "cash",
+    "debit",
+    "transport",
     "money",
     "finance",
     "pocket",
@@ -15822,6 +17492,10 @@
     "viral"
   ],
   "webcam": [
+    "camera",
+    "security"
+  ],
+  "webcam-off": [
     "camera",
     "security"
   ],
@@ -15993,6 +17667,19 @@
     "toolbox",
     "build",
     "construction"
+  ],
+  "wrench-off": [
+    "account",
+    "settings",
+    "spanner",
+    "diy",
+    "toolbox",
+    "build",
+    "construction",
+    "off",
+    "service",
+    "maintenance",
+    "disabled"
   ],
   "x": [
     "cancel",

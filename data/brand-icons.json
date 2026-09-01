@@ -4,40 +4,16 @@
     "logo",
     "simple-icons",
     "42",
+    "42",
     "#000000"
   ],
-  "dotenv": [
+  "1001tracklists": [
     "brand",
     "logo",
     "simple-icons",
-    "dotenv",
-    ".ENV",
-    "#ECD53F",
-    "Dotenv"
-  ],
-  "dotnet": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "dotnet",
-    ".NET",
-    "#512BD4"
-  ],
-  "e": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "e",
-    "/e/",
-    "#000000"
-  ],
-  "1dot1dot1dot1": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "1dot1dot1dot1",
-    "1.1.1.1",
-    "#221E68"
+    "1001tracklists",
+    "1001Tracklists",
+    "#40AEF0"
   ],
   "1and1": [
     "brand",
@@ -47,13 +23,13 @@
     "1&1",
     "#003D8F"
   ],
-  "1001tracklists": [
+  "1dot1dot1dot1": [
     "brand",
     "logo",
     "simple-icons",
-    "1001tracklists",
-    "1001Tracklists",
-    "#40AEF0"
+    "1dot1dot1dot1",
+    "1.1.1.1",
+    "#221E68"
   ],
   "1panel": [
     "brand",
@@ -116,6 +92,7 @@
     "logo",
     "simple-icons",
     "4chan",
+    "4chan",
     "#006600"
   ],
   "4d": [
@@ -130,6 +107,7 @@
     "brand",
     "logo",
     "simple-icons",
+    "500px",
     "500px",
     "#222222"
   ],
@@ -146,6 +124,7 @@
     "logo",
     "simple-icons",
     "99designs",
+    "99designs",
     "#FE5F50"
   ],
   "9gag": [
@@ -155,23 +134,6 @@
     "9gag",
     "9GAG",
     "#000000"
-  ],
-  "aframe": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "aframe",
-    "A-Frame",
-    "#EF2D5E"
-  ],
-  "abdownloadmanager": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "abdownloadmanager",
-    "AB Download Manager",
-    "#897BFF",
-    "ABDM"
   ],
   "abb": [
     "brand",
@@ -196,6 +158,14 @@
     "abbvie",
     "Abbvie",
     "#071D49"
+  ],
+  "abdownloadmanager": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "abdownloadmanager",
+    "AB Download Manager",
+    "#897BFF"
   ],
   "aboutdotme": [
     "brand",
@@ -291,8 +261,7 @@
     "simple-icons",
     "activeloop",
     "Activeloop",
-    "#FFB746",
-    "Deep Lake"
+    "#FFB746"
   ],
   "activision": [
     "brand",
@@ -476,8 +445,7 @@
     "simple-icons",
     "afdian",
     "AFDIAN",
-    "#946CE6",
-    "爱发电"
+    "#946CE6"
   ],
   "affine": [
     "brand",
@@ -486,6 +454,14 @@
     "affine",
     "AFFiNE",
     "#1E96EB"
+  ],
+  "aframe": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "aframe",
+    "A-Frame",
+    "#EF2D5E"
   ],
   "afterpay": [
     "brand",
@@ -503,6 +479,14 @@
     "AfterShip",
     "#FF6B2B"
   ],
+  "agentskills": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "agentskills",
+    "Agent Skills",
+    "#000000"
+  ],
   "agora": [
     "brand",
     "logo",
@@ -511,6 +495,14 @@
     "Agora",
     "#099DFD"
   ],
+  "aib": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "aib",
+    "AIB",
+    "#7F2B7B"
+  ],
   "aidungeon": [
     "brand",
     "logo",
@@ -518,15 +510,6 @@
     "aidungeon",
     "AI Dungeon",
     "#000000"
-  ],
-  "aib": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "aib",
-    "AIB",
-    "#7F2B7B",
-    "Allied Irish Banks"
   ],
   "aiohttp": [
     "brand",
@@ -543,54 +526,6 @@
     "aiqfome",
     "Aiqfome",
     "#7A1FA2"
-  ],
-  "aircanada": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "aircanada",
-    "Air Canada",
-    "#F01428"
-  ],
-  "airchina": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "airchina",
-    "Air China",
-    "#E30E17"
-  ],
-  "airfrance": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "airfrance",
-    "Air France",
-    "#002157"
-  ],
-  "airindia": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "airindia",
-    "Air India",
-    "#DA0E29"
-  ],
-  "airserbia": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "airserbia",
-    "Air Serbia",
-    "#0E203F"
-  ],
-  "airtransat": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "airtransat",
-    "Air Transat",
-    "#172B54"
   ],
   "airasia": [
     "brand",
@@ -640,6 +575,38 @@
     "Aircall",
     "#00B388"
   ],
+  "aircanada": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "aircanada",
+    "Air Canada",
+    "#F01428"
+  ],
+  "airchina": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "airchina",
+    "Air China",
+    "#E30E17"
+  ],
+  "airfrance": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "airfrance",
+    "Air France",
+    "#002157"
+  ],
+  "airindia": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "airindia",
+    "Air India",
+    "#DA0E29"
+  ],
   "airplayaudio": [
     "brand",
     "logo",
@@ -656,6 +623,14 @@
     "AirPlay Video",
     "#000000"
   ],
+  "airserbia": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "airserbia",
+    "Air Serbia",
+    "#0E203F"
+  ],
   "airtable": [
     "brand",
     "logo",
@@ -671,6 +646,14 @@
     "airtel",
     "Airtel",
     "#E40000"
+  ],
+  "airtransat": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "airtransat",
+    "Air Transat",
+    "#172B54"
   ],
   "ajv": [
     "brand",
@@ -735,6 +718,14 @@
     "albertheijn",
     "Albert Heijn",
     "#04ACE6"
+  ],
+  "albumoftheyear": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "albumoftheyear",
+    "Album of the Year",
+    "#222222"
   ],
   "alby": [
     "brand",
@@ -872,14 +863,6 @@
     "AlmaLinux",
     "#000000"
   ],
-  "alpinelinux": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "alpinelinux",
-    "Alpine Linux",
-    "#0D597F"
-  ],
   "alpinedotjs": [
     "brand",
     "logo",
@@ -887,6 +870,14 @@
     "alpinedotjs",
     "Alpine.js",
     "#8BC0D0"
+  ],
+  "alpinelinux": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "alpinelinux",
+    "Alpine Linux",
+    "#0D597F"
   ],
   "alternativeto": [
     "brand",
@@ -918,10 +909,7 @@
     "simple-icons",
     "ameba",
     "Ameba",
-    "#2D8C3C",
-    "Ameba Blog",
-    "Ameblo",
-    "アメブロ"
+    "#2D8C3C"
   ],
   "americanairlines": [
     "brand",
@@ -1099,14 +1087,6 @@
     "Ansys",
     "#FFB71B"
   ],
-  "antdesign": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "antdesign",
-    "Ant Design",
-    "#0170FE"
-  ],
   "anta": [
     "brand",
     "logo",
@@ -1114,6 +1094,14 @@
     "anta",
     "Anta",
     "#D70010"
+  ],
+  "antdesign": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "antdesign",
+    "Ant Design",
+    "#0170FE"
   ],
   "antena3": [
     "brand",
@@ -1194,6 +1182,14 @@
     "apacheant",
     "Apache Ant",
     "#A81C7D"
+  ],
+  "apachearrow": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "apachearrow",
+    "Apache Arrow",
+    "#000000"
   ],
   "apacheavro": [
     "brand",
@@ -1499,22 +1495,13 @@
     "Apostrophe",
     "#6236FF"
   ],
-  "appstore": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "appstore",
-    "App Store",
-    "#0D96F6"
-  ],
   "appgallery": [
     "brand",
     "logo",
     "simple-icons",
     "appgallery",
     "AppGallery",
-    "#FF0000",
-    "HUAWEI AppGallery"
+    "#FF0000"
   ],
   "appian": [
     "brand",
@@ -1620,6 +1607,14 @@
     "Appsmith",
     "#2A2F3D"
   ],
+  "appstore": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "appstore",
+    "App Store",
+    "#0D96F6"
+  ],
   "appveyor": [
     "brand",
     "logo",
@@ -1676,14 +1671,6 @@
     "ArcGIS",
     "#2C7AC3"
   ],
-  "archlinux": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "archlinux",
-    "Arch Linux",
-    "#1793D1"
-  ],
   "archicad": [
     "brand",
     "logo",
@@ -1699,6 +1686,14 @@
     "archiveofourown",
     "Archive of Our Own",
     "#990000"
+  ],
+  "archlinux": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "archlinux",
+    "Arch Linux",
+    "#1793D1"
   ],
   "ardour": [
     "brand",
@@ -1841,6 +1836,7 @@
     "logo",
     "simple-icons",
     "asciinema",
+    "asciinema",
     "#D40000"
   ],
   "asda": [
@@ -1979,14 +1975,6 @@
     "Audible",
     "#F8991C"
   ],
-  "audiotechnica": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "audiotechnica",
-    "Audio-Technica",
-    "#000000"
-  ],
   "audiobookshelf": [
     "brand",
     "logo",
@@ -2010,6 +1998,14 @@
     "audiomack",
     "Audiomack",
     "#FFA200"
+  ],
+  "audiotechnica": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "audiotechnica",
+    "Audio-Technica",
+    "#000000"
   ],
   "aurelia": [
     "brand",
@@ -2136,6 +2132,7 @@
     "logo",
     "simple-icons",
     "avajs",
+    "avajs",
     "#4B4B77"
   ],
   "avaloniaui": [
@@ -2159,6 +2156,7 @@
     "logo",
     "simple-icons",
     "avianca",
+    "avianca",
     "#FF0000"
   ],
   "avira": [
@@ -2176,6 +2174,14 @@
     "avm",
     "AVM",
     "#E2001A"
+  ],
+  "await": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "await",
+    "Await",
+    "#7858F5"
   ],
   "awesomelists": [
     "brand",
@@ -2216,14 +2222,6 @@
     "axisbank",
     "Axis Bank",
     "#971A4D"
-  ],
-  "bandrautomation": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "bandrautomation",
-    "B&R Automation",
-    "#FF8800"
   ],
   "b4x": [
     "brand",
@@ -2297,6 +2295,14 @@
     "Backstage",
     "#9BF0E1"
   ],
+  "backstage-casting": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "backstage-casting",
+    "Backstage",
+    "#000000"
+  ],
   "badoo": [
     "brand",
     "logo",
@@ -2353,6 +2359,14 @@
     "BandLab",
     "#F12C18"
   ],
+  "bandrautomation": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "bandrautomation",
+    "B&R Automation",
+    "#FF8800"
+  ],
   "bandsintown": [
     "brand",
     "logo",
@@ -2393,14 +2407,6 @@
     "Barmenia",
     "#009FE3"
   ],
-  "baseui": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "baseui",
-    "Base UI",
-    "#EDEDED"
-  ],
   "basecamp": [
     "brand",
     "logo",
@@ -2417,14 +2423,21 @@
     "Baserow",
     "#5190EF"
   ],
+  "baseui": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "baseui",
+    "Base UI",
+    "#EDEDED"
+  ],
   "basicattentiontoken": [
     "brand",
     "logo",
     "simple-icons",
     "basicattentiontoken",
     "Basic Attention Token",
-    "#80247B",
-    "BAT"
+    "#80247B"
   ],
   "bastyon": [
     "brand",
@@ -2432,13 +2445,13 @@
     "simple-icons",
     "bastyon",
     "Bastyon",
-    "#00A4FF",
-    "pocketnet"
+    "#00A4FF"
   ],
   "bat": [
     "brand",
     "logo",
     "simple-icons",
+    "bat",
     "bat",
     "#31369E"
   ],
@@ -2586,14 +2599,6 @@
     "Better Auth",
     "#FFFFFF"
   ],
-  "betterstack": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "betterstack",
-    "Better Stack",
-    "#000000"
-  ],
   "betterdiscord": [
     "brand",
     "logo",
@@ -2601,6 +2606,14 @@
     "betterdiscord",
     "BetterDiscord",
     "#3E82E5"
+  ],
+  "betterstack": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "betterstack",
+    "Better Stack",
+    "#000000"
   ],
   "bevy": [
     "brand",
@@ -2610,18 +2623,11 @@
     "Bevy",
     "#232326"
   ],
-  "bigcartel": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "bigcartel",
-    "Big Cartel",
-    "#222222"
-  ],
   "bigbasket": [
     "brand",
     "logo",
     "simple-icons",
+    "bigbasket",
     "bigbasket",
     "#A5CD39"
   ],
@@ -2632,6 +2638,14 @@
     "bigbluebutton",
     "BigBlueButton",
     "#283274"
+  ],
+  "bigcartel": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "bigcartel",
+    "Big Cartel",
+    "#222222"
   ],
   "bigcommerce": [
     "brand",
@@ -2673,14 +2687,6 @@
     "Binance",
     "#F0B90B"
   ],
-  "biolink": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "biolink",
-    "Bio Link",
-    "#000000"
-  ],
   "bioconductor": [
     "brand",
     "logo",
@@ -2689,14 +2695,21 @@
     "Bioconductor",
     "#1A81C2"
   ],
+  "biolink": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "biolink",
+    "Bio Link",
+    "#000000"
+  ],
   "biome": [
     "brand",
     "logo",
     "simple-icons",
     "biome",
     "Biome",
-    "#60A5FA",
-    "Rome"
+    "#60A5FA"
   ],
   "bisecthosting": [
     "brand",
@@ -2912,8 +2925,7 @@
     "simple-icons",
     "bluesky",
     "Bluesky",
-    "#1185FE",
-    "bsky"
+    "#1185FE"
   ],
   "bluesound": [
     "brand",
@@ -3120,6 +3132,7 @@
     "logo",
     "simple-icons",
     "boulanger",
+    "boulanger",
     "#FD5300"
   ],
   "bower": [
@@ -3263,6 +3276,7 @@
     "logo",
     "simple-icons",
     "bspwm",
+    "bspwm",
     "#2E2E2E"
   ],
   "bt": [
@@ -3390,6 +3404,7 @@
     "logo",
     "simple-icons",
     "bunq",
+    "bunq",
     "#3394D7"
   ],
   "burgerking": [
@@ -3446,8 +3461,7 @@
     "simple-icons",
     "bvg",
     "BVG",
-    "#F0D722",
-    "Berliner Verkehrsbetriebe"
+    "#F0D722"
   ],
   "byjus": [
     "brand",
@@ -3472,22 +3486,6 @@
     "c",
     "C",
     "#A8B9CC"
-  ],
-  "cplusplus": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "cplusplus",
-    "C++",
-    "#00599C"
-  ],
-  "cplusplusbuilder": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "cplusplusbuilder",
-    "C++ Builder",
-    "#E62431"
   ],
   "cachet": [
     "brand",
@@ -3633,14 +3631,6 @@
     "CapRover",
     "#ED5B26"
   ],
-  "carthrottle": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "carthrottle",
-    "Car Throttle",
-    "#FF9C42"
-  ],
   "cardano": [
     "brand",
     "logo",
@@ -3680,6 +3670,14 @@
     "carrefour",
     "Carrefour",
     "#004E9F"
+  ],
+  "carthrottle": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "carthrottle",
+    "Car Throttle",
+    "#FF9C42"
   ],
   "carto": [
     "brand",
@@ -3735,10 +3733,7 @@
     "simple-icons",
     "cbc",
     "CBC",
-    "#E60505",
-    "Canadian Broadcasting Company",
-    "Radio Canada",
-    "Société Radio-Canada"
+    "#E60505"
   ],
   "cbs": [
     "brand",
@@ -3754,8 +3749,7 @@
     "simple-icons",
     "ccc",
     "CCC",
-    "#000000",
-    "China Compulsory Certificate"
+    "#000000"
   ],
   "ccleaner": [
     "brand",
@@ -4085,6 +4079,14 @@
     "Cinnamon",
     "#DC682E"
   ],
+  "cinny": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "cinny",
+    "Cinny",
+    "#000000"
+  ],
   "circle": [
     "brand",
     "logo",
@@ -4189,6 +4191,14 @@
     "Claude",
     "#D97757"
   ],
+  "claudecode": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "claudecode",
+    "Claude Code",
+    "#D97757"
+  ],
   "clerk": [
     "brand",
     "logo",
@@ -4261,22 +4271,6 @@
     "Cloud 66",
     "#3C72B9"
   ],
-  "cloudfoundry": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "cloudfoundry",
-    "Cloud Foundry",
-    "#0C9ED5"
-  ],
-  "cloudnativebuild": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "cloudnativebuild",
-    "Cloud Native Build",
-    "#F76945"
-  ],
   "cloudbees": [
     "brand",
     "logo",
@@ -4325,6 +4319,14 @@
     "Cloudflare Workers",
     "#F38020"
   ],
+  "cloudfoundry": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "cloudfoundry",
+    "Cloud Foundry",
+    "#0C9ED5"
+  ],
   "cloudinary": [
     "brand",
     "logo",
@@ -4332,6 +4334,14 @@
     "cloudinary",
     "Cloudinary",
     "#3448C5"
+  ],
+  "cloudnativebuild": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "cloudnativebuild",
+    "Cloud Native Build",
+    "#F76945"
   ],
   "cloudron": [
     "brand",
@@ -4421,18 +4431,11 @@
     "CNN",
     "#CC0000"
   ],
-  "coop": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "coop",
-    "Co-op",
-    "#00B1E7"
-  ],
   "cobalt": [
     "brand",
     "logo",
     "simple-icons",
+    "cobalt",
     "cobalt",
     "#FFFFFF"
   ],
@@ -4450,7 +4453,7 @@
     "simple-icons",
     "cockpit",
     "Cockpit",
-    "#0066CC"
+    "#2A7AE2"
   ],
   "cockroachlabs": [
     "brand",
@@ -4492,13 +4495,13 @@
     "Codacy",
     "#222F29"
   ],
-  "codeclimate": [
+  "codeberg": [
     "brand",
     "logo",
     "simple-icons",
-    "codeclimate",
-    "Code Climate",
-    "#000000"
+    "codeberg",
+    "Codeberg",
+    "#2185D0"
   ],
   "codeblocks": [
     "brand",
@@ -4508,13 +4511,13 @@
     "Code::Blocks",
     "#41AD48"
   ],
-  "codeberg": [
+  "codebuddy": [
     "brand",
     "logo",
     "simple-icons",
-    "codeberg",
-    "Codeberg",
-    "#2185D0"
+    "codebuddy",
+    "CodeBuddy",
+    "#6C4DFF"
   ],
   "codecademy": [
     "brand",
@@ -4539,6 +4542,14 @@
     "codechef",
     "CodeChef",
     "#5B4638"
+  ],
+  "codeclimate": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "codeclimate",
+    "Code Climate",
+    "#000000"
   ],
   "codecov": [
     "brand",
@@ -4700,14 +4711,6 @@
     "Codewars",
     "#B1361E"
   ],
-  "codingninjas": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "codingninjas",
-    "Coding Ninjas",
-    "#DD6620"
-  ],
   "codingame": [
     "brand",
     "logo",
@@ -4715,6 +4718,14 @@
     "codingame",
     "CodinGame",
     "#F2BB13"
+  ],
+  "codingninjas": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "codingninjas",
+    "Coding Ninjas",
+    "#DD6620"
   ],
   "codio": [
     "brand",
@@ -4762,9 +4773,7 @@
     "simple-icons",
     "collaboraonline",
     "Collabora Online",
-    "#5C2983",
-    "Collabora Office",
-    "Collabora Productivity"
+    "#5C2983"
   ],
   "comicfury": [
     "brand",
@@ -4778,6 +4787,7 @@
     "brand",
     "logo",
     "simple-icons",
+    "comma",
     "comma",
     "#51FF00"
   ],
@@ -4793,6 +4803,7 @@
     "brand",
     "logo",
     "simple-icons",
+    "commitlint",
     "commitlint",
     "#000000"
   ],
@@ -4929,6 +4940,7 @@
     "logo",
     "simple-icons",
     "containerd",
+    "containerd",
     "#575757"
   ],
   "contao": [
@@ -5026,6 +5038,14 @@
     "coolify",
     "Coolify",
     "#6B16ED"
+  ],
+  "coop": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "coop",
+    "Co-op",
+    "#00B1E7"
   ],
   "copaairlines": [
     "brand",
@@ -5147,6 +5167,22 @@
     "cPanel",
     "#FF6C2C"
   ],
+  "cplusplus": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "cplusplus",
+    "C++",
+    "#00599C"
+  ],
+  "cplusplusbuilder": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "cplusplusbuilder",
+    "C++ Builder",
+    "#E62431"
+  ],
   "craftcms": [
     "brand",
     "logo",
@@ -5227,14 +5263,6 @@
     "Crehana",
     "#4B22F4"
   ],
-  "crewunited": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "crewunited",
-    "Crew United",
-    "#000000"
-  ],
   "crewai": [
     "brand",
     "logo",
@@ -5242,6 +5270,14 @@
     "crewai",
     "CrewAI",
     "#FF5A50"
+  ],
+  "crewunited": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "crewunited",
+    "Crew United",
+    "#000000"
   ],
   "criticalrole": [
     "brand",
@@ -5361,8 +5397,7 @@
     "simple-icons",
     "cts",
     "CTS",
-    "#E53236",
-    "Compagnie des Transports Strasbourgeois"
+    "#E53236"
   ],
   "cucumber": [
     "brand",
@@ -5384,6 +5419,7 @@
     "brand",
     "logo",
     "simple-icons",
+    "curl",
     "curl",
     "#073551"
   ],
@@ -5451,30 +5487,13 @@
     "D",
     "#B03931"
   ],
-  "dedge": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "dedge",
-    "D-EDGE",
-    "#432975"
-  ],
-  "dwavesystems": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "dwavesystems",
-    "D-Wave Systems",
-    "#008CD7"
-  ],
   "d3": [
     "brand",
     "logo",
     "simple-icons",
     "d3",
     "D3",
-    "#F9A03C",
-    "D3.js"
+    "#F9A03C"
   ],
   "dacia": [
     "brand",
@@ -5594,16 +5613,7 @@
     "simple-icons",
     "dassaultsystemes",
     "Dassault Systèmes",
-    "#005386",
-    "SolidWorks"
-  ],
-  "datadotai": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "datadotai",
-    "data.ai",
-    "#000000"
+    "#005386"
   ],
   "databricks": [
     "brand",
@@ -5628,6 +5638,14 @@
     "datadog",
     "Datadog",
     "#632CA6"
+  ],
+  "datadotai": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "datadotai",
+    "data.ai",
+    "#000000"
   ],
   "datagrip": [
     "brand",
@@ -5699,8 +5717,7 @@
     "simple-icons",
     "dazhongdianping",
     "Dazhong Dianping",
-    "#FF6633",
-    "大众点评"
+    "#FF6633"
   ],
   "dazn": [
     "brand",
@@ -5723,6 +5740,7 @@
     "logo",
     "simple-icons",
     "dblp",
+    "dblp",
     "#004F9F"
   ],
   "dcentertainment": [
@@ -5732,14 +5750,6 @@
     "dcentertainment",
     "DC Entertainment",
     "#0078F0"
-  ],
-  "delonghi": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "delonghi",
-    "De'Longhi",
-    "#072240"
   ],
   "debian": [
     "brand",
@@ -5773,6 +5783,14 @@
     "Decentraland",
     "#FF2D55"
   ],
+  "dedge": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "dedge",
+    "D-EDGE",
+    "#432975"
+  ],
   "deepcool": [
     "brand",
     "logo",
@@ -5794,6 +5812,7 @@
     "logo",
     "simple-icons",
     "deepin",
+    "deepin",
     "#007CFF"
   ],
   "deepl": [
@@ -5810,8 +5829,7 @@
     "simple-icons",
     "deepmind",
     "DeepMind",
-    "#4285F4",
-    "Google DeepMind"
+    "#4285F4"
   ],
   "deepnote": [
     "brand",
@@ -5852,6 +5870,14 @@
     "dell",
     "Dell",
     "#007DB8"
+  ],
+  "delonghi": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "delonghi",
+    "De'Longhi",
+    "#072240"
   ],
   "delphi": [
     "brand",
@@ -5909,6 +5935,14 @@
     "Dependabot",
     "#025E8C"
   ],
+  "dependencycheck": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "dependencycheck",
+    "OWASP Dependency-Check",
+    "#F78D0A"
+  ],
   "depositphotos": [
     "brand",
     "logo",
@@ -5955,10 +5989,7 @@
     "simple-icons",
     "deutschetelekom",
     "Deutsche Telekom",
-    "#E20074",
-    "T-Mobile",
-    "Magenta Telekom",
-    "Македонски Телеком"
+    "#E20074"
   ],
   "deutschewelle": [
     "brand",
@@ -5968,14 +5999,6 @@
     "Deutsche Welle",
     "#05B2FC"
   ],
-  "devdotto": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "devdotto",
-    "dev.to",
-    "#0A0A0A"
-  ],
   "devbox": [
     "brand",
     "logo",
@@ -5984,14 +6007,21 @@
     "Devbox",
     "#280459"
   ],
+  "devdotto": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "devdotto",
+    "dev.to",
+    "#0A0A0A"
+  ],
   "developmentcontainers": [
     "brand",
     "logo",
     "simple-icons",
     "developmentcontainers",
     "Development Containers",
-    "#2753E3",
-    "devcontainers"
+    "#2753E3"
   ],
   "devexpress": [
     "brand",
@@ -6055,8 +6085,7 @@
     "simple-icons",
     "diagramsdotnet",
     "diagrams.net",
-    "#F08705",
-    "draw.io"
+    "#F08705"
   ],
   "dialogflow": [
     "brand",
@@ -6255,6 +6284,7 @@
     "logo",
     "simple-icons",
     "dlthub",
+    "dlthub",
     "#59C1D5"
   ],
   "dm": [
@@ -6262,8 +6292,8 @@
     "logo",
     "simple-icons",
     "dm",
-    "#002878",
-    "dm-drogerie markt"
+    "dm",
+    "#002878"
   ],
   "dmm": [
     "brand",
@@ -6376,6 +6406,22 @@
     "dota2",
     "Dota 2",
     "#BF2E1A"
+  ],
+  "dotenv": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "dotenv",
+    ".ENV",
+    "#ECD53F"
+  ],
+  "dotnet": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "dotnet",
+    ".NET",
+    "#512BD4"
   ],
   "douban": [
     "brand",
@@ -6559,8 +6605,7 @@
     "simple-icons",
     "dungeonsanddragons",
     "Dungeons & Dragons",
-    "#ED1C24",
-    "D&D"
+    "#ED1C24"
   ],
   "dunked": [
     "brand",
@@ -6600,13 +6645,21 @@
     "simple-icons",
     "dvc",
     "DVC",
-    "#13ADC7",
-    "Data Version Control"
+    "#13ADC7"
+  ],
+  "dwavesystems": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "dwavesystems",
+    "D-Wave Systems",
+    "#008CD7"
   ],
   "dwm": [
     "brand",
     "logo",
     "simple-icons",
+    "dwm",
     "dwm",
     "#1177AA"
   ],
@@ -6618,13 +6671,13 @@
     "Dynatrace",
     "#1496FF"
   ],
-  "edotleclerc": [
+  "e": [
     "brand",
     "logo",
     "simple-icons",
-    "edotleclerc",
-    "E.Leclerc",
-    "#0066CC"
+    "e",
+    "/e/",
+    "#000000"
   ],
   "e3": [
     "brand",
@@ -6632,8 +6685,7 @@
     "simple-icons",
     "e3",
     "E3",
-    "#E73D2F",
-    "Electronic Entertainment Expo"
+    "#E73D2F"
   ],
   "ea": [
     "brand",
@@ -6649,8 +6701,7 @@
     "simple-icons",
     "eac",
     "EAC",
-    "#000000",
-    "Eurasian Conformity"
+    "#000000"
   ],
   "eagle": [
     "brand",
@@ -6666,8 +6717,7 @@
     "simple-icons",
     "easyeda",
     "EasyEDA",
-    "#1765F6",
-    "嘉立创EDA"
+    "#1765F6"
   ],
   "easyjet": [
     "brand",
@@ -6781,6 +6831,14 @@
     "EditorConfig",
     "#FEFEFE"
   ],
+  "edotleclerc": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "edotleclerc",
+    "E.Leclerc",
+    "#0066CC"
+  ],
   "educative": [
     "brand",
     "logo",
@@ -6809,6 +6867,7 @@
     "brand",
     "logo",
     "simple-icons",
+    "egghead",
     "egghead",
     "#FCFBFA"
   ],
@@ -6860,20 +6919,20 @@
     "Elastic Cloud",
     "#005571"
   ],
-  "elasticstack": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "elasticstack",
-    "Elastic Stack",
-    "#005571"
-  ],
   "elasticsearch": [
     "brand",
     "logo",
     "simple-icons",
     "elasticsearch",
     "Elasticsearch",
+    "#005571"
+  ],
+  "elasticstack": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "elasticstack",
+    "Elastic Stack",
     "#005571"
   ],
   "elavon": [
@@ -6892,14 +6951,6 @@
     "Electron",
     "#47848F"
   ],
-  "electronfiddle": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "electronfiddle",
-    "Electron Fiddle",
-    "#E79537"
-  ],
   "electronbuilder": [
     "brand",
     "logo",
@@ -6907,6 +6958,14 @@
     "electronbuilder",
     "electron-builder",
     "#000000"
+  ],
+  "electronfiddle": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "electronfiddle",
+    "Electron Fiddle",
+    "#E79537"
   ],
   "elegoo": [
     "brand",
@@ -6928,6 +6987,7 @@
     "brand",
     "logo",
     "simple-icons",
+    "elementary",
     "elementary",
     "#64BAFF"
   ],
@@ -6953,8 +7013,7 @@
     "simple-icons",
     "eleventy",
     "Eleventy",
-    "#222222",
-    "11ty"
+    "#222222"
   ],
   "elgato": [
     "brand",
@@ -7169,6 +7228,7 @@
     "logo",
     "simple-icons",
     "esbuild",
+    "esbuild",
     "#FFCF00"
   ],
   "esea": [
@@ -7232,6 +7292,7 @@
     "logo",
     "simple-icons",
     "etcd",
+    "etcd",
     "#419EDA"
   ],
   "ethereum": [
@@ -7280,8 +7341,7 @@
     "simple-icons",
     "europeanunion",
     "European Union",
-    "#003399",
-    "EU"
+    "#003399"
   ],
   "eventstore": [
     "brand",
@@ -7377,7 +7437,7 @@
     "simple-icons",
     "express",
     "Express",
-    "#000000"
+    "#0A0A0A"
   ],
   "expressdotcom": [
     "brand",
@@ -7402,23 +7462,6 @@
     "eyeem",
     "EyeEm",
     "#000000"
-  ],
-  "fdroid": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "fdroid",
-    "F-Droid",
-    "#1976D2"
-  ],
-  "fsharp": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "fsharp",
-    "F#",
-    "#378BBA",
-    "F sharp"
   ],
   "f1": [
     "brand",
@@ -7628,14 +7671,29 @@
     "Favro",
     "#512DA8"
   ],
+  "fawry": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "fawry",
+    "Fawry",
+    "#FFD300"
+  ],
   "fcc": [
     "brand",
     "logo",
     "simple-icons",
     "fcc",
     "FCC",
-    "#1C3664",
-    "Federal Communications Commission"
+    "#1C3664"
+  ],
+  "fdroid": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "fdroid",
+    "F-Droid",
+    "#1976D2"
   ],
   "fedex": [
     "brand",
@@ -7699,9 +7757,7 @@
     "simple-icons",
     "fi",
     "Fi",
-    "#00B899",
-    "epiFi",
-    "Fi.Money"
+    "#00B899"
   ],
   "fiat": [
     "brand",
@@ -7747,6 +7803,7 @@
     "brand",
     "logo",
     "simple-icons",
+    "figshare",
     "figshare",
     "#556472"
   ],
@@ -8163,12 +8220,14 @@
     "logo",
     "simple-icons",
     "foobar2000",
+    "foobar2000",
     "#000000"
   ],
   "foodpanda": [
     "brand",
     "logo",
     "simple-icons",
+    "foodpanda",
     "foodpanda",
     "#D70F64"
   ],
@@ -8393,6 +8452,7 @@
     "logo",
     "simple-icons",
     "freelancermap",
+    "freelancermap",
     "#00CFD6"
   ],
   "freenas": [
@@ -8407,6 +8467,7 @@
     "brand",
     "logo",
     "simple-icons",
+    "freenet",
     "freenet",
     "#84BC34"
   ],
@@ -8473,6 +8534,14 @@
     "frontify",
     "Frontify",
     "#2D3232"
+  ],
+  "fsharp": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "fsharp",
+    "F#",
+    "#378BBA"
   ],
   "fubo": [
     "brand",
@@ -8586,14 +8655,21 @@
     "Galaxus",
     "#000000"
   ],
+  "gamebanana": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "gamebanana",
+    "GameBanana",
+    "#FCEF40"
+  ],
   "gamedeveloper": [
     "brand",
     "logo",
     "simple-icons",
     "gamedeveloper",
     "Game Developer",
-    "#E60012",
-    "Gamasutra"
+    "#E60012"
   ],
   "gamejolt": [
     "brand",
@@ -8602,22 +8678,6 @@
     "gamejolt",
     "Game Jolt",
     "#CCFF00"
-  ],
-  "gamescience": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "gamescience",
-    "Game Science",
-    "#000000"
-  ],
-  "gamebanana": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "gamebanana",
-    "GameBanana",
-    "#FCEF40"
   ],
   "gameloft": [
     "brand",
@@ -8633,6 +8693,14 @@
     "simple-icons",
     "gamemaker",
     "Gamemaker",
+    "#000000"
+  ],
+  "gamescience": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "gamescience",
+    "Game Science",
     "#000000"
   ],
   "gandi": [
@@ -8809,8 +8877,7 @@
     "simple-icons",
     "gimp",
     "GIMP",
-    "#8C8073",
-    "GNU Image Manipulation Program"
+    "#8C8073"
   ],
   "gin": [
     "brand",
@@ -8834,31 +8901,7 @@
     "simple-icons",
     "git",
     "Git",
-    "#F05032"
-  ],
-  "gitextensions": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "gitextensions",
-    "Git Extensions",
-    "#212121"
-  ],
-  "gitforwindows": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "gitforwindows",
-    "Git for Windows",
-    "#80B3FF"
-  ],
-  "gitlfs": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "gitlfs",
-    "Git LFS",
-    "#F64935"
+    "#F03C2E"
   ],
   "gitbook": [
     "brand",
@@ -8899,6 +8942,22 @@
     "gitee",
     "Gitee",
     "#C71D23"
+  ],
+  "gitextensions": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "gitextensions",
+    "Git Extensions",
+    "#212121"
+  ],
+  "gitforwindows": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "gitforwindows",
+    "Git for Windows",
+    "#80B3FF"
   ],
   "github": [
     "brand",
@@ -8964,6 +9023,14 @@
     "GitLab",
     "#FC6D26"
   ],
+  "gitlfs": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "gitlfs",
+    "Git LFS",
+    "#F64935"
+  ],
   "gitpod": [
     "brand",
     "logo",
@@ -8980,14 +9047,6 @@
     "Gitter",
     "#ED1965"
   ],
-  "gldotinet": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "gldotinet",
-    "GL.iNet",
-    "#636363"
-  ],
   "glance": [
     "brand",
     "logo",
@@ -8996,6 +9055,14 @@
     "Glance",
     "#D9C38C"
   ],
+  "glass": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "glass",
+    "Glass",
+    "#FFCC00"
+  ],
   "glassdoor": [
     "brand",
     "logo",
@@ -9003,6 +9070,14 @@
     "glassdoor",
     "Glassdoor",
     "#00A162"
+  ],
+  "gldotinet": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "gldotinet",
+    "GL.iNet",
+    "#636363"
   ],
   "gleam": [
     "brand",
@@ -9218,8 +9293,7 @@
     "simple-icons",
     "google",
     "Google",
-    "#4285F4",
-    "구글"
+    "#4285F4"
   ],
   "googleadmob": [
     "brand",
@@ -9323,8 +9397,7 @@
     "simple-icons",
     "googlecast",
     "Google Cast",
-    "#4285F4",
-    "Chromecast"
+    "#4285F4"
   ],
   "googlechat": [
     "brand",
@@ -9484,8 +9557,7 @@
     "simple-icons",
     "googlegemini",
     "Google Gemini",
-    "#8E75B2",
-    "Google Bard"
+    "#8E75B2"
   ],
   "googlehome": [
     "brand",
@@ -9645,8 +9717,7 @@
     "simple-icons",
     "googlesummerofcode",
     "Google Summer of Code",
-    "#F9AB00",
-    "GSoC"
+    "#F9AB00"
   ],
   "googletagmanager": [
     "brand",
@@ -9686,8 +9757,7 @@
     "simple-icons",
     "gotomeeting",
     "GoToMeeting",
-    "#F68D2E",
-    "GoToWebinar"
+    "#F68D2E"
   ],
   "gplv3": [
     "brand",
@@ -9727,9 +9797,7 @@
     "simple-icons",
     "gradleplaypublisher",
     "Gradle Play Publisher",
-    "#82B816",
-    "gpp",
-    "Triple-T"
+    "#82B816"
   ],
   "grafana": [
     "brand",
@@ -9770,6 +9838,14 @@
     "graphite",
     "Graphite",
     "#000000"
+  ],
+  "graphite-editor": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "graphite-editor",
+    "Graphite",
+    "#473A3A"
   ],
   "graphql": [
     "brand",
@@ -9897,8 +9973,7 @@
     "simple-icons",
     "gsap",
     "GSAP",
-    "#0AE448",
-    "GreenSock Animation Platform"
+    "#0AE448"
   ],
   "gsk": [
     "brand",
@@ -9906,8 +9981,7 @@
     "simple-icons",
     "gsk",
     "GSK",
-    "#F36633",
-    "GlaxoSmithKline"
+    "#F36633"
   ],
   "gsma": [
     "brand",
@@ -9970,6 +10044,7 @@
     "logo",
     "simple-icons",
     "gulp",
+    "gulp",
     "#CF4647"
   ],
   "gumroad": [
@@ -10020,14 +10095,6 @@
     "Gutenberg",
     "#000000"
   ],
-  "handm": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "handm",
-    "H&M",
-    "#E50010"
-  ],
   "h2database": [
     "brand",
     "logo",
@@ -10052,22 +10119,6 @@
     "Habr",
     "#65A3BE"
   ],
-  "hackclub": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "hackclub",
-    "Hack Club",
-    "#EC3750"
-  ],
-  "hackthebox": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "hackthebox",
-    "Hack The Box",
-    "#9FEF00"
-  ],
   "hackaday": [
     "brand",
     "logo",
@@ -10076,13 +10127,13 @@
     "Hackaday",
     "#1A1A1A"
   ],
-  "hackernoon": [
+  "hackclub": [
     "brand",
     "logo",
     "simple-icons",
-    "hackernoon",
-    "Hacker Noon",
-    "#00FE00"
+    "hackclub",
+    "Hack Club",
+    "#EC3750"
   ],
   "hackerearth": [
     "brand",
@@ -10091,6 +10142,14 @@
     "hackerearth",
     "HackerEarth",
     "#2C3454"
+  ],
+  "hackernoon": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "hackernoon",
+    "Hacker Noon",
+    "#00FE00"
   ],
   "hackerone": [
     "brand",
@@ -10124,6 +10183,14 @@
     "Hackster",
     "#2E9FE6"
   ],
+  "hackthebox": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "hackthebox",
+    "Hack The Box",
+    "#9FEF00"
+  ],
   "hal": [
     "brand",
     "logo",
@@ -10140,6 +10207,14 @@
     "Handlebars.js",
     "#000000"
   ],
+  "handm": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "handm",
+    "H&M",
+    "#E50010"
+  ],
   "handshake": [
     "brand",
     "logo",
@@ -10147,6 +10222,14 @@
     "handshake",
     "Handshake",
     "#D3FB52"
+  ],
+  "handshake-protocol": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "handshake-protocol",
+    "Handshake",
+    "#000000"
   ],
   "happycow": [
     "brand",
@@ -10170,8 +10253,7 @@
     "simple-icons",
     "harmonyos",
     "HarmonyOS",
-    "#000000",
-    "HMOS"
+    "#000000"
   ],
   "hashcat": [
     "brand",
@@ -10227,8 +10309,7 @@
     "simple-icons",
     "haveibeenpwned",
     "Have I Been Pwned",
-    "#030304",
-    "HIBP"
+    "#030304"
   ],
   "havells": [
     "brand",
@@ -10284,8 +10365,7 @@
     "simple-icons",
     "hdfcbank",
     "HDFC Bank",
-    "#004B8D",
-    "HDB"
+    "#004B8D"
   ],
   "headlessui": [
     "brand",
@@ -10351,6 +10431,14 @@
     "Helium",
     "#0ACF83"
   ],
+  "heliumbrowser": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "heliumbrowser",
+    "Helium Browser",
+    "#3450D1"
+  ],
   "helix": [
     "brand",
     "logo",
@@ -10383,14 +10471,6 @@
     "Helm",
     "#0F1689"
   ],
-  "helpscout": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "helpscout",
-    "Help Scout",
-    "#1292EE"
-  ],
   "helpdesk": [
     "brand",
     "logo",
@@ -10398,6 +10478,14 @@
     "helpdesk",
     "HelpDesk",
     "#2FC774"
+  ],
+  "helpscout": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "helpscout",
+    "Help Scout",
+    "#1292EE"
   ],
   "hepsiemlak": [
     "brand",
@@ -10437,8 +10525,7 @@
     "simple-icons",
     "heroui",
     "HeroUI",
-    "#000000",
-    "NextUI"
+    "#000000"
   ],
   "hetzner": [
     "brand",
@@ -10462,8 +10549,7 @@
     "simple-icons",
     "hexlet",
     "Hexlet",
-    "#116EF5",
-    "Хекслет"
+    "#116EF5"
   ],
   "hexo": [
     "brand",
@@ -10481,15 +10567,6 @@
     "HEY",
     "#5522FA"
   ],
-  "hibob": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "hibob",
-    "Hi Bob",
-    "#E42C51",
-    "Bob"
-  ],
   "hibernate": [
     "brand",
     "logo",
@@ -10497,6 +10574,14 @@
     "hibernate",
     "Hibernate",
     "#59666C"
+  ],
+  "hibob": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "hibob",
+    "Hi Bob",
+    "#E42C51"
   ],
   "hilton": [
     "brand",
@@ -10530,6 +10615,14 @@
     "Hive",
     "#FF7A00"
   ],
+  "hive-blockchain": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "hive-blockchain",
+    "Hive",
+    "#E31337"
+  ],
   "hivemq": [
     "brand",
     "logo",
@@ -10546,6 +10639,14 @@
     "Homarr",
     "#FA5252"
   ],
+  "homeadvisor": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "homeadvisor",
+    "HomeAdvisor",
+    "#F68315"
+  ],
   "homeassistant": [
     "brand",
     "logo",
@@ -10561,14 +10662,6 @@
     "homeassistantcommunitystore",
     "Home Assistant Community Store",
     "#41BDF5"
-  ],
-  "homeadvisor": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "homeadvisor",
-    "HomeAdvisor",
-    "#F68315"
   ],
   "homebrew": [
     "brand",
@@ -10598,6 +10691,7 @@
     "brand",
     "logo",
     "simple-icons",
+    "homify",
     "homify",
     "#7DCDA3"
   ],
@@ -10745,14 +10839,6 @@
     "HTC Vive",
     "#00B2E3"
   ],
-  "htmlacademy": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "htmlacademy",
-    "HTML Academy",
-    "#302683"
-  ],
   "html5": [
     "brand",
     "logo",
@@ -10761,10 +10847,19 @@
     "HTML5",
     "#E34F26"
   ],
+  "htmlacademy": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "htmlacademy",
+    "HTML Academy",
+    "#302683"
+  ],
   "htmx": [
     "brand",
     "logo",
     "simple-icons",
+    "htmx",
     "htmx",
     "#3366CC"
   ],
@@ -10772,6 +10867,7 @@
     "brand",
     "logo",
     "simple-icons",
+    "htop",
     "htop",
     "#009020"
   ],
@@ -10900,12 +10996,14 @@
     "logo",
     "simple-icons",
     "i18next",
+    "i18next",
     "#26A69A"
   ],
   "i3": [
     "brand",
     "logo",
     "simple-icons",
+    "i3",
     "i3",
     "#52C0FF"
   ],
@@ -11107,17 +11205,7 @@
     "simple-icons",
     "ilovepdf",
     "iLovePDF",
-    "#E5322D",
-    "iLoveAPI",
-    "iLoveIMG"
-  ],
-  "imagetoolbox": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "imagetoolbox",
-    "Image Toolbox",
-    "#60EA78"
+    "#E5322D"
   ],
   "imagedotsc": [
     "brand",
@@ -11134,6 +11222,14 @@
     "imagej",
     "ImageJ",
     "#00D8E0"
+  ],
+  "imagetoolbox": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "imagetoolbox",
+    "Image Toolbox",
+    "#60EA78"
   ],
   "imdb": [
     "brand",
@@ -11501,8 +11597,7 @@
     "simple-icons",
     "internetcomputer",
     "Internet Computer",
-    "#3B00B9",
-    "Internet Computer Protocol"
+    "#3B00B9"
   ],
   "intigriti": [
     "brand",
@@ -11606,8 +11701,7 @@
     "simple-icons",
     "isc2",
     "ISC2",
-    "#468145",
-    "(ISC)²"
+    "#468145"
   ],
   "isro": [
     "brand",
@@ -11615,8 +11709,7 @@
     "simple-icons",
     "isro",
     "ISRO",
-    "#F58220",
-    "Indian Space Research Organization"
+    "#F58220"
   ],
   "issuu": [
     "brand",
@@ -12088,18 +12181,7 @@
     "simple-icons",
     "justeat",
     "Just Eat",
-    "#FF8000",
-    "Just Eat Takeaway.com",
-    "Takeaway.com",
-    "Lieferando.at",
-    "Lieferando.de",
-    "Menulog",
-    "Grubhub",
-    "Skip",
-    "10bis",
-    "Thuisbezorgd.nl",
-    "Pyszne.pl",
-    "Bistro.sk"
+    "#FF8000"
   ],
   "justgiving": [
     "brand",
@@ -12122,8 +12204,8 @@
     "logo",
     "simple-icons",
     "k6",
-    "#7D64FF",
-    "Grafana k6"
+    "k6",
+    "#7D64FF"
   ],
   "kaggle": [
     "brand",
@@ -12163,8 +12245,7 @@
     "simple-icons",
     "kakao",
     "Kakao",
-    "#FFCD00",
-    "카카오"
+    "#FFCD00"
   ],
   "kakaotalk": [
     "brand",
@@ -12172,8 +12253,7 @@
     "simple-icons",
     "kakaotalk",
     "KakaoTalk",
-    "#FFCD00",
-    "카카오톡"
+    "#FFCD00"
   ],
   "kalilinux": [
     "brand",
@@ -12269,8 +12349,7 @@
     "simple-icons",
     "kde",
     "KDE",
-    "#1D99F3",
-    "K Desktop Environment"
+    "#1D99F3"
   ],
   "kdeneon": [
     "brand",
@@ -12280,14 +12359,6 @@
     "KDE neon",
     "#3DC08D"
   ],
-  "kdeplasma": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "kdeplasma",
-    "KDE Plasma",
-    "#1D99F3"
-  ],
   "kdenlive": [
     "brand",
     "logo",
@@ -12295,6 +12366,14 @@
     "kdenlive",
     "Kdenlive",
     "#527EB2"
+  ],
+  "kdeplasma": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "kdeplasma",
+    "KDE Plasma",
+    "#1D99F3"
   ],
   "kedro": [
     "brand",
@@ -12414,8 +12493,7 @@
     "simple-icons",
     "kfc",
     "KFC",
-    "#F40027",
-    "Kentucky Fried Chicken"
+    "#F40027"
   ],
   "khanacademy": [
     "brand",
@@ -12481,14 +12559,21 @@
     "Kik",
     "#82BC23"
   ],
+  "kimi": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "kimi",
+    "Kimi",
+    "#000000"
+  ],
   "kingstontechnology": [
     "brand",
     "logo",
     "simple-icons",
     "kingstontechnology",
     "Kingston Technology",
-    "#000000",
-    "Kingston"
+    "#000000"
   ],
   "kinopoisk": [
     "brand",
@@ -12496,8 +12581,7 @@
     "simple-icons",
     "kinopoisk",
     "Kinopoisk",
-    "#FF5500",
-    "КиноПоиск"
+    "#FF5500"
   ],
   "kinsta": [
     "brand",
@@ -12553,8 +12637,7 @@
     "simple-icons",
     "kleinanzeigen",
     "Kleinanzeigen",
-    "#1D4B00",
-    "eBay Kleinanzeigen"
+    "#1D4B00"
   ],
   "klm": [
     "brand",
@@ -12620,14 +12703,6 @@
     "Known",
     "#333333"
   ],
-  "kofi": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "kofi",
-    "Ko-fi",
-    "#FF6433"
-  ],
   "koa": [
     "brand",
     "logo",
@@ -12684,6 +12759,14 @@
     "Kofax",
     "#00558C"
   ],
+  "kofi": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "kofi",
+    "Ko-fi",
+    "#FF6433"
+  ],
   "komoot": [
     "brand",
     "logo",
@@ -12738,8 +12821,7 @@
     "simple-icons",
     "kotlin",
     "Kotlin",
-    "#7F52FF",
-    "코틀린"
+    "#7F52FF"
   ],
   "koyeb": [
     "brand",
@@ -12869,14 +12951,6 @@
     "Kyocera",
     "#DF0522"
   ],
-  "lequipe": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "lequipe",
-    "L'Équipe",
-    "#E42829"
-  ],
   "labex": [
     "brand",
     "logo",
@@ -12899,8 +12973,7 @@
     "simple-icons",
     "lada",
     "LADA",
-    "#ED6B21",
-    "Лада"
+    "#ED6B21"
   ],
   "lamborghini": [
     "brand",
@@ -12918,6 +12991,14 @@
     "LangChain",
     "#7FC8FF"
   ],
+  "langchaincorporate": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "langchaincorporate",
+    "LangChain Corporate",
+    "#7FC8FF"
+  ],
   "langflow": [
     "brand",
     "logo",
@@ -12932,7 +13013,7 @@
     "simple-icons",
     "langgraph",
     "LangGraph",
-    "#1C3C3C"
+    "#7FC8FF"
   ],
   "languagetool": [
     "brand",
@@ -13142,6 +13223,14 @@
     "Leptos",
     "#EF3939"
   ],
+  "lequipe": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "lequipe",
+    "L'Équipe",
+    "#E42829"
+  ],
   "lerna": [
     "brand",
     "logo",
@@ -13205,14 +13294,6 @@
     "lg",
     "LG",
     "#A50034"
-  ],
-  "lining": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "lining",
-    "Li-Ning",
-    "#C5242C"
   ],
   "liberadotchat": [
     "brand",
@@ -13331,6 +13412,7 @@
     "logo",
     "simple-icons",
     "libuv",
+    "libuv",
     "#403C3D"
   ],
   "lichess": [
@@ -13395,9 +13477,7 @@
     "simple-icons",
     "line",
     "LINE",
-    "#00C300",
-    "ライン",
-    "라인"
+    "#00C300"
   ],
   "lineageos": [
     "brand",
@@ -13414,6 +13494,14 @@
     "linear",
     "Linear",
     "#5E6AD2"
+  ],
+  "lining": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "lining",
+    "Li-Ning",
+    "#C5242C"
   ],
   "linkerd": [
     "brand",
@@ -13548,6 +13636,7 @@
     "logo",
     "simple-icons",
     "listmonk",
+    "listmonk",
     "#0055D4"
   ],
   "lit": [
@@ -13629,6 +13718,14 @@
     "lmms",
     "LMMS",
     "#10B146"
+  ],
+  "lmstudio": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "lmstudio",
+    "LM Studio",
+    "#000000"
   ],
   "lobsters": [
     "brand",
@@ -13804,8 +13901,7 @@
     "simple-icons",
     "luanti",
     "Luanti",
-    "#53AC56",
-    "Minetest"
+    "#53AC56"
   ],
   "luau": [
     "brand",
@@ -13901,8 +13997,7 @@
     "simple-icons",
     "lvgl",
     "LVGL",
-    "#343839",
-    "Light and Versatile Graphics Library"
+    "#343839"
   ],
   "lydia": [
     "brand",
@@ -13919,6 +14014,14 @@
     "lyft",
     "Lyft",
     "#FF00BF"
+  ],
+  "m5stack": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "m5stack",
+    "M5Stack",
+    "#0077C8"
   ],
   "maas": [
     "brand",
@@ -13992,6 +14095,22 @@
     "Mahindra",
     "#DD052B"
   ],
+  "mailbox": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "mailbox",
+    "mailbox",
+    "#ABE659"
+  ],
+  "mailchimp": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "mailchimp",
+    "MailChimp",
+    "#FFE01B"
+  ],
   "maildotcom": [
     "brand",
     "logo",
@@ -14007,21 +14126,6 @@
     "maildotru",
     "Mail.Ru",
     "#005FF9"
-  ],
-  "mailbox": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "mailbox",
-    "#ABE659"
-  ],
-  "mailchimp": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "mailchimp",
-    "MailChimp",
-    "#FFE01B"
   ],
   "mailgun": [
     "brand",
@@ -14133,8 +14237,7 @@
     "simple-icons",
     "mangaupdates",
     "MangaUpdates",
-    "#FF8C15",
-    "Baka-Updates Manga"
+    "#FF8C15"
   ],
   "manjaro": [
     "brand",
@@ -14252,6 +14355,7 @@
     "brand",
     "logo",
     "simple-icons",
+    "mastercomfig",
     "mastercomfig",
     "#009688"
   ],
@@ -14533,8 +14637,7 @@
     "simple-icons",
     "meituan",
     "Meituan",
-    "#FFD100",
-    "美团"
+    "#FFD100"
   ],
   "meizu": [
     "brand",
@@ -14542,8 +14645,7 @@
     "simple-icons",
     "meizu",
     "Meizu",
-    "#FF4132",
-    "魅族"
+    "#FF4132"
   ],
   "mendeley": [
     "brand",
@@ -14608,6 +14710,14 @@
     "meta",
     "Meta",
     "#0467DF"
+  ],
+  "metaai": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "metaai",
+    "Meta AI",
+    "#9844FF"
   ],
   "metabase": [
     "brand",
@@ -14711,16 +14821,7 @@
     "simple-icons",
     "mg",
     "MG",
-    "#FF0000",
-    "Morris Garages"
-  ],
-  "microeditor": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "microeditor",
-    "Micro Editor",
-    "#2E3192"
+    "#FF0000"
   ],
   "microbit": [
     "brand",
@@ -14737,6 +14838,14 @@
     "microdotblog",
     "Micro.blog",
     "#FF8800"
+  ],
+  "microeditor": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "microeditor",
+    "Micro Editor",
+    "#2E3192"
   ],
   "micropython": [
     "brand",
@@ -14944,8 +15053,7 @@
     "simple-icons",
     "mlb",
     "MLB",
-    "#041E42",
-    "Major League Baseball"
+    "#041E42"
   ],
   "mlflow": [
     "brand",
@@ -15001,8 +15109,7 @@
     "simple-icons",
     "modelcontextprotocol",
     "Model Context Protocol",
-    "#000000",
-    "MCP"
+    "#000000"
   ],
   "modelscope": [
     "brand",
@@ -15249,6 +15356,7 @@
     "logo",
     "simple-icons",
     "mpv",
+    "mpv",
     "#691F69"
   ],
   "mqtt": [
@@ -15265,8 +15373,7 @@
     "simple-icons",
     "msi",
     "MSI",
-    "#FF0000",
-    "Micro-Star International"
+    "#FF0000"
   ],
   "msibusiness": [
     "brand",
@@ -15306,8 +15413,7 @@
     "simple-icons",
     "mui",
     "MUI",
-    "#007FFF",
-    "Material-UI"
+    "#007FFF"
   ],
   "muller": [
     "brand",
@@ -15323,8 +15429,7 @@
     "simple-icons",
     "mullvad",
     "Mullvad",
-    "#294D73",
-    "Mullvad VPN"
+    "#294D73"
   ],
   "multisim": [
     "brand",
@@ -15348,8 +15453,7 @@
     "simple-icons",
     "muo",
     "MUO",
-    "#C60D0D",
-    "MakeUseOf"
+    "#C60D0D"
   ],
   "mural": [
     "brand",
@@ -15381,8 +15485,7 @@
     "simple-icons",
     "myanimelist",
     "MyAnimeList",
-    "#2E51A2",
-    "MAL"
+    "#2E51A2"
   ],
   "myget": [
     "brand",
@@ -15437,6 +15540,7 @@
     "logo",
     "simple-icons",
     "n8n",
+    "n8n",
     "#EA4B71"
   ],
   "namebase": [
@@ -15477,8 +15581,7 @@
     "simple-icons",
     "namuwiki",
     "Namu Wiki",
-    "#008275",
-    "나무위키"
+    "#008275"
   ],
   "nano": [
     "brand",
@@ -15550,9 +15653,7 @@
     "simple-icons",
     "naver",
     "Naver",
-    "#03C75A",
-    "ネイバー",
-    "네이버"
+    "#03C75A"
   ],
   "nba": [
     "brand",
@@ -15687,6 +15788,7 @@
     "logo",
     "simple-icons",
     "netcup",
+    "netcup",
     "#056473"
   ],
   "netdata": [
@@ -15703,8 +15805,7 @@
     "simple-icons",
     "neteasecloudmusic",
     "NetEase Cloud Music",
-    "#D43C33",
-    "网易云音乐"
+    "#D43C33"
   ],
   "netflix": [
     "brand",
@@ -15736,8 +15837,7 @@
     "simple-icons",
     "netlify",
     "Netlify",
-    "#00C7B7",
-    "Netlify CMS"
+    "#00C7B7"
   ],
   "nette": [
     "brand",
@@ -15771,16 +15871,37 @@
     "New Balance",
     "#CF0A2C"
   ],
+  "newegg": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "newegg",
+    "Newegg",
+    "#E05E00"
+  ],
+  "newgrounds": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "newgrounds",
+    "Newgrounds",
+    "#FDA238"
+  ],
   "newjapanprowrestling": [
     "brand",
     "logo",
     "simple-icons",
     "newjapanprowrestling",
     "New Japan Pro-Wrestling",
-    "#FF160B",
-    "NJPW",
-    "NJPW World",
-    "新日本プロレスリング"
+    "#FF160B"
+  ],
+  "newpipe": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "newpipe",
+    "NewPipe",
+    "#CD201F"
   ],
   "newrelic": [
     "brand",
@@ -15798,30 +15919,6 @@
     "New York Times",
     "#000000"
   ],
-  "newegg": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "newegg",
-    "Newegg",
-    "#E05E00"
-  ],
-  "newgrounds": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "newgrounds",
-    "Newgrounds",
-    "#FDA238"
-  ],
-  "newpipe": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "newpipe",
-    "NewPipe",
-    "#CD201F"
-  ],
   "nexon": [
     "brand",
     "logo",
@@ -15830,18 +15927,11 @@
     "NEXON",
     "#000000"
   ],
-  "nextdotjs": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "nextdotjs",
-    "Next.js",
-    "#000000"
-  ],
   "nextbike": [
     "brand",
     "logo",
     "simple-icons",
+    "nextbike",
     "nextbike",
     "#0046D7"
   ],
@@ -15877,6 +15967,14 @@
     "Nextdoor",
     "#8ED500"
   ],
+  "nextdotjs": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "nextdotjs",
+    "Next.js",
+    "#000000"
+  ],
   "nextflow": [
     "brand",
     "logo",
@@ -15893,14 +15991,6 @@
     "Nextra",
     "#000000"
   ],
-  "nfcore": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "nfcore",
-    "nf-core",
-    "#24B064"
-  ],
   "nfc": [
     "brand",
     "logo",
@@ -15908,6 +15998,14 @@
     "nfc",
     "NFC",
     "#002E5F"
+  ],
+  "nfcore": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "nfcore",
+    "nf-core",
+    "#24B064"
   ],
   "nginx": [
     "brand",
@@ -15930,6 +16028,7 @@
     "logo",
     "simple-icons",
     "ngrok",
+    "ngrok",
     "#1F1E37"
   ],
   "ngrx": [
@@ -15946,8 +16045,7 @@
     "simple-icons",
     "nhl",
     "NHL",
-    "#000000",
-    "National Hockey League"
+    "#000000"
   ],
   "nhost": [
     "brand",
@@ -15969,6 +16067,7 @@
     "brand",
     "logo",
     "simple-icons",
+    "niconico",
     "niconico",
     "#231815"
   ],
@@ -16001,6 +16100,7 @@
     "logo",
     "simple-icons",
     "niri",
+    "niri",
     "#D55C44"
   ],
   "nissan": [
@@ -16027,13 +16127,13 @@
     "Nobara Linux",
     "#000000"
   ],
-  "nodered": [
+  "nodebb": [
     "brand",
     "logo",
     "simple-icons",
-    "nodered",
-    "Node-RED",
-    "#8F0000"
+    "nodebb",
+    "NodeBB",
+    "#1E5EBC"
   ],
   "nodedotjs": [
     "brand",
@@ -16042,14 +16142,6 @@
     "nodedotjs",
     "Node.js",
     "#5FA04E"
-  ],
-  "nodebb": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "nodebb",
-    "NodeBB",
-    "#1E5EBC"
   ],
   "nodegui": [
     "brand",
@@ -16066,6 +16158,14 @@
     "nodemon",
     "Nodemon",
     "#76D04B"
+  ],
+  "nodered": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "nodered",
+    "Node-RED",
+    "#8F0000"
   ],
   "nokia": [
     "brand",
@@ -16200,6 +16300,7 @@
     "logo",
     "simple-icons",
     "npm",
+    "npm",
     "#CB3837"
   ],
   "nrwl": [
@@ -16216,13 +16317,13 @@
     "simple-icons",
     "nsis",
     "NSIS",
-    "#01B0F0",
-    "Nullsoft Scriptable Install System"
+    "#01B0F0"
   ],
   "ntfy": [
     "brand",
     "logo",
     "simple-icons",
+    "ntfy",
     "ntfy",
     "#317F6F"
   ],
@@ -16304,8 +16405,7 @@
     "simple-icons",
     "nuxt",
     "Nuxt",
-    "#00DC82",
-    "Nuxt.js"
+    "#00DC82"
   ],
   "nvidia": [
     "brand",
@@ -16319,6 +16419,7 @@
     "brand",
     "logo",
     "simple-icons",
+    "nvm",
     "nvm",
     "#F4DD4B"
   ],
@@ -16346,14 +16447,6 @@
     "NZXT",
     "#000000"
   ],
-  "oreilly": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "oreilly",
-    "O'Reilly",
-    "#D3002D"
-  ],
   "o2": [
     "brand",
     "logo",
@@ -16368,16 +16461,7 @@
     "simple-icons",
     "obb",
     "ÖBB",
-    "#E40327",
-    "Österreichische Bundesbahnen"
-  ],
-  "obsstudio": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "obsstudio",
-    "OBS Studio",
-    "#302E31"
+    "#E40327"
   ],
   "observable": [
     "brand",
@@ -16394,6 +16478,14 @@
     "obsidian",
     "Obsidian",
     "#7C3AED"
+  ],
+  "obsstudio": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "obsstudio",
+    "OBS Studio",
+    "#302E31"
   ],
   "obtainium": [
     "brand",
@@ -16424,6 +16516,7 @@
     "logo",
     "simple-icons",
     "oclif",
+    "oclif",
     "#000000"
   ],
   "octanerender": [
@@ -16432,8 +16525,7 @@
     "simple-icons",
     "octanerender",
     "Octane Render",
-    "#000000",
-    "otoy"
+    "#000000"
   ],
   "octave": [
     "brand",
@@ -16527,6 +16619,7 @@
     "brand",
     "logo",
     "simple-icons",
+    "okcupid",
     "okcupid",
     "#0500BE"
   ],
@@ -16626,63 +16719,6 @@
     "Opel",
     "#F7FF14"
   ],
-  "openaccess": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "openaccess",
-    "Open Access",
-    "#F68212"
-  ],
-  "openbadges": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "openbadges",
-    "Open Badges",
-    "#073B5A"
-  ],
-  "openbugbounty": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "openbugbounty",
-    "Open Bug Bounty",
-    "#F67909"
-  ],
-  "opencollective": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "opencollective",
-    "Open Collective",
-    "#7FADF2"
-  ],
-  "opencontainersinitiative": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "opencontainersinitiative",
-    "Open Containers Initiative",
-    "#262261"
-  ],
-  "opensourcehardware": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "opensourcehardware",
-    "Open Source Hardware",
-    "#0099B0",
-    "OSHWA"
-  ],
-  "opensourceinitiative": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "opensourceinitiative",
-    "Open Source Initiative",
-    "#3DA639"
-  ],
   "open3d": [
     "brand",
     "logo",
@@ -16690,6 +16726,14 @@
     "open3d",
     "Open3D",
     "#000000"
+  ],
+  "openaccess": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "openaccess",
+    "Open Access",
+    "#F68212"
   ],
   "openaigym": [
     "brand",
@@ -16707,6 +16751,14 @@
     "OpenAPI Initiative",
     "#6BA539"
   ],
+  "openbadges": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "openbadges",
+    "Open Badges",
+    "#073B5A"
+  ],
   "openbao": [
     "brand",
     "logo",
@@ -16723,6 +16775,14 @@
     "OpenBSD",
     "#F2CA30"
   ],
+  "openbugbounty": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "openbugbounty",
+    "Open Bug Bounty",
+    "#F67909"
+  ],
   "opencage": [
     "brand",
     "logo",
@@ -16730,6 +16790,30 @@
     "opencage",
     "OpenCage",
     "#1A8865"
+  ],
+  "opencode": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "opencode",
+    "OpenCode",
+    "#000000"
+  ],
+  "opencollective": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "opencollective",
+    "Open Collective",
+    "#7FADF2"
+  ],
+  "opencontainersinitiative": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "opencontainersinitiative",
+    "Open Containers Initiative",
+    "#262261"
   ],
   "opencritic": [
     "brand",
@@ -16808,6 +16892,7 @@
     "logo",
     "simple-icons",
     "openmediavault",
+    "openmediavault",
     "#5DACDF"
   ],
   "openmined": [
@@ -16866,6 +16951,22 @@
     "OpenSearch",
     "#005EB8"
   ],
+  "opensourcehardware": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "opensourcehardware",
+    "Open Source Hardware",
+    "#0099B0"
+  ],
+  "opensourceinitiative": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "opensourceinitiative",
+    "Open Source Initiative",
+    "#3DA639"
+  ],
   "openssl": [
     "brand",
     "logo",
@@ -16904,8 +17005,7 @@
     "simple-icons",
     "opentelemetry",
     "OpenTelemetry",
-    "#000000",
-    "OTel"
+    "#000000"
   ],
   "opentext": [
     "brand",
@@ -16913,8 +17013,7 @@
     "simple-icons",
     "opentext",
     "OpenText",
-    "#000000",
-    "Micro Focus"
+    "#000000"
   ],
   "opentofu": [
     "brand",
@@ -16922,9 +17021,15 @@
     "simple-icons",
     "opentofu",
     "OpenTofu",
-    "#FFDA18",
-    "OpenTF",
-    "Terraform"
+    "#FFDA18"
+  ],
+  "opentui": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "opentui",
+    "OpenTUI",
+    "#000000"
   ],
   "openverse": [
     "brand",
@@ -17054,6 +17159,14 @@
     "ORCID",
     "#A6CE39"
   ],
+  "oreilly": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "oreilly",
+    "O'Reilly",
+    "#D3002D"
+  ],
   "org": [
     "brand",
     "logo",
@@ -17100,9 +17213,7 @@
     "simple-icons",
     "osf",
     "OSF",
-    "#2CB9F1",
-    "Open Science Framework",
-    "Center for Open Science"
+    "#2CB9F1"
   ],
   "osgeo": [
     "brand",
@@ -17191,14 +17302,6 @@
     "owasp",
     "OWASP",
     "#000000"
-  ],
-  "dependencycheck": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "dependencycheck",
-    "OWASP Dependency-Check",
-    "#F78D0A"
   ],
   "owncloud": [
     "brand",
@@ -17365,6 +17468,7 @@
     "logo",
     "simple-icons",
     "pandas",
+    "pandas",
     "#150458"
   ],
   "pandoc": [
@@ -17407,14 +17511,6 @@
     "Paperless-ngx",
     "#17541F"
   ],
-  "paperswithcode": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "paperswithcode",
-    "Papers With Code",
-    "#21CBCE"
-  ],
   "paperspace": [
     "brand",
     "logo",
@@ -17422,6 +17518,14 @@
     "paperspace",
     "Paperspace",
     "#000000"
+  ],
+  "paperswithcode": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "paperswithcode",
+    "Papers With Code",
+    "#21CBCE"
   ],
   "paradoxinteractive": [
     "brand",
@@ -17549,8 +17653,7 @@
     "simple-icons",
     "paysafe",
     "Paysafe",
-    "#5A28FF",
-    "PaysafeCard"
+    "#5A28FF"
   ],
   "paytm": [
     "brand",
@@ -17598,8 +17701,7 @@
     "simple-icons",
     "pearson",
     "Pearson",
-    "#000000",
-    "Pearson VUE"
+    "#000000"
   ],
   "peerlist": [
     "brand",
@@ -17841,21 +17943,13 @@
     "PhpStorm",
     "#000000"
   ],
-  "pinetwork": [
+  "pi": [
     "brand",
     "logo",
     "simple-icons",
-    "pinetwork",
-    "Pi Network",
-    "#F4AF47"
-  ],
-  "pihole": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "pihole",
-    "Pi-hole",
-    "#96060C"
+    "pi",
+    "Pi",
+    "#000000"
   ],
   "piaggiogroup": [
     "brand",
@@ -17929,6 +18023,14 @@
     "Picxy",
     "#2E3192"
   ],
+  "pihole": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "pihole",
+    "Pi-hole",
+    "#96060C"
+  ],
   "pimcore": [
     "brand",
     "logo",
@@ -17953,6 +18055,14 @@
     "Pine Script",
     "#00B453"
   ],
+  "pinetwork": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "pinetwork",
+    "Pi Network",
+    "#F4AF47"
+  ],
   "pingdom": [
     "brand",
     "logo",
@@ -17973,6 +18083,7 @@
     "brand",
     "logo",
     "simple-icons",
+    "pino",
     "pino",
     "#687634"
   ],
@@ -18012,6 +18123,7 @@
     "brand",
     "logo",
     "simple-icons",
+    "pipx",
     "pipx",
     "#2CFFAA"
   ],
@@ -18060,6 +18172,7 @@
     "logo",
     "simple-icons",
     "pixiv",
+    "pixiv",
     "#0096FA"
   ],
   "pixlr": [
@@ -18074,6 +18187,7 @@
     "brand",
     "logo",
     "simple-icons",
+    "pkgsrc",
     "pkgsrc",
     "#FF6600"
   ],
@@ -18149,14 +18263,6 @@
     "PlayCanvas",
     "#E05F2C"
   ],
-  "playerfm": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "playerfm",
-    "Player FM",
-    "#C8122A"
-  ],
   "playerdotme": [
     "brand",
     "logo",
@@ -18164,6 +18270,14 @@
     "playerdotme",
     "Player.me",
     "#C0379A"
+  ],
+  "playerfm": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "playerfm",
+    "Player FM",
+    "#C8122A"
   ],
   "playstation": [
     "brand",
@@ -18211,8 +18325,7 @@
     "simple-icons",
     "playstationportable",
     "PlayStation Portable",
-    "#003791",
-    "PSP"
+    "#003791"
   ],
   "playstationvita": [
     "brand",
@@ -18291,15 +18404,8 @@
     "logo",
     "simple-icons",
     "pnpm",
+    "pnpm",
     "#F69220"
-  ],
-  "pocketcasts": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "pocketcasts",
-    "Pocket Casts",
-    "#F43E37"
   ],
   "pocketbase": [
     "brand",
@@ -18308,6 +18414,14 @@
     "pocketbase",
     "PocketBase",
     "#B8DBE4"
+  ],
+  "pocketcasts": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "pocketcasts",
+    "Pocket Casts",
+    "#F43E37"
   ],
   "podcastaddict": [
     "brand",
@@ -18387,8 +18501,7 @@
     "simple-icons",
     "polygon",
     "Polygon",
-    "#7B3FE4",
-    "Matic"
+    "#7B3FE4"
   ],
   "polymerproject": [
     "brand",
@@ -18476,8 +18589,7 @@
     "simple-icons",
     "posit",
     "Posit",
-    "#447099",
-    "RStudio"
+    "#447099"
   ],
   "postcss": [
     "brand",
@@ -18543,14 +18655,6 @@
     "pr.co",
     "#0080FF"
   ],
-  "precommit": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "precommit",
-    "pre-commit",
-    "#FAB040"
-  ],
   "preact": [
     "brand",
     "logo",
@@ -18558,6 +18662,14 @@
     "preact",
     "Preact",
     "#673AB8"
+  ],
+  "precommit": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "precommit",
+    "pre-commit",
+    "#FAB040"
   ],
   "prefect": [
     "brand",
@@ -18571,6 +18683,7 @@
     "brand",
     "logo",
     "simple-icons",
+    "prek",
     "prek",
     "#F54327"
   ],
@@ -18716,16 +18829,7 @@
     "simple-icons",
     "privateinternetaccess",
     "Private Internet Access",
-    "#1E811F",
-    "PIA"
-  ],
-  "protools": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "protools",
-    "Pro Tools",
-    "#7ACB10"
+    "#1E811F"
   ],
   "probot": [
     "brand",
@@ -18823,14 +18927,6 @@
     "Proteus",
     "#1C79B3"
   ],
-  "protodotio": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "protodotio",
-    "Proto.io",
-    "#34A7C1"
-  ],
   "protocolsdotio": [
     "brand",
     "logo",
@@ -18838,6 +18934,14 @@
     "protocolsdotio",
     "protocols.io",
     "#4D9FE7"
+  ],
+  "protodotio": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "protodotio",
+    "Proto.io",
+    "#34A7C1"
   ],
   "proton": [
     "brand",
@@ -18854,6 +18958,14 @@
     "protoncalendar",
     "Proton Calendar",
     "#50B0E9"
+  ],
+  "protondb": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "protondb",
+    "ProtonDB",
+    "#F50057"
   ],
   "protondrive": [
     "brand",
@@ -18879,13 +18991,13 @@
     "Proton VPN",
     "#66DEB1"
   ],
-  "protondb": [
+  "protools": [
     "brand",
     "logo",
     "simple-icons",
-    "protondb",
-    "ProtonDB",
-    "#F50057"
+    "protools",
+    "Pro Tools",
+    "#7ACB10"
   ],
   "protractor": [
     "brand",
@@ -19021,8 +19133,7 @@
     "simple-icons",
     "pwa",
     "PWA",
-    "#5A0FC8",
-    "Progressive Web Application"
+    "#5A0FC8"
   ],
   "pycharm": [
     "brand",
@@ -19054,8 +19165,7 @@
     "simple-icons",
     "pyg",
     "PyG",
-    "#3C2179",
-    "PyTorch Geometric"
+    "#3C2179"
   ],
   "pypi": [
     "brand",
@@ -19158,6 +19268,7 @@
     "logo",
     "simple-icons",
     "qbittorrent",
+    "qbittorrent",
     "#2F67BA"
   ],
   "qdrant": [
@@ -19246,8 +19357,7 @@
     "simple-icons",
     "qnap",
     "QNAP",
-    "#0C2E82",
-    "Quality Network Appliance Provider"
+    "#0C2E82"
   ],
   "qodo": [
     "brand",
@@ -19279,9 +19389,7 @@
     "simple-icons",
     "quad9",
     "Quad9",
-    "#DC205E",
-    "9.9.9.9",
-    "Quad9 DNS"
+    "#DC205E"
   ],
   "qualcomm": [
     "brand",
@@ -19392,6 +19500,7 @@
     "logo",
     "simple-icons",
     "quicktype",
+    "quicktype",
     "#159588"
   ],
   "quizlet": [
@@ -19482,14 +19591,6 @@
     "Racket",
     "#9F1D20"
   ],
-  "radstudio": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "radstudio",
-    "RAD Studio",
-    "#E62431"
-  ],
   "radar": [
     "brand",
     "logo",
@@ -19503,7 +19604,16 @@
     "logo",
     "simple-icons",
     "radarr",
+    "radarr",
     "#FFCB3D"
+  ],
+  "radiantearth": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "radiantearth",
+    "Radiant Earth",
+    "#469695"
   ],
   "radiofrance": [
     "brand",
@@ -19511,12 +19621,7 @@
     "simple-icons",
     "radiofrance",
     "Radio France",
-    "#2B00E7",
-    "Fip",
-    "France Culture",
-    "France Inter",
-    "France Musique",
-    "Mouv'"
+    "#2B00E7"
   ],
   "radixui": [
     "brand",
@@ -19525,6 +19630,14 @@
     "radixui",
     "Radix UI",
     "#161618"
+  ],
+  "radstudio": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "radstudio",
+    "RAD Studio",
+    "#E62431"
   ],
   "railway": [
     "brand",
@@ -19684,8 +19797,7 @@
     "simple-icons",
     "react",
     "React",
-    "#61DAFB",
-    "React Native"
+    "#61DAFB"
   ],
   "reactbootstrap": [
     "brand",
@@ -19702,6 +19814,30 @@
     "reacthookform",
     "React Hook Form",
     "#EC5990"
+  ],
+  "reactiveresume": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "reactiveresume",
+    "Reactive Resume",
+    "#000000"
+  ],
+  "reactivex": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "reactivex",
+    "ReactiveX",
+    "#B7178C"
+  ],
+  "reactos": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "reactos",
+    "ReactOS",
+    "#0088CC"
   ],
   "reactquery": [
     "brand",
@@ -19727,39 +19863,6 @@
     "React Table",
     "#FF4154"
   ],
-  "reactiveresume": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "reactiveresume",
-    "Reactive Resume",
-    "#000000"
-  ],
-  "reactivex": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "reactivex",
-    "ReactiveX",
-    "#B7178C",
-    "RxJS"
-  ],
-  "reactos": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "reactos",
-    "ReactOS",
-    "#0088CC"
-  ],
-  "readthedocs": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "readthedocs",
-    "Read the Docs",
-    "#000000"
-  ],
   "readdotcv": [
     "brand",
     "logo",
@@ -19775,6 +19878,14 @@
     "readme",
     "ReadMe",
     "#018EF5"
+  ],
+  "readthedocs": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "readthedocs",
+    "Read the Docs",
+    "#000000"
   ],
   "reason": [
     "brand",
@@ -19808,38 +19919,6 @@
     "Red",
     "#B32629"
   ],
-  "redbull": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "redbull",
-    "Red Bull",
-    "#DB0A40"
-  ],
-  "redcandlegames": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "redcandlegames",
-    "Red Candle Games",
-    "#D23735"
-  ],
-  "redhat": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "redhat",
-    "Red Hat",
-    "#EE0000"
-  ],
-  "redhatopenshift": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "redhatopenshift",
-    "Red Hat Open Shift",
-    "#EE0000"
-  ],
   "redash": [
     "brand",
     "logo",
@@ -19856,6 +19935,22 @@
     "Redbubble",
     "#E41321"
   ],
+  "redbull": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "redbull",
+    "Red Bull",
+    "#DB0A40"
+  ],
+  "redcandlegames": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "redcandlegames",
+    "Red Candle Games",
+    "#D23735"
+  ],
   "reddit": [
     "brand",
     "logo",
@@ -19863,6 +19958,22 @@
     "reddit",
     "Reddit",
     "#FF4500"
+  ],
+  "redhat": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "redhat",
+    "Red Hat",
+    "#EE0000"
+  ],
+  "redhatopenshift": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "redhatopenshift",
+    "Red Hat Open Shift",
+    "#EE0000"
   ],
   "redis": [
     "brand",
@@ -19989,6 +20100,7 @@
     "logo",
     "simple-icons",
     "remark",
+    "remark",
     "#000000"
   ],
   "remedyentertainment": [
@@ -20015,14 +20127,6 @@
     "remove.bg",
     "#54616C"
   ],
-  "renpy": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "renpy",
-    "Ren'Py",
-    "#FF7F7F"
-  ],
   "renault": [
     "brand",
     "logo",
@@ -20046,6 +20150,14 @@
     "renovate",
     "Renovate",
     "#308BE3"
+  ],
+  "renpy": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "renpy",
+    "Ren'Py",
+    "#FF7F7F"
   ],
   "renren": [
     "brand",
@@ -20077,9 +20189,7 @@
     "simple-icons",
     "republicofgamers",
     "Republic of Gamers",
-    "#FF0029",
-    "ASUS ROG",
-    "ROG"
+    "#FF0029"
   ],
   "rescript": [
     "brand",
@@ -20199,8 +20309,7 @@
     "simple-icons",
     "revoltdotchat",
     "Revolt.chat",
-    "#FF4655",
-    "revolt"
+    "#FF4655"
   ],
   "revolut": [
     "brand",
@@ -20624,9 +20733,7 @@
     "simple-icons",
     "rtm",
     "RTM",
-    "#36474F",
-    "Régie des Transports Métropolitains",
-    "Régie des Transports de Marseille"
+    "#36474F"
   ],
   "rubocop": [
     "brand",
@@ -20644,22 +20751,6 @@
     "Ruby",
     "#CC342D"
   ],
-  "rubyonrails": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "rubyonrails",
-    "Ruby on Rails",
-    "#D30001"
-  ],
-  "rubysinatra": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "rubysinatra",
-    "Ruby Sinatra",
-    "#000000"
-  ],
   "rubygems": [
     "brand",
     "logo",
@@ -20674,6 +20765,22 @@
     "simple-icons",
     "rubymine",
     "RubyMine",
+    "#000000"
+  ],
+  "rubyonrails": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "rubyonrails",
+    "Ruby on Rails",
+    "#D30001"
+  ],
+  "rubysinatra": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "rubysinatra",
+    "Ruby Sinatra",
     "#000000"
   ],
   "ruff": [
@@ -21220,6 +21327,14 @@
     "Sellfy",
     "#21B352"
   ],
+  "semanticrelease": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "semanticrelease",
+    "semantic-release",
+    "#494949"
+  ],
   "semanticscholar": [
     "brand",
     "logo",
@@ -21251,14 +21366,6 @@
     "semanticweb",
     "Semantic Web",
     "#005A9C"
-  ],
-  "semanticrelease": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "semanticrelease",
-    "semantic-release",
-    "#494949"
   ],
   "semaphoreci": [
     "brand",
@@ -21433,6 +21540,7 @@
     "logo",
     "simple-icons",
     "sharp",
+    "sharp",
     "#99CC00"
   ],
   "shazam": [
@@ -21513,7 +21621,7 @@
     "simple-icons",
     "shortcut",
     "Shortcut",
-    "#58B1E4"
+    "#494BCB"
   ],
   "showpad": [
     "brand",
@@ -21619,6 +21727,14 @@
     "Simple Icons",
     "#111111"
   ],
+  "simpleiconscdn": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "simpleiconscdn",
+    "Simple Icons CDN",
+    "#111111"
+  ],
   "simplelocalize": [
     "brand",
     "logo",
@@ -21697,10 +21813,7 @@
     "simple-icons",
     "siyuan",
     "SiYuan",
-    "#D23F31",
-    "sy",
-    "思源笔记",
-    "思源筆記"
+    "#D23F31"
   ],
   "skaffold": [
     "brand",
@@ -21827,6 +21940,7 @@
     "logo",
     "simple-icons",
     "smart",
+    "smart",
     "#D7E600"
   ],
   "smartthings": [
@@ -21891,8 +22005,7 @@
     "simple-icons",
     "snapdragon",
     "Snapdragon",
-    "#C33139",
-    "Qualcomm Snapdragon"
+    "#C33139"
   ],
   "sncf": [
     "brand",
@@ -22020,8 +22133,7 @@
     "simple-icons",
     "sololearn",
     "Sololearn",
-    "#149EF2",
-    "SoloLearn"
+    "#149EF2"
   ],
   "solus": [
     "brand",
@@ -22053,8 +22165,7 @@
     "simple-icons",
     "sonarqubecloud",
     "SonarQube Cloud",
-    "#126ED3",
-    "SonarCloud"
+    "#126ED3"
   ],
   "sonarqubeforide": [
     "brand",
@@ -22062,8 +22173,7 @@
     "simple-icons",
     "sonarqubeforide",
     "SonarQube for IDE",
-    "#126ED3",
-    "SonarLint"
+    "#126ED3"
   ],
   "sonarqubeserver": [
     "brand",
@@ -22071,13 +22181,13 @@
     "simple-icons",
     "sonarqubeserver",
     "SonarQube Server",
-    "#126ED3",
-    "SonarQube"
+    "#126ED3"
   ],
   "sonarr": [
     "brand",
     "logo",
     "simple-icons",
+    "sonarr",
     "sonarr",
     "#2596BE"
   ],
@@ -22297,15 +22407,6 @@
     "SpeedyPage",
     "#1C71F9"
   ],
-  "spoj": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "spoj",
-    "Sphere Online Judge",
-    "#337AB7",
-    "SPOJ"
-  ],
   "sphinx": [
     "brand",
     "logo",
@@ -22354,6 +22455,14 @@
     "Splunk",
     "#000000"
   ],
+  "spoj": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "spoj",
+    "Sphere Online Judge",
+    "#337AB7"
+  ],
   "spond": [
     "brand",
     "logo",
@@ -22384,8 +22493,7 @@
     "simple-icons",
     "spreadshirt",
     "Spreadshirt",
-    "#00B2A5",
-    "Spreadshop"
+    "#00B2A5"
   ],
   "spreaker": [
     "brand",
@@ -22402,6 +22510,14 @@
     "spring",
     "Spring",
     "#6DB33F"
+  ],
+  "spring-creators": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "spring-creators",
+    "Spring",
+    "#000000"
   ],
   "springboot": [
     "brand",
@@ -22473,12 +22589,7 @@
     "simple-icons",
     "srgssr",
     "SRG SSR",
-    "#AF001E",
-    "Schweizerische Radio- und Fernsehgesellschaft",
-    "Société suisse de radiodiffusion et télévision",
-    "Società svizzera di radiotelevisione",
-    "Societad Svizra da Radio e Televisiun",
-    "Swiss Broadcasting Corporation"
+    "#AF001E"
   ],
   "ssrn": [
     "brand",
@@ -22495,22 +22606,6 @@
     "sst",
     "SST",
     "#E27152"
-  ],
-  "stackexchange": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "stackexchange",
-    "Stack Exchange",
-    "#1E5397"
-  ],
-  "stackoverflow": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "stackoverflow",
-    "Stack Overflow",
-    "#F58025"
   ],
   "stackbit": [
     "brand",
@@ -22536,6 +22631,14 @@
     "StackEdit",
     "#606060"
   ],
+  "stackexchange": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "stackexchange",
+    "Stack Exchange",
+    "#1E5397"
+  ],
   "stackhawk": [
     "brand",
     "logo",
@@ -22543,6 +22646,14 @@
     "stackhawk",
     "StackHawk",
     "#00CBC6"
+  ],
+  "stackoverflow": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "stackoverflow",
+    "Stack Overflow",
+    "#F58025"
   ],
   "stackshare": [
     "brand",
@@ -22576,14 +22687,6 @@
     "Stagetimer",
     "#00A66C"
   ],
-  "standardresume": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "standardresume",
-    "Standard Resume",
-    "#2A3FFB"
-  ],
   "standardjs": [
     "brand",
     "logo",
@@ -22592,13 +22695,13 @@
     "StandardJS",
     "#F3DF49"
   ],
-  "startrek": [
+  "standardresume": [
     "brand",
     "logo",
     "simple-icons",
-    "startrek",
-    "Star Trek",
-    "#FFE200"
+    "standardresume",
+    "Standard Resume",
+    "#2A3FFB"
   ],
   "starbucks": [
     "brand",
@@ -22648,6 +22751,14 @@
     "Startpage",
     "#6563FF"
   ],
+  "startrek": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "startrek",
+    "Star Trek",
+    "#FFE200"
+  ],
   "starz": [
     "brand",
     "logo",
@@ -22696,14 +22807,6 @@
     "Steam",
     "#000000"
   ],
-  "steamdeck": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "steamdeck",
-    "Steam Deck",
-    "#1A9FFF"
-  ],
   "steamdb": [
     "brand",
     "logo",
@@ -22711,6 +22814,14 @@
     "steamdb",
     "SteamDB",
     "#000000"
+  ],
+  "steamdeck": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "steamdeck",
+    "Steam Deck",
+    "#1A9FFF"
   ],
   "steamworks": [
     "brand",
@@ -22925,6 +23036,7 @@
     "logo",
     "simple-icons",
     "stylelint",
+    "stylelint",
     "#263238"
   ],
   "styleshare": [
@@ -22988,6 +23100,7 @@
     "logo",
     "simple-icons",
     "suckless",
+    "suckless",
     "#1177AA"
   ],
   "sui": [
@@ -23038,14 +23151,6 @@
     "Supabase",
     "#3FCF8E"
   ],
-  "superuser": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "superuser",
-    "Super User",
-    "#38A1CE"
-  ],
   "supercell": [
     "brand",
     "logo",
@@ -23069,6 +23174,14 @@
     "supermicro",
     "Supermicro",
     "#151F6D"
+  ],
+  "superuser": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "superuser",
+    "Super User",
+    "#38A1CE"
   ],
   "surfshark": [
     "brand",
@@ -23116,8 +23229,7 @@
     "simple-icons",
     "svelte",
     "Svelte",
-    "#FF3E00",
-    "Sapper"
+    "#FF3E00"
   ],
   "svg": [
     "brand",
@@ -23173,8 +23285,7 @@
     "simple-icons",
     "sway",
     "Sway",
-    "#68751C",
-    "SwayWM"
+    "#68751C"
   ],
   "swc": [
     "brand",
@@ -23294,8 +23405,7 @@
     "simple-icons",
     "tabelog",
     "Tabelog",
-    "#F2CC38",
-    "食べログ"
+    "#F2CC38"
   ],
   "tablecheck": [
     "brand",
@@ -23417,13 +23527,21 @@
     "Tampermonkey",
     "#00485B"
   ],
+  "tangled": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "tangled",
+    "Tangled",
+    "#000000"
+  ],
   "tanstack": [
     "brand",
     "logo",
     "simple-icons",
     "tanstack",
     "TanStack",
-    "#000000"
+    "#ECE8D1"
   ],
   "taobao": [
     "brand",
@@ -23489,15 +23607,6 @@
     "Tata",
     "#486AAE"
   ],
-  "tcs": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "tcs",
-    "Tata Consultancy Services",
-    "#EE3984",
-    "TCS"
-  ],
   "tauri": [
     "brand",
     "logo",
@@ -23513,6 +23622,14 @@
     "taxbuzz",
     "TaxBuzz",
     "#ED8B0B"
+  ],
+  "tcs": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "tcs",
+    "Tata Consultancy Services",
+    "#EE3984"
   ],
   "teal": [
     "brand",
@@ -23594,14 +23711,6 @@
     "TELE 5",
     "#FF00FF"
   ],
-  "telequebec": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "telequebec",
-    "Télé-Québec",
-    "#1343FB"
-  ],
   "telefonica": [
     "brand",
     "logo",
@@ -23632,8 +23741,15 @@
     "simple-icons",
     "telenor",
     "Telenor",
-    "#00C8FF",
-    "Grameenphone"
+    "#00C8FF"
+  ],
+  "telequebec": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "telequebec",
+    "Télé-Québec",
+    "#1343FB"
   ],
   "temporal": [
     "brand",
@@ -23642,6 +23758,14 @@
     "temporal",
     "Temporal",
     "#000000"
+  ],
+  "tencenthy": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "tencenthy",
+    "Tencent Hy",
+    "#0052D9"
   ],
   "tensorflow": [
     "brand",
@@ -23663,6 +23787,7 @@
     "brand",
     "logo",
     "simple-icons",
+    "teratail",
     "teratail",
     "#F4C51C"
   ],
@@ -23736,8 +23861,7 @@
     "simple-icons",
     "tether",
     "Tether",
-    "#50AF95",
-    "USDt"
+    "#50AF95"
   ],
   "textpattern": [
     "brand",
@@ -23761,8 +23885,7 @@
     "simple-icons",
     "tga",
     "TGA",
-    "#0014FF",
-    "The Game Awards"
+    "#0014FF"
   ],
   "thangs": [
     "brand",
@@ -23850,8 +23973,7 @@
     "simple-icons",
     "themoviedatabase",
     "The Movie Database",
-    "#01B4E4",
-    "TMDB"
+    "#01B4E4"
   ],
   "thenorthface": [
     "brand",
@@ -23923,8 +24045,7 @@
     "simple-icons",
     "theweatherchannel",
     "The Weather Channel",
-    "#003399",
-    "weather.com"
+    "#003399"
   ],
   "thingiverse": [
     "brand",
@@ -23954,6 +24075,7 @@
     "brand",
     "logo",
     "simple-icons",
+    "thirdweb",
     "thirdweb",
     "#F213A4"
   ],
@@ -24036,6 +24158,14 @@
     "ticketmaster",
     "Ticketmaster",
     "#026CDF"
+  ],
+  "tickettailor": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "tickettailor",
+    "Ticket Tailor",
+    "#222432"
   ],
   "ticktick": [
     "brand",
@@ -24162,6 +24292,7 @@
     "logo",
     "simple-icons",
     "tinygrad",
+    "tinygrad",
     "#FFFFFF"
   ],
   "tinyletter": [
@@ -24178,13 +24309,13 @@
     "simple-icons",
     "tistory",
     "Tistory",
-    "#000000",
-    "티스토리"
+    "#000000"
   ],
   "tldraw": [
     "brand",
     "logo",
     "simple-icons",
+    "tldraw",
     "tldraw",
     "#FAFAFA"
   ],
@@ -24192,6 +24323,7 @@
     "brand",
     "logo",
     "simple-icons",
+    "tmux",
     "tmux",
     "#1BB91F"
   ],
@@ -24275,14 +24407,6 @@
     "TON",
     "#0098EA"
   ],
-  "topdotgg": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "topdotgg",
-    "Top.gg",
-    "#FF3366"
-  ],
   "topcoder": [
     "brand",
     "logo",
@@ -24290,6 +24414,14 @@
     "topcoder",
     "Topcoder",
     "#29A7DF"
+  ],
+  "topdotgg": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "topdotgg",
+    "Top.gg",
+    "#FF3366"
   ],
   "toptal": [
     "brand",
@@ -24307,14 +24439,6 @@
     "Tor Browser",
     "#7D4698"
   ],
-  "torproject": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "torproject",
-    "Tor Project",
-    "#7D4698"
-  ],
   "torizon": [
     "brand",
     "logo",
@@ -24322,6 +24446,14 @@
     "torizon",
     "Torizon",
     "#FAAF00"
+  ],
+  "torproject": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "torproject",
+    "Tor Project",
+    "#7D4698"
   ],
   "toshiba": [
     "brand",
@@ -24376,6 +24508,7 @@
     "logo",
     "simple-icons",
     "tqdm",
+    "tqdm",
     "#FFC107"
   ],
   "traccar": [
@@ -24393,6 +24526,14 @@
     "tradingview",
     "TradingView",
     "#131622"
+  ],
+  "trae": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "trae",
+    "TRAE",
+    "#32F08C"
   ],
   "traefikmesh": [
     "brand",
@@ -24474,6 +24615,14 @@
     "Travis CI",
     "#3EAAAF"
   ],
+  "traxsource": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "traxsource",
+    "Traxsource",
+    "#40A0FF"
+  ],
   "treehouse": [
     "brand",
     "logo",
@@ -24552,8 +24701,7 @@
     "simple-icons",
     "trillertv",
     "TrillerTV",
-    "#E61414",
-    "FITE"
+    "#E61414"
   ],
   "trimble": [
     "brand",
@@ -24571,14 +24719,6 @@
     "Trino",
     "#DD00A1"
   ],
-  "tripdotcom": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "tripdotcom",
-    "Trip.com",
-    "#287DFA"
-  ],
   "tripadvisor": [
     "brand",
     "logo",
@@ -24587,10 +24727,19 @@
     "Tripadvisor",
     "#34E0A1"
   ],
+  "tripdotcom": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "tripdotcom",
+    "Trip.com",
+    "#287DFA"
+  ],
   "trivago": [
     "brand",
     "logo",
     "simple-icons",
+    "trivago",
     "trivago",
     "#E32851"
   ],
@@ -24647,6 +24796,7 @@
     "logo",
     "simple-icons",
     "trulia",
+    "trulia",
     "#0A0B09"
   ],
   "trustedshops": [
@@ -24665,14 +24815,6 @@
     "Trustpilot",
     "#00B67A"
   ],
-  "tryitonline": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "tryitonline",
-    "Try It Online",
-    "#303030"
-  ],
   "tryhackme": [
     "brand",
     "logo",
@@ -24680,6 +24822,14 @@
     "tryhackme",
     "TryHackMe",
     "#212C42"
+  ],
+  "tryitonline": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "tryitonline",
+    "Try It Online",
+    "#303030"
   ],
   "tsnode": [
     "brand",
@@ -24759,8 +24909,7 @@
     "simple-icons",
     "tuta",
     "Tuta",
-    "#850122",
-    "Tutanota"
+    "#850122"
   ],
   "tuxedocomputers": [
     "brand",
@@ -24770,14 +24919,6 @@
     "TUXEDO Computers",
     "#000000"
   ],
-  "tvtime": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "tvtime",
-    "TV Time",
-    "#FFD400"
-  ],
   "tv4play": [
     "brand",
     "logo",
@@ -24785,6 +24926,14 @@
     "tv4play",
     "TV4 Play",
     "#E0001C"
+  ],
+  "tvtime": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "tvtime",
+    "TV Time",
+    "#FFD400"
   ],
   "twenty": [
     "brand",
@@ -24822,6 +24971,7 @@
     "brand",
     "logo",
     "simple-icons",
+    "ty",
     "ty",
     "#46EBE1"
   ],
@@ -24872,14 +25022,6 @@
     "typst",
     "Typst",
     "#239DAD"
-  ],
-  "udotsdotnews": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "udotsdotnews",
-    "U.S. News",
-    "#005EA6"
   ],
   "uber": [
     "brand",
@@ -24952,6 +25094,14 @@
     "udemy",
     "Udemy",
     "#A435F0"
+  ],
+  "udotsdotnews": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "udotsdotnews",
+    "U.S. News",
+    "#005EA6"
   ],
   "ufc": [
     "brand",
@@ -25031,8 +25181,7 @@
     "simple-icons",
     "uml",
     "UML",
-    "#FABD14",
-    "Unified Modelling Language"
+    "#FABD14"
   ],
   "unacademy": [
     "brand",
@@ -25090,6 +25239,14 @@
     "Uniqlo",
     "#FF0000"
   ],
+  "uniqlo-ja": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "uniqlo-ja",
+    "Uniqlo",
+    "#FF0000"
+  ],
   "unitedairlines": [
     "brand",
     "logo",
@@ -25120,8 +25277,7 @@
     "simple-icons",
     "unjs",
     "UnJS",
-    "#ECDC5A",
-    "Unified JavaScript"
+    "#ECDC5A"
   ],
   "unlicense": [
     "brand",
@@ -25143,6 +25299,7 @@
     "brand",
     "logo",
     "simple-icons",
+    "unpkg",
     "unpkg",
     "#000000"
   ],
@@ -25279,6 +25436,7 @@
     "logo",
     "simple-icons",
     "uv",
+    "uv",
     "#DE5FE9"
   ],
   "v": [
@@ -25293,6 +25451,7 @@
     "brand",
     "logo",
     "simple-icons",
+    "v0",
     "v0",
     "#000000"
   ],
@@ -25598,9 +25757,7 @@
     "simple-icons",
     "victoriametrics",
     "VictoriaMetrics",
-    "#621773",
-    "VM",
-    "빅토리아메트릭스"
+    "#621773"
   ],
   "victronenergy": [
     "brand",
@@ -25656,8 +25813,7 @@
     "simple-icons",
     "virgin",
     "Virgin",
-    "#E10A0A",
-    "Virgin Group"
+    "#E10A0A"
   ],
   "virginatlantic": [
     "brand",
@@ -25681,8 +25837,7 @@
     "simple-icons",
     "virtualbox",
     "VirtualBox",
-    "#2F61B4",
-    "Oracle VirtualBox"
+    "#2F61B4"
   ],
   "virustotal": [
     "brand",
@@ -25712,6 +25867,7 @@
     "brand",
     "logo",
     "simple-icons",
+    "visx",
     "visx",
     "#FF1231"
   ],
@@ -25747,14 +25903,6 @@
     "Vitest",
     "#00FF74"
   ],
-  "vivawallet": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "vivawallet",
-    "Viva Wallet",
-    "#1F263A"
-  ],
   "vivaldi": [
     "brand",
     "logo",
@@ -25762,6 +25910,14 @@
     "vivaldi",
     "Vivaldi",
     "#EF3939"
+  ],
+  "vivawallet": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "vivawallet",
+    "Viva Wallet",
+    "#1F263A"
   ],
   "vivino": [
     "brand",
@@ -25783,6 +25939,7 @@
     "brand",
     "logo",
     "simple-icons",
+    "vivo",
     "vivo",
     "#415FFF"
   ],
@@ -25830,6 +25987,7 @@
     "brand",
     "logo",
     "simple-icons",
+    "voelkner",
     "voelkner",
     "#94C125"
   ],
@@ -26153,22 +26311,6 @@
     "Weasyl",
     "#990000"
   ],
-  "webawesome": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "webawesome",
-    "Web Awesome",
-    "#F36944"
-  ],
-  "webdotde": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "webdotde",
-    "WEB.DE",
-    "#FFD800"
-  ],
   "web3dotjs": [
     "brand",
     "logo",
@@ -26183,8 +26325,7 @@
     "simple-icons",
     "webassembly",
     "WebAssembly",
-    "#654FF0",
-    "Wasm"
+    "#654FF0"
   ],
   "webauthn": [
     "brand",
@@ -26194,6 +26335,14 @@
     "WebAuthn",
     "#3423A6"
   ],
+  "webawesome": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "webawesome",
+    "Web Awesome",
+    "#F36944"
+  ],
   "webcomponentsdotorg": [
     "brand",
     "logo",
@@ -26201,6 +26350,14 @@
     "webcomponentsdotorg",
     "webcomponents.org",
     "#29ABE2"
+  ],
+  "webdotde": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "webdotde",
+    "WEB.DE",
+    "#FFD800"
   ],
   "webdriverio": [
     "brand",
@@ -26303,6 +26460,7 @@
     "logo",
     "simple-icons",
     "webtrees",
+    "webtrees",
     "#2694E8"
   ],
   "wechat": [
@@ -26335,8 +26493,7 @@
     "simple-icons",
     "welcometothejungle",
     "Welcome to the Jungle",
-    "#FFCD00",
-    "WTTJ"
+    "#FFCD00"
   ],
   "wellfound": [
     "brand",
@@ -26399,12 +26556,14 @@
     "logo",
     "simple-icons",
     "wgpu",
+    "wgpu",
     "#40E0D0"
   ],
   "what3words": [
     "brand",
     "logo",
     "simple-icons",
+    "what3words",
     "what3words",
     "#E11F26"
   ],
@@ -26424,22 +26583,6 @@
     "When I Work",
     "#51A33D"
   ],
-  "wikidotgg": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "wikidotgg",
-    "wiki.gg",
-    "#FF1985"
-  ],
-  "wikidotjs": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "wikidotjs",
-    "Wiki.js",
-    "#1976D2"
-  ],
   "wikibooks": [
     "brand",
     "logo",
@@ -26455,6 +26598,22 @@
     "wikidata",
     "Wikidata",
     "#006699"
+  ],
+  "wikidotgg": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "wikidotgg",
+    "wiki.gg",
+    "#FF1985"
+  ],
+  "wikidotjs": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "wikidotjs",
+    "Wiki.js",
+    "#1976D2"
   ],
   "wikimediacommons": [
     "brand",
@@ -26526,8 +26685,7 @@
     "simple-icons",
     "windsurf",
     "Windsurf",
-    "#0B100F",
-    "Codeium"
+    "#0B100F"
   ],
   "wine": [
     "brand",
@@ -26697,14 +26855,6 @@
     "WP Engine",
     "#0ECAD4"
   ],
-  "wprocket": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "wprocket",
-    "WP Rocket",
-    "#F56640"
-  ],
   "wpexplorer": [
     "brand",
     "logo",
@@ -26712,6 +26862,14 @@
     "wpexplorer",
     "WPExplorer",
     "#2563EB"
+  ],
+  "wprocket": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "wprocket",
+    "WP Rocket",
+    "#F56640"
   ],
   "writedotas": [
     "brand",
@@ -26767,16 +26925,7 @@
     "simple-icons",
     "x",
     "X",
-    "#000000",
-    "Twitter"
-  ],
-  "xdotorg": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "xdotorg",
-    "X.Org",
-    "#F28834"
+    "#000000"
   ],
   "xampp": [
     "brand",
@@ -26801,6 +26950,14 @@
     "xdadevelopers",
     "XDA Developers",
     "#EA7100"
+  ],
+  "xdotorg": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "xdotorg",
+    "X.Org",
+    "#F28834"
   ],
   "xendit": [
     "brand",
@@ -26832,8 +26989,7 @@
     "simple-icons",
     "xiaohongshu",
     "Xiaohongshu",
-    "#FF2442",
-    "小红书"
+    "#FF2442"
   ],
   "xiaomi": [
     "brand",
@@ -26857,8 +27013,7 @@
     "simple-icons",
     "xml",
     "XML",
-    "#005FAD",
-    "Extensible Markup Language"
+    "#005FAD"
   ],
   "xmpp": [
     "brand",
@@ -26913,17 +27068,8 @@
     "logo",
     "simple-icons",
     "xyflow",
-    "#1A192B",
-    "reactflow",
-    "svelteflow"
-  ],
-  "ycombinator": [
-    "brand",
-    "logo",
-    "simple-icons",
-    "ycombinator",
-    "Y Combinator",
-    "#F0652F"
+    "xyflow",
+    "#1A192B"
   ],
   "yaak": [
     "brand",
@@ -26937,6 +27083,7 @@
     "brand",
     "logo",
     "simple-icons",
+    "yabai",
     "yabai",
     "#00364B"
   ],
@@ -26987,6 +27134,14 @@
     "yarn",
     "Yarn",
     "#2C8EBB"
+  ],
+  "ycombinator": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "ycombinator",
+    "Y Combinator",
+    "#F0652F"
   ],
   "yelp": [
     "brand",
@@ -27162,8 +27317,7 @@
     "simple-icons",
     "zap",
     "ZAP",
-    "#00549E",
-    "Zed Attack Proxy"
+    "#00549E"
   ],
   "zapier": [
     "brand",
@@ -27195,8 +27349,7 @@
     "simple-icons",
     "zcash",
     "Zcash",
-    "#F3B724",
-    "ZEC"
+    "#F3B724"
   ],
   "zcool": [
     "brand",
@@ -27214,6 +27367,14 @@
     "ZDF",
     "#FA7D19"
   ],
+  "zdotai": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "zdotai",
+    "Z.ai",
+    "#2D2D2D"
+  ],
   "zebpay": [
     "brand",
     "logo",
@@ -27228,6 +27389,14 @@
     "simple-icons",
     "zebratechnologies",
     "Zebra Technologies",
+    "#000000"
+  ],
+  "zectrix": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "zectrix",
+    "ZecTrix",
     "#000000"
   ],
   "zedindustries": [
@@ -27469,6 +27638,14 @@
     "zulip",
     "Zulip",
     "#6492FE"
+  ],
+  "zx": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "zx",
+    "zx",
+    "#F11A7B"
   ],
   "zyte": [
     "brand",

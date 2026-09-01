@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.6/phpunit.xsd"
+    bootstrap="tests/php/bootstrap.php"
+    colors="true"
+    convertDeprecationsToExceptions="false"
+    cacheResultFile=".phpunit.cache/test-results"
+>
+    <testsuites>
+        <testsuite name="unit">
+            <file>tests/php/test-plugin-functions.php</file>
+            <file>tests/php/test-field-class.php</file>
+            <file>tests/php/test-custom-icons.php</file>
+        </testsuite>
+    </testsuites>
+    <coverage>
+        <include>
+            <file>mudrava-acf-lucide-field.php</file>
+            <directory suffix=".php">includes</directory>
+        </include>
+    </coverage>
+    <php>
+        <ini name="error_reporting" value="-1"/>
+    </php>
+</phpunit>

@@ -5,6 +5,43 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2026-08-31
+
+### Added
+
+- Updated bundled assets to `lucide-static` `1.38.0` and `simple-icons` `16.29.0`.
+- Added a lazy REST icon catalog (`wp-json/mudrava-lucide/v1/icons`) that replaces the ~600 KB inlined admin payload; the catalog is restricted to logged-in users via the `mudrava_lucide_field_icons_permission` filter.
+- Added a byte-offset sprite index (`data/lucide-index.php`, `data/simple-index.php`) so each render reads only the matching symbol slice instead of scanning and regex-parsing the whole sprite file.
+- Added build-time search tags (`data/lucide-tags.php`, `data/simple-tags.php`) and a canonical SVG allowlist (`data/allowed-svg.json`) enforced at build time and mirrored at runtime through `wp_kses`.
+- Added a compatibility alias layer (`data/compat-aliases.json`) that maps icon names removed upstream in Lucide 1.38.0 (`angry`, `annoyed`, `frown`, `history`, `laugh`, `meh`, `podcast`, `smile`, `smile-plus`) to their canonical replacements; stored post values are never rewritten.
+- Added a `[lucide_icon]` shortcode and `mudrava_lucide_icon_svg_args` / `mudrava_lucide_icon_svg` filters.
+- Added a custom SVG icon library: site owners can upload plain SVG icons under Settings → Custom Icons (capability configurable via the `mudrava_lucide_field_upload_permission` filter). Uploads are parsed with `DOMDocument` (`LIBXML_NONET`), reduced to the same shape allowlist as the bundled sets via `wp_kses()` and stored as standalone sanitized files; the raw upload never reaches disk. Custom icons are addressable as `custom:<name>` in the field, the picker (per-symbol `viewBox` honored in sprites and previews) and the shortcode/helper, and their inline output carries the `mudrava-lucide-icon-svg--custom` variant without forced paint. Manifest entries whose files went missing are pruned automatically.
+- Added a `sprite` render mode to the helper/shortcode that queues symbols into a footer sprite sheet; inline SVG remains the default.
+- Added minified sprite pipeline scripts (`scripts/build-sprites.mjs`, `scripts/minify-assets.mjs`, `scripts/build-assets.php`) with `--check` modes, plus PHPUnit tests, PHPCS and ESLint configurations.
+
+### Changed
+
+- Sprite and data file reads now go through the WordPress filesystem API (`WP_Filesystem`) instead of direct PHP filesystem calls.
+- Unknown icon values no longer block saving by default. They are collected in a short-lived global transient and surfaced as a dismissible admin notice; the new per-field **Unknown Icon Values** setting (`warn`/`error`) controls strict blocking. The previous hard-fail behavior can be restored per field.
+- The admin picker now fetches catalog data on demand and renders preview sprites sourced from the REST payload instead of localized option objects.
+- Sprite assets are shipped minified via SVGO while the non-minified SVG sources stay untouched for the PHP index.
+
+### Fixed
+
+- Inline frontend rendering no longer embeds `<symbol>` wrappers inside `<svg>`, which made helper and shortcode output invisible.
+- Restored the default icon size rule and the `:not()` brand modifier selector in `assets/css/field.css`.
+- Active descendant and option element IDs are guaranteed in the picker combobox for screen readers.
+- Picker options now apply the `mudrava-lucide-icon-svg--brand` / `--lucide` variant classes with matching `fill`/`stroke` attributes, so brand logos render as filled silhouettes instead of outlines.
+- Local test sites install the plugin through `scripts/sync-live.sh` (production-file mirror) instead of linking the whole repository, so admin runtime and Plugin Check evaluate exactly the shipped payload.
+
+### Security
+
+- All stored and rendered icon markup passes through a strict element/attribute allowlist; `<symbol>` wrappers and disallowed elements are unwrapped or dropped, event-handler attributes and external references (`href`, `xlink:href`) are never allowed.
+
+### Deprecated
+
+- `mudrava_lucide_field_get_sprite_symbols()` and `mudrava_lucide_field_get_brand_sprite_symbols()` are superseded by `mudrava_lucide_field_parse_sprite_symbols()`; back-compat wrappers ship in 1.2.0 and will be removed in 1.3.
+
 ## [1.1.0] - 2026-04-30
 
 ### Added

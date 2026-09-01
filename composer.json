@@ -1,0 +1,25 @@
+{
+    "name": "mudrava/mudrava-acf-lucide-field",
+    "description": "Mudrava Icon Field for ACF with Lucide — ACF field for Lucide line icons and Simple Icons brand logos.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6",
+        "wp-coding-standards/wpcs": "^3.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        },
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "@php unit",
+        "phpunit": "@php vendor/bin/phpunit",
+        "lint": "@php vendor/bin/phpcs",
+        "lint:fix": "@php vendor/bin/phpcbf"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "lucideStatic": {
+        "version": "1.38.0",
+        "integrity": "sha512-/pRaHJceXrQyAMzWfwhWPMwZeiZEIejZ+Ko226AqI52QbLVgowyGAp7OzZIaQEf7XB+LuRGWqUGqTfu3LJ0CQQ==",
+        "tarball": "https://registry.npmjs.org/lucide-static/-/lucide-static-1.38.0.tgz"
+    },
+    "simpleIcons": {
+        "version": "16.29.0",
+        "integrity": "sha512-4H94f5ZgcCcgJroc902TFlFdgPu2IU2eD7+WebN2Z14xKYrKHeJ4UQcZwzgSuH4Rgzw+jp7sbHl40NefuIEYsg==",
+        "tarball": "https://registry.npmjs.org/simple-icons/-/simple-icons-16.29.0.tgz"
+    }
+}

@@ -1,11 +1,8 @@
-# Simplified Chinese translation for Mudrava Icon Field for ACF with Lucide
-# Copyright (C) 2026 Mudrava
-# This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Mudrava Icon Field for ACF with Lucide 1.0.0\n"
-"Report-Msgid-Bugs-To: https://github.com/Mudrava/mudrava-acf-lucide-field/issues\n"
-"POT-Creation-Date: 2026-03-20 00:00+0000\n"
+"Project-Id-Version: Mudrava Icon Field for ACF with Lucide 1.2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mudrava-acf-lucide-field/\n"
+"POT-Creation-Date: 2026-09-01 01:14+0000\n"
 "PO-Revision-Date: 2026-03-20 00:00+0000\n"
 "Last-Translator: Mudrava <info@mudrava.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
@@ -14,90 +11,185 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: scripts/merge-po.py\n"
 
-#. Plugin Name of the plugin
-msgid "Mudrava Icon Field for ACF with Lucide"
-msgstr "Mudrava Icon Field for ACF with Lucide"
+msgid "%d icons available"
+msgstr ""
 
-#. Description of the plugin
-msgid "A custom ACF field type for selecting Lucide icons with a visual picker interface."
-msgstr "一个用于通过可视化选择器界面选择Lucide图标的自定义ACF字段类型。"
+msgid "%s selected"
+msgstr ""
 
-#. Author of the plugin
-msgid "Mudrava"
-msgstr "Mudrava"
+msgid "Accepted format: SVG with an &lt;svg&gt; root and a viewBox. Maximum size: %s. Icons are available in the picker and shortcodes as custom:&lt;name&gt;."
+msgstr ""
 
-#. Author URI of the plugin
-msgid "https://mudrava.com"
-msgstr "https://mudrava.com"
+msgid "Actions"
+msgstr ""
 
-#: mudrava-acf-lucide-field.php:116
-msgid "Docs"
-msgstr "文档"
+msgid "Add icon"
+msgstr ""
 
-#: includes/class-mudrava-acf-field-lucide-icon.php:47
-msgid "Lucide Icon"
-msgstr "Lucide 图标"
-
-#: includes/class-mudrava-acf-field-lucide-icon.php:91
-#: includes/class-mudrava-acf-field-lucide-icon.php:153
-msgid "Search icons..."
-msgstr "搜索图标..."
-
-#: includes/class-mudrava-acf-field-lucide-icon.php:92
-#: includes/class-mudrava-acf-field-lucide-icon.php:183
-msgid "No icons found"
-msgstr "未找到图标"
-
-#: includes/class-mudrava-acf-field-lucide-icon.php:93
-#: includes/class-mudrava-acf-field-lucide-icon.php:169
-msgid "Clear selection"
-msgstr "清除选择"
-
-#: includes/class-mudrava-acf-field-lucide-icon.php:164
-msgid "No icon selected"
-msgstr "未选择图标"
-
-#: includes/class-mudrava-acf-field-lucide-icon.php:207
-msgid "Default Value"
-msgstr "默认值"
-
-#: includes/class-mudrava-acf-field-lucide-icon.php:208
-msgid "Enter the icon name to be selected by default (e.g., \"rocket\")."
-msgstr "输入默认选中的图标名称（例如 \"rocket\"）。"
-
-#: includes/class-mudrava-acf-field-lucide-icon.php:217
-msgid "Return Format"
-msgstr "返回格式"
-
-#: includes/class-mudrava-acf-field-lucide-icon.php:218
-msgid "Specify the format returned by get_field()."
-msgstr "指定 get_field() 返回的格式。"
-
-#: includes/class-mudrava-acf-field-lucide-icon.php:222
-msgid "Icon Name (e.g., \"rocket\")"
-msgstr "图标名称（例如 \"rocket\"）"
-
-#: includes/class-mudrava-acf-field-lucide-icon.php:223
-msgid "SVG Markup"
-msgstr "SVG 标记"
-
-#: includes/class-mudrava-acf-field-lucide-icon.php:232
-msgid "Placeholder"
-msgstr "占位符"
-
-#: includes/class-mudrava-acf-field-lucide-icon.php:233
-msgid "Placeholder text for the search input."
-msgstr "搜索输入框的占位符文本。"
-
-#: includes/class-mudrava-acf-field-lucide-icon.php:253
 msgid "Allow Null"
 msgstr "允许空值"
 
-#: includes/class-mudrava-acf-field-lucide-icon.php:254
 msgid "Allow the field to have no icon selected."
 msgstr "允许该字段不选择任何图标。"
 
-#: includes/class-mudrava-acf-field-lucide-icon.php:323
+msgid "Block saving with a validation error"
+msgstr ""
+
+msgid "Clear selection"
+msgstr "清除选择"
+
+msgid "Comma-separated terms that make the icon findable in the picker search."
+msgstr ""
+
+msgid "Custom Icons"
+msgstr ""
+
+msgid "Default Value"
+msgstr "默认值"
+
+msgid "Delete"
+msgstr ""
+
+msgid "Delete this icon? Existing fields will fall back to their default behavior."
+msgstr ""
+
+msgid "Docs"
+msgstr "文档"
+
+msgid "Enter the icon value to be selected by default (e.g., \"rocket\" or \"simple:facebook\")."
+msgstr ""
+
+msgid "How to handle values that are not part of the bundled icon set (e.g. icons imported from another site or values left over after an icon library update)."
+msgstr ""
+
+msgid "Icon <strong>%s</strong> was added to the library."
+msgstr ""
+
+msgid "Icon <strong>%s</strong> was deleted."
+msgstr ""
+
+msgid "Icon Value (e.g., \"rocket\" or \"simple:facebook\")"
+msgstr ""
+
+msgid "Keywords"
+msgstr ""
+
+msgid "Lucide Icon"
+msgstr "Lucide 图标"
+
+msgid "Mudrava Icon Field — Custom Icons"
+msgstr ""
+
+msgid "Mudrava Icon Field:"
+msgstr ""
+
+msgid "Mudrava Icon Field: an icon with that name already exists. Uploads never overwrite stored icons; delete the old icon first or use another name."
+msgstr ""
+
+msgid "Mudrava Icon Field: some icon values are not part of the bundled icon set and will render as empty markup:"
+msgstr ""
+
+msgid "Mudrava Icon Field: that file is not a valid SVG document. Only plain shape elements (circle, ellipse, line, path, polygon, polyline, rect) inside an &lt;svg&gt; root are accepted."
+msgstr ""
+
+msgid "Mudrava Icon Field: that file is too large. The limit is %s."
+msgstr ""
+
+msgid "Mudrava Icon Field: that icon no longer exists in the library."
+msgstr ""
+
+msgid "Mudrava Icon Field: the icon storage is not writable. Check filesystem permissions."
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "No custom icons yet."
+msgstr ""
+
+msgid "No icon selected"
+msgstr "未选择图标"
+
+msgid "No icons found"
+msgstr "未找到图标"
+
+msgid "Optional; defaults to the file name"
+msgstr ""
+
+msgid "Placeholder"
+msgstr "占位符"
+
+msgid "Placeholder text for the search input."
+msgstr "搜索输入框的占位符文本。"
+
+msgid "Please select a valid icon."
+msgstr ""
+
 msgid "Please select an icon."
 msgstr "请选择一个图标。"
+
+msgid "Return Format"
+msgstr "返回格式"
+
+msgid "SVG Markup"
+msgstr "SVG 标记"
+
+msgid "SVG file"
+msgstr ""
+
+msgid "Save and show an admin notice (default)"
+msgstr ""
+
+msgid "Search icons or brand logos..."
+msgstr ""
+
+msgid "Search keywords"
+msgstr ""
+
+msgid "Select an icon"
+msgstr ""
+
+msgid "Specify the format returned by get_field()."
+msgstr "指定 get_field() 返回的格式。"
+
+msgid "Stored icon is not in the bundled icon set"
+msgstr ""
+
+msgid "Stored icons"
+msgstr ""
+
+msgid "The icon file could not be written."
+msgstr ""
+
+msgid "The icon storage directory could not be created."
+msgstr ""
+
+msgid "The icon storage is not writable on this site."
+msgstr ""
+
+msgid "The storage name is derived from this title: lowercase, dashes, max 64 characters."
+msgstr ""
+
+msgid "This plugin requires %1$s version %2$s or higher to function."
+msgstr ""
+
+msgid "Title"
+msgstr ""
+
+msgid "Unknown Icon Values"
+msgstr ""
+
+msgid "Upload plain SVG icons to extend the picker with a custom set. Files are sanitized on upload: scripts, styles, embedded images and unsupported elements are removed, and only the allowlisted shape markup is stored."
+msgstr ""
+
+msgid "Value"
+msgstr ""
+
+msgid "You are not allowed to manage custom icons."
+msgstr ""
+
+msgid "logo, company, brand"
+msgstr ""
+

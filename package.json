@@ -1,0 +1,21 @@
+{
+    "name": "mudrava-acf-lucide-field",
+    "version": "1.2.0",
+    "private": true,
+    "description": "Build and test tooling for the Mudrava Icon Field for ACF with Lucide plugin.",
+    "license": "GPL-2.0-or-later",
+    "scripts": {
+        "build:assets": "node scripts/minify-assets.mjs && php scripts/build-assets.php",
+        "check:assets": "node scripts/minify-assets.mjs --check && php scripts/build-assets.php --check",
+        "lint:js": "eslint .",
+        "test:e2e": "playwright test",
+        "test:php": "vendor/bin/phpunit",
+        "check:upstream": "node scripts/check-upstream.mjs"
+    },
+    "devDependencies": {
+        "@playwright/test": "^1.61.1",
+        "eslint": "^9.30.0",
+        "globals": "^16.0.0",
+        "svgo": "^4.0.0"
+    }
+}

@@ -1,0 +1,160 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    name: Lint (PHP + JS)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          coverage: none
+
+      - name: PHP syntax check
+        run: |
+          find . -name '*.php' -not -path './vendor/*' -not -path './node_modules/*' -print0 \
+            | xargs -0 -n1 php -l
+
+      - name: Composer install
+        run: composer install --no-interaction --prefer-dist
+
+      - name: PHPCS
+        run: vendor/bin/phpcs
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - run: npm ci
+
+      - name: ESLint
+        run: npx eslint .
+
+  test:
+    name: PHPUnit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          coverage: none
+
+      - name: Composer install
+        run: composer install --no-interaction --prefer-dist
+
+      - name: PHPUnit
+        run: vendor/bin/phpunit
+
+  assets:
+    name: Generated assets in sync
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          coverage: none
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - run: npm ci
+
+      - name: Asset pipeline checks
+        run: |
+          php scripts/build-assets.php --check
+          node scripts/minify-assets.mjs --check
+
+  e2e:
+    name: Playwright e2e (WP ${{ matrix.wp }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        wp: ['6.8', 'latest']
+    services:
+      mysql:
+        image: mariadb:11
+        env:
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_DATABASE: wp
+          MYSQL_USER: wp
+          MYSQL_PASSWORD: wp
+        ports:
+          - 13306:3306
+        options: >-
+          --health-cmd="mariadb-admin ping -h 127.0.0.1 -uroot -proot"
+          --health-interval=5s
+          --health-timeout=5s
+          --health-retries=20
+    env:
+      WP_SITE_DIR: ${{ github.workspace }}/.e2e-site
+      WP_PORT: '8877'
+      WP_BASE_URL: http://127.0.0.1:8877
+      WP_SITE_PATH: ${{ github.workspace }}/.e2e-site
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          coverage: none
+          extensions: mysqli, dom, json
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - name: Install wp-cli
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar -o /tmp/wp
+          sudo mv /tmp/wp /usr/local/bin/wp
+          sudo chmod +x /usr/local/bin/wp
+
+      - name: Install Node dependencies and Playwright browsers
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+
+      - name: Install WordPress ${{ matrix.wp }} + fixtures
+        run: |
+          bash scripts/e2e-setup.sh
+          if [ "${{ matrix.wp }}" != "latest" ]; then
+            wp core download --version=${{ matrix.wp }} --force --path="$WP_SITE_DIR" --allow-root
+          fi
+
+      - name: WordPress Plugin Check (release artifact)
+        run: |
+          bash scripts/build-dist.sh
+          wp plugin install plugin-check --path="$WP_SITE_DIR" --allow-root
+          unzip -q -o dist/mudrava-acf-lucide-field.zip -d /tmp/pc-check
+          wp plugin check /tmp/pc-check/mudrava-acf-lucide-field             --require="$WP_SITE_DIR/wp-content/plugins/plugin-check/cli.php"             --allow-root --path="$WP_SITE_DIR"
+
+      - name: Run Playwright tests
+        run: npx playwright test
+
+      - name: Upload failure artifacts
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report-${{ matrix.wp }}
+          path: test-results/
+          if-no-files-found: ignore
+          retention-days: 7

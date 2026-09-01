@@ -1,100 +1,265 @@
 # Copyright (C) 2026 Mudrava
-# This file is distributed under the GPL-2.0-or-later.
+# This file is distributed under the GPL-2.0-or-later license.
 msgid ""
 msgstr ""
-"Project-Id-Version: Mudrava Icon Field for ACF with Lucide 1.0.0\n"
-"Report-Msgid-Bugs-To: https://github.com/Mudrava/mudrava-acf-lucide-field/issues\n"
-"POT-Creation-Date: 2026-03-20 00:00+0000\n"
+"Project-Id-Version: Mudrava Icon Field for ACF with Lucide 1.2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mudrava-acf-lucide-field/\n"
+"POT-Creation-Date: 2026-09-01 01:14+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2026-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: scripts/make-pot.php\n"
 
-#. Plugin Name of the plugin
-msgid "Mudrava Icon Field for ACF with Lucide"
+#. %d is the number of matching icons in the picker.
+#: class-mudrava-acf-field-lucide-icon.php:109
+msgid "%d icons available"
 msgstr ""
 
-#. Description of the plugin
-msgid "A custom ACF field type for selecting Lucide icons with a visual picker interface."
+#. %s is the name of the icon chosen in the picker.
+#: class-mudrava-acf-field-lucide-icon.php:111
+msgid "%s selected"
 msgstr ""
 
-#. Author of the plugin
-msgid "Mudrava"
+#: mudrava-acf-lucide-field.php:2025
+msgid "Accepted format: SVG with an &lt;svg&gt; root and a viewBox. Maximum size: %s. Icons are available in the picker and shortcodes as custom:&lt;name&gt;."
 msgstr ""
 
-#. Author URI of the plugin
-msgid "https://mudrava.com"
+#: mudrava-acf-lucide-field.php:2042
+msgid "Actions"
 msgstr ""
 
-#: mudrava-acf-lucide-field.php:116
-msgid "Docs"
+#: mudrava-acf-lucide-field.php:2037
+msgid "Add icon"
 msgstr ""
 
-#: includes/class-mudrava-acf-field-lucide-icon.php:47
-msgid "Lucide Icon"
-msgstr ""
-
-#: includes/class-mudrava-acf-field-lucide-icon.php:91
-#: includes/class-mudrava-acf-field-lucide-icon.php:153
-msgid "Search icons..."
-msgstr ""
-
-#: includes/class-mudrava-acf-field-lucide-icon.php:92
-#: includes/class-mudrava-acf-field-lucide-icon.php:183
-msgid "No icons found"
-msgstr ""
-
-#: includes/class-mudrava-acf-field-lucide-icon.php:93
-#: includes/class-mudrava-acf-field-lucide-icon.php:169
-msgid "Clear selection"
-msgstr ""
-
-#: includes/class-mudrava-acf-field-lucide-icon.php:164
-msgid "No icon selected"
-msgstr ""
-
-#: includes/class-mudrava-acf-field-lucide-icon.php:207
-msgid "Default Value"
-msgstr ""
-
-#: includes/class-mudrava-acf-field-lucide-icon.php:208
-msgid "Enter the icon name to be selected by default (e.g., \"rocket\")."
-msgstr ""
-
-#: includes/class-mudrava-acf-field-lucide-icon.php:217
-msgid "Return Format"
-msgstr ""
-
-#: includes/class-mudrava-acf-field-lucide-icon.php:218
-msgid "Specify the format returned by get_field()."
-msgstr ""
-
-#: includes/class-mudrava-acf-field-lucide-icon.php:222
-msgid "Icon Name (e.g., \"rocket\")"
-msgstr ""
-
-#: includes/class-mudrava-acf-field-lucide-icon.php:223
-msgid "SVG Markup"
-msgstr ""
-
-#: includes/class-mudrava-acf-field-lucide-icon.php:232
-msgid "Placeholder"
-msgstr ""
-
-#: includes/class-mudrava-acf-field-lucide-icon.php:233
-msgid "Placeholder text for the search input."
-msgstr ""
-
-#: includes/class-mudrava-acf-field-lucide-icon.php:253
+#: class-mudrava-acf-field-lucide-icon.php:256
 msgid "Allow Null"
 msgstr ""
 
-#: includes/class-mudrava-acf-field-lucide-icon.php:254
+#: class-mudrava-acf-field-lucide-icon.php:257
 msgid "Allow the field to have no icon selected."
 msgstr ""
 
-#: includes/class-mudrava-acf-field-lucide-icon.php:323
+#: class-mudrava-acf-field-lucide-icon.php:273
+msgid "Block saving with a validation error"
+msgstr ""
+
+#: class-mudrava-acf-field-lucide-icon.php:106 
+#: class-mudrava-acf-field-lucide-icon.php:169
+msgid "Clear selection"
+msgstr ""
+
+#: mudrava-acf-lucide-field.php:2035
+msgid "Comma-separated terms that make the icon findable in the picker search."
+msgstr ""
+
+#: mudrava-acf-lucide-field.php:1946 
+#: mudrava-acf-lucide-field.php:1947
+msgid "Custom Icons"
+msgstr ""
+
+#: class-mudrava-acf-field-lucide-icon.php:211
+msgid "Default Value"
+msgstr ""
+
+#: mudrava-acf-lucide-field.php:2058
+msgid "Delete"
+msgstr ""
+
+#: mudrava-acf-lucide-field.php:2054
+msgid "Delete this icon? Existing fields will fall back to their default behavior."
+msgstr ""
+
+#: mudrava-acf-lucide-field.php:147
+msgid "Docs"
+msgstr ""
+
+#: class-mudrava-acf-field-lucide-icon.php:212
+msgid "Enter the icon value to be selected by default (e.g., \"rocket\" or \"simple:facebook\")."
+msgstr ""
+
+#: class-mudrava-acf-field-lucide-icon.php:268
+msgid "How to handle values that are not part of the bundled icon set (e.g. icons imported from another site or values left over after an icon library update)."
+msgstr ""
+
+#: mudrava-acf-lucide-field.php:1976
+msgid "Icon <strong>%s</strong> was added to the library."
+msgstr ""
+
+#: mudrava-acf-lucide-field.php:1981
+msgid "Icon <strong>%s</strong> was deleted."
+msgstr ""
+
+#: class-mudrava-acf-field-lucide-icon.php:226
+msgid "Icon Value (e.g., \"rocket\" or \"simple:facebook\")"
+msgstr ""
+
+#: mudrava-acf-lucide-field.php:2042
+msgid "Keywords"
+msgstr ""
+
+#: class-mudrava-acf-field-lucide-icon.php:52
+msgid "Lucide Icon"
+msgstr ""
+
+#: mudrava-acf-lucide-field.php:2006
+msgid "Mudrava Icon Field — Custom Icons"
+msgstr ""
+
+#: mudrava-acf-lucide-field.php:96
+msgid "Mudrava Icon Field:"
+msgstr ""
+
+#: mudrava-acf-lucide-field.php:1994
+msgid "Mudrava Icon Field: an icon with that name already exists. Uploads never overwrite stored icons; delete the old icon first or use another name."
+msgstr ""
+
+#: class-mudrava-acf-field-lucide-icon.php:444
+msgid "Mudrava Icon Field: some icon values are not part of the bundled icon set and will render as empty markup:"
+msgstr ""
+
+#: mudrava-acf-lucide-field.php:1985
+msgid "Mudrava Icon Field: that file is not a valid SVG document. Only plain shape elements (circle, ellipse, line, path, polygon, polyline, rect) inside an &lt;svg&gt; root are accepted."
+msgstr ""
+
+#: mudrava-acf-lucide-field.php:1990
+msgid "Mudrava Icon Field: that file is too large. The limit is %s."
+msgstr ""
+
+#: mudrava-acf-lucide-field.php:1998
+msgid "Mudrava Icon Field: that icon no longer exists in the library."
+msgstr ""
+
+#: mudrava-acf-lucide-field.php:2002
+msgid "Mudrava Icon Field: the icon storage is not writable. Check filesystem permissions."
+msgstr ""
+
+#: mudrava-acf-lucide-field.php:2034 
+#: mudrava-acf-lucide-field.php:2042
+msgid "Name"
+msgstr ""
+
+#: mudrava-acf-lucide-field.php:2064
+msgid "No custom icons yet."
+msgstr ""
+
+#: class-mudrava-acf-field-lucide-icon.php:105 
+#: class-mudrava-acf-field-lucide-icon.php:160
+msgid "No icon selected"
+msgstr ""
+
+#: class-mudrava-acf-field-lucide-icon.php:104 
+#: class-mudrava-acf-field-lucide-icon.php:187
+msgid "No icons found"
+msgstr ""
+
+#: mudrava-acf-lucide-field.php:2034
+msgid "Optional; defaults to the file name"
+msgstr ""
+
+#: class-mudrava-acf-field-lucide-icon.php:236
+msgid "Placeholder"
+msgstr ""
+
+#: class-mudrava-acf-field-lucide-icon.php:237
+msgid "Placeholder text for the search input."
+msgstr ""
+
+#: class-mudrava-acf-field-lucide-icon.php:353
+msgid "Please select a valid icon."
+msgstr ""
+
+#: class-mudrava-acf-field-lucide-icon.php:346
 msgid "Please select an icon."
+msgstr ""
+
+#: class-mudrava-acf-field-lucide-icon.php:221
+msgid "Return Format"
+msgstr ""
+
+#: class-mudrava-acf-field-lucide-icon.php:227
+msgid "SVG Markup"
+msgstr ""
+
+#: mudrava-acf-lucide-field.php:2033
+msgid "SVG file"
+msgstr ""
+
+#: class-mudrava-acf-field-lucide-icon.php:272
+msgid "Save and show an admin notice (default)"
+msgstr ""
+
+#: class-mudrava-acf-field-lucide-icon.php:103 
+#: class-mudrava-acf-field-lucide-icon.php:157 
+#: class-mudrava-acf-field-lucide-icon.php:182
+msgid "Search icons or brand logos..."
+msgstr ""
+
+#: mudrava-acf-lucide-field.php:2035
+msgid "Search keywords"
+msgstr ""
+
+#: class-mudrava-acf-field-lucide-icon.php:185
+msgid "Select an icon"
+msgstr ""
+
+#: class-mudrava-acf-field-lucide-icon.php:222
+msgid "Specify the format returned by get_field()."
+msgstr ""
+
+#: class-mudrava-acf-field-lucide-icon.php:107
+msgid "Stored icon is not in the bundled icon set"
+msgstr ""
+
+#: mudrava-acf-lucide-field.php:2041
+msgid "Stored icons"
+msgstr ""
+
+#: mudrava-acf-lucide-field.php:1744
+msgid "The icon file could not be written."
+msgstr ""
+
+#: mudrava-acf-lucide-field.php:1736
+msgid "The icon storage directory could not be created."
+msgstr ""
+
+#: mudrava-acf-lucide-field.php:1727
+msgid "The icon storage is not writable on this site."
+msgstr ""
+
+#: mudrava-acf-lucide-field.php:2034
+msgid "The storage name is derived from this title: lowercase, dashes, max 64 characters."
+msgstr ""
+
+#: mudrava-acf-lucide-field.php:91
+msgid "This plugin requires %1$s version %2$s or higher to function."
+msgstr ""
+
+#: mudrava-acf-lucide-field.php:2042
+msgid "Title"
+msgstr ""
+
+#: class-mudrava-acf-field-lucide-icon.php:267
+msgid "Unknown Icon Values"
+msgstr ""
+
+#: mudrava-acf-lucide-field.php:2022
+msgid "Upload plain SVG icons to extend the picker with a custom set. Files are sanitized on upload: scripts, styles, embedded images and unsupported elements are removed, and only the allowlisted shape markup is stored."
+msgstr ""
+
+#: mudrava-acf-lucide-field.php:2042
+msgid "Value"
+msgstr ""
+
+#: mudrava-acf-lucide-field.php:1767 
+#: mudrava-acf-lucide-field.php:1851 
+#: mudrava-acf-lucide-field.php:1964
+msgid "You are not allowed to manage custom icons."
+msgstr ""
+
+#: mudrava-acf-lucide-field.php:2035
+msgid "logo, company, brand"
 msgstr ""

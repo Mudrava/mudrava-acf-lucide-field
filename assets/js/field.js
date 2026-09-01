@@ -1,8 +1,13 @@
 /**
  * Mudrava Lucide Field - JavaScript
  *
- * Handles the icon picker field functionality with local sprite injection
- * and virtual scrolling for performance.
+ * Icon picker for ACF with Lucide + Simple Icons brand icons.
+ *
+ * - Search metadata is fetched once per page from a REST endpoint (lazy).
+ * - Sprites are fetched lazily per source, sanitized against an allowlist,
+ *   and injected as <symbol> defs for <use> references.
+ * - The options grid is a listbox with roving active option,
+ *   aria-activedescendant and infinite pagination.
  *
  * @package Mudrava\LucideField
  * @since   1.0.0
@@ -15,17 +20,17 @@
         return;
     }
 
-    /**
-     * Configuration constants.
-     */
     const CONFIG = {
         ICONS_PER_PAGE: 100,
         DEBOUNCE_DELAY: 200,
     };
 
-    /**
-     * Escape dynamic text inserted into HTML strings.
-     */
+    const SETTINGS = (typeof window.mudravaLucideField !== 'undefined') ? window.mudravaLucideField : {};
+
+    const OPEN_FIELDS = new Set();
+    let documentClickBound = false;
+    let uid = 0;
+
     function escapeHtml(value) {
         return String(value)
             .replace(/&/g, '&amp;')
@@ -35,16 +40,6 @@
             .replace(/'/g, '&#039;');
     }
 
-    /**
-     * Escape dynamic attribute values inserted into HTML strings.
-     */
-    function escapeAttr(value) {
-        return escapeHtml(value);
-    }
-
-    /**
-     * Normalize labels for alias matching.
-     */
     function normalizeToken(value) {
         return String(value || '')
             .toLowerCase()
@@ -53,9 +48,18 @@
             .replace(/^-+|-+$/g, '');
     }
 
-    /**
-     * Parse stored icon values.
-     */
+    function prettifyName(token) {
+        const cleaned = normalizeToken(token);
+
+        if (!cleaned) {
+            return '';
+        }
+
+        const words = cleaned.replace(/-/g, ' ');
+
+        return words.charAt(0).toUpperCase() + words.slice(1);
+    }
+
     function parseIconValue(value) {
         const rawValue = String(value || '').trim();
 
@@ -76,84 +80,381 @@
             source = 'simple';
         }
 
-        if (!['auto', 'lucide', 'simple'].includes(source)) {
+        if (['auto', 'lucide', 'simple', 'custom'].indexOf(source) === -1) {
             source = 'auto';
             name = rawValue;
         }
 
-        return {
-            source: source,
-            name: normalizeToken(name),
-        };
+        return { source: source, name: normalizeToken(name) };
     }
 
     /**
-     * Sprite management - loads once per page.
+     * Shared icon data repository, loaded once per page from REST.
      */
-    const loadedSprites = {};
-    const spriteLoadPromises = {};
+    const Repository = {
+        status: 'idle',
+        promise: null,
+        allowedElements: null,
+        allowedAttributes: null,
+        aliases: {},
+        lucide: null,
+        simple: null,
+        custom: null,
+        entries: [],
+        lucideMap: {},
+        brandMap: {},
+        brandAliasMap: {},
+        customMap: {},
 
-    /**
-     * Load and inject a sprite SVG into the page.
-     *
-     * @return {Promise<void>}
-     */
-    function loadSprite(spriteUrl, containerId) {
-        if (loadedSprites[containerId] || $('#' + containerId).length) {
-            loadedSprites[containerId] = true;
-            return Promise.resolve();
-        }
-
-        if (spriteLoadPromises[containerId]) {
-            return spriteLoadPromises[containerId];
-        }
-
-        spriteLoadPromises[containerId] = new Promise((resolve, reject) => {
-            if (!spriteUrl) {
-                reject(new Error('Sprite URL not defined'));
-                return;
+        ensure: function () {
+            if (this.status === 'ready') {
+                return Promise.resolve();
             }
 
-            $.ajax({
-                url: spriteUrl,
-                dataType: 'text',
-                cache: true,
-                success: function (data) {
-                    const $container = $('<div>')
-                        .attr('id', containerId)
-                        .css({
-                            position: 'absolute',
-                            width: 0,
-                            height: 0,
-                            overflow: 'hidden',
-                            visibility: 'hidden',
-                        })
-                        .html(data);
+            if (this.promise) {
+                return this.promise;
+            }
 
-                    $('body').prepend($container);
-                    loadedSprites[containerId] = true;
-                    resolve();
-                },
-                error: function (xhr, status, error) {
-                    reject(new Error('Failed to load sprite: ' + error));
-                },
+            this.status = 'loading';
+
+            const self = this;
+
+            const headers = {};
+
+            if (SETTINGS.nonce) {
+                headers['X-WP-Nonce'] = SETTINGS.nonce;
+            }
+
+            this.promise = fetch(SETTINGS.dataUrl, {
+                credentials: 'same-origin',
+                headers: headers,
+            })
+                .then(function (response) {
+                    if (!response.ok) {
+                        throw new Error('Icon data request failed: ' + response.status);
+                    }
+
+                    return response.json();
+                })
+                .then(function (data) {
+                    self.load(data);
+                })
+                .catch(function (error) {
+                    self.status = 'idle';
+                    self.promise = null;
+                    throw error;
+                });
+
+            return this.promise;
+        },
+
+        load: function (data) {
+            const self = this;
+
+            this.allowedElements = new Set(data.allowedElements || []);
+            this.allowedAttributes = new Set(data.allowedAttributes || []);
+            this.aliases = data.compatAliases || {};
+            this.lucide = data.lucide || { icons: {}, spriteUrl: '' };
+            this.simple = data.simple || { icons: {}, spriteUrl: '' };
+            this.custom = data.custom || { icons: {}, symbols: {} };
+
+            this.lucideMap = {};
+            this.brandMap = {};
+            this.brandAliasMap = {};
+            this.customMap = {};
+
+            const entries = [];
+
+            Object.keys(this.lucide.icons || {}).forEach(function (iconName) {
+                const tags = self.lucide.icons[iconName] || [];
+                const entry = {
+                    value: iconName,
+                    name: iconName,
+                    label: prettifyName(iconName),
+                    source: 'lucide',
+                    symbol: iconName,
+                    tags: tags,
+                };
+
+                entry.search = [entry.value, entry.label, (entry.tags || []).join(' ')].join(' ').toLowerCase();
+                entries.push(entry);
+                self.lucideMap[iconName] = entry;
             });
-        });
 
-        return spriteLoadPromises[containerId];
-    }
+            Object.keys(this.simple.icons || {}).forEach(function (slug) {
+                const tags = self.simple.icons[slug] || [];
+                const label = tags[4] || prettifyName(slug);
+                const entry = {
+                    value: 'simple:' + slug,
+                    name: slug,
+                    label: label,
+                    source: 'simple',
+                    symbol: 'simple-' + slug,
+                    tags: tags,
+                };
+
+                entry.search = [entry.value, entry.label, (entry.tags || []).join(' ')].join(' ').toLowerCase();
+                entries.push(entry);
+                self.brandMap[slug] = entry;
+
+                [slug, label].concat(tags).forEach(function (tag) {
+                    const normalized = normalizeToken(tag);
+
+                    if (normalized && !self.brandAliasMap[normalized]) {
+                        self.brandAliasMap[normalized] = entry;
+                    }
+                });
+            });
+
+            Object.keys(this.custom.icons || {}).forEach(function (iconName) {
+                const meta = self.custom.icons[iconName] || {};
+                const tags = meta.keywords || [];
+                const label = meta.label || prettifyName(iconName);
+                const entry = {
+                    value: 'custom:' + iconName,
+                    name: iconName,
+                    label: label,
+                    source: 'custom',
+                    symbol: 'custom-' + iconName,
+                    tags: tags,
+                };
+
+                entry.search = [entry.value, entry.label, tags.join(' ')].join(' ').toLowerCase();
+                entries.push(entry);
+                self.customMap[iconName] = entry;
+            });
+
+            entries.sort(function (a, b) {
+                return a.label.localeCompare(b.label);
+            });
+
+            this.entries = entries;
+            this.status = 'ready';
+        },
+
+        resolveEntry: function (value) {
+            const parsed = parseIconValue(value);
+
+            if (!parsed.name) {
+                return null;
+            }
+
+            if (parsed.source === 'simple') {
+                return this.brandMap[parsed.name] || this.brandAliasMap[parsed.name] || null;
+            }
+
+            if (parsed.source === 'lucide') {
+                return this.lucideMap[parsed.name] || this.resolveAlias(parsed.name);
+            }
+
+            if (parsed.source === 'custom') {
+                return this.customMap[parsed.name] || null;
+            }
+
+            return (
+                this.lucideMap[parsed.name] ||
+                this.brandMap[parsed.name] ||
+                this.brandAliasMap[parsed.name] ||
+                this.customMap[parsed.name] ||
+                this.resolveAlias(parsed.name)
+            );
+        },
+
+        resolveAlias: function (name) {
+            const replacement = this.aliases[name];
+
+            if (!replacement) {
+                return null;
+            }
+
+            return this.lucideMap[replacement] || this.brandMap[replacement] || null;
+        },
+    };
 
     /**
-     * Load all bundled sprites.
-     *
-     * @return {Promise<void[]>}
+     * Lazy sprite loader per source. Sprites are sanitized against the
+     * server-provided allowlist before being injected into the DOM.
      */
-    function loadSprites() {
-        return Promise.all([
-            loadSprite(mudravaLucideField.spriteUrl, 'mudrava-lucide-sprite'),
-            loadSprite(mudravaLucideField.brandSpriteUrl, 'mudrava-simple-icons-sprite'),
-        ]);
-    }
+    const Sprites = {
+        containers: {},
+        promises: {},
+
+        ensure: function (source) {
+            if (this.containers[source]) {
+                return Promise.resolve();
+            }
+
+            if (source === 'custom') {
+                const built = this.buildCustom();
+
+                if (!built) {
+                    return Promise.reject(new Error('No custom icons'));
+                }
+
+                document.body.insertBefore(built, document.body.firstChild);
+                this.containers.custom = built;
+
+                return Promise.resolve();
+            }
+
+            if (this.promises[source]) {
+                return this.promises[source];
+            }
+
+            const self = this;
+            const sourceData = source === 'simple' ? Repository.simple : Repository.lucide;
+            const spriteUrl = (sourceData && sourceData.spriteUrl) || '';
+
+            if (!spriteUrl) {
+                return Promise.reject(new Error('Sprite URL not defined'));
+            }
+
+            this.promises[source] = fetch(spriteUrl, { credentials: 'same-origin' })
+                .then(function (response) {
+                    if (!response.ok) {
+                        throw new Error('Sprite request failed: ' + response.status);
+                    }
+
+                    return response.text();
+                })
+                .then(function (markup) {
+                    const container = self.sanitizeSprite(markup, source);
+
+                    if (!container) {
+                        throw new Error('Sprite could not be parsed');
+                    }
+
+                    document.body.insertBefore(container, document.body.firstChild);
+                    self.containers[source] = container;
+                })
+                .catch(function (error) {
+                    self.promises[source] = null;
+                    throw error;
+                });
+
+            return this.promises[source];
+        },
+
+        buildCustom: function () {
+            if (this.containers.custom) {
+                return null;
+            }
+
+            const symbols = (Repository.custom && Repository.custom.symbols) || {};
+            const parts = [];
+
+            Object.keys(symbols).forEach(function (name) {
+                const symbol = symbols[name];
+
+                if (!symbol || !symbol.inner) {
+                    return;
+                }
+
+                parts.push('<symbol id="custom-' + escapeHtml(name) + '" viewBox="' + escapeHtml(String(symbol.viewBox || '0 0 24 24')) + '">' + symbol.inner + '</symbol>');
+            });
+
+            if (!parts.length) {
+                return null;
+            }
+
+            return this.sanitizeSprite('<svg xmlns="http://www.w3.org/2000/svg">' + parts.join('') + '</svg>', 'custom');
+        },
+
+        ensureAll: function () {
+            const self = this;
+
+            return Promise.all([
+                this.ensure('lucide').catch(function () { /* preview falls back to text */ }),
+                this.ensure('simple').catch(function () { /* preview falls back to text */ }),
+                this.ensure('custom').catch(function () { /* no custom icons */ }),
+            ]).then(function () {
+                if (!self.containers.lucide && !self.containers.simple && !self.containers.custom) {
+                    return Promise.reject(new Error('No sprite available'));
+                }
+            });
+        },
+
+        sanitizeSprite: function (markup, source) {
+            const doc = new DOMParser().parseFromString(markup, 'image/svg+xml');
+            const root = doc.documentElement;
+
+            if (!root || root.nodeName.toLowerCase() !== 'svg' || doc.querySelector('parsererror')) {
+                return null;
+            }
+
+            const container = document.createElement('div');
+
+            container.setAttribute('id', 'mudrava-lucide-sprite-' + source);
+            container.setAttribute('aria-hidden', 'true');
+            container.style.cssText = 'position:absolute;width:0;height:0;overflow:hidden';
+
+            const namespace = 'http://www.w3.org/2000/svg';
+            const svg = document.createElementNS(namespace, 'svg');
+            const allowedElements = Repository.allowedElements;
+            const allowedAttributes = Repository.allowedAttributes;
+            const prefix = source === 'simple' ? 'simple-' : ( source === 'custom' ? 'custom-' : '' );
+
+            function serializeChildren(node) {
+                let out = '';
+
+                Array.prototype.forEach.call(node.children, function (child) {
+                    const tag = child.nodeName.toLowerCase();
+
+                    if (!allowedElements.has(tag)) {
+                        return;
+                    }
+
+                    let attrs = '';
+
+                    Array.prototype.forEach.call(child.attributes, function (attr) {
+                        if (!allowedAttributes.has(attr.name)) {
+                            return;
+                        }
+
+                        attrs += ' ' + attr.name + '="' + escapeHtml(attr.value) + '"';
+                    });
+
+                    if (tag === 'g') {
+                        const group = serializeChildren(child);
+
+                        if (!group) {
+                            return;
+                        }
+
+                        out += '<g' + attrs + '>' + group + '</g>';
+                    } else {
+                        out += '<' + tag + attrs + '/>';
+                    }
+                });
+
+                return out;
+            }
+
+            Array.prototype.forEach.call(root.querySelectorAll('symbol'), function (symbol) {
+                const id = symbol.getAttribute('id');
+
+                if (!id || id.indexOf(prefix) !== 0 || !/^[a-zA-Z0-9_-]+$/.test(id)) {
+                    return;
+                }
+
+                const inner = serializeChildren(symbol);
+
+                if (!inner) {
+                    return;
+                }
+
+                const clone = document.createElementNS(namespace, 'symbol');
+                clone.setAttribute('id', id);
+                clone.setAttribute('viewBox', symbol.getAttribute('viewBox') || '0 0 24 24');
+                clone.innerHTML = inner;
+                svg.appendChild(clone);
+            });
+
+            container.appendChild(svg);
+
+            return container;
+        },
+    };
 
     /**
      * Lucide Icon Field Type
@@ -161,23 +462,21 @@
     const LucideIconField = acf.Field.extend({
         type: 'lucide_icon',
 
-        allIcons: [],
         filteredIcons: [],
-        iconMap: {},
-        brandMap: {},
-        brandAliasMap: {},
         currentPage: 0,
         searchQuery: '',
         searchTimer: null,
         loadedIcons: new Set(),
+        activeIndex: -1,
 
         events: {
             'click .mudrava-lucide-selected': 'onToggle',
             'keydown .mudrava-lucide-selected': 'onSelectedKeydown',
             'click .mudrava-lucide-clear': 'onClear',
-            'click .mudrava-lucide-icon': 'onSelect',
+            'click .mudrava-lucide-icon': 'onOptionClick',
             'input .mudrava-lucide-search': 'onSearch',
             'keydown .mudrava-lucide-search': 'onSearchKeydown',
+            'focusin .mudrava-lucide-search': 'onSearchFocus',
         },
 
         $control: function () {
@@ -212,254 +511,156 @@
             return this.$('.mudrava-lucide-grid-wrap');
         },
 
-        /**
-         * Initialize the field.
-         */
         initialize: function () {
-            this.buildIconIndex();
-            this.filteredIcons = [...this.allIcons];
+            if (!this.$input().attr('id')) {
+                this.$input().attr('id', 'mudrava-lucide-field-' + (uid++));
+            }
+
+            this.filteredIcons = [];
             this.currentPage = 0;
             this.loadedIcons = new Set();
+            this.activeIndex = -1;
 
-            this.updatePreviewIcon();
-            this.bindDocumentClick();
+            this.updatePreview();
             this.bindScroll();
-        },
 
-        /**
-         * Build searchable icon entries.
-         */
-        buildIconIndex: function () {
-            const icons = mudravaLucideField.icons || {};
-            const brandIcons = mudravaLucideField.brandIcons || {};
-            const entries = [];
-            const self = this;
+            if (!documentClickBound) {
+                documentClickBound = true;
 
-            this.iconMap = {};
-            this.brandMap = {};
-            this.brandAliasMap = {};
-
-            Object.keys(icons).forEach(function (iconName) {
-                const tags = icons[iconName] || [];
-                const entry = {
-                    value: iconName,
-                    name: iconName,
-                    label: iconName,
-                    source: 'lucide',
-                    symbol: iconName,
-                    tags: tags,
-                };
-
-                entry.search = self.createSearchString(entry);
-                entries.push(entry);
-                self.iconMap[iconName] = entry;
-            });
-
-            Object.keys(brandIcons).forEach(function (slug) {
-                const tags = brandIcons[slug] || [];
-                const label = tags[4] || slug;
-                const entry = {
-                    value: 'simple:' + slug,
-                    name: slug,
-                    label: label,
-                    source: 'simple',
-                    symbol: 'simple-' + slug,
-                    tags: tags,
-                };
-
-                entry.search = self.createSearchString(entry);
-                entries.push(entry);
-                self.brandMap[slug] = entry;
-
-                [slug, label].concat(tags).forEach(function (tag) {
-                    const normalized = normalizeToken(tag);
-
-                    if (normalized && !self.brandAliasMap[normalized]) {
-                        self.brandAliasMap[normalized] = entry;
-                    }
+                $(document).on('click.mudravaLucideGlobal', function (e) {
+                    OPEN_FIELDS.forEach(function (field) {
+                        if (!$(e.target).closest(field.$el).length) {
+                            field.closeDropdown();
+                        }
+                    });
                 });
-            });
-
-            this.allIcons = entries;
+            }
         },
 
         /**
-         * Create the searchable text for an icon entry.
+         * Render the selected icon preview once data and sprites resolve.
          */
-        createSearchString: function (entry) {
-            return [
-                entry.value,
-                entry.name,
-                entry.label,
-                entry.source,
-                entry.source === 'simple' ? 'brand logo simple-icons' : 'lucide',
-                (entry.tags || []).join(' '),
-            ].join(' ').toLowerCase();
-        },
-
-        /**
-         * Score search results so direct name/title matches appear before tag-only matches.
-         */
-        getSearchScore: function (entry, query) {
-            const normalizedQuery = normalizeToken(query);
-            const normalizedName = normalizeToken(entry.name);
-            const normalizedLabel = normalizeToken(entry.label);
-            const normalizedValue = normalizeToken(entry.value.replace(/^simple:/, ''));
-            const tags = (entry.tags || []).map(normalizeToken);
-
-            if (!normalizedQuery) {
-                return 100;
-            }
-
-            if (normalizedName === normalizedQuery || normalizedLabel === normalizedQuery || normalizedValue === normalizedQuery) {
-                return entry.source === 'simple' ? 0 : 5;
-            }
-
-            if (normalizedName.indexOf(normalizedQuery) === 0 || normalizedLabel.indexOf(normalizedQuery) === 0 || normalizedValue.indexOf(normalizedQuery) === 0) {
-                return entry.source === 'simple' ? 10 : 20;
-            }
-
-            if (tags.some(function (tag) { return tag === normalizedQuery; })) {
-                return entry.source === 'simple' ? 30 : 60;
-            }
-
-            if (tags.some(function (tag) { return tag.indexOf(normalizedQuery) === 0; })) {
-                return entry.source === 'simple' ? 40 : 70;
-            }
-
-            return entry.source === 'simple' ? 50 : 80;
-        },
-
-        /**
-         * Resolve stored values, including legacy unprefixed brand values.
-         */
-        resolveIconEntry: function (value) {
-            const parsed = parseIconValue(value);
-
-            if (!parsed.name) {
-                return null;
-            }
-
-            if (parsed.source === 'simple') {
-                return this.brandMap[parsed.name] || this.brandAliasMap[parsed.name] || null;
-            }
-
-            if (parsed.source === 'lucide') {
-                return this.iconMap[parsed.name] || null;
-            }
-
-            return this.iconMap[parsed.name] || this.brandMap[parsed.name] || this.brandAliasMap[parsed.name] || null;
-        },
-
-        /**
-         * Compare picker entry with the current stored value.
-         */
-        isCurrentEntry: function (entry, currentValue) {
-            const currentEntry = this.resolveIconEntry(currentValue);
-
-            return currentEntry ? currentEntry.value === entry.value : entry.value === currentValue;
-        },
-
-        /**
-         * Update the preview icon if a value exists.
-         */
-        updatePreviewIcon: function () {
+        updatePreview: function () {
+            const self = this;
             const value = this.$input().val();
 
             if (!value) {
+                const $preview0 = this.$('.mudrava-lucide-preview');
+                const $selected0 = this.$selected();
+
+                $selected0.removeClass('is-unknown');
+                $preview0.html('<span class="mudrava-lucide-preview-empty">' + escapeHtml(SETTINGS.emptyLabel || 'No icon selected') + '</span>');
+                $selected0.find('.mudrava-lucide-clear').remove();
                 return;
             }
 
-            const self = this;
+            this.$selected().removeClass('is-unknown');
 
-            loadSprites().then(function () {
-                const $preview = self.$('.mudrava-lucide-preview');
-                const entry = self.resolveIconEntry(value);
-                const iconSvg = entry ? self.createIconSvg(entry, 24) : '';
-                const label = entry ? entry.label : value;
+            Repository.ensure()
+                .then(function () {
+                    const $preview = self.$('.mudrava-lucide-preview');
+                    const $selected = self.$selected();
+                    const entry = Repository.resolveEntry(value);
+                    const label = entry ? entry.label : value;
+                    const $label = $preview.find('.mudrava-lucide-preview-name');
 
-                $preview.html(iconSvg + '<span class="mudrava-lucide-preview-name">' + escapeHtml(label) + '</span>');
-                self.showClearButton();
-            }).catch(function () {
-                const $preview = self.$('.mudrava-lucide-preview');
-                $preview.html('<span class="mudrava-lucide-preview-name">' + escapeHtml(value) + '</span>');
-                self.showClearButton();
-            });
+                    if (!$label.length) {
+                        $preview.html('<span class="mudrava-lucide-preview-name">' + escapeHtml(label) + '</span>');
+                    } else {
+                        $label.text(label);
+                    }
+
+                    self.showClearButton();
+
+                    if (!entry) {
+                        $selected.addClass('is-unknown').attr('title', SETTINGS.unknownNotice || '');
+                        return null;
+                    }
+
+                    return Sprites.ensure(entry.source).then(function () {
+                        const svg = self.createIconSvg(entry, 24);
+                        const $svg = $preview.find('svg.mudrava-lucide-icon-svg');
+
+                        if ($svg.length) {
+                            $svg.replaceWith(svg);
+                        } else {
+                            $preview.prepend(svg);
+                        }
+                    });
+                })
+                .catch(function () {
+                    const $preview = self.$('.mudrava-lucide-preview');
+                    const $label = $preview.find('.mudrava-lucide-preview-name');
+
+                    if (!$label.length) {
+                        $preview.html('<span class="mudrava-lucide-preview-name">' + escapeHtml(value) + '</span>');
+                    } else {
+                        $label.text(value);
+                    }
+
+                    self.showClearButton();
+                });
         },
 
-        /**
-         * Create an SVG element with source-specific styling.
-         */
-        createIconSvg: function (icon, size) {
-            const entry = typeof icon === 'string' ? this.resolveIconEntry(icon) : icon;
-            const safeSize = parseInt(size, 10) || 24;
-
+        createIconSvg: function (entry, size) {
             if (!entry) {
                 return '';
             }
 
-            const safeSymbol = escapeAttr(entry.symbol);
+            const safeSize = parseInt(size, 10) || 24;
+            const safeSymbol = escapeHtml(entry.symbol);
+            const brand = entry.source === 'simple';
+            const custom = entry.source === 'custom';
+            const variant = custom ? 'custom' : ( brand ? 'brand' : 'lucide' );
+            const paint = custom ? '' : ' fill="' + ( brand ? 'currentColor' : 'none' ) + '" stroke="' + ( brand ? 'none' : 'currentColor' ) + '"';
+            const geometry = brand || custom ? '' : ' stroke-width="2" stroke-linecap="round" stroke-linejoin="round"';
 
-            if (entry.source === 'simple') {
-                return '<svg class="mudrava-lucide-icon-svg mudrava-lucide-icon-svg--brand" width="' + safeSize + '" height="' + safeSize + '" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true" focusable="false"><use href="#' + safeSymbol + '"></use></svg>';
-            }
-
-            return '<svg class="mudrava-lucide-icon-svg mudrava-lucide-icon-svg--lucide" width="' + safeSize + '" height="' + safeSize + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#' + safeSymbol + '"></use></svg>';
+            return '<svg class="mudrava-lucide-icon-svg mudrava-lucide-icon-svg--' + variant + '" xmlns="http://www.w3.org/2000/svg" width="' + safeSize + '" height="' + safeSize + '" viewBox="0 0 24 24"' + paint + geometry + ' aria-hidden="true" focusable="false"><use href="#' + safeSymbol + '"></use></svg>';
         },
 
-        /**
-         * Show clear button if there's a value and allow_null is true.
-         */
         showClearButton: function () {
             const $selected = this.$selected();
             const value = this.$input().val();
-            const allowNull = this.$control().data('allow-null') == 1;
+            const allowNull = this.$control().data('allow-null') === 1;
 
             if (value && allowNull && !$selected.find('.mudrava-lucide-clear').length) {
+                const clearLabel = SETTINGS.clear || '';
+
                 $selected.append(
-                    '<button type="button" class="mudrava-lucide-clear" title="' + escapeAttr(mudravaLucideField.clear) + '" aria-label="' + escapeAttr(mudravaLucideField.clear) + '">' +
+                    '<button type="button" class="mudrava-lucide-clear" title="' + escapeHtml(clearLabel) + '" aria-label="' + escapeHtml(clearLabel) + '">' +
                     '<span class="dashicons dashicons-no-alt"></span>' +
                     '</button>'
                 );
             }
         },
 
-        /**
-         * Bind document click for closing dropdown.
-         */
-        bindDocumentClick: function () {
-            const self = this;
-
-            $(document).on('click.mudravaLucide' + this.cid, function (e) {
-                if (!$(e.target).closest('.mudrava-lucide-picker').length) {
-                    self.closeDropdown();
-                }
-            });
-        },
-
-        /**
-         * Bind scroll for infinite loading.
-         */
         bindScroll: function () {
             const self = this;
-            let scrollTimer = null;
+
+            this.scrollTimer = null;
 
             this.$gridWrap().on('scroll.mudravaLucide', function () {
-                if (scrollTimer) {
-                    clearTimeout(scrollTimer);
+                if (self.scrollTimer) {
+                    clearTimeout(self.scrollTimer);
                 }
 
-                scrollTimer = setTimeout(function () {
+                self.scrollTimer = setTimeout(function () {
                     self.checkLoadMore();
                 }, 100);
             });
         },
 
-        /**
-         * Check if we need to load more icons.
-         */
+        announce: function (message) {
+            this.$('.mudrava-lucide-live').text(message);
+        },
+
         checkLoadMore: function () {
             const $wrap = this.$gridWrap();
+
+            if (!$wrap.length || !$wrap[0]) {
+                return;
+            }
+
             const scrollTop = $wrap.scrollTop();
             const scrollHeight = $wrap[0].scrollHeight;
             const clientHeight = $wrap[0].clientHeight;
@@ -469,35 +670,28 @@
             }
         },
 
-        /**
-         * Load more icons (next page).
-         */
         loadMoreIcons: function () {
             const totalPages = Math.ceil(this.filteredIcons.length / CONFIG.ICONS_PER_PAGE);
 
             if (this.currentPage < totalPages - 1) {
                 this.currentPage++;
-                this.renderIconsPage(this.currentPage, true);
+                this.renderOptionsPage(this.currentPage, true);
             }
         },
 
-        /**
-         * Render a specific page of icons.
-         */
-        renderIconsPage: function (page, append) {
+        renderOptionsPage: function (page, append) {
             const $grid = this.$grid();
             const startIdx = page * CONFIG.ICONS_PER_PAGE;
             const endIdx = Math.min(startIdx + CONFIG.ICONS_PER_PAGE, this.filteredIcons.length);
             const iconsToRender = this.filteredIcons.slice(startIdx, endIdx);
             const currentValue = this.$input().val();
+            const currentEntry = Repository.resolveEntry(currentValue);
             const self = this;
 
             if (!append) {
                 $grid.empty();
                 this.loadedIcons.clear();
             }
-
-            $grid.toggleClass('has-search', this.searchQuery.length > 0);
 
             const fragment = document.createDocumentFragment();
 
@@ -506,23 +700,35 @@
                     return;
                 }
 
-                const button = document.createElement('button');
-                button.type = 'button';
-                button.className = 'mudrava-lucide-icon';
-                button.dataset.icon = entry.value;
-                button.title = entry.label;
-                button.setAttribute('aria-label', entry.label);
-                button.setAttribute('role', 'option');
+                const option = document.createElement('div');
 
-                if (self.isCurrentEntry(entry, currentValue)) {
-                    button.classList.add('is-selected');
-                    button.setAttribute('aria-selected', 'true');
-                } else {
-                    button.setAttribute('aria-selected', 'false');
+                option.className = 'mudrava-lucide-icon';
+                option.tabIndex = -1;
+                option.setAttribute('role', 'option');
+                option.dataset.icon = entry.value;
+                option.setAttribute('aria-label', entry.label);
+
+                const isCurrent = currentEntry ? currentEntry.value === entry.value : entry.value === currentValue;
+
+                option.setAttribute('aria-selected', isCurrent ? 'true' : 'false');
+
+                if (isCurrent) {
+                    option.classList.add('is-selected');
                 }
 
-                button.innerHTML = self.createIconSvg(entry, 22) + '<span class="mudrava-lucide-icon-label">' + escapeHtml(entry.label) + '</span>';
-                fragment.appendChild(button);
+                const iconWrap = document.createElement('span');
+
+                iconWrap.className = 'mudrava-lucide-icon-preview';
+                iconWrap.innerHTML = self.createIconSvg(entry, 22);
+                option.appendChild(iconWrap);
+
+                const label = document.createElement('span');
+
+                label.className = 'mudrava-lucide-icon-label';
+                label.textContent = entry.label;
+                option.appendChild(label);
+
+                fragment.appendChild(option);
 
                 self.loadedIcons.add(entry.value);
             });
@@ -530,47 +736,182 @@
             $grid.append(fragment);
         },
 
-        /**
-         * Render initial icons.
-         */
         renderIcons: function () {
             this.currentPage = 0;
             this.loadedIcons.clear();
+            this.activeIndex = this.filteredIcons.length ? 0 : -1;
             this.$grid().empty();
-            this.$grid().toggleClass('has-search', this.searchQuery.length > 0);
 
             if (this.filteredIcons.length === 0) {
                 this.$noResults().show();
+                this.updateActivedescendant();
+                this.announce(SETTINGS.noResults || '');
                 return;
             }
 
             this.$noResults().hide();
-            this.renderIconsPage(0, false);
+            this.renderOptionsPage(0, false);
+            this.updateActivedescendant();
+
+            if (SETTINGS.resultsLabel) {
+                this.announce(SETTINGS.resultsLabel.replace('%d', String(this.filteredIcons.length)));
+            }
         },
 
-        /**
-         * Toggle dropdown.
-         */
-        onToggle: function (e) {
-            e.preventDefault();
-            e.stopPropagation();
+        options: function () {
+            return this.$grid().children('.mudrava-lucide-icon');
+        },
 
+        updateActivedescendant: function () {
+            const $options = this.options();
+            const $search = this.$search();
+
+            $options.removeClass('is-active');
+
+            if (this.activeIndex >= 0 && this.activeIndex < $options.length) {
+                const $active = $options.eq(this.activeIndex);
+
+                $active.addClass('is-active');
+
+                let id = $active.attr('id');
+
+                if (!id) {
+                    id = this.optionId(this.activeIndex);
+                }
+
+                if (id) {
+                    $search.attr('aria-activedescendant', id);
+                } else {
+                    $search.removeAttr('aria-activedescendant');
+                }
+            } else {
+                $search.removeAttr('aria-activedescendant');
+            }
+        },
+
+        optionId: function (index) {
+            const $options = this.options();
+
+            if (index < 0 || index >= $options.length) {
+                return '';
+            }
+
+            let id = $options.eq(index).attr('id');
+
+            if (!id) {
+                id = this.$input().attr('id') + '-option-' + index;
+                $options.eq(index).attr('id', id);
+            }
+
+            return id;
+        },
+
+        setActive: function (index, scroll) {
+            const total = this.filteredIcons.length;
+
+            if (total === 0) {
+                this.activeIndex = -1;
+                this.updateActivedescendant();
+                return;
+            }
+
+            if (index < 0) {
+                index = 0;
+            }
+
+            if (index > total - 1) {
+                index = total - 1;
+            }
+
+            // Ensure the page containing the target option is rendered
+            // before clamping; options map 1:1 to filteredIcons positions.
+            const requiredPage = Math.floor(index / CONFIG.ICONS_PER_PAGE);
+
+            while (this.currentPage < requiredPage && this.currentPage < Math.ceil(total / CONFIG.ICONS_PER_PAGE) - 1) {
+                this.currentPage++;
+                this.renderOptionsPage(this.currentPage, true);
+            }
+
+            this.activeIndex = Math.min(index, this.options().length - 1);
+
+            this.updateActivedescendant();
+
+            const node = this.options().eq(index)[0];
+
+            if (scroll && node && node.scrollIntoView) {
+                node.scrollIntoView({ block: 'nearest' });
+            }
+        },
+
+        openDropdown: function () {
+            const self = this;
+
+            OPEN_FIELDS.add(this);
+
+            Repository.ensure()
+                .then(function () {
+                    self.$control().addClass('is-open');
+                    self.$selected().attr('aria-expanded', 'true');
+                    self.$search().val('').attr('aria-expanded', 'true');
+                    self.searchQuery = '';
+                    self.filteredIcons = Repository.entries.slice();
+                    self.renderIcons();
+
+                    Sprites.ensureAll().then(function () {
+                        if (self.activeIndex >= 0) {
+                            self.setActive(self.activeIndex, true);
+                        }
+                    }).catch(function () { /* icons stay as placeholders until a sprite loads */ });
+
+                    setTimeout(function () {
+                        self.$search().trigger('focus');
+                        self.scrollToSelected();
+                    }, 50);
+                })
+                .catch(function () {
+                    OPEN_FIELDS.delete(self);
+                    self.$noResults().show();
+                });
+        },
+
+        closeDropdown: function () {
+            OPEN_FIELDS.delete(this);
+            this.$control().removeClass('is-open');
+            this.$selected().attr('aria-expanded', 'false');
+            this.$search().attr('aria-expanded', 'false');
+        },
+
+        isOpen: function () {
+            return this.$control().hasClass('is-open');
+        },
+
+        scrollToSelected: function () {
+            const $selected = this.$grid().find('.is-selected');
+
+            if ($selected.length) {
+                const node = $selected[0];
+
+                if (node.scrollIntoView) {
+                    node.scrollIntoView({ block: 'nearest' });
+                }
+            }
+        },
+
+        onToggle: function (e) {
             if ($(e.target).closest('.mudrava-lucide-clear').length) {
                 return;
             }
 
-            const $control = this.$control();
+            e.preventDefault();
+            e.stopPropagation();
 
-            if ($control.hasClass('is-open')) {
+            if (this.isOpen()) {
                 this.closeDropdown();
             } else {
                 this.openDropdown();
             }
         },
 
-        /**
-         * Toggle dropdown from keyboard on the selected control.
-         */
         onSelectedKeydown: function (e) {
             if ($(e.target).closest('.mudrava-lucide-clear').length) {
                 return;
@@ -585,183 +926,207 @@
             }
         },
 
-        /**
-         * Open dropdown.
-         */
-        openDropdown: function () {
+        onSearchFocus: function () {
             const self = this;
 
-            loadSprites().then(function () {
-                self.$control().addClass('is-open');
-                self.$selected().attr('aria-expanded', 'true');
-                self.$search().val('');
-                self.searchQuery = '';
-                self.filteredIcons = [...self.allIcons];
-                self.renderIcons();
+            if (!this.isOpen()) {
+                OPEN_FIELDS.add(this);
 
-                setTimeout(function () {
-                    self.$search().focus();
-                    self.scrollToSelected();
-                }, 50);
-            });
-        },
-
-        /**
-         * Close dropdown.
-         */
-        closeDropdown: function () {
-            this.$control().removeClass('is-open');
-            this.$selected().attr('aria-expanded', 'false');
-        },
-
-        /**
-         * Scroll to selected icon.
-         */
-        scrollToSelected: function () {
-            const $selected = this.$grid().find('.is-selected');
-
-            if ($selected.length) {
-                const $gridWrap = this.$gridWrap();
-                const scrollTop = $selected.position().top - 50;
-                $gridWrap.scrollTop(scrollTop);
+                Repository.ensure().then(function () {
+                    self.$control().addClass('is-open');
+                    self.$selected().attr('aria-expanded', 'true');
+                    self.$search().attr('aria-expanded', 'true');
+                    self.filteredIcons = Repository.entries.slice();
+                    self.renderIcons();
+                    Sprites.ensureAll().catch(function () { /* placeholders remain until sprite loads */ });
+                }).catch(function () {
+                    OPEN_FIELDS.delete(self);
+                });
             }
         },
 
-        /**
-         * Handle icon selection.
-         */
-        onSelect: function (e) {
+        onOptionClick: function (e) {
             e.preventDefault();
             e.stopPropagation();
 
-            const $icon = $(e.currentTarget);
-            const iconName = $icon.data('icon');
+            const $option = $(e.currentTarget);
 
-            this.setValue(iconName);
-            this.closeDropdown();
+            this.selectOption($option.data('icon'));
         },
 
-        /**
-         * Set field value.
-         */
-        setValue: function (value) {
+        selectOption: function (value) {
             const $input = this.$input();
-            const $preview = this.$('.mudrava-lucide-preview');
-            const $selected = this.$selected();
-            const entry = this.resolveIconEntry(value);
-            const label = entry ? entry.label : value;
+            const current = $input.val();
 
-            $input.val(value).trigger('change');
+            if (current !== value) {
+                $input.val(value).trigger('change');
+                acf.doAction('change', $input);
+            }
 
             this.$grid().find('.is-selected').removeClass('is-selected').attr('aria-selected', 'false');
 
             if (value) {
-                $preview.html(
-                    this.createIconSvg(entry || value, 24) +
-                    '<span class="mudrava-lucide-preview-name">' + escapeHtml(label) + '</span>'
-                );
-
-                const $iconButton = this.$grid().find('.mudrava-lucide-icon').filter(function () {
+                this.$grid().find('.mudrava-lucide-icon').filter(function () {
                     return $(this).data('icon') === value;
-                });
-                $iconButton.addClass('is-selected').attr('aria-selected', 'true');
-
-                if (!$selected.find('.mudrava-lucide-clear').length) {
-                    $selected.append(
-                        '<button type="button" class="mudrava-lucide-clear" title="' + escapeAttr(mudravaLucideField.clear) + '" aria-label="' + escapeAttr(mudravaLucideField.clear) + '">' +
-                        '<span class="dashicons dashicons-no-alt"></span>' +
-                        '</button>'
-                    );
-                }
-            } else {
-                $preview.html(
-                    '<span class="mudrava-lucide-preview-empty">' + escapeHtml(mudravaLucideField.emptyLabel || 'No icon selected') + '</span>'
-                );
-                $selected.find('.mudrava-lucide-clear').remove();
+                }).addClass('is-selected').attr('aria-selected', 'true');
             }
 
-            acf.doAction('change', $input);
+            this.updatePreview();
+            this.closeDropdown();
+
+            if (value) {
+                const entry = Repository.resolveEntry(value);
+                const label = entry ? entry.label : value;
+
+                this.announce(SETTINGS.selectedLabel ? SETTINGS.selectedLabel.replace('%s', label) : label);
+            } else {
+                this.announce(SETTINGS.emptyLabel || '');
+            }
         },
 
-        /**
-         * Clear selection.
-         */
         onClear: function (e) {
             e.preventDefault();
             e.stopPropagation();
-            this.setValue('');
+
+            const $input = this.$input();
+
+            $input.val('').trigger('change');
+            acf.doAction('change', $input);
+
+            this.updatePreview();
+            this.announce(SETTINGS.emptyLabel || '');
         },
 
-        /**
-         * Handle search with debounce.
-         */
         onSearch: function (e) {
             const self = this;
+            const value = e.target.value;
 
             if (this.searchTimer) {
                 clearTimeout(this.searchTimer);
             }
 
             this.searchTimer = setTimeout(function () {
-                self.filterIcons(e.target.value);
+                self.searchTimer = null;
+                self.applyFilter(value);
             }, CONFIG.DEBOUNCE_DELAY);
         },
 
-        /**
-         * Handle search keydown.
-         */
         onSearchKeydown: function (e) {
+            const keys = ['ArrowDown', 'ArrowUp', 'Home', 'End', 'Enter', 'Escape'];
+
+            if (keys.indexOf(e.key) === -1) {
+                return;
+            }
+
+            e.preventDefault();
+
             if (e.key === 'Escape') {
                 this.closeDropdown();
-                this.$selected().focus();
+                this.$selected().trigger('focus');
+                return;
+            }
+
+            if (this.searchTimer) {
+                clearTimeout(this.searchTimer);
+                this.searchTimer = null;
+                this.applyFilter(this.$search().val());
+            }
+
+            if (e.key === 'ArrowDown') {
+                this.setActive(this.activeIndex + 1, true);
+            } else if (e.key === 'ArrowUp') {
+                this.setActive(this.activeIndex - 1, true);
+            } else if (e.key === 'Home') {
+                this.setActive(0, true);
+            } else if (e.key === 'End') {
+                this.setActive(this.filteredIcons.length - 1, true);
             } else if (e.key === 'Enter') {
-                e.preventDefault();
-                const $firstVisible = this.$grid().find('.mudrava-lucide-icon').first();
-                if ($firstVisible.length) {
-                    $firstVisible.trigger('click');
+                const entry = this.filteredIcons[this.activeIndex];
+
+                if (entry) {
+                    this.selectOption(entry.value);
                 }
             }
         },
 
-        /**
-         * Filter icons by search query.
-         */
-        filterIcons: function (query) {
-            const self = this;
-            const normalizedQuery = query.toLowerCase().trim();
+        applyFilter: function (query) {
+            const normalizedQuery = String(query || '').toLowerCase().trim();
+
             this.searchQuery = normalizedQuery;
 
             if (!normalizedQuery) {
-                this.filteredIcons = [...this.allIcons];
+                this.filteredIcons = Repository.entries.slice();
             } else {
-                this.filteredIcons = this.allIcons.filter(function (entry) {
-                    return entry.search.includes(normalizedQuery);
-                }).sort(function (a, b) {
-                    const scoreDifference = self.getSearchScore(a, normalizedQuery) - self.getSearchScore(b, normalizedQuery);
+                this.filteredIcons = Repository.entries
+                    .filter(function (entry) {
+                        return entry.search.indexOf(normalizedQuery) !== -1;
+                    })
+                    .map(function (entry) {
+                        return { entry: entry, score: getSearchScore(entry, normalizedQuery) };
+                    })
+                    .sort(function (a, b) {
+                        if (a.score !== b.score) {
+                            return a.score - b.score;
+                        }
 
-                    if (scoreDifference !== 0) {
-                        return scoreDifference;
-                    }
-
-                    return a.label.localeCompare(b.label);
-                });
+                        return a.entry.label.localeCompare(b.entry.label);
+                    })
+                    .map(function (item) {
+                        return item.entry;
+                    });
             }
 
             this.renderIcons();
         },
 
-        /**
-         * Cleanup.
-         */
         remove: function () {
-            $(document).off('click.mudravaLucide' + this.cid);
+            OPEN_FIELDS.delete(this);
             this.$gridWrap().off('scroll.mudravaLucide');
+
+            if (this.scrollTimer) {
+                clearTimeout(this.scrollTimer);
+                this.scrollTimer = null;
+            }
 
             if (this.searchTimer) {
                 clearTimeout(this.searchTimer);
+                this.searchTimer = null;
             }
         },
     });
+
+    /**
+     * Score search results so direct name/title matches appear before tag-only matches.
+     */
+    function getSearchScore(entry, query) {
+        const normalizedQuery = normalizeToken(query);
+        const normalizedName = normalizeToken(entry.name);
+        const normalizedLabel = normalizeToken(entry.label);
+        const normalizedValue = normalizeToken(entry.value.replace(/^(?:simple|custom):/, ''));
+        const tags = (entry.tags || []).map(normalizeToken);
+
+        if (!normalizedQuery) {
+            return 100;
+        }
+
+        if (normalizedName === normalizedQuery || normalizedLabel === normalizedQuery || normalizedValue === normalizedQuery) {
+            return entry.source === 'simple' ? 0 : 5;
+        }
+
+        if (normalizedName.indexOf(normalizedQuery) === 0 || normalizedLabel.indexOf(normalizedQuery) === 0 || normalizedValue.indexOf(normalizedQuery) === 0) {
+            return entry.source === 'simple' ? 10 : 20;
+        }
+
+        if (tags.some(function (tag) { return tag === normalizedQuery; })) {
+            return entry.source === 'simple' ? 30 : 60;
+        }
+
+        if (tags.some(function (tag) { return tag.indexOf(normalizedQuery) === 0; })) {
+            return entry.source === 'simple' ? 40 : 70;
+        }
+
+        return entry.source === 'simple' ? 50 : 80;
+    }
 
     acf.registerFieldType(LucideIconField);
 

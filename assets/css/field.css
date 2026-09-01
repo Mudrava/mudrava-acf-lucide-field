@@ -234,6 +234,16 @@
     border-color: #135e96;
 }
 
+.mudrava-lucide-icon.is-active {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+}
+
+.mudrava-lucide-selected.is-unknown .mudrava-lucide-preview-name {
+    color: #9c6f00;
+    font-style: italic;
+}
+
 .mudrava-lucide-icon svg,
 .mudrava-lucide-icon-svg {
     width: 18px;
@@ -242,7 +252,7 @@
     transition: color 0.15s ease;
 }
 
-.mudrava-lucide-icon svg:not,
+.mudrava-lucide-icon svg:not(.mudrava-lucide-icon-svg--brand),
 .mudrava-lucide-icon-svg:not(.mudrava-lucide-icon-svg--brand) {
     stroke: currentColor;
     fill: none;

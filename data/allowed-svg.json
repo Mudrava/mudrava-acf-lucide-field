@@ -1,0 +1,41 @@
+{
+  "elements": [
+    "circle",
+    "ellipse",
+    "g",
+    "line",
+    "path",
+    "polygon",
+    "polyline",
+    "rect"
+  ],
+  "attributes": [
+    "clip-rule",
+    "cx",
+    "cy",
+    "d",
+    "fill",
+    "fill-opacity",
+    "fill-rule",
+    "height",
+    "opacity",
+    "points",
+    "r",
+    "rx",
+    "ry",
+    "stroke",
+    "stroke-linecap",
+    "stroke-linejoin",
+    "stroke-miterlimit",
+    "stroke-opacity",
+    "stroke-width",
+    "transform",
+    "width",
+    "x",
+    "x1",
+    "x2",
+    "y",
+    "y1",
+    "y2"
+  ]
+}

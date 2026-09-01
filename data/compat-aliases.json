@@ -1,0 +1,11 @@
+{
+    "angry": "face-angry",
+    "annoyed": "face-slightly-frowning",
+    "frown": "face-slightly-frowning",
+    "laugh": "face-grinning",
+    "meh": "face-neutral",
+    "smile": "face-slightly-smiling",
+    "smile-plus": "face-slightly-smiling-plus",
+    "history": "rotate-ccw",
+    "podcast": "rss"
+}
