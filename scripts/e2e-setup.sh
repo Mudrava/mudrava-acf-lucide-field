@@ -25,29 +25,41 @@ WP="wp --allow-root"
 
 mkdir -p "$WP_SITE_DIR"
 
-if docker ps -a --format '{{.Names}}' | grep -qx "$CONTAINER"; then
-	docker ps --format '{{.Names}}' | grep -qx "$CONTAINER" || docker start "$CONTAINER" >/dev/null
-else
-	docker run -d --name "$CONTAINER" \
-		-e MYSQL_ROOT_PASSWORD="$DB_ROOT_PASS" \
-		-e MYSQL_DATABASE="$DB_NAME" \
-		-e MYSQL_USER="$DB_USER" \
-		-e MYSQL_PASSWORD="$DB_PASS" \
-		-p "$DB_PORT:3306" mariadb:11 >/dev/null
+# If a database is already listening on the port (e.g. a CI service container),
+# reuse it instead of starting our own to avoid host port collisions.
+external_db=0
+if (exec 3<>"/dev/tcp/127.0.0.1/$DB_PORT") 2>/dev/null; then
+	exec 3>&- 3<&-
+	external_db=1
 fi
 
-ready=0
-for _ in $(seq 1 30); do
-	if docker exec "$CONTAINER" mariadb-admin -uroot -p"$DB_ROOT_PASS" ping >/dev/null 2>&1; then
-		ready=1
-		break
+if [ "$external_db" -eq 1 ]; then
+	echo "Using external database on 127.0.0.1:$DB_PORT"
+else
+	if docker ps -a --format '{{.Names}}' | grep -qx "$CONTAINER"; then
+		docker ps --format '{{.Names}}' | grep -qx "$CONTAINER" || docker start "$CONTAINER" >/dev/null
+	else
+		docker run -d --name "$CONTAINER" \
+			-e MYSQL_ROOT_PASSWORD="$DB_ROOT_PASS" \
+			-e MYSQL_DATABASE="$DB_NAME" \
+			-e MYSQL_USER="$DB_USER" \
+			-e MYSQL_PASSWORD="$DB_PASS" \
+			-p "$DB_PORT:3306" mariadb:11 >/dev/null
 	fi
-	sleep 1
-done
 
-if [ "$ready" -ne 1 ]; then
-	echo "MySQL container $CONTAINER not ready after 30s" >&2
-	exit 1
+	ready=0
+	for _ in $(seq 1 30); do
+		if docker exec "$CONTAINER" mariadb-admin -uroot -p"$DB_ROOT_PASS" ping >/dev/null 2>&1; then
+			ready=1
+			break
+		fi
+		sleep 1
+	done
+
+	if [ "$ready" -ne 1 ]; then
+		echo "MySQL container $CONTAINER not ready after 30s" >&2
+		exit 1
+	fi
 fi
 
 if [ ! -f "$WP_SITE_DIR/wp-settings.php" ]; then
