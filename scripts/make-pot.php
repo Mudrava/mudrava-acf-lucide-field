@@ -82,7 +82,7 @@ foreach ($files as $file) {
 ksort($entries);
 
 $header = array(
-    'Project-Id-Version: Mudrava Icon Field for ACF with Lucide 1.2.0',
+    'Project-Id-Version: Mudrava Icon Field for ACF with Lucide 1.2.1',
     'Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mudrava-acf-lucide-field/',
     'POT-Creation-Date: ' . gmdate('Y-m-d H:i+0000'),
     'MIME-Version: 1.0',

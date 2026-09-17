@@ -2,9 +2,9 @@
 Contributors: mudrava
 Tags: acf, icons, lucide, brands, icon picker
 Requires at least: 6.0
-Tested up to: 7.1
+Tested up to: 7.1.1
 Requires PHP: 7.4
-Stable tag: 1.2.0
+Stable tag: 1.2.1
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -186,6 +186,11 @@ This plugin does not use cookies.
 This plugin does not integrate with or send data to any third-party services.
 
 == Changelog ==
+
+= 1.2.1 - 2026-09-18 =
+
+* Fixed: the admin screens no longer fatal when the plugin is active but ACF is deactivated - the custom-icons capability lookup now falls back to `manage_options` instead of calling `acf_get_setting()` unconditionally.
+* Tested: verified full compatibility with WordPress 7.1.1 - activation, Custom Icons settings page, REST catalog and `[lucide_icon]` shortcode smoke-tested on PHP 8.5.
 
 = 1.2.0 - 2026-08-31 =
 
