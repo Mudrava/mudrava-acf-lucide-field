@@ -1,6 +1,6 @@
 === Mudrava Icon Field for ACF with Lucide ===
 Contributors: mudrava
-Tags: acf, advanced-custom-fields, icons, lucide, icon picker, svg, brands, simple-icons, field, gutenberg
+Tags: acf, advanced-custom-fields, icon picker, lucide, svg
 Requires at least: 6.0
 Tested up to: 7.1.3
 Requires PHP: 7.4
