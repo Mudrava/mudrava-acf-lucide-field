@@ -1,0 +1,43 @@
+name: Bug report
+description: Something does not work as documented
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For security issues follow SECURITY.md, not this form.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+    validations: { required: true }
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations: { required: true }
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      value: |
+        1.
+        2.
+        3.
+    validations: { required: true }
+  - type: textarea
+    id: icon
+    attributes:
+      label: Icon involved
+      description: Icon name as stored (e.g. `arrow-right` or `simple:facebook`), and whether it is Lucide or a brand icon.
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      value: |
+        WordPress:
+        PHP:
+        ACF (free/Pro) version:
+        Plugin version:
+        Browser:
+    validations: { required: true }
