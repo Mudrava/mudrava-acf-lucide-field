@@ -6,10 +6,12 @@ A professional ACF (Advanced Custom Fields) custom field type for selecting [Luc
 
 [![WordPress Plugin Version](https://img.shields.io/wordpress/plugin/v/mudrava-acf-lucide-field)](https://wordpress.org/plugins/mudrava-acf-lucide-field/)
 [![WordPress Plugin Downloads](https://img.shields.io/wordpress/plugin/dt/mudrava-acf-lucide-field)](https://wordpress.org/plugins/mudrava-acf-lucide-field/)
-![WordPress](https://img.shields.io/badge/WordPress-6.0%2B-green.svg)
-![PHP](https://img.shields.io/badge/PHP-7.4%2B-purple.svg)
-![ACF](https://img.shields.io/badge/ACF-6.0%2B-orange.svg)
-![License](https://img.shields.io/badge/license-GPL--2.0--or--later-lightgrey.svg)
+[![WordPress](https://img.shields.io/badge/WordPress-6.0%2B-21759B?logo=wordpress&logoColor=white)](https://wordpress.org/plugins/mudrava-acf-lucide-field/)
+![Tested up to](https://img.shields.io/badge/Tested%20up%20to-WordPress%207.1.3-21759B?logo=wordpress&logoColor=white)
+[![PHP](https://img.shields.io/badge/PHP-7.4%2B-777BB4?logo=php&logoColor=white)](https://www.php.net/)
+[![ACF](https://img.shields.io/badge/ACF-6.0%2B-E4A23C)](https://www.advancedcustomfields.com/)
+[![License](https://img.shields.io/badge/License-GPLv2-green)](LICENSE)
+[![MUDRAVA](https://img.shields.io/badge/by-MUDRAVA-021D69)](https://mudrava.com/en/)
 
 ## Description
 
@@ -29,7 +31,7 @@ Mudrava Icon Field for ACF with Lucide adds a new field type to Advanced Custom 
 
 ## Requirements
 
-- WordPress 6.0 or higher
+- WordPress 6.0 or higher (tested up to WordPress 7.1.3)
 - PHP 7.4 or higher
 - ACF 6.0 or higher
 
@@ -285,6 +287,9 @@ Contributions are welcome! Please read our contributing guidelines before submit
 - **Architecture & design decisions**: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
 - **Security policy**: [SECURITY.md](SECURITY.md)
 - **Contributing guide**: [CONTRIBUTING.md](CONTRIBUTING.md)
+- **Code of Conduct**: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
+- **Accessibility statement**: [ACCESSIBILITY.md](ACCESSIBILITY.md)
+- **Support options**: [SUPPORT.md](SUPPORT.md)
 - **Lucide Icons**: [lucide.dev](https://lucide.dev/)
 - **Simple Icons**: [simpleicons.org](https://simpleicons.org/)
 
