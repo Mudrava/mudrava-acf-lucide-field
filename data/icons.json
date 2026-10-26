@@ -43,7 +43,7 @@
     "hospital",
     "defibrillator",
     "earthquake",
-    "siesmic",
+    "seismic",
     "magnitude",
     "richter scale",
     "aftershock",
@@ -117,10 +117,6 @@
     "safety",
     "equipment",
     "amenities"
-  ],
-  "album": [
-    "photo",
-    "book"
   ],
   "align-center-horizontal": [
     "items",
@@ -436,6 +432,15 @@
     "lounge",
     "loveseat",
     "couch"
+  ],
+  "armenian-dram": [
+    "finance",
+    "symbol",
+    "banking",
+    "economy",
+    "currency",
+    "money",
+    "payment"
   ],
   "arrow-big-down": [
     "backwards",
@@ -848,7 +853,6 @@
   ],
   "asterisk": [
     "symbol",
-    "sterisk",
     "mark",
     "pointer",
     "pencil",
@@ -1011,6 +1015,36 @@
     "singer",
     "song"
   ],
+  "avocado": [
+    "fruit",
+    "snack",
+    "meal",
+    "lunch",
+    "ingredient",
+    "cooking",
+    "cookery",
+    "kitchen",
+    "cuisine",
+    "eating",
+    "healthy",
+    "nutrition",
+    "diet",
+    "guacamole",
+    "mexican",
+    "green",
+    "pit",
+    "seed",
+    "half",
+    "produce",
+    "vegetarian",
+    "vegan",
+    "grocery",
+    "supermarket",
+    "toast",
+    "superfood",
+    "plant based",
+    "ripe"
+  ],
   "award": [
     "achievement",
     "badge",
@@ -1048,6 +1082,38 @@
     "camping",
     "school",
     "childhood"
+  ],
+  "bacon": [
+    "rashers",
+    "smoked",
+    "streaky",
+    "crispy",
+    "meat",
+    "fast food",
+    "junk food",
+    "snack",
+    "dish",
+    "restaurant",
+    "brunch",
+    "lunch",
+    "meal",
+    "savory",
+    "savoury",
+    "cookery",
+    "cooking",
+    "grilled",
+    "barbecue",
+    "barbeque",
+    "bbq",
+    "pig",
+    "pork",
+    "breakfast",
+    "cured",
+    "butcher",
+    "sandwich",
+    "protein",
+    "grocery",
+    "kitchen"
   ],
   "badge": [
     "check",
@@ -1312,6 +1378,19 @@
     "safety",
     "patch"
   ],
+  "bangladeshi-taka": [
+    "currency",
+    "money",
+    "payment",
+    "bdt",
+    "৳",
+    "currency symbol",
+    "cash",
+    "banknote",
+    "price",
+    "remittance",
+    "ecommerce"
+  ],
   "banknote": [
     "currency",
     "money",
@@ -1566,6 +1645,20 @@
     "beverage",
     "brewery",
     "drink"
+  ],
+  "belarusian-ruble": [
+    "currency",
+    "money",
+    "payment",
+    "byn",
+    "iso4217",
+    "fiat",
+    "prices",
+    "localization",
+    "banking",
+    "checkout",
+    "wallet",
+    "exchange-rate"
   ],
   "bell": [
     "alarm",
@@ -2067,6 +2160,47 @@
     "learning",
     "research"
   ],
+  "book-bookmark": [
+    "dictionary",
+    "reading",
+    "booklet",
+    "magazine",
+    "leaflet",
+    "pamphlet",
+    "tome",
+    "library",
+    "writing",
+    "written",
+    "writer",
+    "author",
+    "story",
+    "script",
+    "fiction",
+    "novel",
+    "information",
+    "knowledge",
+    "education",
+    "high school",
+    "university",
+    "college",
+    "academy",
+    "student",
+    "study",
+    "learning",
+    "homework",
+    "research",
+    "documentation",
+    "saved",
+    "later",
+    "future",
+    "reference",
+    "index",
+    "code",
+    "coding",
+    "version control",
+    "git",
+    "repository"
+  ],
   "book-check": [
     "read",
     "booklet",
@@ -2202,7 +2336,7 @@
     "teens",
     "teenager",
     "therapy",
-    "theraputic",
+    "therapeutic",
     "therapist",
     "planner",
     "organizer",
@@ -2257,47 +2391,6 @@
     "secret",
     "hidden",
     "knowledge"
-  ],
-  "book-marked": [
-    "dictionary",
-    "reading",
-    "booklet",
-    "magazine",
-    "leaflet",
-    "pamphlet",
-    "tome",
-    "library",
-    "writing",
-    "written",
-    "writer",
-    "author",
-    "story",
-    "script",
-    "fiction",
-    "novel",
-    "information",
-    "knowledge",
-    "education",
-    "high school",
-    "university",
-    "college",
-    "academy",
-    "student",
-    "study",
-    "learning",
-    "homework",
-    "research",
-    "documentation",
-    "saved",
-    "later",
-    "future",
-    "reference",
-    "index",
-    "code",
-    "coding",
-    "version control",
-    "git",
-    "repository"
   ],
   "book-minus": [
     "code",
@@ -2765,6 +2858,21 @@
     "machine learning",
     "computing"
   ],
+  "brain-off": [
+    "medical",
+    "mind",
+    "mental",
+    "intellect",
+    "cerebral",
+    "consciousness",
+    "genius",
+    "artificial intelligence",
+    "ai",
+    "think",
+    "deep learning",
+    "machine learning",
+    "computing"
+  ],
   "brick-wall": [
     "bricks",
     "mortar",
@@ -2856,6 +2964,25 @@
     "cadet",
     "scout"
   ],
+  "bridge": [
+    "overpass",
+    "cross over",
+    "traverse",
+    "viaduct",
+    "suspension",
+    "infrastructure",
+    "transportation",
+    "crossing",
+    "road",
+    "river",
+    "gate",
+    "golden",
+    "travel",
+    "landmark",
+    "route",
+    "maritime",
+    "clearance"
+  ],
   "briefcase": [
     "work",
     "bag",
@@ -2881,6 +3008,23 @@
     "doctor",
     "medicine",
     "first aid"
+  ],
+  "briefcase-plus": [
+    "work",
+    "bag",
+    "baggage",
+    "folder",
+    "new",
+    "add",
+    "create",
+    "increase",
+    "briefcase",
+    "portfolio",
+    "business",
+    "career",
+    "employment",
+    "professional",
+    "plus"
   ],
   "bring-to-front": [
     "bring",
@@ -3058,7 +3202,7 @@
     "organisation",
     "organization"
   ],
-  "building-2": [
+  "building-complex": [
     "business",
     "company",
     "enterprise",
@@ -3066,6 +3210,26 @@
     "organisation",
     "organization",
     "city"
+  ],
+  "building-complex-plus": [
+    "business",
+    "company",
+    "enterprise",
+    "skyscraper",
+    "organisation",
+    "organization",
+    "city",
+    "new",
+    "add",
+    "create",
+    "increase",
+    "office",
+    "headquarters",
+    "startup",
+    "registration",
+    "onboarding",
+    "real estate",
+    "property"
   ],
   "bus": [
     "bus",
@@ -3225,6 +3389,36 @@
     "tick",
     "complete",
     "task"
+  ],
+  "calendar-chevrons-left": [
+    "navigation",
+    "arrow",
+    "direction",
+    "symbol",
+    "pointer",
+    "indicator",
+    "next",
+    "menu",
+    "date",
+    "day",
+    "month",
+    "year",
+    "events"
+  ],
+  "calendar-chevrons-right": [
+    "navigation",
+    "arrow",
+    "direction",
+    "symbol",
+    "pointer",
+    "indicator",
+    "previous",
+    "menu",
+    "date",
+    "day",
+    "month",
+    "year",
+    "events"
   ],
   "calendar-clock": [
     "date",
@@ -3400,6 +3594,28 @@
     "webcam",
     "video"
   ],
+  "can": [
+    "food",
+    "storage",
+    "groceries",
+    "tin",
+    "metal",
+    "recyclable",
+    "container",
+    "pantry",
+    "grocery",
+    "preserved"
+  ],
+  "can-soda": [
+    "beverage",
+    "drink",
+    "food",
+    "soda",
+    "tin",
+    "beer",
+    "alcohol",
+    "waste"
+  ],
   "candy": [
     "sugar",
     "food",
@@ -3457,7 +3673,7 @@
   "car-battery": [
     "battery",
     "automobile",
-    "powercell",
+    "power cell",
     "electric",
     "power",
     "electricity",
@@ -3526,6 +3742,51 @@
     "vegetable",
     "food",
     "eat"
+  ],
+  "carton": [
+    "milk",
+    "dairy",
+    "beverage",
+    "drink",
+    "diet",
+    "lactose",
+    "liquid",
+    "liter",
+    "litre",
+    "pint",
+    "pints",
+    "pasteurized",
+    "skim",
+    "skimmed",
+    "container",
+    "packaging",
+    "grocery",
+    "juice",
+    "cream",
+    "cow"
+  ],
+  "carton-off": [
+    "milk",
+    "dairy",
+    "beverage",
+    "drink",
+    "diet",
+    "lactose free",
+    "non dairy",
+    "liquid",
+    "liter",
+    "litre",
+    "pint",
+    "pints",
+    "pasteurized",
+    "skim",
+    "skimmed",
+    "container",
+    "packaging",
+    "allergy",
+    "intolerance",
+    "vegan",
+    "unavailable"
   ],
   "case-lower": [
     "text",
@@ -3598,6 +3859,36 @@
     "videotape",
     "crime",
     "watching"
+  ],
+  "certificate": [
+    "award",
+    "ribbon",
+    "medal",
+    "achievement",
+    "pinned",
+    "badge",
+    "recognition",
+    "laurel",
+    "commendation",
+    "diploma",
+    "official",
+    "proof",
+    "fact",
+    "verified",
+    "license",
+    "warrant",
+    "authorization",
+    "legal",
+    "ownership",
+    "credential",
+    "ssl",
+    "tls",
+    "security",
+    "trust",
+    "cybersecurity",
+    "authority",
+    "graduation",
+    "study"
   ],
   "chart-area": [
     "statistics",
@@ -4102,9 +4393,114 @@
     "menu",
     "^"
   ],
+  "circle-chevrons-down": [
+    "bottom",
+    "descend",
+    "page",
+    "page down",
+    "scroll",
+    "jump",
+    "south",
+    "caret",
+    "button",
+    "skip",
+    "end",
+    "last page",
+    "latest",
+    "feed",
+    "chat",
+    "pagination",
+    "fast",
+    "media"
+  ],
+  "circle-chevrons-left": [
+    "previous",
+    "rewind",
+    "backward",
+    "first",
+    "beginning",
+    "start",
+    "west",
+    "music",
+    "caret",
+    "button",
+    "pagination",
+    "skip",
+    "skip-back",
+    "seek-back",
+    "media-controls",
+    "player",
+    "playlist",
+    "track",
+    "chapter",
+    "jump",
+    "timeline",
+    "controls"
+  ],
+  "circle-chevrons-right": [
+    "next",
+    "forward",
+    "skip",
+    "fast forward",
+    "last",
+    "end",
+    "east",
+    "music",
+    "caret",
+    "button",
+    "pagination",
+    "jump",
+    "seek",
+    "seek forward",
+    "player control",
+    "chapter",
+    "track",
+    "timeline",
+    "navigation control"
+  ],
+  "circle-chevrons-up": [
+    "top",
+    "ascend",
+    "page",
+    "page up",
+    "back to top",
+    "scroll",
+    "jump",
+    "north",
+    "caret",
+    "button",
+    "skip",
+    "pagination",
+    "first page",
+    "fast",
+    "fast scroll",
+    "rewind",
+    "jump to start",
+    "floating action button",
+    "anchor",
+    "timeline"
+  ],
   "circle-dashed": [
     "pending",
     "dot",
+    "progress",
+    "issue",
+    "draft",
+    "code",
+    "coding",
+    "version control"
+  ],
+  "circle-dashed-check": [
+    "approved",
+    "pending",
+    "changes",
+    "revision",
+    "reapproval",
+    "published",
+    "schedule",
+    "assignment",
+    "request",
+    "review",
     "progress",
     "issue",
     "draft",
@@ -4215,6 +4611,21 @@
     "improve",
     "circle",
     "button"
+  ],
+  "circle-fading-play": [
+    "short clips",
+    "shorts",
+    "reels",
+    "stories",
+    "video",
+    "highlights",
+    "social media",
+    "content",
+    "preview",
+    "teaser",
+    "clip",
+    "short form",
+    "vertical video"
   ],
   "circle-fading-plus": [
     "stories",
@@ -4445,6 +4856,7 @@
   "circle-x": [
     "cancel",
     "close",
+    "cross",
     "delete",
     "remove",
     "times",
@@ -4481,6 +4893,49 @@
     "tv",
     "show",
     "entertainment"
+  ],
+  "clef-alto": [
+    "do",
+    "c",
+    "music",
+    "note",
+    "key",
+    "soprano",
+    "mezzo",
+    "alto",
+    "staff",
+    "pitch",
+    "baritone",
+    "major",
+    "scale"
+  ],
+  "clef-bass": [
+    "fa",
+    "f",
+    "music",
+    "note",
+    "key",
+    "baritone",
+    "staff",
+    "pitch",
+    "bass",
+    "subbass",
+    "major",
+    "scale"
+  ],
+  "clef-treble": [
+    "sol",
+    "g",
+    "music",
+    "note",
+    "key",
+    "treble",
+    "staff",
+    "pitch",
+    "violin",
+    "solfege",
+    "major",
+    "scale"
   ],
   "clipboard": [
     "copy",
@@ -4730,7 +5185,7 @@
     "bytes",
     "servers",
     "backup",
-    "timemachine",
+    "time machine",
     "rotate",
     "synchronize",
     "synchronise",
@@ -5078,9 +5533,17 @@
   ],
   "cookie": [
     "biscuit",
+    "snack",
+    "dessert",
+    "food",
+    "sweet",
+    "bakery",
+    "consent",
     "privacy",
     "legal",
-    "food"
+    "tracking",
+    "browser",
+    "website"
   ],
   "cooking-pot": [
     "pod",
@@ -5200,6 +5663,31 @@
     "gigahertz",
     "ghz"
   ],
+  "cpu-ai": [
+    "ai",
+    "artificial intelligence",
+    "machine learning",
+    "neural network",
+    "automation",
+    "intelligence",
+    "generative",
+    "assistant",
+    "chatbot",
+    "llm",
+    "deep learning",
+    "inference",
+    "training",
+    "mlops",
+    "model",
+    "predictive",
+    "on-device",
+    "edge",
+    "api",
+    "service",
+    "cognitive",
+    "processor",
+    "chip"
+  ],
   "creative-commons": [
     "licence",
     "license"
@@ -5274,6 +5762,26 @@
     "plastic",
     "bank",
     "cc"
+  ],
+  "credit-card-reader": [
+    "bank",
+    "purchase",
+    "payment",
+    "cc",
+    "atm",
+    "terminal",
+    "checkout",
+    "kiosk",
+    "pos",
+    "point of sale",
+    "transaction",
+    "contactless",
+    "chip",
+    "swipe",
+    "tap",
+    "banking",
+    "finance",
+    "retail"
   ],
   "credit-card-x": [
     "debit",
@@ -5355,6 +5863,15 @@
     "straw",
     "water"
   ],
+  "cupcake": [
+    "cake",
+    "dessert",
+    "food",
+    "celebration",
+    "sweet",
+    "baking",
+    "cooking"
+  ],
   "currency": [
     "finance",
     "money"
@@ -5410,7 +5927,7 @@
     "bytes",
     "servers",
     "backup",
-    "timemachine",
+    "time machine",
     "rotate",
     "arrow",
     "left"
@@ -5783,6 +6300,27 @@
     "money",
     "payment"
   ],
+  "dome": [
+    "roof",
+    "cupola",
+    "rotunda",
+    "shelter",
+    "building",
+    "architecture",
+    "structure",
+    "church",
+    "christian",
+    "orthodox",
+    "byzantine",
+    "cathedral",
+    "basilica",
+    "chapel",
+    "monument",
+    "landmark",
+    "museum",
+    "observatory",
+    "heritage"
+  ],
   "donut": [
     "doughnut",
     "sprinkles",
@@ -5807,6 +6345,15 @@
     "gateway",
     "emergency exit"
   ],
+  "door-closed-cog": [
+    "room",
+    "entrance",
+    "entry",
+    "settings",
+    "gear",
+    "access",
+    "automation"
+  ],
   "door-closed-locked": [
     "entrance",
     "entry",
@@ -5818,6 +6365,14 @@
     "emergency exit",
     "lock"
   ],
+  "door-closed-package": [
+    "delivery",
+    "parcel",
+    "doorstep",
+    "shipping",
+    "drop-off",
+    "courier"
+  ],
   "door-open": [
     "entrance",
     "entry",
@@ -5826,6 +6381,29 @@
     "egress",
     "gate",
     "gateway",
+    "emergency exit"
+  ],
+  "door-stairwell": [
+    "staircase",
+    "stairway",
+    "stairs",
+    "steps",
+    "ladder",
+    "transition",
+    "access",
+    "structure",
+    "spiral",
+    "building",
+    "vertical",
+    "movement",
+    "floor",
+    "level",
+    "entrance",
+    "entry",
+    "exit",
+    "egress",
+    "route",
+    "indoor",
     "emergency exit"
   ],
   "dot": [
@@ -6040,6 +6618,20 @@
     "hatched",
     "bad egg"
   ],
+  "eighth-note": [
+    "audio",
+    "music",
+    "sound",
+    "note",
+    "quaver"
+  ],
+  "eighth-notes": [
+    "audio",
+    "music",
+    "sound",
+    "notes",
+    "quavers"
+  ],
   "eject": [
     "disc",
     "drive",
@@ -6103,6 +6695,21 @@
     "…",
     "..."
   ],
+  "engine": [
+    "vehicle",
+    "power",
+    "energy",
+    "drive",
+    "repair",
+    "car",
+    "motor",
+    "mechanical",
+    "diagnostics",
+    "maintenance",
+    "warning",
+    "dashboard",
+    "parts"
+  ],
   "equal": [
     "calculate",
     "math",
@@ -6116,6 +6723,22 @@
     "calculate",
     "math",
     "operator"
+  ],
+  "equal-approximately-not": [
+    "calculate",
+    "math",
+    "operator",
+    "not",
+    "approximately",
+    "unequal",
+    "code",
+    "≇",
+    "tolerance",
+    "threshold",
+    "mismatch",
+    "comparison",
+    "assertion",
+    "variance"
   ],
   "equal-not": [
     "calculate",
@@ -6330,6 +6953,30 @@
   ],
   "fast-forward": [
     "music"
+  ],
+  "faucet": [
+    "tap",
+    "spigot",
+    "water",
+    "drinking",
+    "fresh",
+    "source",
+    "pipes",
+    "plumbing",
+    "plumber",
+    "sink",
+    "basin",
+    "kitchen",
+    "bathroom",
+    "washroom",
+    "fixture",
+    "valve",
+    "flow",
+    "drinkable",
+    "potable",
+    "amenities",
+    "utilities",
+    "hydration"
   ],
   "feather": [
     "quill",
@@ -6935,18 +7582,6 @@
     "experiment",
     "test"
   ],
-  "flip-horizontal-2": [
-    "reflect",
-    "mirror",
-    "alignment",
-    "dashed"
-  ],
-  "flip-vertical-2": [
-    "reflect",
-    "mirror",
-    "alignment",
-    "dashed"
-  ],
   "flower": [
     "sustainability",
     "nature",
@@ -7195,6 +7830,34 @@
     "import",
     "export"
   ],
+  "folder-user": [
+    "directory",
+    "profile",
+    "person",
+    "personal",
+    "contact",
+    "document",
+    "account",
+    "individual",
+    "home folder",
+    "shared",
+    "access",
+    "owner"
+  ],
+  "folder-users": [
+    "directory",
+    "profile",
+    "shared",
+    "people",
+    "document",
+    "accounts",
+    "group",
+    "team",
+    "permission",
+    "access",
+    "collaboration",
+    "organization"
+  ],
   "folder-x": [
     "directory",
     "remove",
@@ -7369,6 +8032,34 @@
     "game",
     "gaming"
   ],
+  "gap-horizontal": [
+    "gap",
+    "spacing",
+    "space",
+    "between",
+    "padding",
+    "margin",
+    "horizontal",
+    "auto layout",
+    "layout",
+    "distance",
+    "frame",
+    "distribute"
+  ],
+  "gap-vertical": [
+    "gap",
+    "spacing",
+    "space",
+    "between",
+    "padding",
+    "margin",
+    "vertical",
+    "auto layout",
+    "layout",
+    "distance",
+    "frame",
+    "distribute"
+  ],
   "gauge": [
     "dashboard",
     "dial",
@@ -7410,6 +8101,68 @@
     "currency",
     "money",
     "payment"
+  ],
+  "germ": [
+    "virus",
+    "microbe",
+    "bacterium",
+    "bacteria",
+    "germ",
+    "organism",
+    "cilia",
+    "pathogen",
+    "infection",
+    "disease",
+    "contagion",
+    "contamination",
+    "microbiology",
+    "health",
+    "medicine",
+    "biology",
+    "science",
+    "microorganism",
+    "pandemic",
+    "epidemic",
+    "outbreak",
+    "amoeba",
+    "flu",
+    "security",
+    "single cell",
+    "unicellular",
+    "vaccine",
+    "immunity",
+    "quarantine"
+  ],
+  "germ-off": [
+    "virus",
+    "microbe",
+    "bacterium",
+    "bacteria",
+    "germ",
+    "organism",
+    "cilia",
+    "pathogen",
+    "infection",
+    "disease",
+    "contagion",
+    "contamination",
+    "microbiology",
+    "health",
+    "medicine",
+    "biology",
+    "science",
+    "microorganism",
+    "pandemic",
+    "epidemic",
+    "outbreak",
+    "amoeba",
+    "flu",
+    "security",
+    "single cell",
+    "unicellular",
+    "vaccine",
+    "immunity",
+    "quarantine"
   ],
   "ghost": [
     "spirit",
@@ -7582,6 +8335,21 @@
     "online",
     "status"
   ],
+  "globe-code": [
+    "website",
+    "internet",
+    "globe",
+    "connection",
+    "network",
+    "digital",
+    "access",
+    "global",
+    "link",
+    "world",
+    "browser",
+    "language",
+    "translate"
+  ],
   "globe-lock": [
     "vpn",
     "private",
@@ -7659,7 +8427,7 @@
     "academic",
     "hat",
     "diploma",
-    "bachlor's",
+    "bachelor's",
     "master's",
     "doctorate"
   ],
@@ -7667,6 +8435,41 @@
     "fruit",
     "wine",
     "food"
+  ],
+  "graph-hub": [
+    "load balancer",
+    "distribute",
+    "traffic",
+    "network",
+    "nodes",
+    "parallel",
+    "branch",
+    "hierarchy",
+    "routing",
+    "dispatcher",
+    "cluster",
+    "backend",
+    "fan-out",
+    "topology",
+    "orchestration"
+  ],
+  "graph-star": [
+    "mind map",
+    "network",
+    "hub",
+    "nodes",
+    "links",
+    "connections",
+    "relationships",
+    "dependencies",
+    "bonds",
+    "structure",
+    "topology",
+    "cluster",
+    "thoughts",
+    "ideas",
+    "concepts",
+    "molecule"
   ],
   "grid-2x2": [
     "table",
@@ -7785,6 +8588,24 @@
     "move",
     "drag"
   ],
+  "groceries": [
+    "food",
+    "vegetables",
+    "health",
+    "grocery",
+    "market",
+    "farmer",
+    "produce",
+    "pantry",
+    "paper bag",
+    "shop",
+    "supermarket",
+    "retail",
+    "delivery",
+    "larder",
+    "provisions",
+    "takeout"
+  ],
   "group": [
     "cubes",
     "packages",
@@ -7812,6 +8633,33 @@
     "audio",
     "sound",
     "noise"
+  ],
+  "guitar-electric": [
+    "acoustic",
+    "instrument",
+    "strings",
+    "riff",
+    "rock",
+    "band",
+    "country",
+    "concert",
+    "performance",
+    "play",
+    "lead",
+    "loud",
+    "music",
+    "audio",
+    "sound",
+    "noise"
+  ],
+  "half-note": [
+    "audio",
+    "music",
+    "sound",
+    "note",
+    "crotchet",
+    "minim",
+    "quarter note"
   ],
   "ham": [
     "food",
@@ -7943,6 +8791,15 @@
     "tote",
     "travel"
   ],
+  "handle-bottom-right": [
+    "mouse",
+    "grab",
+    "handle",
+    "move",
+    "drag",
+    "resize",
+    "corner"
+  ],
   "handshake": [
     "agreement",
     "partnership",
@@ -7990,8 +8847,7 @@
   "hard-hat": [
     "helmet",
     "construction",
-    "safety",
-    "savety"
+    "safety"
   ],
   "hash": [
     "hashtag",
@@ -8216,6 +9072,17 @@
     "mark",
     "text"
   ],
+  "hiking-stick": [
+    "hiking",
+    "walking",
+    "stick",
+    "trekking",
+    "trail",
+    "pole",
+    "backpacking",
+    "outdoors",
+    "mountains"
+  ],
   "hop": [
     "beer",
     "brewery",
@@ -8254,12 +9121,36 @@
     "time",
     "sandglass"
   ],
+  "hourglass-cog": [
+    "timer",
+    "time",
+    "sandglass",
+    "duration",
+    "settings",
+    "gear",
+    "cog",
+    "edit",
+    "configuration",
+    "countdown",
+    "timeout",
+    "expiration"
+  ],
   "house": [
     "home",
     "living",
     "building",
     "residence",
     "architecture"
+  ],
+  "house-cog": [
+    "home",
+    "building",
+    "residence",
+    "settings",
+    "gear",
+    "configuration",
+    "property",
+    "automation"
   ],
   "house-heart": [
     "home sweet home",
@@ -8294,6 +9185,22 @@
     "building",
     "wifi",
     "connectivity"
+  ],
+  "houses": [
+    "homes",
+    "housing",
+    "estate",
+    "living",
+    "buildings",
+    "development",
+    "residences",
+    "residential",
+    "village",
+    "neighbourhood",
+    "accommodation",
+    "community",
+    "dwellings",
+    "architecture"
   ],
   "ice-cream-bowl": [
     "gelato",
@@ -8428,6 +9335,26 @@
     "arrow",
     "left"
   ],
+  "iv-bag": [
+    "intravenous",
+    "therapy",
+    "infusion",
+    "medicine",
+    "medication",
+    "treatment",
+    "healthcare",
+    "hydration",
+    "vitamin",
+    "supplement",
+    "blood",
+    "donation",
+    "chemotherapy",
+    "clinic",
+    "feeding tube",
+    "administration",
+    "health",
+    "regeneration"
+  ],
   "japanese-yen": [
     "currency",
     "money",
@@ -8466,6 +9393,15 @@
     "equipment",
     "lake",
     "ocean"
+  ],
+  "kazakh-tenge": [
+    "currency",
+    "money",
+    "payment",
+    "kazakhstan",
+    "currency-symbol",
+    "exchange",
+    "cash"
   ],
   "key": [
     "password",
@@ -8528,6 +9464,20 @@
     "spell",
     "settings",
     "mouse"
+  ],
+  "lambda": [
+    "greek",
+    "symbol",
+    "math",
+    "function",
+    "programming",
+    "serverless",
+    "anonymous",
+    "functional",
+    "cloud",
+    "wavelength",
+    "calculus",
+    "linear algebra"
   ],
   "lamp": [
     "lighting",
@@ -8763,6 +9713,34 @@
     "copy",
     "upgrade"
   ],
+  "layout-arrow-down": [
+    "layout",
+    "direction",
+    "flex",
+    "flexbox",
+    "flex-direction",
+    "column",
+    "auto layout",
+    "vertical",
+    "arrange",
+    "order",
+    "flow",
+    "stack"
+  ],
+  "layout-arrow-right": [
+    "layout",
+    "direction",
+    "flex",
+    "flexbox",
+    "flex-direction",
+    "row",
+    "auto layout",
+    "horizontal",
+    "arrange",
+    "order",
+    "flow",
+    "stack"
+  ],
   "layout-dashboard": [
     "masonry",
     "brick"
@@ -8785,6 +9763,26 @@
     "app",
     "home",
     "start"
+  ],
+  "layout-grid-circles": [
+    "app",
+    "home",
+    "start",
+    "dot matrix",
+    "dots",
+    "menu",
+    "dashboard",
+    "collection",
+    "overview",
+    "tiles",
+    "grid",
+    "matrix",
+    "launcher",
+    "apps",
+    "widgets",
+    "ui",
+    "circles",
+    "shortcuts"
   ],
   "layout-list": [
     "todo",
@@ -8835,6 +9833,25 @@
     "podium",
     "stand"
   ],
+  "lens": [
+    "optics",
+    "reflection",
+    "camera",
+    "photography",
+    "focus",
+    "effect",
+    "shader",
+    "post-process",
+    "visual",
+    "contact lens",
+    "glass",
+    "magnify",
+    "translucent",
+    "transparent",
+    "orb",
+    "bubble",
+    "zoom"
+  ],
   "lens-concave": [
     "concave",
     "lens",
@@ -8864,6 +9881,29 @@
     "microscope",
     "curved",
     "science"
+  ],
+  "letter-spacing": [
+    "tracking",
+    "kerning",
+    "design",
+    "lettering",
+    "text",
+    "letters",
+    "characters",
+    "font",
+    "typography",
+    "formatting"
+  ],
+  "letters": [
+    "abc",
+    "alphabet",
+    "alphabetical",
+    "text",
+    "characters",
+    "language",
+    "typography",
+    "literacy",
+    "spelling"
   ],
   "library": [
     "books",
@@ -8943,6 +9983,60 @@
   "lightbulb-off": [
     "lights"
   ],
+  "lighthouse": [
+    "lighthouse",
+    "beacon",
+    "coast",
+    "navigation",
+    "tower",
+    "sea",
+    "ocean",
+    "maritime",
+    "guide",
+    "safety",
+    "light",
+    "shine",
+    "port",
+    "marine",
+    "faro",
+    "signal",
+    "nautical",
+    "harbor",
+    "shore",
+    "light beam",
+    "wayfinding",
+    "guidance",
+    "onboarding",
+    "help",
+    "landmark"
+  ],
+  "line-dot-bottom-vertical": [
+    "code",
+    "version",
+    "control",
+    "station",
+    "waypoint",
+    "start",
+    "first"
+  ],
+  "line-dot-left-horizontal": [
+    "line",
+    "dot",
+    "left",
+    "horizontal",
+    "shape",
+    "symbol",
+    "navigation",
+    "arrow",
+    "pointer",
+    "code",
+    "version control",
+    "waypoint",
+    "stop",
+    "start",
+    "first",
+    "station"
+  ],
   "line-dot-right-horizontal": [
     "code",
     "version control",
@@ -8951,6 +10045,34 @@
     "station",
     "last",
     "end"
+  ],
+  "line-dot-top-vertical": [
+    "arrow",
+    "pointer",
+    "direction",
+    "indicator",
+    "code",
+    "version",
+    "control",
+    "waypoint",
+    "stop",
+    "station",
+    "last",
+    "end"
+  ],
+  "line-height": [
+    "leading",
+    "text",
+    "letters",
+    "characters",
+    "font",
+    "typography",
+    "spacing",
+    "paragraph",
+    "formatting",
+    "editor",
+    "readability",
+    "typesetting"
   ],
   "line-squiggle": [
     "line",
@@ -9347,12 +10469,26 @@
     "unread",
     "scheduled",
     "delayed",
-    "sendlater",
+    "send later",
     "delivery",
     "reminder",
     "pending",
     "outgoing",
     "timer"
+  ],
+  "mail-dot": [
+    "mail",
+    "envelope",
+    "communication",
+    "post",
+    "send",
+    "address",
+    "notification",
+    "email",
+    "message",
+    "letter",
+    "unread",
+    "dot"
   ],
   "mail-minus": [
     "email",
@@ -9366,6 +10502,19 @@
     "message",
     "letter",
     "read"
+  ],
+  "mail-pen": [
+    "email",
+    "message",
+    "letter",
+    "pen",
+    "edit",
+    "compose",
+    "draft",
+    "write",
+    "writing",
+    "create",
+    "reply"
   ],
   "mail-plus": [
     "email",
@@ -9793,6 +10942,27 @@
     "reply",
     "response"
   ],
+  "message-circle-text": [
+    "comment",
+    "chat",
+    "conversation",
+    "dialog",
+    "feedback",
+    "speech",
+    "bubble",
+    "sms",
+    "texting",
+    "messaging",
+    "dm",
+    "discussion",
+    "thread",
+    "transcript",
+    "written",
+    "writing",
+    "lines",
+    "support",
+    "chatbot"
+  ],
   "message-circle-warning": [
     "comment",
     "chat",
@@ -10033,6 +11203,25 @@
     "mute",
     "moderate"
   ],
+  "messages-circle": [
+    "comment",
+    "chat",
+    "conversation",
+    "dialog",
+    "feedback",
+    "speech bubbles",
+    "copy",
+    "multiple",
+    "discussion",
+    "interview",
+    "debate",
+    "group",
+    "group chat",
+    "threads",
+    "unread",
+    "bubble",
+    "messaging"
+  ],
   "messages-square": [
     "comment",
     "chat",
@@ -10268,22 +11457,38 @@
   ],
   "monitor": [
     "tv",
+    "computer",
+    "desktop",
     "screen",
     "display",
+    "external display",
+    "screen sharing",
     "virtual machine",
     "vm"
   ],
   "monitor-check": [
     "tv",
+    "computer",
     "screen",
     "display",
     "desktop",
+    "external display",
+    "screen sharing",
+    "connected",
+    "success",
+    "verified",
     "running",
     "active",
     "virtual machine",
     "vm"
   ],
   "monitor-cloud": [
+    "tv",
+    "computer",
+    "screen",
+    "display",
+    "desktop",
+    "external display",
     "virtual machine",
     "virtual desktop",
     "vm",
@@ -10295,20 +11500,19 @@
     "software as a service",
     "saas",
     "workstation",
-    "environment",
-    "tv",
-    "screen",
-    "display"
+    "environment"
   ],
   "monitor-cog": [
     "tv",
+    "computer",
     "screen",
     "display",
+    "desktop",
+    "external display",
     "virtual machine",
     "vm",
     "executable",
     "settings",
-    "cog",
     "edit",
     "gear",
     "configuration",
@@ -10320,9 +11524,15 @@
   ],
   "monitor-dot": [
     "tv",
+    "computer",
     "screen",
     "display",
     "desktop",
+    "external display",
+    "screen sharing",
+    "status",
+    "notification",
+    "indicator",
     "running",
     "active",
     "virtual machine",
@@ -10330,36 +11540,71 @@
   ],
   "monitor-down": [
     "tv",
+    "computer",
     "screen",
     "display",
     "desktop",
-    "download"
+    "external display",
+    "screen sharing",
+    "download",
+    "remote",
+    "cast"
   ],
   "monitor-off": [
-    "share"
+    "tv",
+    "computer",
+    "screen",
+    "display",
+    "desktop",
+    "external display",
+    "screen sharing",
+    "offline",
+    "disabled",
+    "disconnected",
+    "power"
   ],
   "monitor-pause": [
     "tv",
+    "computer",
     "screen",
     "display",
     "desktop",
+    "external display",
+    "screen sharing",
     "video",
     "movie",
     "film",
+    "pause",
     "suspend",
     "hibernate",
     "boot",
     "virtual machine",
     "vm"
   ],
+  "monitor-pc": [
+    "personal computer",
+    "desktop",
+    "screen",
+    "display",
+    "workstation",
+    "tower",
+    "chassis",
+    "hardware",
+    "setup",
+    "gaming"
+  ],
   "monitor-play": [
     "tv",
+    "computer",
     "screen",
     "display",
     "desktop",
+    "external display",
+    "screen sharing",
     "video",
     "movie",
     "film",
+    "play",
     "running",
     "start",
     "boot",
@@ -10367,26 +11612,42 @@
     "vm"
   ],
   "monitor-smartphone": [
-    "smartphone",
     "phone",
     "cellphone",
     "device",
     "mobile",
     "desktop",
-    "monitor",
+    "screen",
+    "display",
+    "external display",
+    "screen sharing",
     "responsive",
-    "screens"
-  ],
-  "monitor-speaker": [
-    "devices",
-    "connect",
+    "screens",
+    "sync",
     "cast"
   ],
-  "monitor-stop": [
+  "monitor-speaker": [
     "tv",
+    "computer",
     "screen",
     "display",
     "desktop",
+    "external display",
+    "connect",
+    "cast",
+    "audio",
+    "sound",
+    "volume",
+    "presentation"
+  ],
+  "monitor-stop": [
+    "tv",
+    "computer",
+    "screen",
+    "display",
+    "desktop",
+    "external display",
+    "screen sharing",
     "video",
     "movie",
     "film",
@@ -10397,21 +11658,31 @@
   ],
   "monitor-up": [
     "tv",
-    "screen",
-    "display",
-    "upload",
-    "connect",
-    "remote",
-    "screen share"
-  ],
-  "monitor-x": [
-    "tv",
+    "computer",
     "screen",
     "display",
     "desktop",
+    "external display",
+    "upload",
+    "connect",
+    "remote",
+    "screen sharing",
+    "cast"
+  ],
+  "monitor-x": [
+    "tv",
+    "computer",
+    "screen",
+    "display",
+    "desktop",
+    "external display",
+    "screen sharing",
     "virtual machine",
     "vm",
     "close",
+    "error",
+    "failed",
+    "disconnected",
     "stop",
     "suspend",
     "remove",
@@ -10569,6 +11840,40 @@
     "scroll",
     "click"
   ],
+  "mouth": [
+    "speech",
+    "voice",
+    "talk",
+    "speaking",
+    "taste",
+    "tasting",
+    "flavor",
+    "palate",
+    "tongue",
+    "gustatory",
+    "oral",
+    "dental",
+    "expression",
+    "communication",
+    "accessibility"
+  ],
+  "mouth-off": [
+    "speech",
+    "voice",
+    "talk",
+    "mute",
+    "silence",
+    "speechless",
+    "taste loss",
+    "flavor loss",
+    "ageusia",
+    "tasteless",
+    "gustatory",
+    "oral",
+    "dental",
+    "communication",
+    "accessibility"
+  ],
   "move": [
     "arrows"
   ],
@@ -10636,28 +11941,6 @@
     "double",
     "arrow"
   ],
-  "music": [
-    "note",
-    "quaver",
-    "eighth note"
-  ],
-  "music-2": [
-    "quaver",
-    "eighth note",
-    "note"
-  ],
-  "music-3": [
-    "crotchet",
-    "minim",
-    "quarter note",
-    "half note",
-    "note"
-  ],
-  "music-4": [
-    "semiquaver",
-    "sixteenth note",
-    "note"
-  ],
   "navigation": [
     "location",
     "travel"
@@ -10673,6 +11956,13 @@
   "navigation-off": [
     "location",
     "travel"
+  ],
+  "nepali-rupee": [
+    "currency",
+    "money",
+    "nepal",
+    "rupee",
+    "npr"
   ],
   "network": [
     "tree"
@@ -10722,6 +12012,19 @@
     "study",
     "homework",
     "research"
+  ],
+  "notebook-dot": [
+    "document",
+    "file",
+    "journal",
+    "page",
+    "paper",
+    "record",
+    "entry",
+    "notebook",
+    "notification",
+    "unread",
+    "note"
   ],
   "notebook-pen": [
     "pencil",
@@ -11217,7 +12520,7 @@
     "eco-friendly",
     "kraft",
     "retail",
-    "doggybag"
+    "doggy bag"
   ],
   "paperclip": [
     "attachment",
@@ -11261,6 +12564,20 @@
     "function",
     "(",
     ")"
+  ],
+  "park": [
+    "nature",
+    "green",
+    "trees",
+    "landscape",
+    "rest",
+    "walk",
+    "leisure",
+    "environment",
+    "tree",
+    "bench",
+    "outdoors",
+    "recreation"
   ],
   "parking-meter": [
     "driving",
@@ -11462,6 +12779,27 @@
     "offer",
     "marketing"
   ],
+  "perfume-bottle": [
+    "eau de parfum",
+    "eau de toilette",
+    "essence",
+    "aftershave",
+    "cologne",
+    "aroma",
+    "fragrance",
+    "smell",
+    "scent",
+    "bouquet",
+    "gift",
+    "duty free",
+    "spray",
+    "puff",
+    "atomizer",
+    "mist",
+    "beauty",
+    "skincare",
+    "cosmetics"
+  ],
   "person-standing": [
     "people",
     "human",
@@ -11495,6 +12833,17 @@
     "call"
   ],
   "phone-incoming": [
+    "call"
+  ],
+  "phone-log": [
+    "telephone",
+    "communication",
+    "mobile",
+    "device",
+    "contact",
+    "history",
+    "data",
+    "information",
     "call"
   ],
   "phone-missed": [
@@ -11670,6 +13019,17 @@
     "trip",
     "airplane",
     "takeoff"
+  ],
+  "plant-pot": [
+    "plant",
+    "leaf",
+    "nature",
+    "pot",
+    "houseplant",
+    "gardening",
+    "planter",
+    "decor",
+    "indoor"
   ],
   "play": [
     "music",
@@ -11908,6 +13268,27 @@
     "fax",
     "office",
     "device"
+  ],
+  "printer-3d": [
+    "model",
+    "hardware",
+    "technology",
+    "device",
+    "factory",
+    "manufacturing",
+    "art",
+    "extruder",
+    "stl",
+    "obj",
+    "step",
+    "additive",
+    "fabrication",
+    "rapid prototype",
+    "layer",
+    "filament",
+    "nozzle",
+    "maker",
+    "machine"
   ],
   "printer-check": [
     "fax",
@@ -12336,7 +13717,6 @@
     "ignore"
   ],
   "refrigerator": [
-    "frigerator",
     "fridge",
     "freezer",
     "cooler",
@@ -12439,7 +13819,6 @@
     "housekeeping",
     "tool",
     "maintenance",
-    "smarthome",
     "sweeping",
     "hygiene",
     "chores",
@@ -12555,6 +13934,30 @@
     "reload",
     "rerun",
     "redo"
+  ],
+  "rotate-cw-clock": [
+    "modify",
+    "edit",
+    "refresh",
+    "sync",
+    "renew",
+    "revision",
+    "settings",
+    "adjust",
+    "upgrade",
+    "time",
+    "timeline",
+    "version",
+    "time machine",
+    "backup",
+    "clockwise",
+    "arrow",
+    "reload",
+    "rerun",
+    "synchronize",
+    "circular",
+    "cycle",
+    "update"
   ],
   "rotate-cw-fading-clock": [
     "clock",
@@ -12679,6 +14082,13 @@
     "weblog",
     "podcast"
   ],
+  "rugby-ball": [
+    "rugby",
+    "football",
+    "ball",
+    "goal",
+    "sport"
+  ],
   "ruler": [
     "measurements",
     "centimeters",
@@ -12761,7 +14171,10 @@
     "antenna",
     "receiver",
     "dish aerial",
-    "saucer"
+    "saucer",
+    "communication",
+    "broadcast",
+    "signal"
   ],
   "saudi-riyal": [
     "currency",
@@ -12935,7 +14348,7 @@
   "scan-qr-code": [
     "barcode",
     "scan",
-    "qrcode",
+    "qr code",
     "url",
     "information",
     "digital",
@@ -13031,6 +14444,22 @@
     "commute",
     "speed"
   ],
+  "scratch-blocks": [
+    "code",
+    "blocks",
+    "scratch",
+    "turbowarp",
+    "mistwarp",
+    "visual programming",
+    "block-based",
+    "drag-and-drop",
+    "editor",
+    "education",
+    "learning",
+    "programming",
+    "kids",
+    "integration"
+  ],
   "screen-share": [
     "host",
     "desktop",
@@ -13040,6 +14469,16 @@
     "desktop",
     "disconnect",
     "monitor"
+  ],
+  "screw": [
+    "fastener",
+    "hardware",
+    "bolt",
+    "screwdriver",
+    "repair",
+    "assembly",
+    "diy",
+    "flathead"
   ],
   "scroll": [
     "paper",
@@ -13224,6 +14663,19 @@
     "problem",
     "error"
   ],
+  "server-nas": [
+    "storage",
+    "network",
+    "server",
+    "backup",
+    "raid",
+    "files",
+    "sharing",
+    "disk",
+    "hardware",
+    "lan",
+    "cloud"
+  ],
   "server-off": [
     "cloud",
     "storage"
@@ -13278,7 +14730,7 @@
     "beach",
     "sand",
     "holiday",
-    "sealife",
+    "sea life",
     "fossil",
     "ammonite",
     "biology",
@@ -13404,7 +14856,7 @@
     "weakness",
     "infection",
     "infected",
-    "comprimised",
+    "compromised",
     "data leak",
     "audited",
     "admin",
@@ -13470,7 +14922,7 @@
     "weakness",
     "infection",
     "infected",
-    "comprimised",
+    "compromised",
     "data leak",
     "audited",
     "admin",
@@ -13621,7 +15073,7 @@
     "admin",
     "verification",
     "crest",
-    "shieldcog",
+    "shield cog",
     "bravery",
     "knight",
     "foot soldier",
@@ -13719,6 +15171,40 @@
     "army",
     "cadet",
     "scout"
+  ],
+  "shield-house": [
+    "cybersecurity",
+    "secure",
+    "safety",
+    "protection",
+    "guardian",
+    "armored",
+    "armoured",
+    "defense",
+    "defence",
+    "defender",
+    "block",
+    "threat",
+    "prevention",
+    "antivirus",
+    "vigilance",
+    "vigilant",
+    "detection",
+    "scan",
+    "strength",
+    "strong",
+    "tough",
+    "invincible",
+    "invincibility",
+    "invulnerable",
+    "undamaged",
+    "audit",
+    "admin",
+    "property",
+    "household",
+    "connectivity",
+    "building",
+    "residence"
   ],
   "shield-keyhole": [
     "cybersecurity",
@@ -13832,7 +15318,7 @@
     "weakness",
     "infected",
     "infection",
-    "comprimised",
+    "compromised",
     "data leak",
     "unaudited",
     "admin",
@@ -13924,7 +15410,7 @@
     "vulnerable",
     "weakness",
     "infection",
-    "comprimised",
+    "compromised",
     "data leak",
     "audit",
     "admin",
@@ -13986,7 +15472,7 @@
     "weakness",
     "infection",
     "infected",
-    "comprimised",
+    "compromised",
     "data leak",
     "audited",
     "admin",
@@ -14096,6 +15582,42 @@
     "items",
     "ingredients"
   ],
+  "shopping-cart-minus": [
+    "trolley",
+    "cart",
+    "basket",
+    "e-commerce",
+    "ecommerce",
+    "store",
+    "purchase",
+    "products",
+    "items",
+    "checkout",
+    "order",
+    "retail",
+    "remove",
+    "decrease",
+    "quantity",
+    "subtract"
+  ],
+  "shopping-cart-plus": [
+    "trolley",
+    "cart",
+    "basket",
+    "e-commerce",
+    "ecommerce",
+    "store",
+    "purchase",
+    "products",
+    "items",
+    "checkout",
+    "order",
+    "retail",
+    "add",
+    "increase",
+    "quantity",
+    "buy"
+  ],
   "shovel": [
     "dig",
     "spade",
@@ -14140,7 +15662,34 @@
     "arthropod",
     "littleneck",
     "quahog",
-    "cherrystone"
+    "marine",
+    "creature",
+    "fisherman",
+    "ocean",
+    "fresh",
+    "cuisine",
+    "marine-life"
+  ],
+  "shrimp-off": [
+    "marine",
+    "creature",
+    "fisherman",
+    "ocean",
+    "fresh",
+    "cuisine",
+    "marine-life",
+    "seafood",
+    "shellfish",
+    "crustacean",
+    "prawn",
+    "scallop",
+    "whelk",
+    "arthropod",
+    "littleneck",
+    "quahog",
+    "allergy",
+    "intolerance",
+    "diet"
   ],
   "shrink": [
     "scale",
@@ -14271,6 +15820,13 @@
     "alarm",
     "light"
   ],
+  "sixteenth-notes": [
+    "audio",
+    "music",
+    "sound",
+    "notes",
+    "semiquavers"
+  ],
   "skip-back": [
     "arrow",
     "previous",
@@ -14311,7 +15867,12 @@
     "phone",
     "cellphone",
     "device",
-    "screen"
+    "mobile",
+    "screen",
+    "display",
+    "touchscreen",
+    "portable",
+    "responsive"
   ],
   "smartphone-charging": [
     "phone",
@@ -14325,6 +15886,20 @@
     "payment",
     "near-field communication",
     "screen"
+  ],
+  "smartphone-user-round": [
+    "phone",
+    "cellphone",
+    "device",
+    "mobile",
+    "person",
+    "profile",
+    "account",
+    "avatar",
+    "contact",
+    "identity",
+    "owner",
+    "authentication"
   ],
   "snail": [
     "animal",
@@ -14519,7 +16094,7 @@
     "performance",
     "lens",
     "leaderboard",
-    "followspot",
+    "follow spot",
     "best",
     "highlight"
   ],
@@ -14572,7 +16147,7 @@
     "hospital",
     "defibrillator",
     "earthquake",
-    "siesmic",
+    "seismic",
     "magnitude",
     "richter scale",
     "aftershock",
@@ -14712,6 +16287,10 @@
     "glob pattern",
     "wildcard",
     "*"
+  ],
+  "square-bookmark": [
+    "photo",
+    "book"
   ],
   "square-bottom-dashed-scissors": [
     "cut",
@@ -14881,6 +16460,20 @@
     "dom",
     "node"
   ],
+  "square-dashed-plus": [
+    "selection",
+    "select",
+    "add",
+    "new",
+    "placeholder",
+    "marquee",
+    "box",
+    "dashed",
+    "plus",
+    "insert",
+    "frame",
+    "empty"
+  ],
   "square-dashed-text": [
     "find",
     "search",
@@ -14897,6 +16490,42 @@
     "rectangular",
     "marquee",
     "dashed",
+    "box",
+    "rectangle",
+    "aspect ratio",
+    "1:1"
+  ],
+  "square-dashed-x": [
+    "deselect",
+    "unselect",
+    "delete",
+    "select",
+    "selection",
+    "border",
+    "width",
+    "layout",
+    "style",
+    "design",
+    "rectangular",
+    "marquee",
+    "box",
+    "rectangle",
+    "aspect ratio",
+    "1:1"
+  ],
+  "square-dashed-x-corner": [
+    "deselect",
+    "unselect",
+    "delete",
+    "select",
+    "selection",
+    "border",
+    "width",
+    "layout",
+    "style",
+    "design",
+    "rectangular",
+    "marquee",
     "box",
     "rectangle",
     "aspect ratio",
@@ -14931,6 +16560,18 @@
   "square-equal": [
     "calculate",
     "="
+  ],
+  "square-exclamation-point": [
+    "warning",
+    "alert",
+    "danger",
+    "exclamation mark",
+    "rectangle",
+    "square",
+    "notification",
+    "attention",
+    "important",
+    "caution"
   ],
   "square-function": [
     "programming",
@@ -15202,6 +16843,11 @@
     "shortcut",
     "or",
     "/"
+  ],
+  "square-sparkles": [
+    "picture",
+    "photo",
+    "sparkles"
   ],
   "square-split-horizontal": [
     "split",
@@ -15852,14 +17498,27 @@
     "segment"
   ],
   "tablet": [
-    "device"
+    "device",
+    "mobile",
+    "screen",
+    "display",
+    "touchscreen",
+    "portable",
+    "responsive"
   ],
   "tablet-smartphone": [
+    "phone",
+    "cellphone",
+    "device",
+    "mobile",
+    "screen",
+    "display",
+    "touchscreen",
+    "portable",
     "responsive",
     "screens",
     "browser",
-    "testing",
-    "mobile"
+    "testing"
   ],
   "tablets": [
     "medicine",
@@ -16084,6 +17743,36 @@
     "menu",
     "list"
   ],
+  "text-align-justify-center": [
+    "paragraph",
+    "alignment",
+    "justified",
+    "center",
+    "middle",
+    "typography",
+    "editor",
+    "document"
+  ],
+  "text-align-justify-end": [
+    "paragraph",
+    "alignment",
+    "justified",
+    "right",
+    "end",
+    "typography",
+    "editor",
+    "document"
+  ],
+  "text-align-justify-start": [
+    "paragraph",
+    "alignment",
+    "justified",
+    "left",
+    "start",
+    "typography",
+    "editor",
+    "document"
+  ],
   "text-align-start": [
     "text",
     "alignment",
@@ -16178,6 +17867,13 @@
     "like",
     "good",
     "emotion"
+  ],
+  "tic-tac-toe": [
+    "game",
+    "board",
+    "grid",
+    "strategy",
+    "noughts and crosses"
   ],
   "ticket": [
     "entry",
@@ -16364,6 +18060,28 @@
     "bathroom",
     "washroom"
   ],
+  "tombstone": [
+    "grave",
+    "gravestone",
+    "headstone",
+    "cemetery",
+    "graveyard",
+    "death",
+    "memorial",
+    "funeral",
+    "halloween",
+    "rip",
+    "obituary",
+    "deceased",
+    "epitaph",
+    "mourning",
+    "bereavement",
+    "condolence",
+    "deprecated",
+    "retired",
+    "archived",
+    "decommissioned"
+  ],
   "tool-case": [
     "tools",
     "maintenance",
@@ -16395,6 +18113,42 @@
     "engineering",
     "craft",
     "diy"
+  ],
+  "toothbrush": [
+    "dental care",
+    "oral hygiene",
+    "brushing",
+    "teeth",
+    "dentist",
+    "bathroom",
+    "toiletries",
+    "personal care",
+    "cleaning",
+    "bristles",
+    "handle",
+    "plaque",
+    "toothpaste",
+    "self care",
+    "grooming"
+  ],
+  "toothbrush-sparkles": [
+    "dental care",
+    "oral hygiene",
+    "brushing",
+    "teeth",
+    "dentist",
+    "bathroom",
+    "toiletries",
+    "personal care",
+    "cleaning",
+    "bristles",
+    "handle",
+    "plaque",
+    "toothpaste",
+    "self care",
+    "grooming",
+    "fresh",
+    "clean"
   ],
   "tornado": [
     "weather",
@@ -16534,11 +18288,27 @@
     "binoculars",
     "rubbish"
   ],
-  "trash-2": [
+  "trash-off": [
+    "empty",
+    "deletion",
+    "cleanup",
+    "junk",
+    "clear",
     "garbage",
     "delete",
     "remove",
-    "bin"
+    "bin",
+    "trash",
+    "waste",
+    "recycle",
+    "discard",
+    "rubbish",
+    "disabled",
+    "off",
+    "prevent",
+    "locked",
+    "unavailable",
+    "protected"
   ],
   "tree-deciduous": [
     "tree",
@@ -16616,6 +18386,18 @@
     "incline",
     "increase"
   ],
+  "triangles-centerline-dashed-horizontal": [
+    "reflect",
+    "mirror",
+    "alignment",
+    "dashed"
+  ],
+  "triangles-centerline-dashed-vertical": [
+    "reflect",
+    "mirror",
+    "alignment",
+    "dashed"
+  ],
   "trophy": [
     "prize",
     "sports",
@@ -16649,6 +18431,21 @@
     "haulage",
     "lorry",
     "electric"
+  ],
+  "tube-lotion": [
+    "sunscreen",
+    "sunblock",
+    "spf",
+    "uv",
+    "cream",
+    "skincare",
+    "toothpaste",
+    "ointment",
+    "bottle",
+    "toiletries",
+    "bathroom",
+    "beach",
+    "summer"
   ],
   "turkish-lira": [
     "currency",
@@ -16712,7 +18509,7 @@
     "connectivity"
   ],
   "tv-minimal": [
-    "flatscreen",
+    "flat screen",
     "television",
     "stream",
     "display",
@@ -16732,7 +18529,7 @@
     "catchup"
   ],
   "tv-minimal-play": [
-    "flatscreen",
+    "flat screen",
     "television",
     "stream",
     "display",
@@ -16903,6 +18700,24 @@
     "cog",
     "gear"
   ],
+  "user-group": [
+    "group",
+    "people",
+    "team",
+    "members",
+    "community",
+    "membership",
+    "collaboration",
+    "organization",
+    "contacts",
+    "directory",
+    "staff",
+    "family",
+    "ancestry",
+    "ancestors",
+    "lineage",
+    "parents"
+  ],
   "user-key": [
     "passkey",
     "password",
@@ -16982,6 +18797,24 @@
     "cog",
     "gear"
   ],
+  "user-round-group": [
+    "group",
+    "people",
+    "team",
+    "members",
+    "community",
+    "membership",
+    "collaboration",
+    "organization",
+    "contacts",
+    "directory",
+    "staff",
+    "family",
+    "ancestry",
+    "ancestors",
+    "lineage",
+    "parents"
+  ],
   "user-round-key": [
     "passkey",
     "password",
@@ -17027,6 +18860,25 @@
     "magnifier",
     "magnifying glass",
     "lens"
+  ],
+  "user-round-star": [
+    "person",
+    "account",
+    "favorite",
+    "contact",
+    "like",
+    "review",
+    "rating",
+    "admin",
+    "avatar",
+    "profile",
+    "featured",
+    "moderator",
+    "verified",
+    "badge",
+    "award",
+    "champion",
+    "starred"
   ],
   "user-round-x": [
     "delete",
@@ -17078,9 +18930,43 @@
     "group",
     "people"
   ],
+  "users-collaboration": [
+    "group",
+    "people",
+    "collaboration",
+    "users",
+    "team",
+    "communication",
+    "cooperative",
+    "workspace",
+    "peer-to-peer",
+    "p2p",
+    "shared",
+    "delegation",
+    "handoff",
+    "coauthor",
+    "profiles"
+  ],
   "users-round": [
     "group",
     "people"
+  ],
+  "users-round-collaboration": [
+    "group",
+    "people",
+    "collaboration",
+    "users",
+    "team",
+    "communication",
+    "cooperative",
+    "workspace",
+    "peer-to-peer",
+    "p2p",
+    "shared",
+    "delegation",
+    "handoff",
+    "coauthor",
+    "profiles"
   ],
   "utensils": [
     "fork",
@@ -17266,6 +19152,55 @@
   "view": [
     "eye",
     "look"
+  ],
+  "virus": [
+    "pathogen",
+    "infection",
+    "disease",
+    "illness",
+    "contagion",
+    "outbreak",
+    "pandemic",
+    "epidemic",
+    "covid",
+    "coronavirus",
+    "germ",
+    "microbe",
+    "microorganism",
+    "biology",
+    "medical",
+    "healthcare",
+    "malware",
+    "cybersecurity",
+    "threat"
+  ],
+  "virus-off": [
+    "pathogen",
+    "infection",
+    "disease",
+    "illness",
+    "contagion",
+    "outbreak",
+    "pandemic",
+    "epidemic",
+    "covid",
+    "coronavirus",
+    "germ",
+    "microbe",
+    "microorganism",
+    "biology",
+    "medical",
+    "healthcare",
+    "malware",
+    "cybersecurity",
+    "threat",
+    "antivirus",
+    "blocked",
+    "removed",
+    "clean",
+    "safe",
+    "prevention",
+    "quarantine"
   ],
   "voicemail": [
     "phone",
@@ -17545,6 +19480,26 @@
     "intolerance",
     "diet"
   ],
+  "whistle": [
+    "alert",
+    "signal",
+    "sound",
+    "blow",
+    "noise",
+    "coach",
+    "trainer",
+    "referee",
+    "gym",
+    "game",
+    "training",
+    "sports",
+    "traffic cops",
+    "police",
+    "lifeguard",
+    "safety",
+    "rescue",
+    "emergency"
+  ],
   "whole-word": [
     "text",
     "selection",
@@ -17574,6 +19529,26 @@
     "connection",
     "signal",
     "wireless"
+  ],
+  "wifi-lock": [
+    "admin",
+    "connection",
+    "secure",
+    "security",
+    "signal",
+    "network",
+    "password",
+    "wireless",
+    "hotspot",
+    "encrypted",
+    "locked",
+    "private",
+    "ssid",
+    "guest",
+    "router",
+    "access",
+    "authentication",
+    "protected"
   ],
   "wifi-low": [
     "connection",
@@ -17614,6 +19589,16 @@
     "air",
     "pressure",
     "blow"
+  ],
+  "wind-arrow-up": [
+    "weather",
+    "air",
+    "pressure",
+    "blow",
+    "gust",
+    "windy",
+    "sort",
+    "increase"
   ],
   "wine": [
     "alcohol",

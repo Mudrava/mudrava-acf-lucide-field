@@ -1,12 +1,12 @@
 {
     "lucideStatic": {
-        "version": "1.38.0",
-        "integrity": "sha512-/pRaHJceXrQyAMzWfwhWPMwZeiZEIejZ+Ko226AqI52QbLVgowyGAp7OzZIaQEf7XB+LuRGWqUGqTfu3LJ0CQQ==",
-        "tarball": "https://registry.npmjs.org/lucide-static/-/lucide-static-1.38.0.tgz"
+        "version": "1.61.0",
+        "integrity": "sha512-yLAiQB3MWUJEstsEDAwenSA3m7vr1tdLvgnC16Q/XMxRRma0DWwMs8M2bWlvgShrIs1m2mWMJ+0AiahqQO4GrA==",
+        "tarball": "https://registry.npmjs.org/lucide-static/-/lucide-static-1.61.0.tgz"
     },
     "simpleIcons": {
-        "version": "16.29.0",
-        "integrity": "sha512-4H94f5ZgcCcgJroc902TFlFdgPu2IU2eD7+WebN2Z14xKYrKHeJ4UQcZwzgSuH4Rgzw+jp7sbHl40NefuIEYsg==",
-        "tarball": "https://registry.npmjs.org/simple-icons/-/simple-icons-16.29.0.tgz"
+        "version": "16.36.0",
+        "integrity": "sha512-+VNPPkqSOLidFeSgBKUWX4n50WPpDC09hav+BgS26anIF1oQOlGBb8LvwGR+6fYRjo+B6CiKzNBceMPkSVXANQ==",
+        "tarball": "https://registry.npmjs.org/simple-icons/-/simple-icons-16.36.0.tgz"
     }
 }

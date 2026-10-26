@@ -647,6 +647,12 @@
     "source": "https://almalinux.org",
     "guidelines": ""
   },
+  "alphaxiv": {
+    "title": "alphaXiv",
+    "hex": "9A2036",
+    "source": "https://alphaxiv.org",
+    "guidelines": ""
+  },
   "alpinedotjs": {
     "title": "Alpine.js",
     "hex": "8BC0D0",
@@ -1391,6 +1397,12 @@
     "source": "https://www.aseprite.org",
     "guidelines": ""
   },
+  "aspire": {
+    "title": "Aspire",
+    "hex": "7455DD",
+    "source": "https://github.com/microsoft/aspire-brand/blob/f9eb464dec47870de23d55dd7b3c00d39122813d/logo/developer-tools/aspire-plain.svg",
+    "guidelines": ""
+  },
   "assemblyscript": {
     "title": "AssemblyScript",
     "hex": "007ACC",
@@ -1455,6 +1467,12 @@
     "title": "Atlassian",
     "hex": "0052CC",
     "source": "https://atlassian.design/resources/logo-library",
+    "guidelines": ""
+  },
+  "atomgit": {
+    "title": "AtomGit",
+    "hex": "DA203E",
+    "source": "https://cdn-static.atomgit.com/doc/logo.svg",
     "guidelines": ""
   },
   "auchan": {
@@ -1633,7 +1651,7 @@
   },
   "await": {
     "title": "Await",
-    "hex": "7858F5",
+    "hex": "9973FF",
     "source": "https://awaitwidget.com",
     "guidelines": ""
   },
@@ -5269,7 +5287,7 @@
   },
   "elixir": {
     "title": "Elixir",
-    "hex": "4B275F",
+    "hex": "8847B9",
     "source": "https://github.com/elixir-lang/elixir-lang.github.com/tree/031746384ee23b9be19298c92a9699c56cc05845/images/logo",
     "guidelines": ""
   },
@@ -6929,6 +6947,12 @@
     "source": "https://godotengine.org/press",
     "guidelines": ""
   },
+  "godox": {
+    "title": "Godox",
+    "hex": "FF6600",
+    "source": "https://www.godox.com",
+    "guidelines": ""
+  },
   "gofundme": {
     "title": "GoFundMe",
     "hex": "00B964",
@@ -7679,6 +7703,12 @@
     "source": "https://www.happycow.net/press-kits",
     "guidelines": ""
   },
+  "haproxy": {
+    "title": "HAProxy",
+    "hex": "169BD6",
+    "source": "https://github.com/simple-icons/simple-icons/pull/15025#issuecomment-5835041111",
+    "guidelines": ""
+  },
   "harbor": {
     "title": "Harbor",
     "hex": "60B932",
@@ -8223,6 +8253,12 @@
     "title": "HyperX",
     "hex": "E21836",
     "source": "https://ca.hyperx.com/cdn/shop/files/image_placeholder.svg",
+    "guidelines": ""
+  },
+  "hypit": {
+    "title": "Hypit",
+    "hex": "DF3C68",
+    "source": "https://github.com/hypit-ai/hypit/blob/2c320059c1260d0f6f8101472395f91f2f9c8243/docs/public/hypit-logo-dark.svg",
     "guidelines": ""
   },
   "hypothesis": {
@@ -12191,6 +12227,12 @@
     "source": "https://github.com/notepad-plus-plus/notepad-plus-plus/blob/1f2c63cce173e3e1dc5922637c81a851693e2856/PowerEditor/misc/chameleon/chameleon-pencil.eps",
     "guidelines": ""
   },
+  "notesnook": {
+    "title": "Notesnook",
+    "hex": "000000",
+    "source": "https://github.com/streetwriters/notesnook/blob/20bbb6dd5b8d9fa0b3924f20d315babe0e3f6173/apps/web/public/favicon.svg",
+    "guidelines": ""
+  },
   "notion": {
     "title": "Notion",
     "hex": "000000",
@@ -12531,6 +12573,12 @@
     "title": "OnStar",
     "hex": "003D7D",
     "source": "https://www.onstar.com",
+    "guidelines": ""
+  },
+  "oomol": {
+    "title": "OOMOL",
+    "hex": "0D1117",
+    "source": "https://oomol.com/en/brand-assets/",
     "guidelines": ""
   },
   "opel": {
@@ -17345,6 +17393,12 @@
     "source": "https://sites.google.com/sumologic.com/sumo-logic-brand/home",
     "guidelines": ""
   },
+  "sumup": {
+    "title": "SumUp",
+    "hex": "1E1C1C",
+    "source": "https://circuit.sumup.com/?path=/docs/brand-sumuplogo--docs",
+    "guidelines": ""
+  },
   "suno": {
     "title": "Suno",
     "hex": "000000",
@@ -20595,6 +20649,12 @@
     "title": "Zensar",
     "hex": "000000",
     "source": "https://www.zensar.com/about/our-story/our-brand/#logo",
+    "guidelines": ""
+  },
+  "zensical": {
+    "title": "Zensical",
+    "hex": "FFA656",
+    "source": "https://zensical.org/about/press-kit/",
     "guidelines": ""
   },
   "zerodha": {

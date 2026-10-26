@@ -255,8 +255,8 @@ try {
     let main = readFileSync(mainFile, 'utf8');
 
     const replacements = [
-        [/define\('MUDRAVA_LUCIDE_FIELD_LUCIDE_VERSION', '[^']*'\);/, `define('MUDRAVA_LUCIDE_FIELD_LUCIDE_VERSION', '${manifest.lucideStatic.version}');`],
-        [/define\('MUDRAVA_LUCIDE_FIELD_SIMPLE_ICONS_VERSION', '[^']*'\);/, `define('MUDRAVA_LUCIDE_FIELD_SIMPLE_ICONS_VERSION', '${manifest.simpleIcons.version}');`],
+        [/define\(\s*'MUDRAVA_LUCIDE_FIELD_LUCIDE_VERSION',\s*'[^']*'\s*\);/, `define( 'MUDRAVA_LUCIDE_FIELD_LUCIDE_VERSION', '${manifest.lucideStatic.version}' );`],
+        [/define\(\s*'MUDRAVA_LUCIDE_FIELD_SIMPLE_ICONS_VERSION',\s*'[^']*'\s*\);/, `define( 'MUDRAVA_LUCIDE_FIELD_SIMPLE_ICONS_VERSION', '${manifest.simpleIcons.version}' );`],
     ];
 
     for (const [pattern, replacement] of replacements) {

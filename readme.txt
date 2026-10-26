@@ -4,7 +4,7 @@ Tags: acf, advanced-custom-fields, icon picker, lucide, svg
 Requires at least: 6.0
 Tested up to: 7.1.3
 Requires PHP: 7.4
-Stable tag: 1.2.1
+Stable tag: 1.3.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -187,6 +187,16 @@ This plugin does not integrate with or send data to any third-party services.
 
 == Changelog ==
 
+= 1.3.0 - 2026-10-26 =
+
+### Added
+
+- Updated bundled assets to `lucide-static` `1.61.0` and `simple-icons` `16.36.0` (1903 Lucide symbols, 3467 brand logos).
+
+### Changed
+
+- Extended the compatibility alias layer for icons renamed upstream since 1.38.0: `album`, `book-marked`, `building-2`, `flip-horizontal-2`, `flip-vertical-2`, `music`, `music-2`, `music-3`, `music-4` and `trash-2` now resolve to their current replacements. Stored values are never rewritten.
+
 = 1.2.1 - 2026-09-18 =
 
 * Fixed: the admin screens no longer fatal when the plugin is active but ACF is deactivated - the custom-icons capability lookup now falls back to `manage_options` instead of calling `acf_get_setting()` unconditionally.
@@ -241,6 +251,9 @@ This plugin does not integrate with or send data to any third-party services.
 * Full compatibility with ACF Repeater and Flexible Content fields
 
 == Upgrade Notice ==
+
+= 1.3.0 =
+Updates bundled icon libraries to `lucide-static` 1.61.0 and `simple-icons` 16.36.0. Icons renamed upstream since 1.38.0 (`album`, `book-marked`, `building-2`, `flip-horizontal-2`, `flip-vertical-2`, `music`, `music-2`, `music-3`, `music-4`, `trash-2`) are aliased to their canonical replacements; saved values are never rewritten.
 
 = 1.2.0 =
 Updates bundled icon libraries to `lucide-static` 1.38.0 and `simple-icons` 16.29.0, reworks the admin picker to load lazily over REST, and makes unknown icon values non-blocking by default. Saved values are never rewritten; removed upstream icons are aliased to their canonical replacements.

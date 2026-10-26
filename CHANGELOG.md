@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.0] - 2026-10-26
+
+### Added
+
+- Updated bundled assets to `lucide-static` `1.61.0` and `simple-icons` `16.36.0` (1903 Lucide symbols, 3467 brand logos).
+
+### Changed
+
+- Extended the compatibility alias layer (`data/compat-aliases.json`) for icons renamed upstream since Lucide 1.38.0: `album` -> `square-bookmark`, `book-marked` -> `book-bookmark`, `building-2` -> `building-complex`, `flip-horizontal-2` -> `triangles-centerline-dashed-vertical`, `flip-vertical-2` -> `triangles-centerline-dashed-horizontal`, `music` -> `eighth-notes`, `music-2` -> `eighth-note`, `music-3` -> `half-note`, `music-4` -> `sixteenth-notes`, `trash-2` -> `trash`. Stored post values are never rewritten.
+- `scripts/build-sprites.mjs` now rewrites the library version constants regardless of `define( ... )` spacing, so the WordPress code style in the main plugin file no longer breaks the sprite build.
+
 ## [1.2.1] - 2026-09-18
 
 ### Fixed

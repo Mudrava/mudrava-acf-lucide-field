@@ -863,6 +863,14 @@
     "AlmaLinux",
     "#000000"
   ],
+  "alphaxiv": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "alphaxiv",
+    "alphaXiv",
+    "#9A2036"
+  ],
   "alpinedotjs": [
     "brand",
     "logo",
@@ -1855,6 +1863,14 @@
     "Aseprite",
     "#7D929E"
   ],
+  "aspire": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "aspire",
+    "Aspire",
+    "#7455DD"
+  ],
   "assemblyscript": [
     "brand",
     "logo",
@@ -1942,6 +1958,14 @@
     "atlassian",
     "Atlassian",
     "#0052CC"
+  ],
+  "atomgit": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "atomgit",
+    "AtomGit",
+    "#DA203E"
   ],
   "auchan": [
     "brand",
@@ -2181,7 +2205,7 @@
     "simple-icons",
     "await",
     "Await",
-    "#7858F5"
+    "#9973FF"
   ],
   "awesomelists": [
     "brand",
@@ -7029,7 +7053,7 @@
     "simple-icons",
     "elixir",
     "Elixir",
-    "#4B275F"
+    "#8847B9"
   ],
   "elk": [
     "brand",
@@ -9239,6 +9263,14 @@
     "Godot Engine",
     "#478CBF"
   ],
+  "godox": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "godox",
+    "Godox",
+    "#FF6600"
+  ],
   "gofundme": [
     "brand",
     "logo",
@@ -10239,6 +10271,14 @@
     "HappyCow",
     "#7C4EC4"
   ],
+  "haproxy": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "haproxy",
+    "HAProxy",
+    "#169BD6"
+  ],
   "harbor": [
     "brand",
     "logo",
@@ -10966,6 +11006,14 @@
     "hyperx",
     "HyperX",
     "#E21836"
+  ],
+  "hypit": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "hypit",
+    "Hypit",
+    "#DF3C68"
   ],
   "hypothesis": [
     "brand",
@@ -16255,6 +16303,14 @@
     "Notepad++",
     "#90E59A"
   ],
+  "notesnook": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "notesnook",
+    "Notesnook",
+    "#000000"
+  ],
   "notion": [
     "brand",
     "logo",
@@ -16710,6 +16766,14 @@
     "onstar",
     "OnStar",
     "#003D7D"
+  ],
+  "oomol": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "oomol",
+    "OOMOL",
+    "#0D1117"
   ],
   "opel": [
     "brand",
@@ -23127,6 +23191,14 @@
     "Sumo Logic",
     "#000099"
   ],
+  "sumup": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "sumup",
+    "SumUp",
+    "#1E1C1C"
+  ],
   "suno": [
     "brand",
     "logo",
@@ -27462,6 +27534,14 @@
     "zensar",
     "Zensar",
     "#000000"
+  ],
+  "zensical": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "zensical",
+    "Zensical",
+    "#FFA656"
   ],
   "zerodha": [
     "brand",

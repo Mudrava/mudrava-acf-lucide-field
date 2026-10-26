@@ -7,5 +7,15 @@
     "smile": "face-slightly-smiling",
     "smile-plus": "face-slightly-smiling-plus",
     "history": "rotate-ccw",
-    "podcast": "rss"
+    "podcast": "rss",
+    "album": "square-bookmark",
+    "book-marked": "book-bookmark",
+    "building-2": "building-complex",
+    "flip-horizontal-2": "triangles-centerline-dashed-vertical",
+    "flip-vertical-2": "triangles-centerline-dashed-horizontal",
+    "music": "eighth-notes",
+    "music-2": "eighth-note",
+    "music-3": "half-note",
+    "music-4": "sixteenth-notes",
+    "trash-2": "trash"
 }
