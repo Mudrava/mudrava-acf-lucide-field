@@ -2,9 +2,9 @@
 Contributors: mudrava
 Tags: acf, advanced-custom-fields, icon picker, lucide, svg
 Requires at least: 6.0
-Tested up to: 7.1.3
+Tested up to: 7.1.4
 Requires PHP: 7.4
-Stable tag: 1.3.0
+Stable tag: 1.4.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,7 +18,7 @@ A professional ACF custom field type for selecting Lucide icons and Simple Icons
 
 = Features =
 
-* **Visual Icon Picker** - Browse and select from 1,791 Lucide icons and 3,457 brand logos
+* **Visual Icon Picker** - Browse and select from 2,015 Lucide icons and 3,467 brand logos
 * **Brand Icons** - Brand logos use Simple Icons values such as `simple:facebook`
 * **Custom Icon Library** - Upload your own SVG icons under Settings, sanitized on upload and addressable as `custom:<name>`
 * **Shortcode & Helper** - `[lucide_icon]` shortcode plus `mudrava_get_lucide_icon()` helper for templates
@@ -147,7 +147,7 @@ Lucide v1 removed most brand icons from the current packages. Version 1.1.0 upda
 
 = What happens if an icon name was removed in a library update? =
 
-Saved values are never rewritten. Icons removed in `lucide-static` 1.38.0 (`angry`, `annoyed`, `frown`, `history`, `laugh`, `meh`, `podcast`, `smile`, `smile-plus`) are mapped to canonical replacements in `data/compat-aliases.json`, for example `smile` renders as `face-slightly-smiling`. Unknown values that have no alias keep saving and surface as a dismissible admin notice; set the field setting "Unknown Icon Values" to "error" to make validation strict instead.
+Saved values are never rewritten. Icons removed in earlier `lucide-static` releases - 1.38.0 (`angry`, `annoyed`, `frown`, `history`, `laugh`, `meh`, `podcast`, `smile`, `smile-plus`) and 1.66.0 (`archive-restore`, `bold`, `circle-parking`, `circle-parking-off`, `copyright`, `heading`, `square-m`, `square-parking`, `square-parking-off`) - are mapped to canonical replacements in `data/compat-aliases.json`, for example `smile` renders as `face-slightly-smiling` and `bold` as `letter-b`. Unknown values that have no alias keep saving and surface as a dismissible admin notice; set the field setting "Unknown Icon Values" to "error" to make validation strict instead.
 
 = Can I use this with ACF Repeater or Flexible Content fields? =
 
@@ -186,6 +186,20 @@ This plugin does not use cookies.
 This plugin does not integrate with or send data to any third-party services.
 
 == Changelog ==
+
+= 1.4.0 - 2026-11-02 =
+
+### Added
+
+- Updated bundled assets to `lucide-static` `1.66.0` (2015 Lucide symbols, 3467 brand logos; 121 new icons, including the full alphabet glyph sets `letter-*`, `circle-letter-*`, `square-letter-*` and the expanded database and archive families). `simple-icons` `16.36.0` is unchanged, it was already current.
+
+### Changed
+
+- Extended the compatibility alias layer for icons renamed upstream between 1.61.0 and 1.66.0: `archive-restore`, `bold`, `circle-parking`, `circle-parking-off`, `copyright`, `heading`, `square-m`, `square-parking` and `square-parking-off` now resolve to their current replacements (`archive-arrow-up`, `letter-b`, `circle-letter-p`, `circle-letter-p-off`, `circle-letter-c`, `letter-h`, `square-letter-m`, `square-letter-p`, `square-letter-p-off`). Stored values are never rewritten.
+
+### Tested
+
+- Verified compatibility with WordPress 7.1.4 on PHP 8.5: activation, icon picker search and pagination, REST catalog, `[lucide_icon]` shortcode, custom icon upload, and rendering of the 1.66.0 renames through the alias layer.
 
 = 1.3.0 - 2026-10-26 =
 

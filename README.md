@@ -19,7 +19,7 @@ Mudrava Icon Field for ACF with Lucide adds a new field type to Advanced Custom 
 
 ### Features
 
-- **Visual Icon Picker** - Browse and select from 1,791 Lucide icons and 3,457 brand logos
+- **Visual Icon Picker** - Browse and select from 2,015 Lucide icons and 3,467 brand logos
 - **Brand Icons** - Brand logos use Simple Icons values such as `simple:facebook`
 - **Smart Search** - Filter icons by name or build-time search tags instantly
 - **Performant** - Lazy icon catalog over a local REST endpoint, byte-offset sprite lookups (no full-file scans), inline frontend SVG output, paginated grid (100 icons per page)
@@ -251,7 +251,7 @@ New brand values are saved as `simple:<slug>`, for example `simple:facebook`. Le
 
 ### What happens if an icon is removed in a library update?
 
-Saved values are never rewritten. Removed Lucide names from the 1.38.0 sync (`angry`, `annoyed`, `frown`, `history`, `laugh`, `meh`, `smile`, `smile-plus`, `podcast`) are mapped to their canonical replacements in `data/compat-aliases.json` (for example `smile` renders as `face-slightly-smiling`). Values with no alias at all keep saving and surface as a dismissible admin notice instead of a hard validation failure; switch the field setting **Unknown Icon Values** to `error` if you prefer strict blocking.
+Saved values are never rewritten. Removed Lucide names from the 1.38.0 sync (`angry`, `annoyed`, `frown`, `history`, `laugh`, `meh`, `smile`, `smile-plus`, `podcast`) and from the 1.66.0 sync (`archive-restore`, `bold`, `circle-parking`, `circle-parking-off`, `copyright`, `heading`, `square-m`, `square-parking`, `square-parking-off`) are mapped to their canonical replacements in `data/compat-aliases.json` (for example `smile` renders as `face-slightly-smiling` and `bold` as `letter-b`). Values with no alias at all keep saving and surface as a dismissible admin notice instead of a hard validation failure; switch the field setting **Unknown Icon Values** to `error` if you prefer strict blocking.
 
 ### Can I use brand logos freely?
 

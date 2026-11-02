@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.0] - 2026-11-02
+
+### Added
+
+- Updated bundled assets to `lucide-static` `1.66.0` (2015 Lucide symbols, 3467 brand logos). Adds 121 icons, including the full alphabet glyph sets (`letter-a` to `letter-z`, `circle-letter-*`, `square-letter-*`) and the expanded database and archive families. `simple-icons` `16.36.0` unchanged, already current upstream.
+- Verified compatibility with WordPress 7.1.4 on PHP 8.5 (activation, picker search and pagination, REST catalog, `[lucide_icon]` shortcode, custom icon upload, alias-layer rendering of the 1.66.0 renames).
+
+### Changed
+
+- Extended the compatibility alias layer (`data/compat-aliases.json`) for icons renamed upstream between Lucide 1.61.0 and 1.66.0: `archive-restore` -> `archive-arrow-up`, `bold` -> `letter-b`, `circle-parking` -> `circle-letter-p`, `circle-parking-off` -> `circle-letter-p-off`, `copyright` -> `circle-letter-c`, `heading` -> `letter-h`, `square-m` -> `square-letter-m`, `square-parking` -> `square-letter-p`, `square-parking-off` -> `square-letter-p-off`. Stored post values are never rewritten.
+
 ## [1.3.0] - 2026-10-26
 
 ### Added
