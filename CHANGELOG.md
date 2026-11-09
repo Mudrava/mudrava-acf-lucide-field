@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.0] - 2026-11-09
+
+### Added
+
+- Updated bundled assets to `lucide-static` `1.70.0` (2029 Lucide symbols, 3470 brand logos). Adds 14 icons, including the `*-exclamation-point` family, `diagram-flow-horizontal`/`diagram-flow-vertical`, `square-dashed-search`, `package-question-mark`, `moped` and `mango`. `simple-icons` bumped to `16.37.0` (+3 brand logos).
+
+### Changed
+
+- Extended the compatibility alias layer (`data/compat-aliases.json`) for the upstream rename in Lucide 1.70.0 (`*-alert` and `*-warning` became `*-exclamation-point`, verified byte-identical artwork): `badge-alert`, `battery-warning`, `book-alert`, `circle-alert`, `clock-alert`, `cloud-alert`, `mail-warning`, `message-circle-warning`, `message-square-warning`, `octagon-alert`, `search-alert`, `shield-alert` and `triangle-alert` now resolve to their renamed twins. Stored post values are never rewritten.
+
+### Tested
+
+- Verified compatibility with WordPress 7.1.4 on PHP 8.5 (activation, picker search and pagination, REST catalog, `[lucide_icon]` shortcode, custom icon upload, alias-layer rendering of all 1.70.0 renames).
+
 ## [1.4.0] - 2026-11-02
 
 ### Added

@@ -7,7 +7,7 @@ A professional ACF (Advanced Custom Fields) custom field type for selecting [Luc
 [![WordPress Plugin Version](https://img.shields.io/wordpress/plugin/v/mudrava-acf-lucide-field)](https://wordpress.org/plugins/mudrava-acf-lucide-field/)
 [![WordPress Plugin Downloads](https://img.shields.io/wordpress/plugin/dt/mudrava-acf-lucide-field)](https://wordpress.org/plugins/mudrava-acf-lucide-field/)
 [![WordPress](https://img.shields.io/badge/WordPress-6.0%2B-21759B?logo=wordpress&logoColor=white)](https://wordpress.org/plugins/mudrava-acf-lucide-field/)
-![Tested up to](https://img.shields.io/badge/Tested%20up%20to-WordPress%207.1.3-21759B?logo=wordpress&logoColor=white)
+![Tested up to](https://img.shields.io/badge/Tested%20up%20to-WordPress%207.1.4-21759B?logo=wordpress&logoColor=white)
 [![PHP](https://img.shields.io/badge/PHP-7.4%2B-777BB4?logo=php&logoColor=white)](https://www.php.net/)
 [![ACF](https://img.shields.io/badge/ACF-6.0%2B-E4A23C)](https://www.advancedcustomfields.com/)
 [![License](https://img.shields.io/badge/License-GPLv2-green)](LICENSE)
@@ -19,7 +19,7 @@ Mudrava Icon Field for ACF with Lucide adds a new field type to Advanced Custom 
 
 ### Features
 
-- **Visual Icon Picker** - Browse and select from 2,015 Lucide icons and 3,467 brand logos
+- **Visual Icon Picker** - Browse and select from 2,029 Lucide icons and 3,470 brand logos
 - **Brand Icons** - Brand logos use Simple Icons values such as `simple:facebook`
 - **Smart Search** - Filter icons by name or build-time search tags instantly
 - **Performant** - Lazy icon catalog over a local REST endpoint, byte-offset sprite lookups (no full-file scans), inline frontend SVG output, paginated grid (100 icons per page)
@@ -31,7 +31,7 @@ Mudrava Icon Field for ACF with Lucide adds a new field type to Advanced Custom 
 
 ## Requirements
 
-- WordPress 6.0 or higher (tested up to WordPress 7.1.3)
+- WordPress 6.0 or higher (tested up to WordPress 7.1.4)
 - PHP 7.4 or higher
 - ACF 6.0 or higher
 
@@ -251,7 +251,7 @@ New brand values are saved as `simple:<slug>`, for example `simple:facebook`. Le
 
 ### What happens if an icon is removed in a library update?
 
-Saved values are never rewritten. Removed Lucide names from the 1.38.0 sync (`angry`, `annoyed`, `frown`, `history`, `laugh`, `meh`, `smile`, `smile-plus`, `podcast`) and from the 1.66.0 sync (`archive-restore`, `bold`, `circle-parking`, `circle-parking-off`, `copyright`, `heading`, `square-m`, `square-parking`, `square-parking-off`) are mapped to their canonical replacements in `data/compat-aliases.json` (for example `smile` renders as `face-slightly-smiling` and `bold` as `letter-b`). Values with no alias at all keep saving and surface as a dismissible admin notice instead of a hard validation failure; switch the field setting **Unknown Icon Values** to `error` if you prefer strict blocking.
+Saved values are never rewritten. Removed Lucide names from the 1.38.0 sync (`angry`, `annoyed`, `frown`, `history`, `laugh`, `meh`, `smile`, `smile-plus`, `podcast`), from the 1.66.0 sync (`archive-restore`, `bold`, `circle-parking`, `circle-parking-off`, `copyright`, `heading`, `square-m`, `square-parking`, `square-parking-off`) and from the 1.70.0 sync (`badge-alert`, `battery-warning`, `book-alert`, `circle-alert`, `clock-alert`, `cloud-alert`, `mail-warning`, `message-circle-warning`, `message-square-warning`, `octagon-alert`, `search-alert`, `shield-alert`, `triangle-alert`) are mapped to their canonical replacements in `data/compat-aliases.json` (for example `smile` renders as `face-slightly-smiling` and `triangle-alert` as `triangle-exclamation-point`). Values with no alias at all keep saving and surface as a dismissible admin notice instead of a hard validation failure; switch the field setting **Unknown Icon Values** to `error` if you prefer strict blocking.
 
 ### Can I use brand logos freely?
 

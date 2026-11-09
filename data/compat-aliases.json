@@ -26,5 +26,18 @@
     "heading": "letter-h",
     "square-m": "square-letter-m",
     "square-parking": "square-letter-p",
-    "square-parking-off": "square-letter-p-off"
+    "square-parking-off": "square-letter-p-off",
+    "badge-alert": "badge-exclamation-point",
+    "battery-warning": "battery-exclamation-point",
+    "book-alert": "book-exclamation-point",
+    "circle-alert": "circle-exclamation-point",
+    "clock-alert": "clock-exclamation-point",
+    "cloud-alert": "cloud-exclamation-point",
+    "mail-warning": "mail-exclamation-point",
+    "message-circle-warning": "message-circle-exclamation-point",
+    "message-square-warning": "message-square-exclamation-point",
+    "octagon-alert": "octagon-exclamation-point",
+    "search-alert": "search-exclamation-point",
+    "shield-alert": "shield-exclamation-point",
+    "triangle-alert": "triangle-exclamation-point"
 }

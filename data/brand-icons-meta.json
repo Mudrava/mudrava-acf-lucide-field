@@ -11689,8 +11689,8 @@
   },
   "n8n": {
     "title": "n8n",
-    "hex": "EA4B71",
-    "source": "https://n8n.io/press",
+    "hex": "FF91AC",
+    "source": "https://guidelines.n8n.design/logo",
     "guidelines": ""
   },
   "namebase": {
@@ -11931,6 +11931,12 @@
     "title": "Neutralinojs",
     "hex": "F89901",
     "source": "https://github.com/neutralinojs/design-guide/blob/52a7232598ff22cddd810a3079e09a2cc2892609/logo/neutralinojs_logo_vector.svg",
+    "guidelines": ""
+  },
+  "newapi": {
+    "title": "New API",
+    "hex": "A39AE6",
+    "source": "https://www.newapi.ai",
     "guidelines": ""
   },
   "newbalance": {
@@ -12417,6 +12423,12 @@
     "title": "OCaml",
     "hex": "EC6813",
     "source": "https://ocaml.org/logo",
+    "guidelines": ""
+  },
+  "oceanbase": {
+    "title": "OceanBase",
+    "hex": "0181FD",
+    "source": "https://github.com/oceanbase/oceanbase/blob/9098aa6be373240e180ec628a886f39ad0047b7c/images/logo.svg",
     "guidelines": ""
   },
   "oclc": {
@@ -20709,6 +20721,12 @@
     "title": "Zilch",
     "hex": "00D287",
     "source": "https://www.zilch.com",
+    "guidelines": ""
+  },
+  "zilliz": {
+    "title": "Zilliz",
+    "hex": "2858FF",
+    "source": "https://zilliz.com",
     "guidelines": ""
   },
   "zillow": {

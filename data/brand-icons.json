@@ -15589,7 +15589,7 @@
     "simple-icons",
     "n8n",
     "n8n",
-    "#EA4B71"
+    "#FF91AC"
   ],
   "namebase": [
     "brand",
@@ -15910,6 +15910,14 @@
     "neutralinojs",
     "Neutralinojs",
     "#F89901"
+  ],
+  "newapi": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "newapi",
+    "New API",
+    "#A39AE6"
   ],
   "newbalance": [
     "brand",
@@ -16558,6 +16566,14 @@
     "ocaml",
     "OCaml",
     "#EC6813"
+  ],
+  "oceanbase": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "oceanbase",
+    "OceanBase",
+    "#0181FD"
   ],
   "oclc": [
     "brand",
@@ -27614,6 +27630,14 @@
     "zilch",
     "Zilch",
     "#00D287"
+  ],
+  "zilliz": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "zilliz",
+    "Zilliz",
+    "#2858FF"
   ],
   "zillow": [
     "brand",
