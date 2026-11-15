@@ -4,7 +4,7 @@ Tags: acf, advanced-custom-fields, icon picker, lucide, svg
 Requires at least: 6.0
 Tested up to: 7.1.4
 Requires PHP: 7.4
-Stable tag: 1.5.0
+Stable tag: 1.5.1
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -186,6 +186,16 @@ This plugin does not use cookies.
 This plugin does not integrate with or send data to any third-party services.
 
 == Changelog ==
+
+= 1.5.1 - 2026-11-16 =
+
+### Added
+
+- 16 complete new translations, bringing the bundled set to 27 locales: Russian, Swedish, Catalan, Czech, Danish, Greek, Galician, Croatian, Hungarian, Indonesian, Norwegian Bokmål, Portuguese (Portugal), Romanian, Slovak, Slovenian and Serbian. Each translation uses the established WordPress core terminology of its language, and Swedish adopts the approved community strings from translate.wordpress.org as its base.
+
+### Changed
+
+- Completed the existing 11 bundled catalogs: every string added in 1.3 to 1.5 (custom icon library, unknown-value handling, picker status labels) is now translated in all shipped languages instead of falling back to English.
 
 = 1.5.0 - 2026-11-09 =
 
