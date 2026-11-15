@@ -1,0 +1,196 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mudrava Icon Field for ACF with Lucide 1.5.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mudrava-acf-lucide-field/\n"
+"POT-Creation-Date: 2026-11-15 22:17+0000\n"
+"PO-Revision-Date: 2026-11-16 00:00+0000\n"
+"Last-Translator: Mudrava <info@mudrava.com>\n"
+"Language-Team: Danish <da@li.org>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "%d icons available"
+msgstr "%d ikoner tilgængelige"
+
+msgid "%s selected"
+msgstr "%s valgt"
+
+msgid "Accepted format: SVG with an &lt;svg&gt; root and a viewBox. Maximum size: %s. Icons are available in the picker and shortcodes as custom:&lt;name&gt;."
+msgstr "Accepteret format: SVG med et &lt;svg&gt;-rodelement og en viewBox. Maksimal størrelse: %s. Ikonerne bliver tilgængelige i vælgeren og i shortcodes som custom:&lt;name&gt;."
+
+msgid "Actions"
+msgstr "Handlinger"
+
+msgid "Add icon"
+msgstr "Tilføj ikon"
+
+msgid "Allow Null"
+msgstr "Tillad tom værdi"
+
+msgid "Allow the field to have no icon selected."
+msgstr "Tillad at feltet ikke har noget valgt ikon."
+
+msgid "Block saving with a validation error"
+msgstr "Blokér gemning med en valideringsfejl"
+
+msgid "Clear selection"
+msgstr "Ryd valg"
+
+msgid "Comma-separated terms that make the icon findable in the picker search."
+msgstr "Kommaseparerede udtryk, der gør ikonet søgbart i vælgeren."
+
+msgid "Custom Icons"
+msgstr "Brugerdefinerede ikoner"
+
+msgid "Default Value"
+msgstr "Standardværdi"
+
+msgid "Delete"
+msgstr "Slet"
+
+msgid "Delete this icon? Existing fields will fall back to their default behavior."
+msgstr "Slet dette ikon? Eksisterende felter vender tilbage til standardopførslen."
+
+msgid "Docs"
+msgstr "Dokumentation"
+
+msgid "Enter the icon value to be selected by default (e.g., \"rocket\" or \"simple:facebook\")."
+msgstr "Indtast den ikonværdi, der skal vælges som standard (f.eks. \"rocket\" eller \"simple:facebook\")."
+
+msgid "How to handle values that are not part of the bundled icon set (e.g. icons imported from another site or values left over after an icon library update)."
+msgstr "Sådan håndteres værdier, der ikke indgår i det medfølgende ikonsæt (f.eks. importerede ikoner fra et andet site eller værdier, der er tilovers efter en opdatering af ikonbiblioteket)."
+
+msgid "Icon <strong>%s</strong> was added to the library."
+msgstr "Ikonet <strong>%s</strong> blev føjet til biblioteket."
+
+msgid "Icon <strong>%s</strong> was deleted."
+msgstr "Ikonet <strong>%s</strong> blev slettet."
+
+msgid "Icon Value (e.g., \"rocket\" or \"simple:facebook\")"
+msgstr "Ikonværdi (f.eks. \"rocket\" eller \"simple:facebook\")"
+
+msgid "Keywords"
+msgstr "Nøgleord"
+
+msgid "Lucide Icon"
+msgstr "Lucide-ikon"
+
+msgid "Mudrava Icon Field — Custom Icons"
+msgstr "Mudrava Icon Field — brugerdefinerede ikoner"
+
+msgid "Mudrava Icon Field:"
+msgstr "Mudrava Icon Field:"
+
+msgid "Mudrava Icon Field: an icon with that name already exists. Uploads never overwrite stored icons; delete the old icon first or use another name."
+msgstr "Mudrava Icon Field: et ikon med det navn findes allerede. Uploads overskriver aldrig gemte ikoner; slet det gamle ikon først eller brug et andet navn."
+
+msgid "Mudrava Icon Field: some icon values are not part of the bundled icon set and will render as empty markup:"
+msgstr "Mudrava Icon Field: nogle ikonværdier indgår ikke i det medfølgende ikonsæt og vises som tom markup:"
+
+msgid "Mudrava Icon Field: that file is not a valid SVG document. Only plain shape elements (circle, ellipse, line, path, polygon, polyline, rect) inside an &lt;svg&gt; root are accepted."
+msgstr "Mudrava Icon Field: filen er ikke et gyldigt SVG-dokument. Indeni et &lt;svg&gt;-rodelement accepteres kun enkle formelementer (circle, ellipse, line, path, polygon, polyline, rect)."
+
+msgid "Mudrava Icon Field: that file is too large. The limit is %s."
+msgstr "Mudrava Icon Field: filen er for stor. Grænsen er %s."
+
+msgid "Mudrava Icon Field: that icon no longer exists in the library."
+msgstr "Mudrava Icon Field: dette ikon findes ikke længere i biblioteket."
+
+msgid "Mudrava Icon Field: the icon storage is not writable. Check filesystem permissions."
+msgstr "Mudrava Icon Field: ikonlagringen er ikke skrivbar. Tjek filsystemets tilladelser."
+
+msgid "Name"
+msgstr "Navn"
+
+msgid "No custom icons yet."
+msgstr "Endnu ingen brugerdefinerede ikoner."
+
+msgid "No icon selected"
+msgstr "Intet ikon valgt"
+
+msgid "No icons found"
+msgstr "Ingen ikoner fundet"
+
+msgid "Optional; defaults to the file name"
+msgstr "Valgfrit; som standard bruges filnavnet"
+
+msgid "Placeholder"
+msgstr "Pladsholder"
+
+msgid "Placeholder text for the search input."
+msgstr "Pladsholdertekst til søgefeltet."
+
+msgid "Please select a valid icon."
+msgstr "Vælg et gyldigt ikon."
+
+msgid "Please select an icon."
+msgstr "Vælg et ikon."
+
+msgid "Preview"
+msgstr "Forhåndsvisning"
+
+msgid "Return Format"
+msgstr "Returformat"
+
+msgid "SVG Markup"
+msgstr "SVG-kode"
+
+msgid "SVG file"
+msgstr "SVG-fil"
+
+msgid "Save and show an admin notice (default)"
+msgstr "Gem og vis en meddelelse i admin (standard)"
+
+msgid "Search icons or brand logos..."
+msgstr "Søg efter ikoner eller mærkelogoer..."
+
+msgid "Search keywords"
+msgstr "Søgeord"
+
+msgid "Select an icon"
+msgstr "Vælg et ikon"
+
+msgid "Specify the format returned by get_field()."
+msgstr "Angiv det format, som returneres af get_field()."
+
+msgid "Stored icon is not in the bundled icon set"
+msgstr "Det gemte ikon er ikke i det medfølgende ikonsæt"
+
+msgid "Stored icons"
+msgstr "Gemte ikoner"
+
+msgid "The icon file could not be written."
+msgstr "Ikonfilen kunne ikke skrives."
+
+msgid "The icon storage directory could not be created."
+msgstr "Mappen til ikonlagring kunne ikke oprettes."
+
+msgid "The icon storage is not writable on this site."
+msgstr "Ikonlagringen er ikke skrivbar på dette site."
+
+msgid "The storage name is derived from this title: lowercase, dashes, max 64 characters."
+msgstr "Lagringsnavnet afledes af denne titel: små bogstaver, bindestreger, maks. 64 tegn."
+
+msgid "This plugin requires %1$s version %2$s or higher to function."
+msgstr "Dette plugin kræver %1$s version %2$s eller nyere for at fungere."
+
+msgid "Title"
+msgstr "Titel"
+
+msgid "Unknown Icon Values"
+msgstr "Ukendte ikonværdier"
+
+msgid "Upload plain SVG icons to extend the picker with a custom set. Files are sanitized on upload: scripts, styles, embedded images and unsupported elements are removed, and only the allowlisted shape markup is stored."
+msgstr "Upload enkle SVG-ikoner og udvid vælgeren med et eget sæt. Filer renses ved upload: scripts, styles, indlejrede billeder og elementer, der ikke understøttes, fjernes, og kun den tilladte form-markup gemmes."
+
+msgid "Value"
+msgstr "Værdi"
+
+msgid "You are not allowed to manage custom icons."
+msgstr "Du har ikke tilladelse til at administrere brugerdefinerede ikoner."
+
+msgid "logo, company, brand"
+msgstr "logo, virksomhed, mærke"

@@ -1,0 +1,199 @@
+# Russian translation of Mudrava Icon Field for ACF with Lucide.
+# Terminology and base strings reviewed against the community translation on
+# translate.wordpress.org (project wp-plugins/mudrava-acf-lucide-field).
+msgid ""
+msgstr ""
+"Project-Id-Version: Mudrava Icon Field for ACF with Lucide 1.5.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mudrava-acf-lucide-field/\n"
+"POT-Creation-Date: 2026-11-15 22:17+0000\n"
+"PO-Revision-Date: 2026-11-16 00:00+0000\n"
+"Last-Translator: Mudrava <info@mudrava.com>\n"
+"Language-Team: Russian <ru@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+
+msgid "%d icons available"
+msgstr "Доступно значков: %d"
+
+msgid "%s selected"
+msgstr "Выбран: %s"
+
+msgid "Accepted format: SVG with an &lt;svg&gt; root and a viewBox. Maximum size: %s. Icons are available in the picker and shortcodes as custom:&lt;name&gt;."
+msgstr "Допустимый формат: SVG с корневым элементом &lt;svg&gt; и атрибутом viewBox. Максимальный размер: %s. Значки будут доступны в выборе и в шорткодах как custom:&lt;name&gt;."
+
+msgid "Actions"
+msgstr "Действия"
+
+msgid "Add icon"
+msgstr "Добавить значок"
+
+msgid "Allow Null"
+msgstr "Разрешить пустое значение"
+
+msgid "Allow the field to have no icon selected."
+msgstr "Разрешить поле без выбранного значка."
+
+msgid "Block saving with a validation error"
+msgstr "Блокировать сохранение с ошибкой проверки"
+
+msgid "Clear selection"
+msgstr "Очистить выбор"
+
+msgid "Comma-separated terms that make the icon findable in the picker search."
+msgstr "Термины через запятую, по которым значок можно найти в поиске выбора."
+
+msgid "Custom Icons"
+msgstr "Пользовательские значки"
+
+msgid "Default Value"
+msgstr "Значение по умолчанию"
+
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "Delete this icon? Existing fields will fall back to their default behavior."
+msgstr "Удалить этот значок? Существующие поля вернутся к поведению по умолчанию."
+
+msgid "Docs"
+msgstr "Документация"
+
+msgid "Enter the icon value to be selected by default (e.g., \"rocket\" or \"simple:facebook\")."
+msgstr "Укажите значение значка, которое будет выбрано по умолчанию (например, \"rocket\" или \"simple:facebook\")."
+
+msgid "How to handle values that are not part of the bundled icon set (e.g. icons imported from another site or values left over after an icon library update)."
+msgstr "Как поступать со значениями, которых нет во встроенном наборе значков (например, значки, импортированные с другого сайта, или значения, оставшиеся после обновления библиотеки значков)."
+
+msgid "Icon <strong>%s</strong> was added to the library."
+msgstr "Значок <strong>%s</strong> добавлен в библиотеку."
+
+msgid "Icon <strong>%s</strong> was deleted."
+msgstr "Значок <strong>%s</strong> удалён."
+
+msgid "Icon Value (e.g., \"rocket\" or \"simple:facebook\")"
+msgstr "Значение значка (например, \"rocket\" или \"simple:facebook\")"
+
+msgid "Keywords"
+msgstr "Ключевые слова"
+
+msgid "Lucide Icon"
+msgstr "Значок Lucide"
+
+msgid "Mudrava Icon Field — Custom Icons"
+msgstr "Mudrava Icon Field — пользовательские значки"
+
+msgid "Mudrava Icon Field:"
+msgstr "Mudrava Icon Field:"
+
+msgid "Mudrava Icon Field: an icon with that name already exists. Uploads never overwrite stored icons; delete the old icon first or use another name."
+msgstr "Mudrava Icon Field: значок с таким именем уже существует. Загрузка никогда не перезаписывает сохранённые значки: сначала удалите старый значок или используйте другое имя."
+
+msgid "Mudrava Icon Field: some icon values are not part of the bundled icon set and will render as empty markup:"
+msgstr "Mudrava Icon Field: некоторые значения значков отсутствуют во встроенном наборе и будут отображаться как пустая разметка:"
+
+msgid "Mudrava Icon Field: that file is not a valid SVG document. Only plain shape elements (circle, ellipse, line, path, polygon, polyline, rect) inside an &lt;svg&gt; root are accepted."
+msgstr "Mudrava Icon Field: этот файл не является корректным SVG-документом. Внутри корневого элемента &lt;svg&gt; допускаются только простые графические элементы (circle, ellipse, line, path, polygon, polyline, rect)."
+
+msgid "Mudrava Icon Field: that file is too large. The limit is %s."
+msgstr "Mudrava Icon Field: файл слишком большой. Ограничение: %s."
+
+msgid "Mudrava Icon Field: that icon no longer exists in the library."
+msgstr "Mudrava Icon Field: этого значка больше нет в библиотеке."
+
+msgid "Mudrava Icon Field: the icon storage is not writable. Check filesystem permissions."
+msgstr "Mudrava Icon Field: хранилище значков недоступно для записи. Проверьте права доступа к файловой системе."
+
+msgid "Name"
+msgstr "Имя"
+
+msgid "No custom icons yet."
+msgstr "Пользовательских значков пока нет."
+
+msgid "No icon selected"
+msgstr "Значок не выбран"
+
+msgid "No icons found"
+msgstr "Значки не найдены"
+
+msgid "Optional; defaults to the file name"
+msgstr "Необязательно; по умолчанию используется имя файла"
+
+msgid "Placeholder"
+msgstr "Текст-заполнитель"
+
+msgid "Placeholder text for the search input."
+msgstr "Текст-заполнитель для поля поиска."
+
+msgid "Please select a valid icon."
+msgstr "Выберите допустимый значок."
+
+msgid "Please select an icon."
+msgstr "Выберите значок."
+
+msgid "Preview"
+msgstr "Предпросмотр"
+
+msgid "Return Format"
+msgstr "Формат возвращаемого значения"
+
+msgid "SVG Markup"
+msgstr "Разметка SVG"
+
+msgid "SVG file"
+msgstr "SVG-файл"
+
+msgid "Save and show an admin notice (default)"
+msgstr "Сохранять и показывать уведомление администратора (по умолчанию)"
+
+msgid "Search icons or brand logos..."
+msgstr "Поиск значков или логотипов брендов..."
+
+msgid "Search keywords"
+msgstr "Ключевые слова поиска"
+
+msgid "Select an icon"
+msgstr "Выберите значок"
+
+msgid "Specify the format returned by get_field()."
+msgstr "Укажите формат, который возвращает get_field()."
+
+msgid "Stored icon is not in the bundled icon set"
+msgstr "Сохранённый значок отсутствует во встроенном наборе"
+
+msgid "Stored icons"
+msgstr "Сохранённые значки"
+
+msgid "The icon file could not be written."
+msgstr "Не удалось записать файл значка."
+
+msgid "The icon storage directory could not be created."
+msgstr "Не удалось создать каталог хранилища значков."
+
+msgid "The icon storage is not writable on this site."
+msgstr "Хранилище значков недоступно для записи на этом сайте."
+
+msgid "The storage name is derived from this title: lowercase, dashes, max 64 characters."
+msgstr "Имя в хранилище формируется из этого заголовка: строчные буквы, дефисы, не более 64 символов."
+
+msgid "This plugin requires %1$s version %2$s or higher to function."
+msgstr "Для работы плагина требуется %1$s версии %2$s или выше."
+
+msgid "Title"
+msgstr "Заголовок"
+
+msgid "Unknown Icon Values"
+msgstr "Неизвестные значения значков"
+
+msgid "Upload plain SVG icons to extend the picker with a custom set. Files are sanitized on upload: scripts, styles, embedded images and unsupported elements are removed, and only the allowlisted shape markup is stored."
+msgstr "Загрузите простые SVG-значки, чтобы дополнить выбор собственным набором. Файлы очищаются при загрузке: сценарии, стили, встроенные изображения и неподдерживаемые элементы удаляются, сохраняется только разрешённая разметка фигур."
+
+msgid "Value"
+msgstr "Значение"
+
+msgid "You are not allowed to manage custom icons."
+msgstr "У вас нет прав на управление пользовательскими значками."
+
+msgid "logo, company, brand"
+msgstr "логотип, компания, бренд"

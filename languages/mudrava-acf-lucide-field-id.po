@@ -1,0 +1,196 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mudrava Icon Field for ACF with Lucide 1.5.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mudrava-acf-lucide-field/\n"
+"POT-Creation-Date: 2026-11-15 22:17+0000\n"
+"PO-Revision-Date: 2026-11-16 00:00+0000\n"
+"Last-Translator: Mudrava <info@mudrava.com>\n"
+"Language-Team: Indonesian <id@li.org>\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "%d icons available"
+msgstr "%d ikon tersedia"
+
+msgid "%s selected"
+msgstr "%s dipilih"
+
+msgid "Accepted format: SVG with an &lt;svg&gt; root and a viewBox. Maximum size: %s. Icons are available in the picker and shortcodes as custom:&lt;name&gt;."
+msgstr "Format yang diterima: SVG dengan elemen akar &lt;svg&gt; dan viewBox. Ukuran maksimum: %s. Ikon akan tersedia di pemilih dan shortcode sebagai custom:&lt;name&gt;."
+
+msgid "Actions"
+msgstr "Aksi"
+
+msgid "Add icon"
+msgstr "Tambah ikon"
+
+msgid "Allow Null"
+msgstr "Izinkan nilai kosong"
+
+msgid "Allow the field to have no icon selected."
+msgstr "Izinkan kolom ini tanpa ikon terpilih."
+
+msgid "Block saving with a validation error"
+msgstr "Blokir penyimpanan dengan galat validasi"
+
+msgid "Clear selection"
+msgstr "Kosongkan pilihan"
+
+msgid "Comma-separated terms that make the icon findable in the picker search."
+msgstr "Istilah yang dipisahkan dengan koma agar ikon dapat ditemukan di pencarian pemilih."
+
+msgid "Custom Icons"
+msgstr "Ikon Kustom"
+
+msgid "Default Value"
+msgstr "Nilai Bawaan"
+
+msgid "Delete"
+msgstr "Hapus"
+
+msgid "Delete this icon? Existing fields will fall back to their default behavior."
+msgstr "Hapus ikon ini? Kolom yang ada akan kembali ke perilaku bawaannya."
+
+msgid "Docs"
+msgstr "Dokumentasi"
+
+msgid "Enter the icon value to be selected by default (e.g., \"rocket\" or \"simple:facebook\")."
+msgstr "Masukkan nilai ikon yang dipilih secara bawaan (mis. \"rocket\" atau \"simple:facebook\")."
+
+msgid "How to handle values that are not part of the bundled icon set (e.g. icons imported from another site or values left over after an icon library update)."
+msgstr "Cara menangani nilai yang bukan bagian dari set ikon bawaan (mis. ikon yang diimpor dari situs lain atau nilai sisa setelah pembaruan pustaka ikon)."
+
+msgid "Icon <strong>%s</strong> was added to the library."
+msgstr "Ikon <strong>%s</strong> telah ditambahkan ke pustaka."
+
+msgid "Icon <strong>%s</strong> was deleted."
+msgstr "Ikon <strong>%s</strong> telah dihapus."
+
+msgid "Icon Value (e.g., \"rocket\" or \"simple:facebook\")"
+msgstr "Nilai Ikon (mis. \"rocket\" atau \"simple:facebook\")"
+
+msgid "Keywords"
+msgstr "Kata Kunci"
+
+msgid "Lucide Icon"
+msgstr "Ikon Lucide"
+
+msgid "Mudrava Icon Field — Custom Icons"
+msgstr "Mudrava Icon Field — Ikon Kustom"
+
+msgid "Mudrava Icon Field:"
+msgstr "Mudrava Icon Field:"
+
+msgid "Mudrava Icon Field: an icon with that name already exists. Uploads never overwrite stored icons; delete the old icon first or use another name."
+msgstr "Mudrava Icon Field: ikon dengan nama itu sudah ada. Unggahan tidak pernah menimpa ikon tersimpan; hapus ikon lama terlebih dahulu atau gunakan nama lain."
+
+msgid "Mudrava Icon Field: some icon values are not part of the bundled icon set and will render as empty markup:"
+msgstr "Mudrava Icon Field: beberapa nilai ikon bukan bagian dari set ikon bawaan dan akan ditampilkan sebagai markup kosong:"
+
+msgid "Mudrava Icon Field: that file is not a valid SVG document. Only plain shape elements (circle, ellipse, line, path, polygon, polyline, rect) inside an &lt;svg&gt; root are accepted."
+msgstr "Mudrava Icon Field: berkas tersebut bukan dokumen SVG yang valid. Di dalam akar &lt;svg&gt; hanya elemen bentuk sederhana yang diterima (circle, ellipse, line, path, polygon, polyline, rect)."
+
+msgid "Mudrava Icon Field: that file is too large. The limit is %s."
+msgstr "Mudrava Icon Field: berkas tersebut terlalu besar. Batasnya %s."
+
+msgid "Mudrava Icon Field: that icon no longer exists in the library."
+msgstr "Mudrava Icon Field: ikon tersebut tidak ada lagi di pustaka."
+
+msgid "Mudrava Icon Field: the icon storage is not writable. Check filesystem permissions."
+msgstr "Mudrava Icon Field: penyimpanan ikon tidak dapat ditulis. Periksa izin sistem berkas."
+
+msgid "Name"
+msgstr "Nama"
+
+msgid "No custom icons yet."
+msgstr "Belum ada ikon kustom."
+
+msgid "No icon selected"
+msgstr "Tidak ada ikon dipilih"
+
+msgid "No icons found"
+msgstr "Tidak ada ikon ditemukan"
+
+msgid "Optional; defaults to the file name"
+msgstr "Opsional; bawaannya menggunakan nama berkas"
+
+msgid "Placeholder"
+msgstr "Teks placeholder"
+
+msgid "Placeholder text for the search input."
+msgstr "Teks placeholder untuk kolom pencarian."
+
+msgid "Please select a valid icon."
+msgstr "Silakan pilih ikon yang valid."
+
+msgid "Please select an icon."
+msgstr "Silakan pilih ikon."
+
+msgid "Preview"
+msgstr "Pratinjau"
+
+msgid "Return Format"
+msgstr "Format Pengembalian"
+
+msgid "SVG Markup"
+msgstr "Markup SVG"
+
+msgid "SVG file"
+msgstr "Berkas SVG"
+
+msgid "Save and show an admin notice (default)"
+msgstr "Simpan dan tampilkan pemberitahuan admin (bawaan)"
+
+msgid "Search icons or brand logos..."
+msgstr "Cari ikon atau logo merek..."
+
+msgid "Search keywords"
+msgstr "Kata kunci pencarian"
+
+msgid "Select an icon"
+msgstr "Pilih ikon"
+
+msgid "Specify the format returned by get_field()."
+msgstr "Tentukan format yang dikembalikan get_field()."
+
+msgid "Stored icon is not in the bundled icon set"
+msgstr "Ikon tersimpan tidak ada dalam set ikon bawaan"
+
+msgid "Stored icons"
+msgstr "Ikon tersimpan"
+
+msgid "The icon file could not be written."
+msgstr "Berkas ikon tidak dapat ditulis."
+
+msgid "The icon storage directory could not be created."
+msgstr "Direktori penyimpanan ikon tidak dapat dibuat."
+
+msgid "The icon storage is not writable on this site."
+msgstr "Penyimpanan ikon di situs ini tidak dapat ditulis."
+
+msgid "The storage name is derived from this title: lowercase, dashes, max 64 characters."
+msgstr "Nama penyimpanan diturunkan dari judul ini: huruf kecil, tanda hubung, maks 64 karakter."
+
+msgid "This plugin requires %1$s version %2$s or higher to function."
+msgstr "Plugin ini memerlukan %1$s versi %2$s atau lebih tinggi agar berfungsi."
+
+msgid "Title"
+msgstr "Judul"
+
+msgid "Unknown Icon Values"
+msgstr "Nilai Ikon Tidak Dikenal"
+
+msgid "Upload plain SVG icons to extend the picker with a custom set. Files are sanitized on upload: scripts, styles, embedded images and unsupported elements are removed, and only the allowlisted shape markup is stored."
+msgstr "Unggah ikon SVG sederhana untuk memperluas pemilih dengan set sendiri. Berkas dibersihkan saat diunggah: skrip, gaya, gambar sematan, dan elemen yang tidak didukung dihapus, dan hanya markup bentuk yang diizinkan yang disimpan."
+
+msgid "Value"
+msgstr "Nilai"
+
+msgid "You are not allowed to manage custom icons."
+msgstr "Anda tidak diizinkan mengelola ikon kustom."
+
+msgid "logo, company, brand"
+msgstr "logo, perusahaan, merek"

@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+
+- 14 new complete translations: Catalan (`ca`), Czech (`cs`), Danish (`da`), Greek (`el`), Galician (`gl`), Croatian (`hr`), Hungarian (`hu`), Indonesian (`id`), Norwegian Bokmål (`nb`), Portuguese Portugal (`pt_PT`), Romanian (`ro`), Slovak (`sk`), Slovenian (`sl`) and Serbian (`sr`), each using the established WordPress core terminology of that language.
+- Complete Russian (`ru`) and Swedish (`sv`) translations. Swedish adopts the approved community strings from translate.wordpress.org as its base. The bundled set now covers 27 locales.
+
+### Changed
+
+- Completed the existing 11 bundled catalogs: every string added in 1.3 to 1.5 (custom icon library, unknown-value handling, picker status labels) is now translated in all shipped languages instead of falling back to English. Terminology follows each catalog's established style.
+- Fixed the Russian base strings reviewed on translate.wordpress.org (typos and untranslated terms) before shipping.
+- `scripts/make-pot.php` now derives the catalog version from the plugin header instead of a hardcoded one.
+
 ## [1.5.0] - 2026-11-09
 
 ### Added

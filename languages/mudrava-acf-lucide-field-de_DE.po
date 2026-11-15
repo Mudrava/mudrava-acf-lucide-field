@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Mudrava Icon Field for ACF with Lucide 1.2.0\n"
+"Project-Id-Version: Mudrava Icon Field for ACF with Lucide 1.5.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mudrava-acf-lucide-field/\n"
-"POT-Creation-Date: 2026-09-01 09:51+0000\n"
-"PO-Revision-Date: 2026-03-20 00:00+0000\n"
+"POT-Creation-Date: 2026-11-15 22:17+0000\n"
+"PO-Revision-Date: 2026-11-16 00:00+0000\n"
 "Last-Translator: Mudrava <info@mudrava.com>\n"
 "Language-Team: German <de@li.org>\n"
 "Language: de_DE\n"
@@ -11,22 +11,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: scripts/merge-po.py\n"
 
 msgid "%d icons available"
-msgstr ""
+msgstr "%d Symbole verfügbar"
 
 msgid "%s selected"
-msgstr ""
+msgstr "%s ausgewählt"
 
 msgid "Accepted format: SVG with an &lt;svg&gt; root and a viewBox. Maximum size: %s. Icons are available in the picker and shortcodes as custom:&lt;name&gt;."
-msgstr ""
+msgstr "Akzeptiertes Format: SVG mit einem &lt;svg&gt;-Wurzelelement und viewBox. Maximale Größe: %s. Die Symbole stehen im Auswahlfenster und in Shortcodes als custom:&lt;name&gt; zur Verfügung."
 
 msgid "Actions"
-msgstr ""
+msgstr "Aktionen"
 
 msgid "Add icon"
-msgstr ""
+msgstr "Symbol hinzufügen"
 
 msgid "Allow Null"
 msgstr "Null erlauben"
@@ -35,79 +34,79 @@ msgid "Allow the field to have no icon selected."
 msgstr "Erlauben, dass kein Symbol ausgewählt ist."
 
 msgid "Block saving with a validation error"
-msgstr ""
+msgstr "Speichern mit Validierungsfehler blockieren"
 
 msgid "Clear selection"
 msgstr "Auswahl aufheben"
 
 msgid "Comma-separated terms that make the icon findable in the picker search."
-msgstr ""
+msgstr "Kommagetrennte Begriffe, über die das Symbol in der Suche gefunden wird."
 
 msgid "Custom Icons"
-msgstr ""
+msgstr "Eigene Symbole"
 
 msgid "Default Value"
 msgstr "Standardwert"
 
 msgid "Delete"
-msgstr ""
+msgstr "Löschen"
 
 msgid "Delete this icon? Existing fields will fall back to their default behavior."
-msgstr ""
+msgstr "Dieses Symbol löschen? Vorhandene Felder fallen auf ihr Standardverhalten zurück."
 
 msgid "Docs"
 msgstr "Dokumentation"
 
 msgid "Enter the icon value to be selected by default (e.g., \"rocket\" or \"simple:facebook\")."
-msgstr ""
+msgstr "Geben Sie den Symbolwert ein, der standardmäßig ausgewählt sein soll (z. B. „rocket“ oder „simple:facebook“)."
 
 msgid "How to handle values that are not part of the bundled icon set (e.g. icons imported from another site or values left over after an icon library update)."
-msgstr ""
+msgstr "So wird mit Werten umgegangen, die nicht zum mitgelieferten Symbolsatz gehören (z. B. von einer anderen Website importierte Symbole oder Werte, die nach einer Aktualisierung der Symbolbibliothek übrig bleiben)."
 
 msgid "Icon <strong>%s</strong> was added to the library."
-msgstr ""
+msgstr "Das Symbol <strong>%s</strong> wurde zur Bibliothek hinzugefügt."
 
 msgid "Icon <strong>%s</strong> was deleted."
-msgstr ""
+msgstr "Das Symbol <strong>%s</strong> wurde gelöscht."
 
 msgid "Icon Value (e.g., \"rocket\" or \"simple:facebook\")"
-msgstr ""
+msgstr "Symbolwert (z. B. „rocket“ oder „simple:facebook“)"
 
 msgid "Keywords"
-msgstr ""
+msgstr "Schlüsselwörter"
 
 msgid "Lucide Icon"
 msgstr "Lucide-Symbol"
 
 msgid "Mudrava Icon Field — Custom Icons"
-msgstr ""
+msgstr "Mudrava Icon Field — Eigene Symbole"
 
 msgid "Mudrava Icon Field:"
-msgstr ""
+msgstr "Mudrava Icon Field:"
 
 msgid "Mudrava Icon Field: an icon with that name already exists. Uploads never overwrite stored icons; delete the old icon first or use another name."
-msgstr ""
+msgstr "Mudrava Icon Field: Ein Symbol mit diesem Namen existiert bereits. Hochladen überschreibt gespeicherte Symbole nie; löschen Sie zuerst das alte Symbol oder verwenden Sie einen anderen Namen."
 
 msgid "Mudrava Icon Field: some icon values are not part of the bundled icon set and will render as empty markup:"
-msgstr ""
+msgstr "Mudrava Icon Field: Einige Symbolwerte gehören nicht zum mitgelieferten Symbolsatz und werden als leeres Markup ausgegeben:"
 
 msgid "Mudrava Icon Field: that file is not a valid SVG document. Only plain shape elements (circle, ellipse, line, path, polygon, polyline, rect) inside an &lt;svg&gt; root are accepted."
-msgstr ""
+msgstr "Mudrava Icon Field: Diese Datei ist kein gültiges SVG-Dokument. Innerhalb des &lt;svg&gt;-Wurzelelements sind nur einfache Formelemente (circle, ellipse, line, path, polygon, polyline, rect) erlaubt."
 
 msgid "Mudrava Icon Field: that file is too large. The limit is %s."
-msgstr ""
+msgstr "Mudrava Icon Field: Diese Datei ist zu groß. Das Limit beträgt %s."
 
 msgid "Mudrava Icon Field: that icon no longer exists in the library."
-msgstr ""
+msgstr "Mudrava Icon Field: Dieses Symbol existiert nicht mehr in der Bibliothek."
 
 msgid "Mudrava Icon Field: the icon storage is not writable. Check filesystem permissions."
-msgstr ""
+msgstr "Mudrava Icon Field: Der Symbolspeicher ist nicht beschreibbar. Prüfen Sie die Dateisystemberechtigungen."
 
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgid "No custom icons yet."
-msgstr ""
+msgstr "Noch keine eigenen Symbole."
 
 msgid "No icon selected"
 msgstr "Kein Symbol ausgewählt"
@@ -116,7 +115,7 @@ msgid "No icons found"
 msgstr "Keine Symbole gefunden"
 
 msgid "Optional; defaults to the file name"
-msgstr ""
+msgstr "Optional; standardmäßig wird der Dateiname verwendet"
 
 msgid "Placeholder"
 msgstr "Platzhalter"
@@ -125,13 +124,13 @@ msgid "Placeholder text for the search input."
 msgstr "Platzhaltertext für das Suchfeld."
 
 msgid "Please select a valid icon."
-msgstr ""
+msgstr "Bitte wählen Sie ein gültiges Symbol aus."
 
 msgid "Please select an icon."
 msgstr "Bitte wählen Sie ein Symbol aus."
 
 msgid "Preview"
-msgstr ""
+msgstr "Vorschau"
 
 msgid "Return Format"
 msgstr "Rückgabeformat"
@@ -140,59 +139,58 @@ msgid "SVG Markup"
 msgstr "SVG-Markup"
 
 msgid "SVG file"
-msgstr ""
+msgstr "SVG-Datei"
 
 msgid "Save and show an admin notice (default)"
-msgstr ""
+msgstr "Speichern und Hinweis im Adminbereich anzeigen (Standard)"
 
 msgid "Search icons or brand logos..."
-msgstr ""
+msgstr "Symbole oder Markenlogos suchen..."
 
 msgid "Search keywords"
-msgstr ""
+msgstr "Suchbegriffe"
 
 msgid "Select an icon"
-msgstr ""
+msgstr "Symbol auswählen"
 
 msgid "Specify the format returned by get_field()."
 msgstr "Geben Sie das von get_field() zurückgegebene Format an."
 
 msgid "Stored icon is not in the bundled icon set"
-msgstr ""
+msgstr "Das gespeicherte Symbol ist nicht im mitgelieferten Symbolsatz"
 
 msgid "Stored icons"
-msgstr ""
+msgstr "Gespeicherte Symbole"
 
 msgid "The icon file could not be written."
-msgstr ""
+msgstr "Die Symboldatei konnte nicht geschrieben werden."
 
 msgid "The icon storage directory could not be created."
-msgstr ""
+msgstr "Das Verzeichnis für den Symbolspeicher konnte nicht erstellt werden."
 
 msgid "The icon storage is not writable on this site."
-msgstr ""
+msgstr "Der Symbolspeicher ist auf dieser Website nicht beschreibbar."
 
 msgid "The storage name is derived from this title: lowercase, dashes, max 64 characters."
-msgstr ""
+msgstr "Der Name im Speicher wird aus dem Titel abgeleitet: Kleinbuchstaben, Gedankenstriche, maximal 64 Zeichen."
 
 msgid "This plugin requires %1$s version %2$s or higher to function."
-msgstr ""
+msgstr "Dieses Plugin benötigt %1$s in Version %2$s oder höher."
 
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 msgid "Unknown Icon Values"
-msgstr ""
+msgstr "Unbekannte Symbolwerte"
 
 msgid "Upload plain SVG icons to extend the picker with a custom set. Files are sanitized on upload: scripts, styles, embedded images and unsupported elements are removed, and only the allowlisted shape markup is stored."
-msgstr ""
+msgstr "Laden Sie einfache SVG-Symbole hoch, um die Auswahl um einen eigenen Satz zu erweitern. Dateien werden beim Hochladen bereinigt: Skripte, Styles, eingebettete Bilder und nicht unterstützte Elemente werden entfernt; gespeichert wird nur das erlaubte Formen-Markup."
 
 msgid "Value"
-msgstr ""
+msgstr "Wert"
 
 msgid "You are not allowed to manage custom icons."
-msgstr ""
+msgstr "Sie dürfen eigene Symbole nicht verwalten."
 
 msgid "logo, company, brand"
-msgstr ""
-
+msgstr "logo, unternehmen, marke"

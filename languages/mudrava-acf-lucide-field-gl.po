@@ -1,0 +1,196 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mudrava Icon Field for ACF with Lucide 1.5.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mudrava-acf-lucide-field/\n"
+"POT-Creation-Date: 2026-11-15 22:17+0000\n"
+"PO-Revision-Date: 2026-11-16 00:00+0000\n"
+"Last-Translator: Mudrava <info@mudrava.com>\n"
+"Language-Team: Galician <gl@li.org>\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "%d icons available"
+msgstr "%d iconas dispoñibles"
+
+msgid "%s selected"
+msgstr "%s seleccionada"
+
+msgid "Accepted format: SVG with an &lt;svg&gt; root and a viewBox. Maximum size: %s. Icons are available in the picker and shortcodes as custom:&lt;name&gt;."
+msgstr "Formato aceptado: SVG cun elemento raíz &lt;svg&gt; e un viewBox. Tamaño máximo: %s. As iconas estarán dispoñibles no selector e en shortcodes como custom:&lt;name&gt;."
+
+msgid "Actions"
+msgstr "Accións"
+
+msgid "Add icon"
+msgstr "Engadir icona"
+
+msgid "Allow Null"
+msgstr "Permitir valor nulo"
+
+msgid "Allow the field to have no icon selected."
+msgstr "Permitir que o campo non teña ningunha icona seleccionada."
+
+msgid "Block saving with a validation error"
+msgstr "Bloquear a garda cun erro de validación"
+
+msgid "Clear selection"
+msgstr "Limpar selección"
+
+msgid "Comma-separated terms that make the icon findable in the picker search."
+msgstr "Termos separados por comas que permiten atopar a icona na busca do selector."
+
+msgid "Custom Icons"
+msgstr "Iconas personalizadas"
+
+msgid "Default Value"
+msgstr "Valor predeterminado"
+
+msgid "Delete"
+msgstr "Eliminar"
+
+msgid "Delete this icon? Existing fields will fall back to their default behavior."
+msgstr "Eliminar esta icona? Os campos existentes volverán ao seu comportamento predeterminado."
+
+msgid "Docs"
+msgstr "Documentación"
+
+msgid "Enter the icon value to be selected by default (e.g., \"rocket\" or \"simple:facebook\")."
+msgstr "Introduza o valor da icona que se seleccionará de forma predeterminada (por exemplo, \"rocket\" ou \"simple:facebook\")."
+
+msgid "How to handle values that are not part of the bundled icon set (e.g. icons imported from another site or values left over after an icon library update)."
+msgstr "Como xestionar os valores que non forman parte do conxunto de iconas incluído (por exemplo, iconas importadas doutro sitio ou valores restantes despois dunha actualización da biblioteca de iconas)."
+
+msgid "Icon <strong>%s</strong> was added to the library."
+msgstr "A icona <strong>%s</strong> engadiuse á biblioteca."
+
+msgid "Icon <strong>%s</strong> was deleted."
+msgstr "A icona <strong>%s</strong> foi eliminada."
+
+msgid "Icon Value (e.g., \"rocket\" or \"simple:facebook\")"
+msgstr "Valor da icona (por exemplo, \"rocket\" ou \"simple:facebook\")"
+
+msgid "Keywords"
+msgstr "Palabras clave"
+
+msgid "Lucide Icon"
+msgstr "Icona Lucide"
+
+msgid "Mudrava Icon Field — Custom Icons"
+msgstr "Mudrava Icon Field — Iconas personalizadas"
+
+msgid "Mudrava Icon Field:"
+msgstr "Mudrava Icon Field:"
+
+msgid "Mudrava Icon Field: an icon with that name already exists. Uploads never overwrite stored icons; delete the old icon first or use another name."
+msgstr "Mudrava Icon Field: xa existe unha icona con ese nome. As subidas nunca sobrescriben as iconas gardadas; elimine primeiro a icona antiga ou use outro nome."
+
+msgid "Mudrava Icon Field: some icon values are not part of the bundled icon set and will render as empty markup:"
+msgstr "Mudrava Icon Field: algúns valores de icona non forman parte do conxunto incluído e amosaranse como marcamento baleiro:"
+
+msgid "Mudrava Icon Field: that file is not a valid SVG document. Only plain shape elements (circle, ellipse, line, path, polygon, polyline, rect) inside an &lt;svg&gt; root are accepted."
+msgstr "Mudrava Icon Field: ese ficheiro non é un documento SVG válido. Dentro da raíz &lt;svg&gt; só se aceptan elementos de forma simples (circle, ellipse, line, path, polygon, polyline, rect)."
+
+msgid "Mudrava Icon Field: that file is too large. The limit is %s."
+msgstr "Mudrava Icon Field: ese ficheiro é demasiado grande. O límite é %s."
+
+msgid "Mudrava Icon Field: that icon no longer exists in the library."
+msgstr "Mudrava Icon Field: esa icona xa non existe na biblioteca."
+
+msgid "Mudrava Icon Field: the icon storage is not writable. Check filesystem permissions."
+msgstr "Mudrava Icon Field: o almacenamento de iconas non ten permisos de escritura. Comprobe os permisos do sistema de ficheiros."
+
+msgid "Name"
+msgstr "Nome"
+
+msgid "No custom icons yet."
+msgstr "Aínda non hai iconas personalizadas."
+
+msgid "No icon selected"
+msgstr "Ningunha icona seleccionada"
+
+msgid "No icons found"
+msgstr "Non se atoparon iconas"
+
+msgid "Optional; defaults to the file name"
+msgstr "Opcional; de forma predeterminada úsase o nome do ficheiro"
+
+msgid "Placeholder"
+msgstr "Texto provisional"
+
+msgid "Placeholder text for the search input."
+msgstr "Texto provisional para o campo de busca."
+
+msgid "Please select a valid icon."
+msgstr "Seleccione unha icona válida."
+
+msgid "Please select an icon."
+msgstr "Seleccione unha icona."
+
+msgid "Preview"
+msgstr "Vista previa"
+
+msgid "Return Format"
+msgstr "Formato devolto"
+
+msgid "SVG Markup"
+msgstr "Marcado SVG"
+
+msgid "SVG file"
+msgstr "Ficheiro SVG"
+
+msgid "Save and show an admin notice (default)"
+msgstr "Gardar e amosar un aviso de administración (predeterminado)"
+
+msgid "Search icons or brand logos..."
+msgstr "Buscar iconas ou logotipos de marcas..."
+
+msgid "Search keywords"
+msgstr "Palabras clave de busca"
+
+msgid "Select an icon"
+msgstr "Seleccionar unha icona"
+
+msgid "Specify the format returned by get_field()."
+msgstr "Especifique o formato devolto por get_field()."
+
+msgid "Stored icon is not in the bundled icon set"
+msgstr "A icona gardada non está no conxunto de iconas incluído"
+
+msgid "Stored icons"
+msgstr "Iconas gardadas"
+
+msgid "The icon file could not be written."
+msgstr "Non se puido escribir o ficheiro da icona."
+
+msgid "The icon storage directory could not be created."
+msgstr "Non se puido crear o directorio de almacenamento de iconas."
+
+msgid "The icon storage is not writable on this site."
+msgstr "O almacenamento de iconas non ten permisos de escritura neste sitio."
+
+msgid "The storage name is derived from this title: lowercase, dashes, max 64 characters."
+msgstr "O nome de almacenamento derívase deste título: minúsculas, guións, máximo 64 caracteres."
+
+msgid "This plugin requires %1$s version %2$s or higher to function."
+msgstr "Este complemento require %1$s versión %2$s ou superior para funcionar."
+
+msgid "Title"
+msgstr "Título"
+
+msgid "Unknown Icon Values"
+msgstr "Valores de icona descoñecidos"
+
+msgid "Upload plain SVG icons to extend the picker with a custom set. Files are sanitized on upload: scripts, styles, embedded images and unsupported elements are removed, and only the allowlisted shape markup is stored."
+msgstr "Suba iconas SVG simples para ampliar o selector cun conxunto propio. Os ficheiros saneanse ao subilos: retíranse scripts, estilos, imaxes integradas e elementos non admitidos, e só se garda o marcamento de formas permitido."
+
+msgid "Value"
+msgstr "Valor"
+
+msgid "You are not allowed to manage custom icons."
+msgstr "Non ten permiso para xestionar iconas personalizadas."
+
+msgid "logo, company, brand"
+msgstr "logo, empresa, marca"

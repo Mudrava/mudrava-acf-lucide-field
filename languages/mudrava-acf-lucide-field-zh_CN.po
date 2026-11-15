@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Mudrava Icon Field for ACF with Lucide 1.2.0\n"
+"Project-Id-Version: Mudrava Icon Field for ACF with Lucide 1.5.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mudrava-acf-lucide-field/\n"
-"POT-Creation-Date: 2026-09-01 09:51+0000\n"
-"PO-Revision-Date: 2026-03-20 00:00+0000\n"
+"POT-Creation-Date: 2026-11-15 22:17+0000\n"
+"PO-Revision-Date: 2026-11-16 00:00+0000\n"
 "Last-Translator: Mudrava <info@mudrava.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "Language: zh_CN\n"
@@ -11,22 +11,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: scripts/merge-po.py\n"
 
 msgid "%d icons available"
-msgstr ""
+msgstr "可用图标：%d"
 
 msgid "%s selected"
-msgstr ""
+msgstr "已选择：%s"
 
 msgid "Accepted format: SVG with an &lt;svg&gt; root and a viewBox. Maximum size: %s. Icons are available in the picker and shortcodes as custom:&lt;name&gt;."
-msgstr ""
+msgstr "接受的格式：以 &lt;svg&gt; 为根元素并包含 viewBox 的 SVG。最大大小：%s。图标可在选择器中以及 custom:&lt;name&gt; 短代码中使用。"
 
 msgid "Actions"
-msgstr ""
+msgstr "操作"
 
 msgid "Add icon"
-msgstr ""
+msgstr "添加图标"
 
 msgid "Allow Null"
 msgstr "允许空值"
@@ -35,79 +34,79 @@ msgid "Allow the field to have no icon selected."
 msgstr "允许该字段不选择任何图标。"
 
 msgid "Block saving with a validation error"
-msgstr ""
+msgstr "验证失败时阻止保存"
 
 msgid "Clear selection"
 msgstr "清除选择"
 
 msgid "Comma-separated terms that make the icon findable in the picker search."
-msgstr ""
+msgstr "以逗号分隔的词语，便于在选择器搜索中找到该图标。"
 
 msgid "Custom Icons"
-msgstr ""
+msgstr "自定义图标"
 
 msgid "Default Value"
 msgstr "默认值"
 
 msgid "Delete"
-msgstr ""
+msgstr "删除"
 
 msgid "Delete this icon? Existing fields will fall back to their default behavior."
-msgstr ""
+msgstr "删除此图标？现有字段将恢复默认行为。"
 
 msgid "Docs"
 msgstr "文档"
 
 msgid "Enter the icon value to be selected by default (e.g., \"rocket\" or \"simple:facebook\")."
-msgstr ""
+msgstr "输入默认选中的图标值（例如 \"rocket\" 或 \"simple:facebook\"）。"
 
 msgid "How to handle values that are not part of the bundled icon set (e.g. icons imported from another site or values left over after an icon library update)."
-msgstr ""
+msgstr "如何处理不属于内置图标集的值（例如从其他网站导入的图标，或图标库更新后遗留的值）。"
 
 msgid "Icon <strong>%s</strong> was added to the library."
-msgstr ""
+msgstr "图标 <strong>%s</strong> 已添加到图标库。"
 
 msgid "Icon <strong>%s</strong> was deleted."
-msgstr ""
+msgstr "图标 <strong>%s</strong> 已删除。"
 
 msgid "Icon Value (e.g., \"rocket\" or \"simple:facebook\")"
-msgstr ""
+msgstr "图标值（例如 \"rocket\" 或 \"simple:facebook\"）"
 
 msgid "Keywords"
-msgstr ""
+msgstr "关键词"
 
 msgid "Lucide Icon"
 msgstr "Lucide 图标"
 
 msgid "Mudrava Icon Field — Custom Icons"
-msgstr ""
+msgstr "Mudrava Icon Field — 自定义图标"
 
 msgid "Mudrava Icon Field:"
-msgstr ""
+msgstr "Mudrava Icon Field："
 
 msgid "Mudrava Icon Field: an icon with that name already exists. Uploads never overwrite stored icons; delete the old icon first or use another name."
-msgstr ""
+msgstr "Mudrava Icon Field：已存在同名图标。上传不会覆盖已存储的图标；请先删除旧图标或改用其他名称。"
 
 msgid "Mudrava Icon Field: some icon values are not part of the bundled icon set and will render as empty markup:"
-msgstr ""
+msgstr "Mudrava Icon Field：部分图标值不在内置图标集中，将渲染为空标记："
 
 msgid "Mudrava Icon Field: that file is not a valid SVG document. Only plain shape elements (circle, ellipse, line, path, polygon, polyline, rect) inside an &lt;svg&gt; root are accepted."
-msgstr ""
+msgstr "Mudrava Icon Field：该文件不是有效的 SVG 文档。&lt;svg&gt; 根元素内仅接受简单的形状元素（circle、ellipse、line、path、polygon、polyline、rect）。"
 
 msgid "Mudrava Icon Field: that file is too large. The limit is %s."
-msgstr ""
+msgstr "Mudrava Icon Field：该文件过大。上限为 %s。"
 
 msgid "Mudrava Icon Field: that icon no longer exists in the library."
-msgstr ""
+msgstr "Mudrava Icon Field：该图标已不在图标库中。"
 
 msgid "Mudrava Icon Field: the icon storage is not writable. Check filesystem permissions."
-msgstr ""
+msgstr "Mudrava Icon Field：图标存储目录不可写。请检查文件系统权限。"
 
 msgid "Name"
-msgstr ""
+msgstr "名称"
 
 msgid "No custom icons yet."
-msgstr ""
+msgstr "尚无自定义图标。"
 
 msgid "No icon selected"
 msgstr "未选择图标"
@@ -116,7 +115,7 @@ msgid "No icons found"
 msgstr "未找到图标"
 
 msgid "Optional; defaults to the file name"
-msgstr ""
+msgstr "可选；默认使用文件名"
 
 msgid "Placeholder"
 msgstr "占位符"
@@ -125,13 +124,13 @@ msgid "Placeholder text for the search input."
 msgstr "搜索输入框的占位符文本。"
 
 msgid "Please select a valid icon."
-msgstr ""
+msgstr "请选择一个有效的图标。"
 
 msgid "Please select an icon."
 msgstr "请选择一个图标。"
 
 msgid "Preview"
-msgstr ""
+msgstr "预览"
 
 msgid "Return Format"
 msgstr "返回格式"
@@ -140,59 +139,58 @@ msgid "SVG Markup"
 msgstr "SVG 标记"
 
 msgid "SVG file"
-msgstr ""
+msgstr "SVG 文件"
 
 msgid "Save and show an admin notice (default)"
-msgstr ""
+msgstr "保存并显示管理通知（默认）"
 
 msgid "Search icons or brand logos..."
-msgstr ""
+msgstr "搜索图标或品牌标志……"
 
 msgid "Search keywords"
-msgstr ""
+msgstr "搜索关键词"
 
 msgid "Select an icon"
-msgstr ""
+msgstr "选择图标"
 
 msgid "Specify the format returned by get_field()."
 msgstr "指定 get_field() 返回的格式。"
 
 msgid "Stored icon is not in the bundled icon set"
-msgstr ""
+msgstr "已存储的图标不在内置图标集中"
 
 msgid "Stored icons"
-msgstr ""
+msgstr "已存储的图标"
 
 msgid "The icon file could not be written."
-msgstr ""
+msgstr "无法写入图标文件。"
 
 msgid "The icon storage directory could not be created."
-msgstr ""
+msgstr "无法创建图标存储目录。"
 
 msgid "The icon storage is not writable on this site."
-msgstr ""
+msgstr "此站点的图标存储目录不可写。"
 
 msgid "The storage name is derived from this title: lowercase, dashes, max 64 characters."
-msgstr ""
+msgstr "存储名称由此标题生成：小写字母、短横线，最多 64 个字符。"
 
 msgid "This plugin requires %1$s version %2$s or higher to function."
-msgstr ""
+msgstr "此插件需要 %1$s %2$s 或更高版本才能运行。"
 
 msgid "Title"
-msgstr ""
+msgstr "标题"
 
 msgid "Unknown Icon Values"
-msgstr ""
+msgstr "未知图标值"
 
 msgid "Upload plain SVG icons to extend the picker with a custom set. Files are sanitized on upload: scripts, styles, embedded images and unsupported elements are removed, and only the allowlisted shape markup is stored."
-msgstr ""
+msgstr "上传简单的 SVG 图标，为选择器添加自定义图标集。文件上传时会被净化：移除脚本、样式、嵌入图片及不支持的元素，仅保存允许的形状标记。"
 
 msgid "Value"
-msgstr ""
+msgstr "值"
 
 msgid "You are not allowed to manage custom icons."
-msgstr ""
+msgstr "您没有权限管理自定义图标。"
 
 msgid "logo, company, brand"
-msgstr ""
-
+msgstr "logo、公司、品牌"

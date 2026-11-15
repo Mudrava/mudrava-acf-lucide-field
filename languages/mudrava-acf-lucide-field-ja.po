@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Mudrava Icon Field for ACF with Lucide 1.2.0\n"
+"Project-Id-Version: Mudrava Icon Field for ACF with Lucide 1.5.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mudrava-acf-lucide-field/\n"
-"POT-Creation-Date: 2026-09-01 09:51+0000\n"
-"PO-Revision-Date: 2026-03-20 00:00+0000\n"
+"POT-Creation-Date: 2026-11-15 22:17+0000\n"
+"PO-Revision-Date: 2026-11-16 00:00+0000\n"
 "Last-Translator: Mudrava <info@mudrava.com>\n"
 "Language-Team: Japanese <ja@li.org>\n"
 "Language: ja\n"
@@ -11,22 +11,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: scripts/merge-po.py\n"
 
 msgid "%d icons available"
-msgstr ""
+msgstr "利用可能なアイコン: %d"
 
 msgid "%s selected"
-msgstr ""
+msgstr "%s を選択中"
 
 msgid "Accepted format: SVG with an &lt;svg&gt; root and a viewBox. Maximum size: %s. Icons are available in the picker and shortcodes as custom:&lt;name&gt;."
-msgstr ""
+msgstr "許可される形式: &lt;svg&gt; ルートと viewBox を持つ SVG。最大サイズ: %s。アイコンはピッカーと、custom:&lt;name&gt; 形式のショートコードで利用できます。"
 
 msgid "Actions"
-msgstr ""
+msgstr "操作"
 
 msgid "Add icon"
-msgstr ""
+msgstr "アイコンを追加"
 
 msgid "Allow Null"
 msgstr "空の値を許可"
@@ -35,79 +34,79 @@ msgid "Allow the field to have no icon selected."
 msgstr "アイコンが選択されていない状態を許可します。"
 
 msgid "Block saving with a validation error"
-msgstr ""
+msgstr "検証エラーで保存をブロック"
 
 msgid "Clear selection"
 msgstr "選択をクリア"
 
 msgid "Comma-separated terms that make the icon findable in the picker search."
-msgstr ""
+msgstr "ピッカー内の検索でアイコンを見つけやすくする、カンマ区切りの用語。"
 
 msgid "Custom Icons"
-msgstr ""
+msgstr "カスタムアイコン"
 
 msgid "Default Value"
 msgstr "デフォルト値"
 
 msgid "Delete"
-msgstr ""
+msgstr "削除"
 
 msgid "Delete this icon? Existing fields will fall back to their default behavior."
-msgstr ""
+msgstr "このアイコンを削除しますか? 既存のフィールドはデフォルトの動作に戻ります。"
 
 msgid "Docs"
 msgstr "ドキュメント"
 
 msgid "Enter the icon value to be selected by default (e.g., \"rocket\" or \"simple:facebook\")."
-msgstr ""
+msgstr "デフォルトで選択されるアイコンの値を入力してください (例: \"rocket\" または \"simple:facebook\")。"
 
 msgid "How to handle values that are not part of the bundled icon set (e.g. icons imported from another site or values left over after an icon library update)."
-msgstr ""
+msgstr "同梱のアイコンセットに含まれない値の扱いを指定します (例: 他サイトからインポートしたアイコンや、アイコンライブラリの更新後に残った値)。"
 
 msgid "Icon <strong>%s</strong> was added to the library."
-msgstr ""
+msgstr "アイコン <strong>%s</strong> をライブラリに追加しました。"
 
 msgid "Icon <strong>%s</strong> was deleted."
-msgstr ""
+msgstr "アイコン <strong>%s</strong> を削除しました。"
 
 msgid "Icon Value (e.g., \"rocket\" or \"simple:facebook\")"
-msgstr ""
+msgstr "アイコンの値 (例: \"rocket\" または \"simple:facebook\")"
 
 msgid "Keywords"
-msgstr ""
+msgstr "キーワード"
 
 msgid "Lucide Icon"
 msgstr "Lucide アイコン"
 
 msgid "Mudrava Icon Field — Custom Icons"
-msgstr ""
+msgstr "Mudrava Icon Field — カスタムアイコン"
 
 msgid "Mudrava Icon Field:"
-msgstr ""
+msgstr "Mudrava Icon Field:"
 
 msgid "Mudrava Icon Field: an icon with that name already exists. Uploads never overwrite stored icons; delete the old icon first or use another name."
-msgstr ""
+msgstr "Mudrava Icon Field: 同じ名前のアイコンがすでに存在します。アップロードは保存済みのアイコンを上書きしません。先に古いアイコンを削除するか、別の名前を使用してください。"
 
 msgid "Mudrava Icon Field: some icon values are not part of the bundled icon set and will render as empty markup:"
-msgstr ""
+msgstr "Mudrava Icon Field: 一部のアイコン値は同梱のアイコンセットに含まれていないため、空のマークアップとして表示されます:"
 
 msgid "Mudrava Icon Field: that file is not a valid SVG document. Only plain shape elements (circle, ellipse, line, path, polygon, polyline, rect) inside an &lt;svg&gt; root are accepted."
-msgstr ""
+msgstr "Mudrava Icon Field: このファイルは有効な SVG ドキュメントではありません。&lt;svg&gt; ルート内はシンプルな図形要素 (circle、ellipse、line、path、polygon、polyline、rect) のみ許可されます。"
 
 msgid "Mudrava Icon Field: that file is too large. The limit is %s."
-msgstr ""
+msgstr "Mudrava Icon Field: このファイルはサイズオーバーです。上限は %s です。"
 
 msgid "Mudrava Icon Field: that icon no longer exists in the library."
-msgstr ""
+msgstr "Mudrava Icon Field: このアイコンはもうライブラリに存在しません。"
 
 msgid "Mudrava Icon Field: the icon storage is not writable. Check filesystem permissions."
-msgstr ""
+msgstr "Mudrava Icon Field: アイコンの保存先に書き込めません。ファイルシステムのパーミッションを確認してください。"
 
 msgid "Name"
-msgstr ""
+msgstr "名前"
 
 msgid "No custom icons yet."
-msgstr ""
+msgstr "カスタムアイコンはまだありません。"
 
 msgid "No icon selected"
 msgstr "アイコンが選択されていません"
@@ -116,7 +115,7 @@ msgid "No icons found"
 msgstr "アイコンが見つかりません"
 
 msgid "Optional; defaults to the file name"
-msgstr ""
+msgstr "任意。未入力の場合はファイル名が使用されます"
 
 msgid "Placeholder"
 msgstr "プレースホルダー"
@@ -125,74 +124,73 @@ msgid "Placeholder text for the search input."
 msgstr "検索入力のプレースホルダーテキスト。"
 
 msgid "Please select a valid icon."
-msgstr ""
+msgstr "有効なアイコンを選択してください。"
 
 msgid "Please select an icon."
 msgstr "アイコンを選択してください。"
 
 msgid "Preview"
-msgstr ""
+msgstr "プレビュー"
 
 msgid "Return Format"
-msgstr "返却フォーマット"
+msgstr "戻り値の形式"
 
 msgid "SVG Markup"
 msgstr "SVG マークアップ"
 
 msgid "SVG file"
-msgstr ""
+msgstr "SVG ファイル"
 
 msgid "Save and show an admin notice (default)"
-msgstr ""
+msgstr "保存して管理画面に通知を表示 (デフォルト)"
 
 msgid "Search icons or brand logos..."
-msgstr ""
+msgstr "アイコンやブランドロゴを検索..."
 
 msgid "Search keywords"
-msgstr ""
+msgstr "検索キーワード"
 
 msgid "Select an icon"
-msgstr ""
+msgstr "アイコンを選択"
 
 msgid "Specify the format returned by get_field()."
 msgstr "get_field() が返すフォーマットを指定してください。"
 
 msgid "Stored icon is not in the bundled icon set"
-msgstr ""
+msgstr "保存されたアイコンは同梱のアイコンセットに含まれていません"
 
 msgid "Stored icons"
-msgstr ""
+msgstr "保存済みのアイコン"
 
 msgid "The icon file could not be written."
-msgstr ""
+msgstr "アイコンファイルを書き込めませんでした。"
 
 msgid "The icon storage directory could not be created."
-msgstr ""
+msgstr "アイコン保存用ディレクトリを作成できませんでした。"
 
 msgid "The icon storage is not writable on this site."
-msgstr ""
+msgstr "このサイトではアイコンの保存先に書き込めません。"
 
 msgid "The storage name is derived from this title: lowercase, dashes, max 64 characters."
-msgstr ""
+msgstr "保存時の名前はここから生成されます: 小文字、ハイフン、最大64文字。"
 
 msgid "This plugin requires %1$s version %2$s or higher to function."
-msgstr ""
+msgstr "このプラグインが動作するには %1$s バージョン %2$s 以上が必要です。"
 
 msgid "Title"
-msgstr ""
+msgstr "タイトル"
 
 msgid "Unknown Icon Values"
-msgstr ""
+msgstr "不明なアイコン値"
 
 msgid "Upload plain SVG icons to extend the picker with a custom set. Files are sanitized on upload: scripts, styles, embedded images and unsupported elements are removed, and only the allowlisted shape markup is stored."
-msgstr ""
+msgstr "シンプルな SVG アイコンをアップロードして、ピッカーをカスタムセットで拡張できます。アップロード時にファイルをサニタイズします: スクリプト、スタイル、埋め込み画像、未対応の要素は削除され、許可された図形マークアップのみが保存されます。"
 
 msgid "Value"
-msgstr ""
+msgstr "値"
 
 msgid "You are not allowed to manage custom icons."
-msgstr ""
+msgstr "カスタムアイコンを管理する権限がありません。"
 
 msgid "logo, company, brand"
-msgstr ""
-
+msgstr "ロゴ、企業、ブランド"

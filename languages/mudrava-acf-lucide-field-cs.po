@@ -1,0 +1,196 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mudrava Icon Field for ACF with Lucide 1.5.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mudrava-acf-lucide-field/\n"
+"POT-Creation-Date: 2026-11-15 22:17+0000\n"
+"PO-Revision-Date: 2026-11-16 00:00+0000\n"
+"Last-Translator: Mudrava <info@mudrava.com>\n"
+"Language-Team: Czech <cs@li.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+msgid "%d icons available"
+msgstr "Dostupné ikony: %d"
+
+msgid "%s selected"
+msgstr "Vybráno: %s"
+
+msgid "Accepted format: SVG with an &lt;svg&gt; root and a viewBox. Maximum size: %s. Icons are available in the picker and shortcodes as custom:&lt;name&gt;."
+msgstr "Akceptovaný formát: SVG s kořenovým elementem &lt;svg&gt; a atributem viewBox. Maximální velikost: %s. Ikony budou dostupné ve výběru a v shortcodech jako custom:&lt;name&gt;."
+
+msgid "Actions"
+msgstr "Akce"
+
+msgid "Add icon"
+msgstr "Přidat ikonu"
+
+msgid "Allow Null"
+msgstr "Povolit prázdnou hodnotu"
+
+msgid "Allow the field to have no icon selected."
+msgstr "Povolit, aby pole nemělo vybranou žádnou ikonu."
+
+msgid "Block saving with a validation error"
+msgstr "Blokovat uložení chybou ověření"
+
+msgid "Clear selection"
+msgstr "Zrušit výběr"
+
+msgid "Comma-separated terms that make the icon findable in the picker search."
+msgstr "Výrazy oddělené čárkami, podle kterých lze ikonu dohledat ve vyhledávání výběru."
+
+msgid "Custom Icons"
+msgstr "Vlastní ikony"
+
+msgid "Default Value"
+msgstr "Výchozí hodnota"
+
+msgid "Delete"
+msgstr "Smazat"
+
+msgid "Delete this icon? Existing fields will fall back to their default behavior."
+msgstr "Smazat tuto ikonu? Stávající pole se vrátí ke výchozímu chování."
+
+msgid "Docs"
+msgstr "Dokumentace"
+
+msgid "Enter the icon value to be selected by default (e.g., \"rocket\" or \"simple:facebook\")."
+msgstr "Zadejte hodnotu ikony, která má být vybrána ve výchozím stavu (např. \"rocket\" nebo \"simple:facebook\")."
+
+msgid "How to handle values that are not part of the bundled icon set (e.g. icons imported from another site or values left over after an icon library update)."
+msgstr "Jak zpracovat hodnoty, které nejsou součástí dodávané sady ikon (např. ikony importované z jiného webu nebo pozůstalé hodnoty po aktualizaci knihovny ikon)."
+
+msgid "Icon <strong>%s</strong> was added to the library."
+msgstr "Ikona <strong>%s</strong> byla přidána do knihovny."
+
+msgid "Icon <strong>%s</strong> was deleted."
+msgstr "Ikona <strong>%s</strong> byla smazána."
+
+msgid "Icon Value (e.g., \"rocket\" or \"simple:facebook\")"
+msgstr "Hodnota ikony (např. \"rocket\" nebo \"simple:facebook\")"
+
+msgid "Keywords"
+msgstr "Klíčová slova"
+
+msgid "Lucide Icon"
+msgstr "Ikona Lucide"
+
+msgid "Mudrava Icon Field — Custom Icons"
+msgstr "Mudrava Icon Field — vlastní ikony"
+
+msgid "Mudrava Icon Field:"
+msgstr "Mudrava Icon Field:"
+
+msgid "Mudrava Icon Field: an icon with that name already exists. Uploads never overwrite stored icons; delete the old icon first or use another name."
+msgstr "Mudrava Icon Field: ikona s tímto názvem už existuje. Nahrávání nikdy nepřepisuje uložené ikony; nejprve starou ikonu smažte nebo použijte jiný název."
+
+msgid "Mudrava Icon Field: some icon values are not part of the bundled icon set and will render as empty markup:"
+msgstr "Mudrava Icon Field: některé hodnoty ikon nejsou součástí dodávané sady a budou vykresleny jako prázdný obsah:"
+
+msgid "Mudrava Icon Field: that file is not a valid SVG document. Only plain shape elements (circle, ellipse, line, path, polygon, polyline, rect) inside an &lt;svg&gt; root are accepted."
+msgstr "Mudrava Icon Field: soubor není platný dokument SVG. Uvnitř kořenového elementu &lt;svg&gt; jsou akceptovány pouze jednoduché grafické elementy (circle, ellipse, line, path, polygon, polyline, rect)."
+
+msgid "Mudrava Icon Field: that file is too large. The limit is %s."
+msgstr "Mudrava Icon Field: soubor je příliš velký. Limit je %s."
+
+msgid "Mudrava Icon Field: that icon no longer exists in the library."
+msgstr "Mudrava Icon Field: tato ikona v knihovně již neexistuje."
+
+msgid "Mudrava Icon Field: the icon storage is not writable. Check filesystem permissions."
+msgstr "Mudrava Icon Field: úložiště ikon není zapisovatelné. Zkontrolujte oprávnění souborového systému."
+
+msgid "Name"
+msgstr "Jméno"
+
+msgid "No custom icons yet."
+msgstr "Zatím žádné vlastní ikony."
+
+msgid "No icon selected"
+msgstr "Není vybrána žádná ikona"
+
+msgid "No icons found"
+msgstr "Nebyly nalezeny žádné ikony"
+
+msgid "Optional; defaults to the file name"
+msgstr "Nepovinné; výchozí je název souboru"
+
+msgid "Placeholder"
+msgstr "Zástupný text"
+
+msgid "Placeholder text for the search input."
+msgstr "Zástupný text pole vyhledávání."
+
+msgid "Please select a valid icon."
+msgstr "Vyberte platnou ikonu."
+
+msgid "Please select an icon."
+msgstr "Vyberte ikonu."
+
+msgid "Preview"
+msgstr "Náhled"
+
+msgid "Return Format"
+msgstr "Formát návratové hodnoty"
+
+msgid "SVG Markup"
+msgstr "Značení SVG"
+
+msgid "SVG file"
+msgstr "Soubor SVG"
+
+msgid "Save and show an admin notice (default)"
+msgstr "Uložit a zobrazit upozornění v administraci (výchozí)"
+
+msgid "Search icons or brand logos..."
+msgstr "Hledat ikony nebo loga značek..."
+
+msgid "Search keywords"
+msgstr "Klíčová slova vyhledávání"
+
+msgid "Select an icon"
+msgstr "Výběr ikony"
+
+msgid "Specify the format returned by get_field()."
+msgstr "Zadejte formát, který vrací get_field()."
+
+msgid "Stored icon is not in the bundled icon set"
+msgstr "Uložená ikona není v dodávané sadě ikon"
+
+msgid "Stored icons"
+msgstr "Uložené ikony"
+
+msgid "The icon file could not be written."
+msgstr "Soubor ikony se nepodařilo zapsat."
+
+msgid "The icon storage directory could not be created."
+msgstr "Nepodařilo se vytvořit adresář úložiště ikon."
+
+msgid "The icon storage is not writable on this site."
+msgstr "Úložiště ikon není na tomto webu zapisovatelné."
+
+msgid "The storage name is derived from this title: lowercase, dashes, max 64 characters."
+msgstr "Název v úložišti se odvozuje z tohoto titulu: malá písmena, pomlčky, nejvýše 64 znaků."
+
+msgid "This plugin requires %1$s version %2$s or higher to function."
+msgstr "Tento plugin vyžaduje %1$s verzi %2$s nebo novější."
+
+msgid "Title"
+msgstr "Titulek"
+
+msgid "Unknown Icon Values"
+msgstr "Neznámé hodnoty ikon"
+
+msgid "Upload plain SVG icons to extend the picker with a custom set. Files are sanitized on upload: scripts, styles, embedded images and unsupported elements are removed, and only the allowlisted shape markup is stored."
+msgstr "Nahrajte jednoduché ikony SVG a rozšiřte výběr o vlastní sadu. Soubory se při nahrávání vyčistí: skripty, styly, vložené obrázky a nepodporované elementy se odstraní a uloží se pouze povolené značení tvarů."
+
+msgid "Value"
+msgstr "Hodnota"
+
+msgid "You are not allowed to manage custom icons."
+msgstr "Nemáte oprávnění spravovat vlastní ikony."
+
+msgid "logo, company, brand"
+msgstr "logo, firma, značka"

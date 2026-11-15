@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Mudrava Icon Field for ACF with Lucide 1.2.0\n"
+"Project-Id-Version: Mudrava Icon Field for ACF with Lucide 1.5.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mudrava-acf-lucide-field/\n"
-"POT-Creation-Date: 2026-09-01 09:51+0000\n"
-"PO-Revision-Date: 2026-03-20 00:00+0000\n"
+"POT-Creation-Date: 2026-11-15 22:17+0000\n"
+"PO-Revision-Date: 2026-11-16 00:00+0000\n"
 "Last-Translator: Mudrava <info@mudrava.com>\n"
 "Language-Team: Dutch <nl@li.org>\n"
 "Language: nl_NL\n"
@@ -11,22 +11,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: scripts/merge-po.py\n"
 
 msgid "%d icons available"
-msgstr ""
+msgstr "%d pictogrammen beschikbaar"
 
 msgid "%s selected"
-msgstr ""
+msgstr "%s geselecteerd"
 
 msgid "Accepted format: SVG with an &lt;svg&gt; root and a viewBox. Maximum size: %s. Icons are available in the picker and shortcodes as custom:&lt;name&gt;."
-msgstr ""
+msgstr "Geaccepteerd formaat: SVG met een &lt;svg&gt;-hoofdelement en een viewBox. Maximale grootte: %s. Pictogrammen zijn beschikbaar in de kiezer en via shortcodes als custom:&lt;name&gt;."
 
 msgid "Actions"
-msgstr ""
+msgstr "Acties"
 
 msgid "Add icon"
-msgstr ""
+msgstr "Pictogram toevoegen"
 
 msgid "Allow Null"
 msgstr "Null toestaan"
@@ -35,79 +34,79 @@ msgid "Allow the field to have no icon selected."
 msgstr "Toestaan dat het veld geen geselecteerd pictogram heeft."
 
 msgid "Block saving with a validation error"
-msgstr ""
+msgstr "Opslaan blokkeren met een validatiefout"
 
 msgid "Clear selection"
 msgstr "Selectie wissen"
 
 msgid "Comma-separated terms that make the icon findable in the picker search."
-msgstr ""
+msgstr "Door komma's gescheiden termen waarmee het pictogram te vinden is via het zoekveld."
 
 msgid "Custom Icons"
-msgstr ""
+msgstr "Aangepaste pictogrammen"
 
 msgid "Default Value"
 msgstr "Standaardwaarde"
 
 msgid "Delete"
-msgstr ""
+msgstr "Verwijderen"
 
 msgid "Delete this icon? Existing fields will fall back to their default behavior."
-msgstr ""
+msgstr "Dit pictogram verwijderen? Bestaande velden vallen terug op hun standaardgedrag."
 
 msgid "Docs"
 msgstr "Documentatie"
 
 msgid "Enter the icon value to be selected by default (e.g., \"rocket\" or \"simple:facebook\")."
-msgstr ""
+msgstr "Voer de pictogramwaarde in die standaard geselecteerd wordt (bijvoorbeeld \"rocket\" of \"simple:facebook\")."
 
 msgid "How to handle values that are not part of the bundled icon set (e.g. icons imported from another site or values left over after an icon library update)."
-msgstr ""
+msgstr "Hoe om te gaan met waarden die niet in de meegeleverde pictogramset zitten (bijvoorbeeld geïmporteerde pictogrammen van een andere site of restanten na een update van de pictogrambibliotheek)."
 
 msgid "Icon <strong>%s</strong> was added to the library."
-msgstr ""
+msgstr "Pictogram <strong>%s</strong> is toegevoegd aan de bibliotheek."
 
 msgid "Icon <strong>%s</strong> was deleted."
-msgstr ""
+msgstr "Pictogram <strong>%s</strong> is verwijderd."
 
 msgid "Icon Value (e.g., \"rocket\" or \"simple:facebook\")"
-msgstr ""
+msgstr "Pictogramwaarde (bijvoorbeeld \"rocket\" of \"simple:facebook\")"
 
 msgid "Keywords"
-msgstr ""
+msgstr "Trefwoorden"
 
 msgid "Lucide Icon"
 msgstr "Lucide-pictogram"
 
 msgid "Mudrava Icon Field — Custom Icons"
-msgstr ""
+msgstr "Mudrava Icon Field — aangepaste pictogrammen"
 
 msgid "Mudrava Icon Field:"
-msgstr ""
+msgstr "Mudrava Icon Field:"
 
 msgid "Mudrava Icon Field: an icon with that name already exists. Uploads never overwrite stored icons; delete the old icon first or use another name."
-msgstr ""
+msgstr "Mudrava Icon Field: er bestaat al een pictogram met die naam. Uploads overschrijven bestaande pictogrammen nooit; verwijder eerst het oude pictogram of gebruik een andere naam."
 
 msgid "Mudrava Icon Field: some icon values are not part of the bundled icon set and will render as empty markup:"
-msgstr ""
+msgstr "Mudrava Icon Field: sommige pictogramwaarden horen niet bij de meegeleverde set en worden als lege opmaak weergegeven:"
 
 msgid "Mudrava Icon Field: that file is not a valid SVG document. Only plain shape elements (circle, ellipse, line, path, polygon, polyline, rect) inside an &lt;svg&gt; root are accepted."
-msgstr ""
+msgstr "Mudrava Icon Field: dat bestand is geen geldig SVG-document. Binnen een &lt;svg&gt;-hoofdelement zijn alleen eenvoudige vormelementen (circle, ellipse, line, path, polygon, polyline, rect) toegestaan."
 
 msgid "Mudrava Icon Field: that file is too large. The limit is %s."
-msgstr ""
+msgstr "Mudrava Icon Field: dat bestand is te groot. De limiet is %s."
 
 msgid "Mudrava Icon Field: that icon no longer exists in the library."
-msgstr ""
+msgstr "Mudrava Icon Field: dat pictogram bestaat niet meer in de bibliotheek."
 
 msgid "Mudrava Icon Field: the icon storage is not writable. Check filesystem permissions."
-msgstr ""
+msgstr "Mudrava Icon Field: de pictogramopslag is niet schrijfbaar. Controleer de bestandssysteemrechten."
 
 msgid "Name"
-msgstr ""
+msgstr "Naam"
 
 msgid "No custom icons yet."
-msgstr ""
+msgstr "Nog geen aangepaste pictogrammen."
 
 msgid "No icon selected"
 msgstr "Geen pictogram geselecteerd"
@@ -116,7 +115,7 @@ msgid "No icons found"
 msgstr "Geen pictogrammen gevonden"
 
 msgid "Optional; defaults to the file name"
-msgstr ""
+msgstr "Optioneel; standaard wordt de bestandsnaam gebruikt"
 
 msgid "Placeholder"
 msgstr "Tijdelijke aanduiding"
@@ -125,13 +124,13 @@ msgid "Placeholder text for the search input."
 msgstr "Tijdelijke tekst voor het zoekveld."
 
 msgid "Please select a valid icon."
-msgstr ""
+msgstr "Selecteer een geldig pictogram."
 
 msgid "Please select an icon."
 msgstr "Selecteer een pictogram."
 
 msgid "Preview"
-msgstr ""
+msgstr "Voorbeeld"
 
 msgid "Return Format"
 msgstr "Retourformaat"
@@ -140,59 +139,58 @@ msgid "SVG Markup"
 msgstr "SVG-opmaak"
 
 msgid "SVG file"
-msgstr ""
+msgstr "SVG-bestand"
 
 msgid "Save and show an admin notice (default)"
-msgstr ""
+msgstr "Opslaan en een melding tonen in de beheeromgeving (standaard)"
 
 msgid "Search icons or brand logos..."
-msgstr ""
+msgstr "Pictogrammen of merklogo's zoeken..."
 
 msgid "Search keywords"
-msgstr ""
+msgstr "Zoekwoorden"
 
 msgid "Select an icon"
-msgstr ""
+msgstr "Pictogram selecteren"
 
 msgid "Specify the format returned by get_field()."
 msgstr "Geef het formaat op dat door get_field() wordt geretourneerd."
 
 msgid "Stored icon is not in the bundled icon set"
-msgstr ""
+msgstr "Het opgeslagen pictogram zit niet in de meegeleverde pictogramset"
 
 msgid "Stored icons"
-msgstr ""
+msgstr "Opgeslagen pictogrammen"
 
 msgid "The icon file could not be written."
-msgstr ""
+msgstr "Het pictogrambestand kon niet worden weggeschreven."
 
 msgid "The icon storage directory could not be created."
-msgstr ""
+msgstr "De map voor pictogramopslag kon niet worden aangemaakt."
 
 msgid "The icon storage is not writable on this site."
-msgstr ""
+msgstr "De pictogramopslag is op deze site niet schrijfbaar."
 
 msgid "The storage name is derived from this title: lowercase, dashes, max 64 characters."
-msgstr ""
+msgstr "De opslagnaam wordt afgeleid van deze titel: kleine letters, koppeltekens, maximaal 64 tekens."
 
 msgid "This plugin requires %1$s version %2$s or higher to function."
-msgstr ""
+msgstr "Deze plugin vereist %1$s versie %2$s of hoger om te werken."
 
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 msgid "Unknown Icon Values"
-msgstr ""
+msgstr "Onbekende pictogramwaarden"
 
 msgid "Upload plain SVG icons to extend the picker with a custom set. Files are sanitized on upload: scripts, styles, embedded images and unsupported elements are removed, and only the allowlisted shape markup is stored."
-msgstr ""
+msgstr "Upload eenvoudige SVG-pictogrammen om de kiezer uit te breiden met een eigen set. Bestanden worden bij het uploaden opgeschoond: scripts, stijlen, ingebedde afbeeldingen en niet-ondersteunde elementen worden verwijderd; alleen toegestane vormopmaak wordt bewaard."
 
 msgid "Value"
-msgstr ""
+msgstr "Waarde"
 
 msgid "You are not allowed to manage custom icons."
-msgstr ""
+msgstr "U heeft geen rechten om aangepaste pictogrammen te beheren."
 
 msgid "logo, company, brand"
-msgstr ""
-
+msgstr "logo, bedrijf, merk"

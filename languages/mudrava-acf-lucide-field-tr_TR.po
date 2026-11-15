@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Mudrava Icon Field for ACF with Lucide 1.2.0\n"
+"Project-Id-Version: Mudrava Icon Field for ACF with Lucide 1.5.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mudrava-acf-lucide-field/\n"
-"POT-Creation-Date: 2026-09-01 09:51+0000\n"
-"PO-Revision-Date: 2026-03-20 00:00+0000\n"
+"POT-Creation-Date: 2026-11-15 22:17+0000\n"
+"PO-Revision-Date: 2026-11-16 00:00+0000\n"
 "Last-Translator: Mudrava <info@mudrava.com>\n"
 "Language-Team: Turkish <tr@li.org>\n"
 "Language: tr_TR\n"
@@ -11,22 +11,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: scripts/merge-po.py\n"
 
 msgid "%d icons available"
-msgstr ""
+msgstr "%d simge kullanılabilir"
 
 msgid "%s selected"
-msgstr ""
+msgstr "%s seçildi"
 
 msgid "Accepted format: SVG with an &lt;svg&gt; root and a viewBox. Maximum size: %s. Icons are available in the picker and shortcodes as custom:&lt;name&gt;."
-msgstr ""
+msgstr "Kabul edilen biçim: &lt;svg&gt; kökü ve viewBox içeren SVG. Azami boyut: %s. Simgeler seçicide ve custom:&lt;name&gt; biçimindeki kısa kodlarda kullanılabilir."
 
 msgid "Actions"
-msgstr ""
+msgstr "Eylemler"
 
 msgid "Add icon"
-msgstr ""
+msgstr "Simge ekle"
 
 msgid "Allow Null"
 msgstr "Boş değere izin ver"
@@ -35,79 +34,79 @@ msgid "Allow the field to have no icon selected."
 msgstr "Alanın simge seçimi olmadan kalmasına izin ver."
 
 msgid "Block saving with a validation error"
-msgstr ""
+msgstr "Doğrulama hatasıyla kaydetmeyi engelle"
 
 msgid "Clear selection"
 msgstr "Seçimi temizle"
 
 msgid "Comma-separated terms that make the icon findable in the picker search."
-msgstr ""
+msgstr "Simgenin seçici aramasında bulunabilmesini sağlayan, virgülle ayrılmış terimler."
 
 msgid "Custom Icons"
-msgstr ""
+msgstr "Özel Simgeler"
 
 msgid "Default Value"
 msgstr "Varsayılan Değer"
 
 msgid "Delete"
-msgstr ""
+msgstr "Sil"
 
 msgid "Delete this icon? Existing fields will fall back to their default behavior."
-msgstr ""
+msgstr "Bu simge silinsin mi? Mevcut alanlar varsayılan davranışlarına döner."
 
 msgid "Docs"
 msgstr "Belgeler"
 
 msgid "Enter the icon value to be selected by default (e.g., \"rocket\" or \"simple:facebook\")."
-msgstr ""
+msgstr "Varsayılan olarak seçilecek simge değerini girin (örn. \"rocket\" veya \"simple:facebook\")."
 
 msgid "How to handle values that are not part of the bundled icon set (e.g. icons imported from another site or values left over after an icon library update)."
-msgstr ""
+msgstr "Yerleşik simge kümesine dahil olmayan değerlerin nasıl ele alınacağı (örn. başka bir siteden içe aktarılan simgeler veya simge kütüphanesi güncellemesinden kalan değerler)."
 
 msgid "Icon <strong>%s</strong> was added to the library."
-msgstr ""
+msgstr "<strong>%s</strong> simgesi kütüphaneye eklendi."
 
 msgid "Icon <strong>%s</strong> was deleted."
-msgstr ""
+msgstr "<strong>%s</strong> simgesi silindi."
 
 msgid "Icon Value (e.g., \"rocket\" or \"simple:facebook\")"
-msgstr ""
+msgstr "Simge değeri (örn. \"rocket\" veya \"simple:facebook\")"
 
 msgid "Keywords"
-msgstr ""
+msgstr "Anahtar Kelimeler"
 
 msgid "Lucide Icon"
 msgstr "Lucide Simgesi"
 
 msgid "Mudrava Icon Field — Custom Icons"
-msgstr ""
+msgstr "Mudrava Icon Field — Özel Simgeler"
 
 msgid "Mudrava Icon Field:"
-msgstr ""
+msgstr "Mudrava Icon Field:"
 
 msgid "Mudrava Icon Field: an icon with that name already exists. Uploads never overwrite stored icons; delete the old icon first or use another name."
-msgstr ""
+msgstr "Mudrava Icon Field: bu adda bir simge zaten var. Yükleme işlemleri kaydedilmiş simgelerin üzerine asla yazmaz; önce eski simgeyi silin veya başka bir ad kullanın."
 
 msgid "Mudrava Icon Field: some icon values are not part of the bundled icon set and will render as empty markup:"
-msgstr ""
+msgstr "Mudrava Icon Field: bazı simge değerleri yerleşik simge kümesine dahil değil ve boş işaretlemesi olarak görüntülenecek:"
 
 msgid "Mudrava Icon Field: that file is not a valid SVG document. Only plain shape elements (circle, ellipse, line, path, polygon, polyline, rect) inside an &lt;svg&gt; root are accepted."
-msgstr ""
+msgstr "Mudrava Icon Field: bu dosya geçerli bir SVG belgesi değil. &lt;svg&gt; kökü içinde yalnızca düz şekil ögeleri (circle, ellipse, line, path, polygon, polyline, rect) kabul edilir."
 
 msgid "Mudrava Icon Field: that file is too large. The limit is %s."
-msgstr ""
+msgstr "Mudrava Icon Field: bu dosya çok büyük. Sınır: %s."
 
 msgid "Mudrava Icon Field: that icon no longer exists in the library."
-msgstr ""
+msgstr "Mudrava Icon Field: bu simge artık kütüphanede yok."
 
 msgid "Mudrava Icon Field: the icon storage is not writable. Check filesystem permissions."
-msgstr ""
+msgstr "Mudrava Icon Field: simge deposuna yazılamıyor. Dosya sistemi izinlerini denetleyin."
 
 msgid "Name"
-msgstr ""
+msgstr "Ad"
 
 msgid "No custom icons yet."
-msgstr ""
+msgstr "Henüz özel simge yok."
 
 msgid "No icon selected"
 msgstr "Simge seçilmedi"
@@ -116,7 +115,7 @@ msgid "No icons found"
 msgstr "Simge bulunamadı"
 
 msgid "Optional; defaults to the file name"
-msgstr ""
+msgstr "İsteğe bağlı; varsayılan olarak dosya adı kullanılır"
 
 msgid "Placeholder"
 msgstr "Yer tutucu"
@@ -125,13 +124,13 @@ msgid "Placeholder text for the search input."
 msgstr "Arama alanı için yer tutucu metin."
 
 msgid "Please select a valid icon."
-msgstr ""
+msgstr "Lütfen geçerli bir simge seçin."
 
 msgid "Please select an icon."
 msgstr "Lütfen bir simge seçin."
 
 msgid "Preview"
-msgstr ""
+msgstr "Önizleme"
 
 msgid "Return Format"
 msgstr "Dönüş Biçimi"
@@ -140,59 +139,58 @@ msgid "SVG Markup"
 msgstr "SVG İşaretlemesi"
 
 msgid "SVG file"
-msgstr ""
+msgstr "SVG dosyası"
 
 msgid "Save and show an admin notice (default)"
-msgstr ""
+msgstr "Kaydet ve yönetim ekranında bir uyarı göster (varsayılan)"
 
 msgid "Search icons or brand logos..."
-msgstr ""
+msgstr "Simge veya marka logosu ara..."
 
 msgid "Search keywords"
-msgstr ""
+msgstr "Arama anahtar kelimeleri"
 
 msgid "Select an icon"
-msgstr ""
+msgstr "Simge seç"
 
 msgid "Specify the format returned by get_field()."
 msgstr "get_field() tarafından döndürülen biçimi belirtin."
 
 msgid "Stored icon is not in the bundled icon set"
-msgstr ""
+msgstr "Saklanan simge yerleşik simge kümesinde değil"
 
 msgid "Stored icons"
-msgstr ""
+msgstr "Saklanan simgeler"
 
 msgid "The icon file could not be written."
-msgstr ""
+msgstr "Simge dosyası yazılamadı."
 
 msgid "The icon storage directory could not be created."
-msgstr ""
+msgstr "Simge depolama dizini oluşturulamadı."
 
 msgid "The icon storage is not writable on this site."
-msgstr ""
+msgstr "Bu sitede simge deposuna yazılamıyor."
 
 msgid "The storage name is derived from this title: lowercase, dashes, max 64 characters."
-msgstr ""
+msgstr "Depolama adı bu başlıktan türetilir: küçük harf, tire, en fazla 64 karakter."
 
 msgid "This plugin requires %1$s version %2$s or higher to function."
-msgstr ""
+msgstr "Bu eklentinin çalışması için %1$s sürüm %2$s veya üstü gerekiyor."
 
 msgid "Title"
-msgstr ""
+msgstr "Başlık"
 
 msgid "Unknown Icon Values"
-msgstr ""
+msgstr "Bilinmeyen Simge Değerleri"
 
 msgid "Upload plain SVG icons to extend the picker with a custom set. Files are sanitized on upload: scripts, styles, embedded images and unsupported elements are removed, and only the allowlisted shape markup is stored."
-msgstr ""
+msgstr "Seçiciyi özel bir kümeyle genişletmek için düz SVG simgeleri yükleyin. Dosyalar yükleme sırasında temizlenir: betikler, stiller, gömülü görseller ve desteklenmeyen ögeler kaldırılır; yalnızca izin verilen şekil işaretlemesi saklanır."
 
 msgid "Value"
-msgstr ""
+msgstr "Değer"
 
 msgid "You are not allowed to manage custom icons."
-msgstr ""
+msgstr "Özel simgeleri yönetme izniniz yok."
 
 msgid "logo, company, brand"
-msgstr ""
-
+msgstr "logo, şirket, marka"

@@ -165,7 +165,7 @@ Use the `mudrava_get_lucide_icon()` helper function with custom attributes for w
 
 = Is the plugin translation-ready? =
 
-Yes, the plugin is fully translation-ready with text domain `mudrava-acf-lucide-field`. Translation files should be placed in the `/languages/` directory.
+Yes. The plugin ships complete translations for 27 languages: Catalan, Czech, Danish, German, Greek, Spanish, French, Galician, Croatian, Hungarian, Indonesian, Italian, Japanese, Norwegian Bokmål, Dutch, Polish, Portuguese (Brazil), Portuguese (Portugal), Romanian, Russian, Slovak, Slovenian, Serbian, Swedish, Turkish, Ukrainian and Simplified Chinese, with the text domain `mudrava-acf-lucide-field`. Additional languages and community corrections are welcome on [translate.wordpress.org](https://translate.wordpress.org/projects/wp-plugins/mudrava-acf-lucide-field/); approved translations are delivered automatically as WordPress language packs.
 
 == Privacy ==
 

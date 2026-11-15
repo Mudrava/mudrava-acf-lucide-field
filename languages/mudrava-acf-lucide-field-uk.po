@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Mudrava Icon Field for ACF with Lucide 1.2.0\n"
+"Project-Id-Version: Mudrava Icon Field for ACF with Lucide 1.5.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mudrava-acf-lucide-field/\n"
-"POT-Creation-Date: 2026-09-01 09:51+0000\n"
-"PO-Revision-Date: 2026-03-20 00:00+0000\n"
+"POT-Creation-Date: 2026-11-15 22:17+0000\n"
+"PO-Revision-Date: 2026-11-16 00:00+0000\n"
 "Last-Translator: Mudrava <info@mudrava.com>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
 "Language: uk\n"
@@ -11,22 +11,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
-"X-Generator: scripts/merge-po.py\n"
 
 msgid "%d icons available"
-msgstr ""
+msgstr "Доступно іконок: %d"
 
 msgid "%s selected"
-msgstr ""
+msgstr "Вибрано: %s"
 
 msgid "Accepted format: SVG with an &lt;svg&gt; root and a viewBox. Maximum size: %s. Icons are available in the picker and shortcodes as custom:&lt;name&gt;."
-msgstr ""
+msgstr "Допустимий формат: SVG з кореневим елементом &lt;svg&gt; та viewBox. Максимальний розмір: %s. Іконки будуть доступні у виборі та в шорткодах як custom:&lt;name&gt;."
 
 msgid "Actions"
-msgstr ""
+msgstr "Дії"
 
 msgid "Add icon"
-msgstr ""
+msgstr "Додати іконку"
 
 msgid "Allow Null"
 msgstr "Дозволити порожнє значення"
@@ -35,79 +34,79 @@ msgid "Allow the field to have no icon selected."
 msgstr "Дозволити полю не мати вибраної іконки."
 
 msgid "Block saving with a validation error"
-msgstr ""
+msgstr "Блокувати збереження з помилкою валідації"
 
 msgid "Clear selection"
 msgstr "Очистити вибір"
 
 msgid "Comma-separated terms that make the icon findable in the picker search."
-msgstr ""
+msgstr "Терміни через кому, за якими іконку можна буде знайти в пошуку вибору."
 
 msgid "Custom Icons"
-msgstr ""
+msgstr "Користувацькі іконки"
 
 msgid "Default Value"
 msgstr "Значення за замовчуванням"
 
 msgid "Delete"
-msgstr ""
+msgstr "Видалити"
 
 msgid "Delete this icon? Existing fields will fall back to their default behavior."
-msgstr ""
+msgstr "Видалити цю іконку? Наявні поля повернуться до типової поведінки."
 
 msgid "Docs"
 msgstr "Документація"
 
 msgid "Enter the icon value to be selected by default (e.g., \"rocket\" or \"simple:facebook\")."
-msgstr ""
+msgstr "Введіть значення іконки, яку буде вибрано типово (наприклад, \"rocket\" або \"simple:facebook\")."
 
 msgid "How to handle values that are not part of the bundled icon set (e.g. icons imported from another site or values left over after an icon library update)."
-msgstr ""
+msgstr "Як обходитися зі значеннями, яких немає у вбудованому наборі іконок (наприклад, іконки, імпортовані з іншого сайту, або значення, що залишилися після оновлення бібліотеки іконок)."
 
 msgid "Icon <strong>%s</strong> was added to the library."
-msgstr ""
+msgstr "Іконку <strong>%s</strong> додано до бібліотеки."
 
 msgid "Icon <strong>%s</strong> was deleted."
-msgstr ""
+msgstr "Іконку <strong>%s</strong> видалено."
 
 msgid "Icon Value (e.g., \"rocket\" or \"simple:facebook\")"
-msgstr ""
+msgstr "Значення іконки (наприклад, \"rocket\" або \"simple:facebook\")"
 
 msgid "Keywords"
-msgstr ""
+msgstr "Ключові слова"
 
 msgid "Lucide Icon"
 msgstr "Іконка Lucide"
 
 msgid "Mudrava Icon Field — Custom Icons"
-msgstr ""
+msgstr "Mudrava Icon Field — користувацькі іконки"
 
 msgid "Mudrava Icon Field:"
-msgstr ""
+msgstr "Mudrava Icon Field:"
 
 msgid "Mudrava Icon Field: an icon with that name already exists. Uploads never overwrite stored icons; delete the old icon first or use another name."
-msgstr ""
+msgstr "Mudrava Icon Field: іконка з такою назвою вже існує. Завантаження ніколи не перезаписують збережені іконки: спочатку видаліть стару іконку або вкажіть іншу назву."
 
 msgid "Mudrava Icon Field: some icon values are not part of the bundled icon set and will render as empty markup:"
-msgstr ""
+msgstr "Mudrava Icon Field: деякі значення іконок відсутні у вбудованому наборі та відображатимуться як порожня розмітка:"
 
 msgid "Mudrava Icon Field: that file is not a valid SVG document. Only plain shape elements (circle, ellipse, line, path, polygon, polyline, rect) inside an &lt;svg&gt; root are accepted."
-msgstr ""
+msgstr "Mudrava Icon Field: цей файл не є коректним SVG-документом. Усередині кореневого елемента &lt;svg&gt; приймаються лише прості графічні елементи (circle, ellipse, line, path, polygon, polyline, rect)."
 
 msgid "Mudrava Icon Field: that file is too large. The limit is %s."
-msgstr ""
+msgstr "Mudrava Icon Field: цей файл завеликий. Обмеження: %s."
 
 msgid "Mudrava Icon Field: that icon no longer exists in the library."
-msgstr ""
+msgstr "Mudrava Icon Field: цієї іконки більше немає в бібліотеці."
 
 msgid "Mudrava Icon Field: the icon storage is not writable. Check filesystem permissions."
-msgstr ""
+msgstr "Mudrava Icon Field: сховище іконок недоступне для запису. Перевірте права доступу до файлової системи."
 
 msgid "Name"
-msgstr ""
+msgstr "Назва"
 
 msgid "No custom icons yet."
-msgstr ""
+msgstr "Користувацьких іконок поки немає."
 
 msgid "No icon selected"
 msgstr "Іконку не вибрано"
@@ -116,7 +115,7 @@ msgid "No icons found"
 msgstr "Іконок не знайдено"
 
 msgid "Optional; defaults to the file name"
-msgstr ""
+msgstr "Необов'язково; типово використовується назва файлу"
 
 msgid "Placeholder"
 msgstr "Заповнювач"
@@ -125,13 +124,13 @@ msgid "Placeholder text for the search input."
 msgstr "Текст-заповнювач для поля пошуку."
 
 msgid "Please select a valid icon."
-msgstr ""
+msgstr "Будь ласка, виберіть коректну іконку."
 
 msgid "Please select an icon."
 msgstr "Будь ласка, виберіть іконку."
 
 msgid "Preview"
-msgstr ""
+msgstr "Попередній перегляд"
 
 msgid "Return Format"
 msgstr "Формат повернення"
@@ -140,59 +139,58 @@ msgid "SVG Markup"
 msgstr "SVG-розмітка"
 
 msgid "SVG file"
-msgstr ""
+msgstr "SVG-файл"
 
 msgid "Save and show an admin notice (default)"
-msgstr ""
+msgstr "Зберігати й показувати сповіщення в панелі адміністрування (типово)"
 
 msgid "Search icons or brand logos..."
-msgstr ""
+msgstr "Пошук іконок або логотипів брендів..."
 
 msgid "Search keywords"
-msgstr ""
+msgstr "Ключові слова пошуку"
 
 msgid "Select an icon"
-msgstr ""
+msgstr "Вибір іконки"
 
 msgid "Specify the format returned by get_field()."
 msgstr "Вкажіть формат, який повертає get_field()."
 
 msgid "Stored icon is not in the bundled icon set"
-msgstr ""
+msgstr "Збережена іконка відсутня у вбудованому наборі"
 
 msgid "Stored icons"
-msgstr ""
+msgstr "Збережені іконки"
 
 msgid "The icon file could not be written."
-msgstr ""
+msgstr "Не вдалося записати файл іконки."
 
 msgid "The icon storage directory could not be created."
-msgstr ""
+msgstr "Не вдалося створити теку для зберігання іконок."
 
 msgid "The icon storage is not writable on this site."
-msgstr ""
+msgstr "На цьому сайті сховище іконок недоступне для запису."
 
 msgid "The storage name is derived from this title: lowercase, dashes, max 64 characters."
-msgstr ""
+msgstr "Назва у сховищі формується з цієї назви: малі літери, дефіси, максимум 64 символи."
 
 msgid "This plugin requires %1$s version %2$s or higher to function."
-msgstr ""
+msgstr "Для роботи плагіна потрібен %1$s версії %2$s або новішої."
 
 msgid "Title"
-msgstr ""
+msgstr "Заголовок"
 
 msgid "Unknown Icon Values"
-msgstr ""
+msgstr "Невідомі значення іконок"
 
 msgid "Upload plain SVG icons to extend the picker with a custom set. Files are sanitized on upload: scripts, styles, embedded images and unsupported elements are removed, and only the allowlisted shape markup is stored."
-msgstr ""
+msgstr "Завантажуйте прості SVG-іконки, щоб доповнити вибір власним набором. Файли очищуються під час завантаження: скрипти, стилі, вбудовані зображення та непідтримувані елементи видаляються, зберігається лише дозволена розмітка фігур."
 
 msgid "Value"
-msgstr ""
+msgstr "Значення"
 
 msgid "You are not allowed to manage custom icons."
-msgstr ""
+msgstr "У вас немає дозволу керувати користувацькими іконками."
 
 msgid "logo, company, brand"
-msgstr ""
-
+msgstr "логотип, компанія, бренд"

@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Mudrava Icon Field for ACF with Lucide 1.2.0\n"
+"Project-Id-Version: Mudrava Icon Field for ACF with Lucide 1.5.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mudrava-acf-lucide-field/\n"
-"POT-Creation-Date: 2026-09-01 09:51+0000\n"
-"PO-Revision-Date: 2026-03-20 00:00+0000\n"
+"POT-Creation-Date: 2026-11-15 22:17+0000\n"
+"PO-Revision-Date: 2026-11-16 00:00+0000\n"
 "Last-Translator: Mudrava <info@mudrava.com>\n"
 "Language-Team: French <fr@li.org>\n"
 "Language: fr_FR\n"
@@ -11,22 +11,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: scripts/merge-po.py\n"
 
 msgid "%d icons available"
-msgstr ""
+msgstr "%d icônes disponibles"
 
 msgid "%s selected"
-msgstr ""
+msgstr "%s sélectionnée"
 
 msgid "Accepted format: SVG with an &lt;svg&gt; root and a viewBox. Maximum size: %s. Icons are available in the picker and shortcodes as custom:&lt;name&gt;."
-msgstr ""
+msgstr "Format accepté : SVG avec une racine &lt;svg&gt; et un viewBox. Taille maximale : %s. Les icônes sont disponibles dans le sélecteur et dans les shortcodes sous la forme custom:&lt;name&gt;."
 
 msgid "Actions"
-msgstr ""
+msgstr "Actions"
 
 msgid "Add icon"
-msgstr ""
+msgstr "Ajouter une icône"
 
 msgid "Allow Null"
 msgstr "Autoriser la valeur nulle"
@@ -35,79 +34,79 @@ msgid "Allow the field to have no icon selected."
 msgstr "Autoriser le champ à n'avoir aucune icône sélectionnée."
 
 msgid "Block saving with a validation error"
-msgstr ""
+msgstr "Bloquer l'enregistrement avec une erreur de validation"
 
 msgid "Clear selection"
 msgstr "Effacer la sélection"
 
 msgid "Comma-separated terms that make the icon findable in the picker search."
-msgstr ""
+msgstr "Termes séparés par des virgules pour retrouver l'icône via la recherche du sélecteur."
 
 msgid "Custom Icons"
-msgstr ""
+msgstr "Icônes personnalisées"
 
 msgid "Default Value"
 msgstr "Valeur par défaut"
 
 msgid "Delete"
-msgstr ""
+msgstr "Supprimer"
 
 msgid "Delete this icon? Existing fields will fall back to their default behavior."
-msgstr ""
+msgstr "Supprimer cette icône ? Les champs existants retrouveront leur comportement par défaut."
 
 msgid "Docs"
 msgstr "Documentation"
 
 msgid "Enter the icon value to be selected by default (e.g., \"rocket\" or \"simple:facebook\")."
-msgstr ""
+msgstr "Saisissez la valeur d'icône à sélectionner par défaut (par exemple « rocket » ou « simple:facebook »)."
 
 msgid "How to handle values that are not part of the bundled icon set (e.g. icons imported from another site or values left over after an icon library update)."
-msgstr ""
+msgstr "Comment traiter les valeurs absentes du jeu d'icônes inclus (par exemple des icônes importées d'un autre site ou des valeurs restantes après une mise à jour de la bibliothèque d'icônes)."
 
 msgid "Icon <strong>%s</strong> was added to the library."
-msgstr ""
+msgstr "L'icône <strong>%s</strong> a été ajoutée à la bibliothèque."
 
 msgid "Icon <strong>%s</strong> was deleted."
-msgstr ""
+msgstr "L'icône <strong>%s</strong> a été supprimée."
 
 msgid "Icon Value (e.g., \"rocket\" or \"simple:facebook\")"
-msgstr ""
+msgstr "Valeur de l'icône (par exemple « rocket » ou « simple:facebook »)"
 
 msgid "Keywords"
-msgstr ""
+msgstr "Mots-clés"
 
 msgid "Lucide Icon"
 msgstr "Icône Lucide"
 
 msgid "Mudrava Icon Field — Custom Icons"
-msgstr ""
+msgstr "Mudrava Icon Field — Icônes personnalisées"
 
 msgid "Mudrava Icon Field:"
-msgstr ""
+msgstr "Mudrava Icon Field :"
 
 msgid "Mudrava Icon Field: an icon with that name already exists. Uploads never overwrite stored icons; delete the old icon first or use another name."
-msgstr ""
+msgstr "Mudrava Icon Field : une icône portant ce nom existe déjà. Les envois n'écrasent jamais les icônes existantes ; supprimez d'abord l'ancienne icône ou utilisez un autre nom."
 
 msgid "Mudrava Icon Field: some icon values are not part of the bundled icon set and will render as empty markup:"
-msgstr ""
+msgstr "Mudrava Icon Field : certaines valeurs d'icône ne font pas partie du jeu inclus et seront affichées comme un balisage vide :"
 
 msgid "Mudrava Icon Field: that file is not a valid SVG document. Only plain shape elements (circle, ellipse, line, path, polygon, polyline, rect) inside an &lt;svg&gt; root are accepted."
-msgstr ""
+msgstr "Mudrava Icon Field : ce fichier n'est pas un document SVG valide. Seuls les éléments de forme simples (circle, ellipse, line, path, polygon, polyline, rect) sont acceptés dans la racine &lt;svg&gt;."
 
 msgid "Mudrava Icon Field: that file is too large. The limit is %s."
-msgstr ""
+msgstr "Mudrava Icon Field : ce fichier est trop volumineux. La limite est %s."
 
 msgid "Mudrava Icon Field: that icon no longer exists in the library."
-msgstr ""
+msgstr "Mudrava Icon Field : cette icône n'existe plus dans la bibliothèque."
 
 msgid "Mudrava Icon Field: the icon storage is not writable. Check filesystem permissions."
-msgstr ""
+msgstr "Mudrava Icon Field : le stockage des icônes n'est pas accessible en écriture. Vérifiez les autorisations du système de fichiers."
 
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgid "No custom icons yet."
-msgstr ""
+msgstr "Aucune icône personnalisée pour le moment."
 
 msgid "No icon selected"
 msgstr "Aucune icône sélectionnée"
@@ -116,7 +115,7 @@ msgid "No icons found"
 msgstr "Aucune icône trouvée"
 
 msgid "Optional; defaults to the file name"
-msgstr ""
+msgstr "Facultatif ; le nom du fichier est utilisé par défaut"
 
 msgid "Placeholder"
 msgstr "Texte indicatif"
@@ -125,13 +124,13 @@ msgid "Placeholder text for the search input."
 msgstr "Texte indicatif pour le champ de recherche."
 
 msgid "Please select a valid icon."
-msgstr ""
+msgstr "Veuillez sélectionner une icône valide."
 
 msgid "Please select an icon."
 msgstr "Veuillez sélectionner une icône."
 
 msgid "Preview"
-msgstr ""
+msgstr "Aperçu"
 
 msgid "Return Format"
 msgstr "Format de retour"
@@ -140,59 +139,58 @@ msgid "SVG Markup"
 msgstr "Balisage SVG"
 
 msgid "SVG file"
-msgstr ""
+msgstr "Fichier SVG"
 
 msgid "Save and show an admin notice (default)"
-msgstr ""
+msgstr "Enregistrer et afficher une notification d'administration (par défaut)"
 
 msgid "Search icons or brand logos..."
-msgstr ""
+msgstr "Rechercher des icônes ou des logos de marques..."
 
 msgid "Search keywords"
-msgstr ""
+msgstr "Mots-clés de recherche"
 
 msgid "Select an icon"
-msgstr ""
+msgstr "Sélectionner une icône"
 
 msgid "Specify the format returned by get_field()."
 msgstr "Spécifiez le format renvoyé par get_field()."
 
 msgid "Stored icon is not in the bundled icon set"
-msgstr ""
+msgstr "L'icône enregistrée ne fait pas partie du jeu d'icônes inclus"
 
 msgid "Stored icons"
-msgstr ""
+msgstr "Icônes enregistrées"
 
 msgid "The icon file could not be written."
-msgstr ""
+msgstr "Le fichier d'icône n'a pas pu être écrit."
 
 msgid "The icon storage directory could not be created."
-msgstr ""
+msgstr "Le répertoire de stockage des icônes n'a pas pu être créé."
 
 msgid "The icon storage is not writable on this site."
-msgstr ""
+msgstr "Le stockage des icônes n'est pas accessible en écriture sur ce site."
 
 msgid "The storage name is derived from this title: lowercase, dashes, max 64 characters."
-msgstr ""
+msgstr "Le nom de stockage est dérivé de ce titre : minuscules, tirets, 64 caractères maximum."
 
 msgid "This plugin requires %1$s version %2$s or higher to function."
-msgstr ""
+msgstr "Ce plugin nécessite %1$s en version %2$s ou supérieure pour fonctionner."
 
 msgid "Title"
-msgstr ""
+msgstr "Titre"
 
 msgid "Unknown Icon Values"
-msgstr ""
+msgstr "Valeurs d'icône inconnues"
 
 msgid "Upload plain SVG icons to extend the picker with a custom set. Files are sanitized on upload: scripts, styles, embedded images and unsupported elements are removed, and only the allowlisted shape markup is stored."
-msgstr ""
+msgstr "Téléversez des icônes SVG simples pour enrichir le sélecteur avec un jeu personnalisé. Les fichiers sont assainis lors du téléversement : scripts, styles, images intégrées et éléments non pris en charge sont retirés ; seul le balisage de formes autorisé est conservé."
 
 msgid "Value"
-msgstr ""
+msgstr "Valeur"
 
 msgid "You are not allowed to manage custom icons."
-msgstr ""
+msgstr "Vous n'êtes pas autorisé à gérer les icônes personnalisées."
 
 msgid "logo, company, brand"
-msgstr ""
-
+msgstr "logo, entreprise, marque"

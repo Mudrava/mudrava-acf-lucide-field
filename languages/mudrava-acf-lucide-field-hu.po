@@ -1,0 +1,196 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mudrava Icon Field for ACF with Lucide 1.5.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mudrava-acf-lucide-field/\n"
+"POT-Creation-Date: 2026-11-15 22:17+0000\n"
+"PO-Revision-Date: 2026-11-16 00:00+0000\n"
+"Last-Translator: Mudrava <info@mudrava.com>\n"
+"Language-Team: Hungarian <hu@li.org>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "%d icons available"
+msgstr "%d ikon érhető el"
+
+msgid "%s selected"
+msgstr "%s kiválasztva"
+
+msgid "Accepted format: SVG with an &lt;svg&gt; root and a viewBox. Maximum size: %s. Icons are available in the picker and shortcodes as custom:&lt;name&gt;."
+msgstr "Elfogadott formátum: &lt;svg&gt; gyökérelemmel és viewBox attribútummal rendelkező SVG. Maximális méret: %s. Az ikonok megjelennek a választóban és a shortcode-okban custom:&lt;name&gt; alakban."
+
+msgid "Actions"
+msgstr "Műveletek"
+
+msgid "Add icon"
+msgstr "Ikon hozzáadása"
+
+msgid "Allow Null"
+msgstr "Üres érték engedélyezése"
+
+msgid "Allow the field to have no icon selected."
+msgstr "A mező maradhat ikon kiválasztása nélkül is."
+
+msgid "Block saving with a validation error"
+msgstr "Mentés blokkolása ellenőrzési hibával"
+
+msgid "Clear selection"
+msgstr "Kiválasztás törlése"
+
+msgid "Comma-separated terms that make the icon findable in the picker search."
+msgstr "Vesszővel elválasztott kifejezések, amelyek alapján az ikon megtalálható a keresőben."
+
+msgid "Custom Icons"
+msgstr "Egyedi ikonok"
+
+msgid "Default Value"
+msgstr "Alapértelmezett érték"
+
+msgid "Delete"
+msgstr "Törlés"
+
+msgid "Delete this icon? Existing fields will fall back to their default behavior."
+msgstr "Törli ezt az ikont? A meglévő mezők visszaállnak az alapértelmezett viselkedésre."
+
+msgid "Docs"
+msgstr "Dokumentáció"
+
+msgid "Enter the icon value to be selected by default (e.g., \"rocket\" or \"simple:facebook\")."
+msgstr "Adja meg az alapértelmezetten kiválasztandó ikon értékét (például \"rocket\" vagy \"simple:facebook\")."
+
+msgid "How to handle values that are not part of the bundled icon set (e.g. icons imported from another site or values left over after an icon library update)."
+msgstr "Hogyan viszonyuljon a csomagolt ikonkészleten kívüli értékekhez (például másik webhelyről importált ikonok vagy az ikonkönyvtár frissítése után megmaradt értékek)."
+
+msgid "Icon <strong>%s</strong> was added to the library."
+msgstr "A(z) <strong>%s</strong> ikon hozzáadva a könyvtárhoz."
+
+msgid "Icon <strong>%s</strong> was deleted."
+msgstr "A(z) <strong>%s</strong> ikon törölve."
+
+msgid "Icon Value (e.g., \"rocket\" or \"simple:facebook\")"
+msgstr "Ikon értéke (például \"rocket\" vagy \"simple:facebook\")"
+
+msgid "Keywords"
+msgstr "Kulcsszavak"
+
+msgid "Lucide Icon"
+msgstr "Lucide ikon"
+
+msgid "Mudrava Icon Field — Custom Icons"
+msgstr "Mudrava Icon Field — egyedi ikonok"
+
+msgid "Mudrava Icon Field:"
+msgstr "Mudrava Icon Field:"
+
+msgid "Mudrava Icon Field: an icon with that name already exists. Uploads never overwrite stored icons; delete the old icon first or use another name."
+msgstr "Mudrava Icon Field: már létezik ilyen nevű ikon. A feltöltés soha nem írja felül a mentett ikonokat; először törölje a régi ikont, vagy használjon másik nevet."
+
+msgid "Mudrava Icon Field: some icon values are not part of the bundled icon set and will render as empty markup:"
+msgstr "Mudrava Icon Field: egyes ikonértékek nem részei a csomagolt ikonkészletnek, és üres jelölésként jelennek meg:"
+
+msgid "Mudrava Icon Field: that file is not a valid SVG document. Only plain shape elements (circle, ellipse, line, path, polygon, polyline, rect) inside an &lt;svg&gt; root are accepted."
+msgstr "Mudrava Icon Field: a fájl nem érvényes SVG-dokumentum. Az &lt;svg&gt; gyökéren belül csak egyszerű alakzatok (circle, ellipse, line, path, polygon, polyline, rect) fogadhatók el."
+
+msgid "Mudrava Icon Field: that file is too large. The limit is %s."
+msgstr "Mudrava Icon Field: a fájl túl nagy. A korlát: %s."
+
+msgid "Mudrava Icon Field: that icon no longer exists in the library."
+msgstr "Mudrava Icon Field: ez az ikon már nem létezik a könyvtárban."
+
+msgid "Mudrava Icon Field: the icon storage is not writable. Check filesystem permissions."
+msgstr "Mudrava Icon Field: az ikontároló nem írható. Ellenőrizze a fájlrendszer jogosultságait."
+
+msgid "Name"
+msgstr "Név"
+
+msgid "No custom icons yet."
+msgstr "Még nincs egyedi ikon."
+
+msgid "No icon selected"
+msgstr "Nincs ikon kiválasztva"
+
+msgid "No icons found"
+msgstr "Nincs találat"
+
+msgid "Optional; defaults to the file name"
+msgstr "Nem kötelező; alapértelmezetten a fájlnév kerül használatba"
+
+msgid "Placeholder"
+msgstr "Helykitöltő szöveg"
+
+msgid "Placeholder text for the search input."
+msgstr "Helykitöltő szöveg a keresőmezőben."
+
+msgid "Please select a valid icon."
+msgstr "Válasszon érvényes ikont."
+
+msgid "Please select an icon."
+msgstr "Válasszon ikont."
+
+msgid "Preview"
+msgstr "Előnézet"
+
+msgid "Return Format"
+msgstr "Visszatérési formátum"
+
+msgid "SVG Markup"
+msgstr "SVG-jelölés"
+
+msgid "SVG file"
+msgstr "SVG-fájl"
+
+msgid "Save and show an admin notice (default)"
+msgstr "Mentés és értesítés megjelenítése az admin felületen (alapértelmezett)"
+
+msgid "Search icons or brand logos..."
+msgstr "Keresés ikonokra vagy márkalogókra..."
+
+msgid "Search keywords"
+msgstr "Keresési kulcsszavak"
+
+msgid "Select an icon"
+msgstr "Ikon kiválasztása"
+
+msgid "Specify the format returned by get_field()."
+msgstr "Adja meg a get_field() függvény által visszaadott formátumot."
+
+msgid "Stored icon is not in the bundled icon set"
+msgstr "A mentett ikon nem szerepel a csomagolt ikonkészletben"
+
+msgid "Stored icons"
+msgstr "Mentett ikonok"
+
+msgid "The icon file could not be written."
+msgstr "Az ikonfájl írása nem sikerült."
+
+msgid "The icon storage directory could not be created."
+msgstr "Az ikontároló könyvtár létrehozása nem sikerült."
+
+msgid "The icon storage is not writable on this site."
+msgstr "Az ikontároló ezen a webhelyen nem írható."
+
+msgid "The storage name is derived from this title: lowercase, dashes, max 64 characters."
+msgstr "A tárolási név ebből a címből képződik: kisbetűk, kötőjelek, legfeljebb 64 karakter."
+
+msgid "This plugin requires %1$s version %2$s or higher to function."
+msgstr "A bővítmény működéséhez a(z) %1$s %2$s vagy újabb verzió szükséges."
+
+msgid "Title"
+msgstr "Cím"
+
+msgid "Unknown Icon Values"
+msgstr "Ismeretlen ikonértékek"
+
+msgid "Upload plain SVG icons to extend the picker with a custom set. Files are sanitized on upload: scripts, styles, embedded images and unsupported elements are removed, and only the allowlisted shape markup is stored."
+msgstr "Töltsön fel egyszerű SVG ikonokat, hogy egyedi ikonszettel bővítse a választót. Feltöltéskor a fájlok tisztításra kerülnek: a szkriptek, stílusok, beágyazott képek és a nem támogatott elemek törlődnek, és csak az engedélyezett alakzatjelölés marad meg."
+
+msgid "Value"
+msgstr "Érték"
+
+msgid "You are not allowed to manage custom icons."
+msgstr "Nincs jogosultsága az egyedi ikonok kezelésére."
+
+msgid "logo, company, brand"
+msgstr "logó, cég, márka"

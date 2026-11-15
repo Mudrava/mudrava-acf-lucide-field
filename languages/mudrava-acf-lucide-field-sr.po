@@ -1,0 +1,196 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mudrava Icon Field for ACF with Lucide 1.5.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mudrava-acf-lucide-field/\n"
+"POT-Creation-Date: 2026-11-15 22:17+0000\n"
+"PO-Revision-Date: 2026-11-16 00:00+0000\n"
+"Last-Translator: Mudrava <info@mudrava.com>\n"
+"Language-Team: Serbian <sr@li.org>\n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+
+msgid "%d icons available"
+msgstr "Доступне иконе: %d"
+
+msgid "%s selected"
+msgstr "Изабрано: %s"
+
+msgid "Accepted format: SVG with an &lt;svg&gt; root and a viewBox. Maximum size: %s. Icons are available in the picker and shortcodes as custom:&lt;name&gt;."
+msgstr "Прихватљив формат: SVG са главним елементом &lt;svg&gt; и атрибутом viewBox. Највећа величина: %s. Иконе су доступне у избору и у shortcode-овима као custom:&lt;name&gt;."
+
+msgid "Actions"
+msgstr "Радње"
+
+msgid "Add icon"
+msgstr "Додај икону"
+
+msgid "Allow Null"
+msgstr "Допусти празну вредност"
+
+msgid "Allow the field to have no icon selected."
+msgstr "Дозвољава да поље нема изабрану икону."
+
+msgid "Block saving with a validation error"
+msgstr "Блокирај чување уз грешку провере"
+
+msgid "Clear selection"
+msgstr "Очисти избор"
+
+msgid "Comma-separated terms that make the icon findable in the picker search."
+msgstr "Појмови раздвојени зарезима по којима се икона може пронаћи претрагом."
+
+msgid "Custom Icons"
+msgstr "Прилагођене иконе"
+
+msgid "Default Value"
+msgstr "Подразумевана вредност"
+
+msgid "Delete"
+msgstr "Обриши"
+
+msgid "Delete this icon? Existing fields will fall back to their default behavior."
+msgstr "Обрисати ову икону? Постојећа поља вратиће се на подразумевано понашање."
+
+msgid "Docs"
+msgstr "Документација"
+
+msgid "Enter the icon value to be selected by default (e.g., \"rocket\" or \"simple:facebook\")."
+msgstr "Унесите вредност иконе која се бира као подразумевана (нпр. \"rocket\" или \"simple:facebook\")."
+
+msgid "How to handle values that are not part of the bundled icon set (e.g. icons imported from another site or values left over after an icon library update)."
+msgstr "Како поступити са вредностима које нису део испорученог сета икона (нпр. иконе увезене са другог сајта или вредности преостале након ажурирања библиотеке икона)."
+
+msgid "Icon <strong>%s</strong> was added to the library."
+msgstr "Икона <strong>%s</strong> је додата у библиотеку."
+
+msgid "Icon <strong>%s</strong> was deleted."
+msgstr "Икона <strong>%s</strong> је обрисана."
+
+msgid "Icon Value (e.g., \"rocket\" or \"simple:facebook\")"
+msgstr "Вредност иконе (нпр. \"rocket\" или \"simple:facebook\")"
+
+msgid "Keywords"
+msgstr "Кључне речи"
+
+msgid "Lucide Icon"
+msgstr "Lucide икона"
+
+msgid "Mudrava Icon Field — Custom Icons"
+msgstr "Mudrava Icon Field — прилагођене иконе"
+
+msgid "Mudrava Icon Field:"
+msgstr "Mudrava Icon Field:"
+
+msgid "Mudrava Icon Field: an icon with that name already exists. Uploads never overwrite stored icons; delete the old icon first or use another name."
+msgstr "Mudrava Icon Field: икона под тим називом већ постоји. Отпремање никада не преписује сачуване иконе; прво обришите стару икону или користите други назив."
+
+msgid "Mudrava Icon Field: some icon values are not part of the bundled icon set and will render as empty markup:"
+msgstr "Mudrava Icon Field: неке вредности икона нису део испорученог сета и приказаће се као празан садржај:"
+
+msgid "Mudrava Icon Field: that file is not a valid SVG document. Only plain shape elements (circle, ellipse, line, path, polygon, polyline, rect) inside an &lt;svg&gt; root are accepted."
+msgstr "Mudrava Icon Field: датотека није важећи SVG документ. Унутар главног елемента &lt;svg&gt; прихваћени су само једноставни графички елементи (circle, ellipse, line, path, polygon, polyline, rect)."
+
+msgid "Mudrava Icon Field: that file is too large. The limit is %s."
+msgstr "Mudrava Icon Field: датотека је превелика. Ограничење је %s."
+
+msgid "Mudrava Icon Field: that icon no longer exists in the library."
+msgstr "Mudrava Icon Field: та икона више не постоји у библиотеци."
+
+msgid "Mudrava Icon Field: the icon storage is not writable. Check filesystem permissions."
+msgstr "Mudrava Icon Field: смештај икона нема дозволу за упис. Проверите дозволе система датотека."
+
+msgid "Name"
+msgstr "Назив"
+
+msgid "No custom icons yet."
+msgstr "Још нема прилагођених икона."
+
+msgid "No icon selected"
+msgstr "Икона није изабрана"
+
+msgid "No icons found"
+msgstr "Није пронађена ниједна икона"
+
+msgid "Optional; defaults to the file name"
+msgstr "Опционо; подразумевано се користи назив датотеке"
+
+msgid "Placeholder"
+msgstr "Пример текста"
+
+msgid "Placeholder text for the search input."
+msgstr "Пример текста у пољу за претрагу."
+
+msgid "Please select a valid icon."
+msgstr "Изаберите важећу икону."
+
+msgid "Please select an icon."
+msgstr "Изаберите икону."
+
+msgid "Preview"
+msgstr "Преглед"
+
+msgid "Return Format"
+msgstr "Формат повратне вредности"
+
+msgid "SVG Markup"
+msgstr "SVG ознака"
+
+msgid "SVG file"
+msgstr "SVG датотека"
+
+msgid "Save and show an admin notice (default)"
+msgstr "Сачувај и прикажи обавештење у административној табли (подразумевано)"
+
+msgid "Search icons or brand logos..."
+msgstr "Претражите иконе или логое брендова..."
+
+msgid "Search keywords"
+msgstr "Кључне речи претраге"
+
+msgid "Select an icon"
+msgstr "Избор иконе"
+
+msgid "Specify the format returned by get_field()."
+msgstr "Наведите формат који враћа get_field()."
+
+msgid "Stored icon is not in the bundled icon set"
+msgstr "Сачувана икона није у испорученом сету икона"
+
+msgid "Stored icons"
+msgstr "Сачуване иконе"
+
+msgid "The icon file could not be written."
+msgstr "Није могуће уписати датотеку иконе."
+
+msgid "The icon storage directory could not be created."
+msgstr "Није могуће направити фасциклу за смештај икона."
+
+msgid "The icon storage is not writable on this site."
+msgstr "Смештај икона на овом сајту нема дозволу за упис."
+
+msgid "The storage name is derived from this title: lowercase, dashes, max 64 characters."
+msgstr "Назив у смештају изводи се из овог наслова: мала слова, цртице, највише 64 знака."
+
+msgid "This plugin requires %1$s version %2$s or higher to function."
+msgstr "Овај додатак захтева %1$s верзију %2$s или новију да би радио."
+
+msgid "Title"
+msgstr "Наслов"
+
+msgid "Unknown Icon Values"
+msgstr "Непознате вредности икона"
+
+msgid "Upload plain SVG icons to extend the picker with a custom set. Files are sanitized on upload: scripts, styles, embedded images and unsupported elements are removed, and only the allowlisted shape markup is stored."
+msgstr "Отпремите једноставне SVG иконе и проширите избор властитим сетом. Датотеке се прочишћавају при отпремању: скрипте, стилови, уграђене слике и неподржани елементи се уклањају, а чува се само дозвољена ознака облика."
+
+msgid "Value"
+msgstr "Вредност"
+
+msgid "You are not allowed to manage custom icons."
+msgstr "Немате дозволу за управљање прилагођеним иконама."
+
+msgid "logo, company, brand"
+msgstr "лого, компанија, бренд"
