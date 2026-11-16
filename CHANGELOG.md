@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.6.0] - 2026-11-16
+
+### Added
+
+- Updated bundled assets to `lucide-static` `1.73.0` (2055 Lucide symbols, 3472 brand logos). Adds 34 icons, including the `stroke-line-cap-*` and `stroke-line-join-*` editor glyphs, the new `*-enter`/`*-exit` arrow family, `asterism`, `cap`, `cheese`, `graph-ring`, `mound-shovel`, `route-arrow-right`, `text-pen`, `question-mark` and `exclamation-mark`. `simple-icons` bumped to `16.38.0` (+2 brand logos).
+
+### Changed
+
+- Extended the compatibility alias layer (`data/compat-aliases.json`) for the upstream rename in Lucide 1.73.0 (`*-arrow-out-*` became `*-arrow-*-exit`, verified byte-identical artwork): `circle-arrow-out-down-left`, `circle-arrow-out-down-right`, `circle-arrow-out-up-left`, `circle-arrow-out-up-right`, `square-arrow-out-down-left`, `square-arrow-out-down-right`, `square-arrow-out-up-left` and `square-arrow-out-up-right` now resolve to their renamed twins. Stored post values are never rewritten.
+
+### Tested
+
+- Verified compatibility with WordPress 7.1.4 on PHP 8.5 (activation, picker search and pagination, REST catalog, `[lucide_icon]` shortcode, custom icon upload, alias-layer rendering of all 1.73.0 renames).
+
 ## [1.5.1] - 2026-11-16
 
 ### Added

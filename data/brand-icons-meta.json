@@ -9497,6 +9497,12 @@
     "source": "https://kitsu.io",
     "guidelines": ""
   },
+  "kitty": {
+    "title": "kitty",
+    "hex": "000000",
+    "source": "https://sw.kovidgoyal.net/kitty",
+    "guidelines": ""
+  },
   "kiwix": {
     "title": "Kiwix",
     "hex": "000000",
@@ -18477,6 +18483,12 @@
     "title": "Traefik Proxy",
     "hex": "24A1C1",
     "source": "https://traefik.io/traefik",
+    "guidelines": ""
+  },
+  "trafficdotcv": {
+    "title": "Traffic.cv",
+    "hex": "635BFF",
+    "source": "https://traffic.cv/logo.svg",
     "guidelines": ""
   },
   "trailforks": {

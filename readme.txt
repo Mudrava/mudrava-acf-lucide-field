@@ -4,7 +4,7 @@ Tags: acf, advanced-custom-fields, icon picker, lucide, svg
 Requires at least: 6.0
 Tested up to: 7.1.4
 Requires PHP: 7.4
-Stable tag: 1.5.1
+Stable tag: 1.6.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,7 +18,7 @@ A professional ACF custom field type for selecting Lucide icons and Simple Icons
 
 = Features =
 
-* **Visual Icon Picker** - Browse and select from 2,029 Lucide icons and 3,470 brand logos
+* **Visual Icon Picker** - Browse and select from 2,055 Lucide icons and 3,472 brand logos
 * **Brand Icons** - Brand logos use Simple Icons values such as `simple:facebook`
 * **Custom Icon Library** - Upload your own SVG icons under Settings, sanitized on upload and addressable as `custom:<name>`
 * **Shortcode & Helper** - `[lucide_icon]` shortcode plus `mudrava_get_lucide_icon()` helper for templates
@@ -147,7 +147,7 @@ Lucide v1 removed most brand icons from the current packages. Version 1.1.0 upda
 
 = What happens if an icon name was removed in a library update? =
 
-Saved values are never rewritten. Icons removed in earlier `lucide-static` releases - 1.38.0 (`angry`, `annoyed`, `frown`, `history`, `laugh`, `meh`, `podcast`, `smile`, `smile-plus`), 1.66.0 (`archive-restore`, `bold`, `circle-parking`, `circle-parking-off`, `copyright`, `heading`, `square-m`, `square-parking`, `square-parking-off`) and 1.70.0 (`badge-alert`, `battery-warning`, `book-alert`, `circle-alert`, `clock-alert`, `cloud-alert`, `mail-warning`, `message-circle-warning`, `message-square-warning`, `octagon-alert`, `search-alert`, `shield-alert`, `triangle-alert`) - are mapped to canonical replacements in `data/compat-aliases.json`, for example `smile` renders as `face-slightly-smiling` and `triangle-alert` as `triangle-exclamation-point`. Unknown values that have no alias keep saving and surface as a dismissible admin notice; set the field setting "Unknown Icon Values" to "error" to make validation strict instead.
+Saved values are never rewritten. Icons removed in earlier `lucide-static` releases - 1.38.0 (`angry`, `annoyed`, `frown`, `history`, `laugh`, `meh`, `podcast`, `smile`, `smile-plus`), 1.66.0 (`archive-restore`, `bold`, `circle-parking`, `circle-parking-off`, `copyright`, `heading`, `square-m`, `square-parking`, `square-parking-off`), 1.70.0 (`badge-alert`, `battery-warning`, `book-alert`, `circle-alert`, `clock-alert`, `cloud-alert`, `mail-warning`, `message-circle-warning`, `message-square-warning`, `octagon-alert`, `search-alert`, `shield-alert`, `triangle-alert`) and 1.73.0 (`circle-arrow-out-down-left`, `circle-arrow-out-down-right`, `circle-arrow-out-up-left`, `circle-arrow-out-up-right`, `square-arrow-out-down-left`, `square-arrow-out-down-right`, `square-arrow-out-up-left`, `square-arrow-out-up-right`) - are mapped to canonical replacements in `data/compat-aliases.json`, for example `smile` renders as `face-slightly-smiling` and `triangle-alert` as `triangle-exclamation-point`. Unknown values that have no alias keep saving and surface as a dismissible admin notice; set the field setting "Unknown Icon Values" to "error" to make validation strict instead.
 
 = Can I use this with ACF Repeater or Flexible Content fields? =
 
@@ -186,6 +186,20 @@ This plugin does not use cookies.
 This plugin does not integrate with or send data to any third-party services.
 
 == Changelog ==
+
+= 1.6.0 - 2026-11-16 =
+
+### Added
+
+- Updated bundled assets to `lucide-static` `1.73.0` (2055 Lucide symbols, 3472 brand logos; 34 new icons, including the `stroke-line-cap-*` and `stroke-line-join-*` editor glyphs, `asterism`, `cap`, `cheese`, `graph-ring`, `mound-shovel`, `route-arrow-right`, `text-pen`, `question-mark`, `exclamation-mark` and the new `*-enter`/`*-exit` arrow family) and `simple-icons` `16.38.0` (+2 brand logos).
+
+### Changed
+
+- Extended the compatibility alias layer for icons renamed upstream between 1.70.0 and 1.73.0 (`*-arrow-out-*` became `*-arrow-*-exit`): `circle-arrow-out-down-left`, `circle-arrow-out-down-right`, `circle-arrow-out-up-left`, `circle-arrow-out-up-right`, `square-arrow-out-down-left`, `square-arrow-out-down-right`, `square-arrow-out-up-left` and `square-arrow-out-up-right` now resolve to their renamed twins, which are byte-identical artwork. Stored values are never rewritten.
+
+### Tested
+
+- Verified compatibility with WordPress 7.1.4 on PHP 8.5: activation, icon picker search and pagination, REST catalog, `[lucide_icon]` shortcode, custom icon upload, and rendering of all 1.73.0 renames through the alias layer.
 
 = 1.5.1 - 2026-11-16 =
 

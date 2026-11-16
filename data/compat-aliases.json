@@ -39,5 +39,13 @@
     "octagon-alert": "octagon-exclamation-point",
     "search-alert": "search-exclamation-point",
     "shield-alert": "shield-exclamation-point",
-    "triangle-alert": "triangle-exclamation-point"
+    "triangle-alert": "triangle-exclamation-point",
+    "circle-arrow-out-down-left": "circle-arrow-down-left-exit",
+    "circle-arrow-out-down-right": "circle-arrow-down-right-exit",
+    "circle-arrow-out-up-left": "circle-arrow-up-left-exit",
+    "circle-arrow-out-up-right": "circle-arrow-up-right-exit",
+    "square-arrow-out-down-left": "square-arrow-down-left-exit",
+    "square-arrow-out-down-right": "square-arrow-down-right-exit",
+    "square-arrow-out-up-left": "square-arrow-up-left-exit",
+    "square-arrow-out-up-right": "square-arrow-up-right-exit"
 }

@@ -12663,6 +12663,14 @@
     "Kitsu",
     "#FD755C"
   ],
+  "kitty": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "kitty",
+    "kitty",
+    "#000000"
+  ],
   "kiwix": [
     "brand",
     "logo",
@@ -24638,6 +24646,14 @@
     "traefikproxy",
     "Traefik Proxy",
     "#24A1C1"
+  ],
+  "trafficdotcv": [
+    "brand",
+    "logo",
+    "simple-icons",
+    "trafficdotcv",
+    "Traffic.cv",
+    "#635BFF"
   ],
   "trailforks": [
     "brand",
