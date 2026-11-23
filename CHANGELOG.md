@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.7.0] - 2026-11-23
+
+### Added
+
+- Updated bundled assets to `lucide-static` `1.78.0` (2102 Lucide symbols). Adds 55 new icons including the `arrows-`/`carets-`/`chevrons-*-axis` resize families, the `bot-*` family, `cinema`, `chocolate-bar`, `doghouse`, `jacket`, `warehouse-waves`, `nigerian-naira`, `graph-path`, `diagram-sankey` and `folder-network`. `simple-icons` bumped to `16.38.1`: brand artwork refresh with updated Marko and Netlify colors and paths (brand count 3472 unchanged).
+- Added a complete Georgian translation (`languages/mudrava-acf-lucide-field-ka.po` and `.mo`), bringing the bundled set to 28 languages. Written by hand following the established Georgian terminology of WordPress core.
+
+### Changed
+
+- Extended the compatibility alias layer (`data/compat-aliases.json`) for icons renamed upstream between 1.73.0 and 1.78.0: `fold-horizontal`, `fold-vertical`, `unfold-horizontal` and `unfold-vertical` now resolve to the `arrows-*-axis-dashed` family, `triangles-centerline-dashed-*` to `carets-to-axis-dashed-*` and `square-centerline-dashed-*` to `square-axis-dashed-*` (verified as the same rendered geometry, redrawn with consistent naming). The existing `flip-horizontal-2` and `flip-vertical-2` aliases were repointed to the renamed `carets-to-axis-dashed-*` successors so their stored values keep rendering. Stored post values are never rewritten.
+
+### Tested
+
+- Verified compatibility with WordPress 7.1.5 on PHP 8.5 (activation, picker search and pagination, REST catalog, `[lucide_icon]` shortcode, custom icon upload, alias-layer rendering of all 1.78.0 renames).
+
 ## [1.6.0] - 2026-11-16
 
 ### Added

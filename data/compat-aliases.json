@@ -11,8 +11,8 @@
     "album": "square-bookmark",
     "book-marked": "book-bookmark",
     "building-2": "building-complex",
-    "flip-horizontal-2": "triangles-centerline-dashed-vertical",
-    "flip-vertical-2": "triangles-centerline-dashed-horizontal",
+    "flip-horizontal-2": "carets-to-axis-dashed-vertical",
+    "flip-vertical-2": "carets-to-axis-dashed-horizontal",
     "music": "eighth-notes",
     "music-2": "eighth-note",
     "music-3": "half-note",
@@ -47,5 +47,13 @@
     "square-arrow-out-down-left": "square-arrow-down-left-exit",
     "square-arrow-out-down-right": "square-arrow-down-right-exit",
     "square-arrow-out-up-left": "square-arrow-up-left-exit",
-    "square-arrow-out-up-right": "square-arrow-up-right-exit"
+    "square-arrow-out-up-right": "square-arrow-up-right-exit",
+    "fold-horizontal": "arrows-to-axis-dashed-vertical",
+    "fold-vertical": "arrows-to-axis-dashed-horizontal",
+    "unfold-horizontal": "arrows-from-axis-dashed-vertical",
+    "unfold-vertical": "arrows-from-axis-dashed-horizontal",
+    "triangles-centerline-dashed-horizontal": "carets-to-axis-dashed-horizontal",
+    "triangles-centerline-dashed-vertical": "carets-to-axis-dashed-vertical",
+    "square-centerline-dashed-horizontal": "square-axis-dashed-vertical",
+    "square-centerline-dashed-vertical": "square-axis-dashed-horizontal"
 }

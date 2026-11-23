@@ -2,9 +2,9 @@
 Contributors: mudrava
 Tags: acf, advanced-custom-fields, icon picker, lucide, svg
 Requires at least: 6.0
-Tested up to: 7.1.4
+Tested up to: 7.1.5
 Requires PHP: 7.4
-Stable tag: 1.6.0
+Stable tag: 1.7.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,7 +18,7 @@ A professional ACF custom field type for selecting Lucide icons and Simple Icons
 
 = Features =
 
-* **Visual Icon Picker** - Browse and select from 2,055 Lucide icons and 3,472 brand logos
+* **Visual Icon Picker** - Browse and select from 2,102 Lucide icons and 3,472 brand logos
 * **Brand Icons** - Brand logos use Simple Icons values such as `simple:facebook`
 * **Custom Icon Library** - Upload your own SVG icons under Settings, sanitized on upload and addressable as `custom:<name>`
 * **Shortcode & Helper** - `[lucide_icon]` shortcode plus `mudrava_get_lucide_icon()` helper for templates
@@ -147,7 +147,7 @@ Lucide v1 removed most brand icons from the current packages. Version 1.1.0 upda
 
 = What happens if an icon name was removed in a library update? =
 
-Saved values are never rewritten. Icons removed in earlier `lucide-static` releases - 1.38.0 (`angry`, `annoyed`, `frown`, `history`, `laugh`, `meh`, `podcast`, `smile`, `smile-plus`), 1.66.0 (`archive-restore`, `bold`, `circle-parking`, `circle-parking-off`, `copyright`, `heading`, `square-m`, `square-parking`, `square-parking-off`), 1.70.0 (`badge-alert`, `battery-warning`, `book-alert`, `circle-alert`, `clock-alert`, `cloud-alert`, `mail-warning`, `message-circle-warning`, `message-square-warning`, `octagon-alert`, `search-alert`, `shield-alert`, `triangle-alert`) and 1.73.0 (`circle-arrow-out-down-left`, `circle-arrow-out-down-right`, `circle-arrow-out-up-left`, `circle-arrow-out-up-right`, `square-arrow-out-down-left`, `square-arrow-out-down-right`, `square-arrow-out-up-left`, `square-arrow-out-up-right`) - are mapped to canonical replacements in `data/compat-aliases.json`, for example `smile` renders as `face-slightly-smiling` and `triangle-alert` as `triangle-exclamation-point`. Unknown values that have no alias keep saving and surface as a dismissible admin notice; set the field setting "Unknown Icon Values" to "error" to make validation strict instead.
+Saved values are never rewritten. Icons removed in earlier `lucide-static` releases - 1.38.0 (`angry`, `annoyed`, `frown`, `history`, `laugh`, `meh`, `podcast`, `smile`, `smile-plus`), 1.66.0 (`archive-restore`, `bold`, `circle-parking`, `circle-parking-off`, `copyright`, `heading`, `square-m`, `square-parking`, `square-parking-off`), 1.70.0 (`badge-alert`, `battery-warning`, `book-alert`, `circle-alert`, `clock-alert`, `cloud-alert`, `mail-warning`, `message-circle-warning`, `message-square-warning`, `octagon-alert`, `search-alert`, `shield-alert`, `triangle-alert`), 1.73.0 (`circle-arrow-out-down-left`, `circle-arrow-out-down-right`, `circle-arrow-out-up-left`, `circle-arrow-out-up-right`, `square-arrow-out-down-left`, `square-arrow-out-down-right`, `square-arrow-out-up-left`, `square-arrow-out-up-right`) and 1.78.0 (`fold-horizontal`, `fold-vertical`, `unfold-horizontal`, `unfold-vertical`, `triangles-centerline-dashed-horizontal`, `triangles-centerline-dashed-vertical`, `square-centerline-dashed-horizontal`, `square-centerline-dashed-vertical`) - are mapped to canonical replacements in `data/compat-aliases.json`, for example `smile` renders as `face-slightly-smiling` and `triangle-alert` as `triangle-exclamation-point`. Unknown values that have no alias keep saving and surface as a dismissible admin notice; set the field setting "Unknown Icon Values" to "error" to make validation strict instead.
 
 = Can I use this with ACF Repeater or Flexible Content fields? =
 
@@ -165,7 +165,7 @@ Use the `mudrava_get_lucide_icon()` helper function with custom attributes for w
 
 = Is the plugin translation-ready? =
 
-Yes. The plugin ships complete translations for 27 languages: Catalan, Czech, Danish, German, Greek, Spanish, French, Galician, Croatian, Hungarian, Indonesian, Italian, Japanese, Norwegian Bokmål, Dutch, Polish, Portuguese (Brazil), Portuguese (Portugal), Romanian, Russian, Slovak, Slovenian, Serbian, Swedish, Turkish, Ukrainian and Simplified Chinese, with the text domain `mudrava-acf-lucide-field`. Additional languages and community corrections are welcome on [translate.wordpress.org](https://translate.wordpress.org/projects/wp-plugins/mudrava-acf-lucide-field/); approved translations are delivered automatically as WordPress language packs.
+Yes. The plugin ships complete translations for 28 languages: Catalan, Czech, Danish, German, Greek, Spanish, French, Galician, Georgian, Croatian, Hungarian, Indonesian, Italian, Japanese, Norwegian Bokmål, Dutch, Polish, Portuguese (Brazil), Portuguese (Portugal), Romanian, Russian, Slovak, Slovenian, Serbian, Swedish, Turkish, Ukrainian and Simplified Chinese, with the text domain `mudrava-acf-lucide-field`. Additional languages and community corrections are welcome on [translate.wordpress.org](https://translate.wordpress.org/projects/wp-plugins/mudrava-acf-lucide-field/); approved translations are delivered automatically as WordPress language packs.
 
 == Privacy ==
 
@@ -186,6 +186,21 @@ This plugin does not use cookies.
 This plugin does not integrate with or send data to any third-party services.
 
 == Changelog ==
+
+= 1.7.0 - 2026-11-23 =
+
+### Added
+
+- Updated bundled assets to `lucide-static` `1.78.0` (2102 Lucide symbols, 3472 brand logos; 47 net new icons, including the `arrows-`/`carets-`/`chevrons-*-axis` resize families, the `bot-*` family, `cinema`, `chocolate-bar`, `doghouse`, `jacket`, `warehouse-waves`, `nigerian-naira`, `graph-path`, `diagram-sankey` and `folder-network`) and `simple-icons` `16.38.1` (brand artwork refresh: updated Marko and Netlify colors and paths).
+- Added a complete Georgian translation, bringing the bundled set to 28 languages. The translation follows the established Georgian terminology of WordPress core.
+
+### Changed
+
+- Extended the compatibility alias layer for icons renamed or redrawn upstream between 1.73.0 and 1.78.0: `fold-horizontal`, `fold-vertical`, `unfold-horizontal` and `unfold-vertical` now resolve to the `arrows-*-axis-dashed` family, `triangles-centerline-dashed-*` to `carets-to-axis-dashed-*` and `square-centerline-dashed-*` to `square-axis-dashed-*`, all verified as the same rendered geometry. The existing `flip-horizontal-2` and `flip-vertical-2` aliases were repointed to the renamed `carets-to-axis-dashed-*` successors. Stored values are never rewritten.
+
+### Tested
+
+- Verified compatibility with WordPress 7.1.5 on PHP 8.5: activation, icon picker search and pagination, REST catalog, `[lucide_icon]` shortcode, custom icon upload, and rendering of all 1.78.0 renames through the alias layer.
 
 = 1.6.0 - 2026-11-16 =
 

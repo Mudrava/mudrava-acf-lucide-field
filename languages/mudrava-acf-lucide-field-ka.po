@@ -1,0 +1,199 @@
+# Georgian translation of Mudrava Icon Field for ACF with Lucide.
+# Written by hand, string by string, following the established Georgian
+# terminology of WordPress core (ხატულა, საცავი, ნაგულისხმები, წინასწარი ნახვა).
+msgid ""
+msgstr ""
+"Project-Id-Version: Mudrava Icon Field for ACF with Lucide 1.7.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mudrava-acf-lucide-field/\n"
+"POT-Creation-Date: 2026-11-23 19:17+0000\n"
+"PO-Revision-Date: 2026-11-23 19:45+0000\n"
+"Last-Translator: Mudrava <info@mudrava.com>\n"
+"Language-Team: Georgian <ka@li.org>\n"
+"Language: ka\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "%d icons available"
+msgstr "ხელმისაწვდომია %d ხატულა"
+
+msgid "%s selected"
+msgstr "არჩეულია %s"
+
+msgid "Accepted format: SVG with an &lt;svg&gt; root and a viewBox. Maximum size: %s. Icons are available in the picker and shortcodes as custom:&lt;name&gt;."
+msgstr "დასაშვები ფორმატი: SVG &lt;svg&gt; საფუძვლითა და viewBox ატრიბუტით. მაქსიმალური ზომა: %s. ხატულები ხელმისაწვდომი იქნება ამრჩევსა და შორტკოდებში custom:&lt;name&gt; სახით."
+
+msgid "Actions"
+msgstr "მოქმედებები"
+
+msgid "Add icon"
+msgstr "ხატულის დამატება"
+
+msgid "Allow Null"
+msgstr "ცარიელი მნიშვნელობის დაშვება"
+
+msgid "Allow the field to have no icon selected."
+msgstr "ხატულის არჩევის გარეშე ველის დაშვება."
+
+msgid "Block saving with a validation error"
+msgstr "შენახვის ბლოკირება გადამოწმების შეცდომით"
+
+msgid "Clear selection"
+msgstr "არჩევის გასუფთავება"
+
+msgid "Comma-separated terms that make the icon findable in the picker search."
+msgstr "ფრჩხილებით გამიჯნული ტერმინები, რომლითაც ხატულა მოიძებნება ამრჩევის ძებნაში."
+
+msgid "Custom Icons"
+msgstr "მორგებული ხატულები"
+
+msgid "Default Value"
+msgstr "ნაგულისხმები მნიშვნელობა"
+
+msgid "Delete"
+msgstr "წაშლა"
+
+msgid "Delete this icon? Existing fields will fall back to their default behavior."
+msgstr "წაიშალოს ეს ხატულა? არსებული ველები ნაგულისხმებ ქცევას დაუბრუნდება."
+
+msgid "Docs"
+msgstr "დოკუმენტაცია"
+
+msgid "Enter the icon value to be selected by default (e.g., \"rocket\" or \"simple:facebook\")."
+msgstr "მიუთითეთ ხატულის მნიშვნელობა, რომელიც ნაგულისხმებად აირჩევა (მაგ., \"rocket\" ან \"simple:facebook\")."
+
+msgid "How to handle values that are not part of the bundled icon set (e.g. icons imported from another site or values left over after an icon library update)."
+msgstr "როგორ მოვიქცეთ ისეთი მნიშვნელობებით, რომლებიც სტანდარტულ ხატულების ნაკრებში არ შედის (მაგ. სხვა საიტიდან შემოტანილი ხატულები ან ბიბლიოთეკის განახლების შემდეგ დარჩენილი მნიშვნელობები)."
+
+msgid "Icon <strong>%s</strong> was added to the library."
+msgstr "ხატულა <strong>%s</strong> დაემატა ბიბლიოთეკას."
+
+msgid "Icon <strong>%s</strong> was deleted."
+msgstr "ხატულა <strong>%s</strong> წაიშალა."
+
+msgid "Icon Value (e.g., \"rocket\" or \"simple:facebook\")"
+msgstr "ხატულის მნიშვნელობა (მაგ., \"rocket\" ან \"simple:facebook\")"
+
+msgid "Keywords"
+msgstr "საკვანძო სიტყვები"
+
+msgid "Lucide Icon"
+msgstr "Lucide-ის ხატულა"
+
+msgid "Mudrava Icon Field — Custom Icons"
+msgstr "Mudrava Icon Field — მორგებული ხატულები"
+
+msgid "Mudrava Icon Field:"
+msgstr "Mudrava Icon Field:"
+
+msgid "Mudrava Icon Field: an icon with that name already exists. Uploads never overwrite stored icons; delete the old icon first or use another name."
+msgstr "Mudrava Icon Field: ამ სახელის ხატულა უკვე არსებობს. ატვირთვა არასდროს ცვლის შენახულ ხატულებს: ჯერ წაშალეთ ძველი ხატულა ან გამოიყენეთ სხვა სახელი."
+
+msgid "Mudrava Icon Field: some icon values are not part of the bundled icon set and will render as empty markup:"
+msgstr "Mudrava Icon Field: ზოგიერთი ხატულის მნიშვნელობა სტანდარტულ ნაკრებში არ შედის და ცარიელი მარკირების სახით გამოისახება:"
+
+msgid "Mudrava Icon Field: that file is not a valid SVG document. Only plain shape elements (circle, ellipse, line, path, polygon, polyline, rect) inside an &lt;svg&gt; root are accepted."
+msgstr "Mudrava Icon Field: ეს ფაილი სწორი SVG დოკუმენტი არ არის. &lt;svg&gt; საფუძვლის შიგნით დაშვებულია მხოლოდ მარტივი გეომეტრიული ელემენტები (circle, ellipse, line, path, polygon, polyline, rect)."
+
+msgid "Mudrava Icon Field: that file is too large. The limit is %s."
+msgstr "Mudrava Icon Field: ფაილი ძალიან დიდია. ლიმიტი: %s."
+
+msgid "Mudrava Icon Field: that icon no longer exists in the library."
+msgstr "Mudrava Icon Field: ეს ხატულა აღარ არის ბიბლიოთეკაში."
+
+msgid "Mudrava Icon Field: the icon storage is not writable. Check filesystem permissions."
+msgstr "Mudrava Icon Field: ხატულების საცავში ჩაწერა შეუძლებელია. შეამოწმეთ ფაილური სისტემის ნებართვები."
+
+msgid "Name"
+msgstr "სახელი"
+
+msgid "No custom icons yet."
+msgstr "მორგებული ხატულები ჯერ არ არის."
+
+msgid "No icon selected"
+msgstr "ხატულა არ არის არჩეული"
+
+msgid "No icons found"
+msgstr "ხატულა ვერ მოიძებნა"
+
+msgid "Optional; defaults to the file name"
+msgstr "არასავალდებულო; ნაგულისხმებად გამოიყენება ფაილის სახელი"
+
+msgid "Placeholder"
+msgstr "მანიშნებელი ტექსტი"
+
+msgid "Placeholder text for the search input."
+msgstr "საძიებო ველის მანიშნებელი ტექსტი."
+
+msgid "Please select a valid icon."
+msgstr "აირჩიეთ სწორი ხატულა."
+
+msgid "Please select an icon."
+msgstr "აირჩიეთ ხატულა."
+
+msgid "Preview"
+msgstr "წინასწარი ნახვა"
+
+msgid "Return Format"
+msgstr "დაბრუნების ფორმატი"
+
+msgid "SVG Markup"
+msgstr "SVG მარკირება"
+
+msgid "SVG file"
+msgstr "SVG ფაილი"
+
+msgid "Save and show an admin notice (default)"
+msgstr "შენახვა და ადმინისტრატორის შეტყობინების ჩვენება (ნაგულისხმები)"
+
+msgid "Search icons or brand logos..."
+msgstr "ხატულების ან ბრენდების ლოგოების ძებნა..."
+
+msgid "Search keywords"
+msgstr "ძებნის საკვანძო სიტყვები"
+
+msgid "Select an icon"
+msgstr "აირჩიეთ ხატულა"
+
+msgid "Specify the format returned by get_field()."
+msgstr "მიუთითეთ ფორმატი, რომელსაც აბრუნებს get_field()."
+
+msgid "Stored icon is not in the bundled icon set"
+msgstr "შენახული ხატულა სტანდარტულ ნაკრებში არ შედის"
+
+msgid "Stored icons"
+msgstr "შენახული ხატულები"
+
+msgid "The icon file could not be written."
+msgstr "ხატულის ფაილის ჩაწერა ვერ მოხერხდა."
+
+msgid "The icon storage directory could not be created."
+msgstr "ხატულების საცავის საქმის შექმნა ვერ მოხერხდა."
+
+msgid "The icon storage is not writable on this site."
+msgstr "ამ საიტზე ხატულების საცავში ჩაწერა შეუძლებელია."
+
+msgid "The storage name is derived from this title: lowercase, dashes, max 64 characters."
+msgstr "სახელი საცავში ფორმდება ამ სათაურიდან: პატარა ასოები, ტირეები, მაქსიმუმ 64 სიმბოლო."
+
+msgid "This plugin requires %1$s version %2$s or higher to function."
+msgstr "ამ პლაგინის სამუშაოდ საჭიროა %1$s-ის %2$s ან უფრო ახალი ვერსია."
+
+msgid "Title"
+msgstr "სათაური"
+
+msgid "Unknown Icon Values"
+msgstr "უცნობი ხატულის მნიშვნელობები"
+
+msgid "Upload plain SVG icons to extend the picker with a custom set. Files are sanitized on upload: scripts, styles, embedded images and unsupported elements are removed, and only the allowlisted shape markup is stored."
+msgstr "ატვირთეთ მარტივი SVG ხატულები, რომ ამრჩევი საკუთარი ნაკრებით გააფართოვოთ. ფაილები ატვირთვისას იწმინდება: სკრიპტები, სტილები, ჩაშენებული სურათები და მხარდაუჭირავი ელემენტები იშლება, ინახება მხოლოდ დასაშვები ფიგურების მარკირება."
+
+msgid "Value"
+msgstr "მნიშვნელობა"
+
+msgid "You are not allowed to manage custom icons."
+msgstr "მორგებული ხატულების მართვის ნებართვა არ გაქვთ."
+
+msgid "logo, company, brand"
+msgstr "ლოგო, კომპანია, ბრენდი"
